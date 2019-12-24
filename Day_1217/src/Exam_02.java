@@ -2,12 +2,13 @@
 [자료형 - DateType(기억장소의 크기와 연관)]
 
 1. 기본자료형
-	문자 : char
-	정수 : byte , int , long
+	문자 : char(2) -> '정수타입'도 가능 함 시험에서 주의!
+	정수 : byte(1) , int(2) , long(8) ,short(2)
 	실수 : double, float
-	논리 : boolean
+	논리 : boolean(true/false)
 
-	자바에는 문자열 자료형은 없음 원래 
+	*자바에는 문자열 자료형은 없음 원래 
+	*char도 정수 -> 결국 숫자/논리로 분리가능
 
 2. 참조자료형 (주소/위치)
 	배열 
