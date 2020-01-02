@@ -27,10 +27,9 @@ public class Exam_10 {
 				sum += num;
 			}
 		}
-
-		int ave = sum / cnt;
+		
 		System.out.println("sum = "+sum);
-		System.out.println("ave = "+ave);
+		System.out.println("ave = "+(double)sum/cnt);
 		
 		
 		
