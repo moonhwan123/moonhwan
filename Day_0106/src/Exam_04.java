@@ -24,17 +24,16 @@ public class Exam_04 {
 		int inwon = 0;
 			
 		while(true) {
-			int kyuryo;
 			int m = 50000;
 			boolean sw = true;
 			System.out.print("급여를 입력 하세요(1 ~ 500,000) >> ");
-			kyuryo = sc.nextInt();
+			int kyuryo = sc.nextInt();
 			
 			if(kyuryo == -999) break;
-			if(inwon == -999) break;
-				
+			if(inwon == 10) break;
+			
+			if(kyuryo>=1 && kyuryo<= 500000) {	
 				for(int x = 0; x <= 9; x++) {
-					
 					int mok = kyuryo / m ;
 					sum[x] = mok;
 					
@@ -50,6 +49,7 @@ public class Exam_04 {
 					total[x]= total[x]+sum[x];
 				}
 				inwon++;
+			}else System.out.println("잘 못된 값 입니다.");
 
 		}
 		
@@ -57,7 +57,7 @@ public class Exam_04 {
 		boolean sw = true;
 		
 		for(int x = 0; x <= 9; x++) {
-			System.out.println(m+" : "+total[x]);
+			System.out.println(m+"원 : "+total[x]+"개");
 			if(sw) {
 				m = m/5;
 				sw = false;
@@ -67,7 +67,7 @@ public class Exam_04 {
 			}
 			
 		}
-		System.out.println("인원 : "+inwon);
+		System.out.println("계산된 인원 : "+inwon);
 		
 		
 		
