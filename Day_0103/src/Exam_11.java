@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /*
 1)
 1
@@ -52,11 +54,12 @@ public class Exam_11 {
 		
 		//1번)
 		System.out.println("1번)");
-		int k_1 = 1;
-		for(int a = 1; a <= 5; a++) {
-			for(int b = 1; b <= a; b++) {
-				System.out.print(k_1);
-				k_1++;
+		int number = 1;
+		for(int i = 1; i <= 5; i++) {
+			for(int j = 1; j <= i; j++) {
+				System.out.print(number);
+				System.out.print("\t");
+				number++;
 			}
 			System.out.println();
 		}
@@ -64,9 +67,9 @@ public class Exam_11 {
 		//2번)
 		
 		System.out.println("2번)");
-		char ch = 'A';
-		for(int a = 1; a <= 5; a++) {
-			for(int b = 1; b <= a; b++) {
+		for(int i = 1; i <= 26; i++) {
+			char ch = 'A';
+			for(int j = 1; j <= i; j++) {
 				System.out.print(ch);
 				ch++;
 			}
@@ -78,47 +81,60 @@ public class Exam_11 {
 		
 		//3번)
 		System.out.println("3번)");
-		int k_2 = 1;
-		for(int a = 1; a <= 5; a++) {
-			for(int b = 1; b <= 5-a; b++) {
-				System.out.print(" ");
+		int number1 = 1;
+		for(int i = 1; i <= 5; i++) {
+			for(int k = 5-i; k >= 1; k--) {
+				System.out.print("\t");
 			}
-			for(int c = 1; c <= a; c++) {
-				System.out.print(k_2);
-				k_2++;
+			for(int j = 1; j <= i; j++) {
+				System.out.print(number1);
+				System.out.print("\t");
+				number1++;
 			}
 			System.out.println();
 		}
 		
 		
 		//4번)
-		System.out.println("4번)");
+		Scanner sc = new Scanner(System.in);
 		
-		for (int i = 5; i > 0; i--) {
-		    for (int j = 5 - i; j > 0; j--) {
-		        System.out.print(" ");
-		    }
-		    for (int k = i * 2 - 1; k > 0; k--) {
-		        System.out.print("*");
-		    }
-		    System.out.println();
+		System.out.print("반복할 횟수 입력>>");
+		int num = sc.nextInt();
+
+		for(int i = 1; i <= num; i++) {
+			for(int j = 1; j <= i-1; j++) {
+				System.out.print(" ");
+			}
+			for(int k = 1; k <= (num*2+1)-(i*2); k++) {
+				System.out.print("*");
+			}
+			System.out.println();
 		}
 
 
 
 		//5번)
 		System.out.println("5번)");
-		
-		
-		for (int i = 5; i > 0; i--) {
-		    for (int j = 5 - i; j > 0; j--) {
-		        System.out.print(" ");
-		    }
-		    for (int k = i ; k > 0; k--) {
-		        System.out.print("*");
-		    }
-		    System.out.println();
+		for(int i = 1; i <= 9; i++) {
+			if(i<=5) {
+				for(int j = 1; j <= i-1; j++) {
+					System.out.print(" ");
+				}
+				for(int k = 5; k >= i; k--) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}else {
+				for(int a = 8; a >= i; a--) {
+					System.out.print(" ");
+				}
+				for(int b = 6; b <= i+1; b++) {
+					System.out.print("*");
+				}
+				System.out.println();
+			}
 		}
+
 		
 		
 		
