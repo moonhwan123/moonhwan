@@ -18,7 +18,7 @@ public class Exam_08 {
 		
 		int arr[] = new int[20];
 		int cnt = 0;
-		int ave = 0;
+		double ave = 0;
 		int sum = 0;
 		
 		while(true) {
@@ -33,9 +33,11 @@ public class Exam_08 {
 			}else System.out.println("입력 오류");
 		}
 
-		ave = sum/cnt;
+		ave = (double)sum/cnt;
+		ave = (int)(ave*100+0.5)/100.;
 		
-		int cha[] = new int[cnt];	
+		
+		double cha[] = new double[cnt];	
 		
 		for(int x = 0; x < cnt; x++) {
 			if(ave < arr[x]) {
@@ -45,7 +47,7 @@ public class Exam_08 {
 			}
 		}
 		
-		int min = cha[0];
+		double min = cha[0];
 		int d=0;
 		for(int x = 1; x < cnt; x++) {
 			if(min>cha[x]) {
