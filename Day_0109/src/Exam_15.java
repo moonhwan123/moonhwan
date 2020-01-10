@@ -55,7 +55,7 @@ public class Exam_15 {
 			}
 			System.out.println();
 		}
-		System.out.println("===================================");
+		System.out.println("============================================================");
 		
 		//합계 출력 부분
 		System.out.print("합계 : "+"\t\t");
@@ -71,8 +71,8 @@ public class Exam_15 {
 			System.out.print(ave[x]+"\t");
 		}
 		System.out.println();
-		System.out.println("[전체 평균 이상인 학생]");
 		//전체 평균 이상인 학생
+		System.out.println("[전체 평균 이상인 학생]");
 		System.out.println("번호\t이름\t평균");
 		for(int x = 0; x < cnt; x++) {
 			if(arr[x][6]>ave[5]) {
