@@ -2,6 +2,9 @@ import java.util.Scanner;
 
 public class sam_14 {
 	public static void main(String[] args) {
+		
+		System.out.println("[2부터 입력한 수까지의 소수의 갯수를 출력합니다.]");
+		
 		Scanner sc = new Scanner(System.in);
 		
 		int i = 2;

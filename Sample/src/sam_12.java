@@ -4,7 +4,7 @@ public class sam_12 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("소수판별할 정수를 1개 입력 하세요 >>");
+		System.out.print("2이상의 정수중 소수판별할 정수를 1개 입력 하세요 >> ");
 		int num = sc.nextInt();
 		int nmg;
 		

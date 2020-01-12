@@ -9,7 +9,7 @@ public class sam_30 {
 			for(int j = 0; j < 5; j++) {
 				arr[j][i] = k;
 				k++;
-			}System.out.println();
+			}
 		}
 		
 		for(int i = 0; i < 5; i++) {

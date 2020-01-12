@@ -2,6 +2,8 @@
 public class sam_11 {
 	public static void main(String[] args) {
 		
+		System.out.println("[1 ~ 100사이의 짝수합,홀수합을 출력합니다.]");
+		
 		int jjakSum = 0;
 		int holSum = 0;
 		
