@@ -45,6 +45,8 @@ public class Exam_09 {
 		Sawon[] sa = new Sawon[5];
 		Scanner sc = new Scanner(System.in);
 		
+		int[] total = new int[10];
+		
 		Sawon s;
 		
 		for(int x = 0; x < sa.length; x++) {
@@ -67,7 +69,9 @@ public class Exam_09 {
 			}
 			System.out.println();
 		}
+		
 
+		
 		
 	}
 }

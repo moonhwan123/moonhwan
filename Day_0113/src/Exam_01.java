@@ -32,12 +32,12 @@ class Student{
 public class Exam_01 {
 	public static void main(String[] args) {
 		
-		Student stu1; // stu1 = "레퍼런스 변수" (인스턴스 변수-객체를 가리키는 변수)
-		stu1 = new Student(); // 인스턴스 생성(실제로 생성) , 붕어빵 틀에서 붕어빵을 만든 느낌
-		//stu1를 생성하면 객체가 만들어지고 stu1은 Student를 가리킨다.
+		Student stu1; // stu1 = "레퍼런스(참조) 변수" (인스턴스 변수-객체를 가리키는 변수)
+		stu1 = new Student(); // 인스턴스(객체) 생성(실제로 생성) , 붕어빵 틀에서 붕어빵을 만든 느낌
+		//new를 이용해서 stu1를 생성하면 객체가 만들어지고 stu1은 Student를 가리킨다.
 		//배열하고 같은 원리
 		stu1.studentNumber = 1101;
-		//stu1.stu1이 가리키는 놈
+		//stu1.studentNumber이 가리키는 놈
 		stu1.name = "홍길동";
 		stu1.kor = 90;
 		stu1.eng = 80;

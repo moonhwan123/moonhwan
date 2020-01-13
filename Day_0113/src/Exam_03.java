@@ -26,6 +26,7 @@ public class Exam_03 {
 		
 		aa.x = 10;
 		int s = bb.sum();
+		System.out.println(s);
 
 		
 		//
