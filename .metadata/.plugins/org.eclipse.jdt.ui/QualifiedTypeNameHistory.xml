@@ -9,6 +9,9 @@
 <fullyQualifiedTypeName name="Hak3"/>
 <fullyQualifiedTypeName name="Mouse"/>
 <fullyQualifiedTypeName name="Mouse2"/>
+<fullyQualifiedTypeName name="StudentTest"/>
+<fullyQualifiedTypeName name="SeqNumber"/>
+<fullyQualifiedTypeName name="ConvNumber"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
