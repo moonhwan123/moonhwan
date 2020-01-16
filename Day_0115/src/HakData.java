@@ -9,8 +9,7 @@ public class HakData {
 	
 	void print() {
 		for(int x = 0; x < hak.length; x++) {
-			System.out.print(hak[x].bun+"\t"+hak[x].name+"\t"+hak[x].score+"\n");
-//			hak[x].print();
+			hak[x].print();
 		}
 	}
 	

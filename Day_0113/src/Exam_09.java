@@ -16,6 +16,13 @@ class Sawon{
 	String name;
 	int pay;
 	int money[] = new int[10]; // 5만원~1원 까지 화폐매수 저장 공간
+	
+	Sawon() {}
+	Sawon(int sabun, String name , int pay){
+		this.sabun = sabun;
+		this.name = name;
+		this.pay = pay;
+	}
 
 	void count() {
 		int temp = this.pay;
@@ -51,6 +58,18 @@ public class Exam_09 {
 		
 		for(int x = 0; x < sa.length; x++) {
 			System.out.print("입력 : ");
+			int sabun = sc.nextInt();
+			String name = sc.next();
+			int pay = sc.nextInt();
+			
+			s = new Sawon(sabun,name,pay);
+			s.count();
+			sa[x] = s;
+			
+		}
+		/*
+		 	for(int x = 0; x < sa.length; x++) {
+			System.out.print("입력 : ");
 			s = new Sawon();
 			s.sabun = sc.nextInt();
 			s.name = sc.next();
@@ -58,7 +77,7 @@ public class Exam_09 {
 			s.count();
 			sa[x] = s;
 		}
-		
+		 */
 		
 		System.out.println("=====================================================================");
 		for(int x = 0; x < sa.length; x++) {

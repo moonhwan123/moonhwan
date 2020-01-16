@@ -7,6 +7,7 @@ class Data{
 }
 
 public class Exam_04 {
+	
 	static void swap(int a , int b) {
 		int c = a;
 		a = b;
@@ -14,14 +15,15 @@ public class Exam_04 {
 	}
 	static void swapD(Data a) {
 		int aa = a.x;
-		a.x = a.y		;
+		a.x = a.y;
 		a.y = aa;
 	}
 	static void swapA(int[] dd) {
 		int aa = dd[0];
-		dd[0] = dd[1];		;
+		dd[0] = dd[1];		
 		dd[1] = aa;
 	}
+	
 	public static void main(String[] args) {
 		
 		int a = 10;
