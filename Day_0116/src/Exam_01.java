@@ -35,13 +35,20 @@ public class Exam_01 {
 		
 
 		StudentData sd = new StudentData();
-		
+/*		
 		//석차 , 정렬 처리
 		sd.rank(cls1, cnt);
 		sd.sort(cls1, cnt);
 		
 		// 처리 후 데이터 출력
 		sd.clsDataPrint(cls1, cnt);
+*/
+		
+		StudentData2 sd2 = new StudentData2(cls1, cnt);
+		sd2.rankAcc();
+		sd2.sort2();
+		sd2.clsDataPrint();
+		
 		
 	}
 }

@@ -8,7 +8,7 @@ default : 접근 제어자가 생략이 되면 자동으로 디폴트임,쓰는거 아님 -> "같은 패키�
 
 protected : 같은 패키지 + 패키지가 달라도 상속 관계일때는 사용가능
 
-public : 제한 없음
+public : 제한 없음(다른 패키지일 경우 import하면 된다.)
 
 제일 많이 쓰는 거는 private or public
 일반적으로 클래스에는 public을 쓰긴한다.

@@ -18,8 +18,6 @@ public class MainClass {
 	    	for(int j = 0; j< r.length; j ++) {
 	    		 r[j] = (int)(Math.random()*4);
 	    	}
-		   
-		    
 	    	stu[i] = new StudentClass(name[r[0]], age[r[1]], gender[r[2]], address[r[3]]);
 	    }
 	    

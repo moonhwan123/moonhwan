@@ -45,6 +45,8 @@ public class Polymorpism2 {
 		james.feed(lion);
 		james.feed(rabbit);
 		james.feed(monkey);
+		
+		
 	}
 }
 

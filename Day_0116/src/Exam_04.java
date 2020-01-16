@@ -1,4 +1,5 @@
 import java.util.Random;
+
 import java.util.Scanner;
 //import java.util.*; util에 있는 모든 클래스 소환
 //import java.lang.*; 은 굳이 임포트 안해도 되는 것들

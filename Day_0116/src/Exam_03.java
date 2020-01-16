@@ -12,7 +12,6 @@ class AA{
 }
 public class Exam_03 {
 	public static void main(String[] args) {
-		
 		AA a = new AA();
 		int b = 3;
 //		a.PI = 314; final이라 못바꿈
