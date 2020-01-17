@@ -15,10 +15,16 @@
 <fullyQualifiedTypeName name="Sawon"/>
 <fullyQualifiedTypeName name="StudentData"/>
 <fullyQualifiedTypeName name="SawonData"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="studnet.util.Sample"/>
 <fullyQualifiedTypeName name="Student"/>
 <fullyQualifiedTypeName name="StudentData2"/>
+<fullyQualifiedTypeName name="parking.ParkingData"/>
+<fullyQualifiedTypeName name="parking.Parking"/>
+<fullyQualifiedTypeName name="sawon.SawonPay"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="sawon2.SawonExam"/>
+<fullyQualifiedTypeName name="sawon2.Sawon"/>
+<fullyQualifiedTypeName name="sawon2.SawonData"/>
 </qualifiedTypeNameHistroy>
