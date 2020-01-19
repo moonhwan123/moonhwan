@@ -17,7 +17,7 @@ public class DocumentTest {
 	public static void main(String[] args) {
 		DocumentTest d1 = new DocumentTest();
 		DocumentTest d2 = new DocumentTest("자바.txt");
-		DocumentTest d3 = new DocumentTest("자바.txt");
+		DocumentTest d3 = new DocumentTest();
 		DocumentTest d4 = new DocumentTest("자바.txt");
 	}
 }

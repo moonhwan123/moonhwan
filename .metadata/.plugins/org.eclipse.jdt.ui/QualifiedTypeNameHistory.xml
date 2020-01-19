@@ -27,4 +27,6 @@
 <fullyQualifiedTypeName name="sawon2.SawonExam"/>
 <fullyQualifiedTypeName name="sawon2.Sawon"/>
 <fullyQualifiedTypeName name="sawon2.SawonData"/>
+<fullyQualifiedTypeName name="Product"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
 </qualifiedTypeNameHistroy>
