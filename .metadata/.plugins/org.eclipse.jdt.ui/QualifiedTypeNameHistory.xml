@@ -22,11 +22,22 @@
 <fullyQualifiedTypeName name="parking.ParkingData"/>
 <fullyQualifiedTypeName name="parking.Parking"/>
 <fullyQualifiedTypeName name="sawon.SawonPay"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="sawon2.SawonExam"/>
 <fullyQualifiedTypeName name="sawon2.Sawon"/>
 <fullyQualifiedTypeName name="sawon2.SawonData"/>
 <fullyQualifiedTypeName name="Product"/>
 <fullyQualifiedTypeName name="java.util.concurrent.ConcurrentHashMap"/>
+<fullyQualifiedTypeName name="test01.DigitalTv"/>
+<fullyQualifiedTypeName name="test01.child"/>
+<fullyQualifiedTypeName name="test01.Child"/>
+<fullyQualifiedTypeName name="test01.Parent"/>
+<fullyQualifiedTypeName name="test01.Child2"/>
+<fullyQualifiedTypeName name="test02.Dog"/>
+<fullyQualifiedTypeName name="test02.Animal"/>
+<fullyQualifiedTypeName name="test02.Cat"/>
+<fullyQualifiedTypeName name="test02.Control"/>
+<fullyQualifiedTypeName name="student.Student"/>
+<fullyQualifiedTypeName name="student.StudentHak"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
