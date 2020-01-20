@@ -25,8 +25,7 @@ class HH extends GG{
 
 public class Exam_03 {
 	public static void main(String[] args) {
-		FF f1 = new FF();
-		GG g1 = new GG();
+		
 		HH h1 = new HH();
 		
 		
