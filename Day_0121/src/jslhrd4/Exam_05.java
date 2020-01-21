@@ -1,14 +1,10 @@
-package jlshrd4;
+package jslhrd4;
 
 import java.io.IOException;
 
 /*
 [에외 처리]
 최상위 클래스 - Exception
-
-
-
-
 
  */
 

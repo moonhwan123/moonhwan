@@ -36,7 +36,8 @@ public class Exam_09 {
 		
 		Student2 s1 = new Student2(1,"ȫ�浿",90);
 		Student2 s2 = new Student2(1,"ȫ�浿",90);
-		System.out.println("s1 = "+s1.hashCode());
+		System.out.println(s1.toString());
+		System.out.println("s1 = "+s1);
 		System.out.println("s2 = "+s2.hashCode());
 		
 		String str1 = "AAA";

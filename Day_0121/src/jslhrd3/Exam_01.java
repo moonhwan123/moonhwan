@@ -1,4 +1,4 @@
-package jlshrd3;
+package jslhrd3;
 
 /*
 [중첩클래스(내부클래스,InnerClass)]

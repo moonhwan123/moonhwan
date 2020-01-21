@@ -1,4 +1,4 @@
-package jlshrd3;
+package jslhrd3;
 /*
 [4. 익명중첩 클래스]
 

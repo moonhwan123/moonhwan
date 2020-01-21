@@ -1,4 +1,4 @@
-package jlshrd3;
+package jslhrd3;
 
 /*
 [3.지역중첩 클래스]

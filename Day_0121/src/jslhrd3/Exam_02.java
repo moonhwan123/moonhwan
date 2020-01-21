@@ -1,4 +1,4 @@
-package jlshrd3;
+package jslhrd3;
 
 /*
 [2.정적(static)중첩 클래스]

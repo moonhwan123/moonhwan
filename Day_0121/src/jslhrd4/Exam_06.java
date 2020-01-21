@@ -1,4 +1,4 @@
-package jlshrd4;
+package jslhrd4;
 
 import java.io.IOException;
 
