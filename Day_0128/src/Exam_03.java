@@ -17,23 +17,23 @@ public class Exam_03 {
 //		String str = sc2.nextLine();
 //		System.out.println(str);
 		
-		while(sc2.hasNext()) {
-			String str2 = sc2.nextLine();
-			System.out.println(str2);
-		}
+//		while(sc2.hasNext()) {
+//			String str2 = sc2.nextLine();
+//			System.out.println(str2);
+//		}
 		
 		
-//      try {
-//    	  Scanner scanner = new Scanner(new File("c:\\data\\test.txt"));
-//    	  while(scanner.hasNextLine())
-//    	  {
-//    		  String line = scanner.nextLine();
-//          
-//          	System.out.println(line);
-//    	  }
-//	  } catch (FileNotFoundException e) {
-//	      e.printStackTrace();
-//	  }
+      try {
+    	  Scanner scanner = new Scanner(new File("c:\\data\\test.txt"));
+    	  while(scanner.hasNextLine())
+    	  {
+    		  String line = scanner.nextLine();
+          
+          	System.out.println(line);
+    	  }
+	  } catch (FileNotFoundException e) {
+	      e.printStackTrace();
+	  }
 		
 		
 	}

@@ -59,7 +59,7 @@ public class StudentData {
 	
 	
 	public void rate1() {
-		double imsi=0;
+		double imsi;
 		double hwak;
 		for(int x = 0; x < 20; x++) {
 			imsi=0;

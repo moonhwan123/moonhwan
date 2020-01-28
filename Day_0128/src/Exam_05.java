@@ -18,14 +18,14 @@ public class Exam_05 {
 //		}
 		
 		StringTokenizer st = new StringTokenizer(str,"-."); // -으로도 분리가능하고 .으로도 분리가 가능
-		System.out.println("토큰 수 : "+st.countTokens());
+//		System.out.println("토큰 수 : "+st.countTokens());
+//		
+//		System.out.println(st.nextToken());
+//		System.out.println(st.nextToken());
 		
-		System.out.println(st.nextToken());
-		System.out.println(st.nextToken());
-		
-//		while(st.hasMoreTokens()) {
-//			System.out.println(st.nextToken());
-//		}
+		while(st.hasMoreTokens()) {
+			System.out.println(st.nextToken());
+		}
 		
 		
 		
