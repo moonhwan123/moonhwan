@@ -13,8 +13,8 @@
 		</list>
 	</section>
 	<section name="WorkbenchPreferenceDialogSettings">
-		<item key="DIALOG_X_ORIGIN" value="595"/>
-		<item key="DIALOG_Y_ORIGIN" value="93"/>
+		<item key="DIALOG_X_ORIGIN" value="964"/>
+		<item key="DIALOG_Y_ORIGIN" value="88"/>
 	</section>
 	<section name="ImportExportAction">
 		<item key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID" value="org.eclipse.ui.wizards.export.ZipFile"/>
@@ -30,6 +30,7 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\JSLHRD\Desktop\40기 최문환 로또 프로그램.zip"/>
 			<item value="C:\Users\JSLHRD\Desktop\사원급여관리.zip"/>
 			<item value="C:\Users\ansghks46\Desktop\0116.zip"/>
 			<item value="C:\Users\JSLHRD\Desktop\Day_1217.zip"/>
