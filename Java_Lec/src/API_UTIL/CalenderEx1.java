@@ -30,7 +30,7 @@ import java.util.Calendar;
 
 
 
-public class calenderEx1 {
+public class CalenderEx1 {
 
 	public static void main(String[] args) {
 		
