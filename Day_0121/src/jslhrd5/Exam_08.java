@@ -16,7 +16,8 @@ class Student{
 	@Override
 	public boolean equals(Object obj) {
 		if(obj!=null && obj instanceof Student) {
-			return bun==((Student)obj).bun && ((Student)obj).name.equals(name);
+			return bun == ((Student)obj).bun  &&  ((Student)obj).name.equals(name);
+			
 		}else {
 			return false;
 		}

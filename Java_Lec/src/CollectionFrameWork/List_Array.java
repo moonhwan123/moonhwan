@@ -57,6 +57,7 @@ public class List_Array {
 		list1.add(new Integer(2));
 		
 		
+		
 		ArrayList list2 = new ArrayList(list1.subList(1, 4));
 		//fromindex롤 부터 toindex사이에 저장된 객체 반환
 		
