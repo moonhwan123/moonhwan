@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="test02.Cat"/>
-<fullyQualifiedTypeName name="test02.Control"/>
-<fullyQualifiedTypeName name="student.StudentHak"/>
-<fullyQualifiedTypeName name="SutdaCard"/>
-<fullyQualifiedTypeName name="java.interface2.Action"/>
-<fullyQualifiedTypeName name="jslhrd.DataAccessObject"/>
-<fullyQualifiedTypeName name="jslhrd.OracleDao"/>
-<fullyQualifiedTypeName name="jslhrd.MysqlDao"/>
 <fullyQualifiedTypeName name="java.net.Socket"/>
 <fullyQualifiedTypeName name="jlshrd3.Outer.Inner"/>
 <fullyQualifiedTypeName name="jlshrd3.Outer1.Inner1"/>
 <fullyQualifiedTypeName name="jlshrd3.Outer2"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="jslhrd5.Student"/>
 <fullyQualifiedTypeName name="test.Member"/>
 <fullyQualifiedTypeName name="java.security.KeyRep.Type"/>
@@ -22,8 +13,6 @@
 <fullyQualifiedTypeName name="HakData"/>
 <fullyQualifiedTypeName name="lottopack2.LottoData"/>
 <fullyQualifiedTypeName name="java.util.Properties"/>
-<fullyQualifiedTypeName name="java.lang.Comparable"/>
-<fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="user.UserData"/>
@@ -42,7 +31,6 @@
 <fullyQualifiedTypeName name="student.StudentData"/>
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="Person"/>
-<fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="example.StudentData"/>
 <fullyQualifiedTypeName name="java.awt.List"/>
@@ -53,11 +41,23 @@
 <fullyQualifiedTypeName name="java.util.Collections"/>
 <fullyQualifiedTypeName name="java.lang.Iterable"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="treeset.Person"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="generics.Product"/>
+<fullyQualifiedTypeName name="java.awt.Toolkit"/>
+<fullyQualifiedTypeName name="thread.BeepTask"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
 </qualifiedTypeNameHistroy>
