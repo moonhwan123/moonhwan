@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>insert2</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	border: 1px solid black;
+	width: 500px;
+	height: 200px;
+}
+
+table, th, td {
+	border: 1px solid #ccc;
+	text-align: center;
+	
+}
+.shopList {
+	margin: 0 auto;
+}
+.footer{
+	text-align: center;
+}
+
+</style>
+
+<script>
+	function save2() {
+		/* 변수는 var로 통일한다. */
+		var id = my.t_id.value;
+//		alert(id);	
+		var pw = my.t_pw.value;
+//		alert(pw);
+		var gender = my.t_gender.value;
+//		alert(gender);
+
+		var hobby1 = my.t_hobby111.value;
+//		alert(hobby1);
+		var hobby1_tf = my.t_hobby1.checked;
+//		alert(hobby1_tf);
+		
+		var hobby2 = my.t_hobby2.value;
+//		alert(hobby2);
+		
+		var dept = my.t_dept.value;
+		alert(dept);
+	}
+</script>
+
+</head>
+<body>
+
+
+	<div class="container">
+		<!-- 표 만들기  -->
+		<form name="my" method="post" action="insert.html">
+		<!--
+		my는 내가 임의로 만든이름 
+		post : 대량의 많은 데이터 전송시 , 눈에 보이지 않음 / get : 소량, 눈에 보임
+		action : 저장 버튼을 눌렀을때 값들을 어떤 페이지로 보낼것인가
+		= name과 action은 반드시 존재 해야됨
+		 -->
+			<table class="shopList">
+			
+				<tr>
+					<th>아이디</th>
+					<td><input type="text" name="t_id"></td>
+				</tr>
+				
+				<tr>
+					<th>패스워드</th>
+					<td><input type="password" name="t_pw"></td>
+				</tr>
+				
+				<tr>
+					<th>성별</th>
+					<td>
+						<input type="radio" name="t_gender" value="m" checked>남&nbsp;
+						<input type="radio" name="t_gender" value="f">여&nbsp;
+						<input type="radio" name="t_gender" value="t">트
+					</td>
+				</tr>
+				
+				<tr>
+					<th>취미</th>
+					<td>
+						<input type="checkbox" name="t_hobby1" value="낚시">낚시
+						<input type="checkbox" name="t_hobby2" value="등산">등산
+						<input type="checkbox" name="t_hobby3" value="볼링">볼링
+						<input type="checkbox" name="t_hobby4" value="게임">게임
+						<input type="checkbox" name="t_hobby5" value="여행">여행
+					</td>
+				</tr>
+				
+				<tr>
+					<th>부서</th>
+					<td>
+						<select name="t_dept">
+							<option>선택</option>
+							<option value="aa">교육부</option>
+							<option value="bb">홍보부</option>
+							<option value="cc">영업부</option>
+							<option value="dd">경리부</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="저장11">&nbsp;&nbsp;
+						<input type="button" onclick="save2();" value="저장22">&nbsp;&nbsp;
+						<!-- 
+						입력 받은 모든 값을 action=""프로그램으로
+						전송하여 처리 하시오
+						save2() = 자바스크립트 함수 
+						-->
+						<input type="reset" value="다시쓰기">
+					</td>
+				</tr>
+				
+								
+			</table>
+		</form>
+	</div>
+	
+	<div class="footer">
+		<p>copyright All rights reserved.</p>
+	</div>
+	
+
+</body>
+</html>

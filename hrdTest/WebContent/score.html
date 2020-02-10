@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>insert2</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	border: 1px solid black;
+	width: 500px;
+	height: 200px;
+}
+
+table, th, td {
+	border: 1px solid #ccc;
+	text-align: center;
+	
+}
+.shopList {
+	margin: 0 auto;
+}
+.footer{
+	text-align: center;
+}
+
+</style>
+
+<script>
+	function proc() {
+		var kor = score.t_kor.value;
+		var eng = score.t_eng.value;
+		var mat = score.t_mat.value;
+		
+		var total = Number(kor) + Number(eng) + Number(mat);
+		var ave = total / 3;
+		
+		score.t_total.value = total;
+		score.t_ave.value = ave;
+		
+		if(ave > 80){
+			score.t_rank.value = "합격";
+		}else{
+			score.t_rank.value = "꺼져";
+		}
+		
+	}
+</script>
+
+</head>
+<body>
+
+
+	<div class="container">
+		
+		<form name="score">
+
+			<table class="shopList">
+			
+				<tr>
+					<th>국어</th>
+					<td><input type="text" name="t_kor"></td>
+				</tr>
+				
+				<tr>
+					<th>영어</th>
+					<td><input type="text" name="t_eng"></td>
+				</tr>
+				
+				<tr>
+					<th>수학</th>
+					<td><input type="text" name="t_mat"></td>
+				</tr>
+
+				<tr>
+					<td colspan="2">
+						<input type="button" onclick="proc()" value="계산">&nbsp;&nbsp;
+						<input type="reset" value="다시쓰기">
+					</td>
+				</tr>
+				
+				<tr>
+					<th>총점</th>
+					<td><input type="text" name="t_total"></td>
+				</tr>
+				
+				<tr>
+					<th>평균</th>
+					<td><input type="text" name="t_ave"></td>
+				</tr>
+				<tr>
+					<th>평가</th>
+					<td><input type="text" name="t_rank"></td>
+				</tr>
+				
+								
+			</table>
+		</form>
+	</div>
+	
+	<div class="footer">
+		<p>copyright All rights reserved.</p>
+	</div>
+	
+
+</body>
+</html>
