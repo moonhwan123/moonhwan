@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â(1~99)
-ÀÔ·Â ÀÚ·á°¡ -99, ¶Ç´Â ÀÔ·ÂÀÚ·á °Ç¼ö°¡ 20 ÀÌ¸é Á¾·á
-ÀÔ·Â : 77
+í‚¤ë³´ë“œ ì…ë ¥(1~99)
+ì…ë ¥ ìë£Œê°€ -99, ë˜ëŠ” ì…ë ¥ìë£Œ ê±´ìˆ˜ê°€ 20 ì´ë©´ ì¢…ë£Œ
+ì…ë ¥ : 77
 ...
-ÀÔ·Â : -99 (-99´Â ÀÔ·ÂÀÚ·á ¾Æ´Ô)
-ÀÔ·ÂÀÚ·á : 77 xx xx xx ....
-Æò±Õ : xxx
-Æò±Õ¿¡ °¡Àå °¡±î¿î ¼ö : xx (°£°İÀÌ Á¦ÀÏ ÀÛÀº³ğ ,Å«¼ö - ÀÛÀº¼ö)
+ì…ë ¥ : -99 (-99ëŠ” ì…ë ¥ìë£Œ ì•„ë‹˜)
+ì…ë ¥ìë£Œ : 77 xx xx xx ....
+í‰ê·  : xxx
+í‰ê· ì— ê°€ì¥ ê°€ê¹Œìš´ ìˆ˜ : xx (ê°„ê²©ì´ ì œì¼ ì‘ì€ë†ˆ ,í°ìˆ˜ - ì‘ì€ìˆ˜)
 
  */
 public class Exam_08 {
@@ -22,7 +22,7 @@ public class Exam_08 {
 		int sum = 0;
 		
 		while(true) {
-			System.out.print("ÀÔ·Â(1~99) : ");
+			System.out.print("ì…ë ¥(1~99) : ");
 			int num = sc.nextInt();
 			
 			if(num == -99 || cnt == 20) break;
@@ -30,7 +30,7 @@ public class Exam_08 {
 				arr[cnt] = num;
 				cnt++;
 				sum+=num;
-			}else System.out.println("ÀÔ·Â ¿À·ù");
+			}else System.out.println("ì…ë ¥ ì˜¤ë¥˜");
 		}
 
 		ave = (double)sum/cnt;
@@ -57,14 +57,14 @@ public class Exam_08 {
 			
 		}
 
-		System.out.print("ÀÔ·Â ÀÚ·á : ");
+		System.out.print("ì…ë ¥ ìë£Œ : ");
 		for(int x = 0; x < cnt; x++) {
 			System.out.print(arr[x]+"\t");
 		}
 		
 		System.out.println();
-		System.out.print("Æò±Õ : "+ ave+"\n");
-		System.out.println("Æò±Õ¿¡ °¡Àå °¡±î¿î¼ö : " + arr[d]);
+		System.out.print("í‰ê·  : "+ ave+"\n");
+		System.out.println("í‰ê· ì— ê°€ì¥ ê°€ê¹Œìš´ìˆ˜ : " + arr[d]);
 		
 		
 		

@@ -1,22 +1,22 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â(ÃÖ´ë10°³)
-¿À¸§ Â÷¼ø Á¤·ÄÇÏ´Â Å¬·¡½º »ı¼º
-ÀÔ·Â : 2 6 9 7 5 8 9 1
+í‚¤ë³´ë“œ ì…ë ¥(ìµœëŒ€10ê°œ)
+ì˜¤ë¦„ ì°¨ìˆœ ì •ë ¬í•˜ëŠ” í´ë˜ìŠ¤ ìƒì„±
+ì…ë ¥ : 2 6 9 7 5 8 9 1
 
-Ãâ·Â
-Á¤·ÄÀü
+ì¶œë ¥
+ì •ë ¬ì „
 2 6 9 7 5 8 9 1
-Á¤·ÄÈÄ
+ì •ë ¬í›„
 1 2 5 6 7 8 9 9 
 
  */
 
-class HH{ // ¿À¸§Â÷¼ø Á¤·Ä Å¬·¡½º
+class HH{ // ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬ í´ë˜ìŠ¤
 	
-	//¼±ÅÃÁ¤·Ä ¸Ş¼Òµå
-	void sort(int arr[],int cnt) { //arr - ÂüÁ¶¿¡ ÀÇÇÑ È£Ãâ , cnt - °ª¿¡ ÀÇÇÑ È£Ãâ
+	//ì„ íƒì •ë ¬ ë©”ì†Œë“œ
+	void sort(int arr[],int cnt) { //arr - ì°¸ì¡°ì— ì˜í•œ í˜¸ì¶œ , cnt - ê°’ì— ì˜í•œ í˜¸ì¶œ
 		for(int x = 0; x < cnt-1; x++) {
 			for(int y = x+1; y < cnt; y++) {
 				if(arr[x] > arr[y]) {
@@ -25,10 +25,10 @@ class HH{ // ¿À¸§Â÷¼ø Á¤·Ä Å¬·¡½º
 					arr[y] = temp;
 				}
 			}
-		}//for¹® ³¡
-	}//sort¸Ş¼­µå ³¡
+		}//forë¬¸ ë
+	}//sortë©”ì„œë“œ ë
 	
-	//Ãâ·Â ¸Ş¼Òµå
+	//ì¶œë ¥ ë©”ì†Œë“œ
 	void arrPrint(int arr[],int cnt,String str) {
 		System.out.println("["+str+"]");
 		for(int x = 0; x < cnt; x++) {
@@ -48,8 +48,8 @@ public class Exam_08 {
 		
 		int numberArr[] = new int[10];
 		int cnt = 0;
-		//ÀÔ·Â ÀÛ¾÷
-		System.out.print("ÀÔ·Â : ");
+		//ì…ë ¥ ì‘ì—…
+		System.out.print("ì…ë ¥ : ");
 		while(true) {
 			int num = sc.nextInt();
 			if(num == -99) break;
@@ -58,17 +58,17 @@ public class Exam_08 {
 			if(cnt == 10) break;		
 		}
 		
-		//°´Ã¼ »ı¼º
+		//ê°ì²´ ìƒì„±
 		HH h = new HH();
 		
-		//Àü - È£Ãâ
-		h.arrPrint(numberArr,cnt,"Àü");
+		//ì „ - í˜¸ì¶œ
+		h.arrPrint(numberArr,cnt,"ì „");
 		
-		//Á¤·Ä ¸Ş¼Òµå È£Ãâ
+		//ì •ë ¬ ë©”ì†Œë“œ í˜¸ì¶œ
 		h.sort(numberArr,cnt);
 		
-		//ÈÄ - È£Ãâ
-		h.arrPrint(numberArr,cnt,"ÈÄ");
+		//í›„ - í˜¸ì¶œ
+		h.arrPrint(numberArr,cnt,"í›„");
 		
 	}
 }

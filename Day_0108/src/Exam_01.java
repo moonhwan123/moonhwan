@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â (1 ~ 10) -> 7°³ ÀÔ·Â
-ÀÔ·Â : 5
-ÀÔ·Â : 0
-ÀÔ·Â ¿À·ù 
-ÀÔ·Â : 9
+í‚¤ë³´ë“œ ì…ë ¥ (1 ~ 10) -> 7ê°œ ì…ë ¥
+ì…ë ¥ : 5
+ì…ë ¥ : 0
+ì…ë ¥ ì˜¤ë¥˜ 
+ì…ë ¥ : 9
 .....
--> 7°³ ÀÔ·Â½Ã Ãâ·Â 
-[Ãâ·Â]
-ÀÔ·Â ÀÚ·á : 5 9 x x x x x
-ÃÖ´ë°ª : 
-ÃÖ¼Ò°ª : 
-ÇÕ°è(ÃÖ´ë, ÃÖ¼Ò¸¦ »« ÇÕ°è) : 
+-> 7ê°œ ì…ë ¥ì‹œ ì¶œë ¥ 
+[ì¶œë ¥]
+ì…ë ¥ ìë£Œ : 5 9 x x x x x
+ìµœëŒ€ê°’ : 
+ìµœì†Œê°’ : 
+í•©ê³„(ìµœëŒ€, ìµœì†Œë¥¼ ëº€ í•©ê³„) : 
 
  */
 
@@ -23,40 +23,40 @@ public class Exam_01 {
 		int arr[] = new int[7];
 		int cnt = 0;
 
-		//ÀÔ·Â
+		//ì…ë ¥
 		while(cnt<7) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			int num = sc.nextInt();
 			if(num >= 1 && num <= 10) {
 				arr[cnt] = num;
 				cnt++;
-			}else System.out.println("ÀÔ·Â ¿À·ù");
+			}else System.out.println("ì…ë ¥ ì˜¤ë¥˜");
 		}
-		//ÃÖ´ë,ÃÖ¼Ò,ÇÕ°è
+		//ìµœëŒ€,ìµœì†Œ,í•©ê³„
 		int max = arr[0]; // int max = -999
 		int min = arr[0]; // int min = 999
-		int sum = arr[0]; // int sum = 0; // Ã¼Å©ÇÊ¿ä
+		int sum = arr[0]; // int sum = 0; // ì²´í¬í•„ìš”
 		
 		for(int x = 1; x < arr.length; x++) {
 			if(max<arr[x]) {
 				max = arr[x];
 			}
-			if(min>arr[x]) { // else if ÇÏ¸é ¾ÈµÊ (µ¶¸³µÈ°Å)
+			if(min>arr[x]) { // else if í•˜ë©´ ì•ˆë¨ (ë…ë¦½ëœê±°)
 				min = arr[x];
 			}
 			sum+=arr[x];
 		}
 		
-		//ÀÔ·ÂÀÚ·á Ãâ·Â
-		System.out.print("ÀÔ·Â ÀÚ·á : ");
+		//ì…ë ¥ìë£Œ ì¶œë ¥
+		System.out.print("ì…ë ¥ ìë£Œ : ");
 		for(int i = 0; i <= arr.length-1; i++) {
 			System.out.print(arr[i]+"\t");
 		}
 		System.out.println();
 		
-		System.out.println("ÃÖ´ë°ª : " + max);
-		System.out.println("ÃÖ¼Ò°ª : " + min);
-		System.out.println("ÃÖ´ë,ÃÖ¼Ò¸¦ »« ÇÕ°è : " + (sum-max-min));
+		System.out.println("ìµœëŒ€ê°’ : " + max);
+		System.out.println("ìµœì†Œê°’ : " + min);
+		System.out.println("ìµœëŒ€,ìµœì†Œë¥¼ ëº€ í•©ê³„ : " + (sum-max-min));
 		
 		
 		

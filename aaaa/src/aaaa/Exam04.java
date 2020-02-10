@@ -20,10 +20,10 @@ class AAData{
 	AAData(AA[] AAarr){
 		this.AAarr = AAarr;
 	}
-	//¸Ş¼Òµå Ãß°¡
-	//¿øº» ±×´ë·Î Ãâ·Â
+	//ë©”ì†Œë“œ ì¶”ê°€
+	//ì›ë³¸ ê·¸ëŒ€ë¡œ ì¶œë ¥
 	void sourceData() {
-		System.out.println("¹øÈ£\tÁ¡¼ö");
+		System.out.println("ë²ˆí˜¸\tì ìˆ˜");
 		for(int x = 0; x < AAarr.length; x++) {
 			System.out.print(AAarr[x].bun+"\t");
 			for(int y = 0; y < AAarr[x].score.length; y++) {
@@ -32,7 +32,7 @@ class AAData{
 			System.out.println();
 		}
 	}
-	//Á¡¼ö¸¦ ¼ÒÆ® ÇØ¼­ Ãâ·Â
+	//ì ìˆ˜ë¥¼ ì†ŒíŠ¸ í•´ì„œ ì¶œë ¥
 	void sortData() {	
 		for(int x = 0; x < AAarr.length; x++) {
 			for(int y = 0; y < AAarr[x].score.length-1; y++) {
@@ -72,3 +72,4 @@ public class Exam04 {
 		
 	}
 }
+

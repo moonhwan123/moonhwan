@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå (2~1024)ÀÔ·Â
-ÀÔ·Â °ªÀ» 2Áø¼ö º¯È¯ÇØ¼­ Ãâ·Â
-ÀÔ·Â °ªÀÌ -99 ÀÌ¸é Á¾·á 
+í‚¤ë³´ë“œ (2~1024)ìž…ë ¥
+ìž…ë ¥ ê°’ì„ 2ì§„ìˆ˜ ë³€í™˜í•´ì„œ ì¶œë ¥
+ìž…ë ¥ ê°’ì´ -99 ì´ë©´ ì¢…ë£Œ 
 
-¿¹½Ã)
-ÀÔ·Â : 10 
-2Áø¼ö : 1010
-ÀÔ·Â : 1
-ÀÔ·Â ¿À·ù
-ÀÔ·Â : 127
-2Áø¼ö : 1111111
+ì˜ˆì‹œ)
+ìž…ë ¥ : 10 
+2ì§„ìˆ˜ : 1010
+ìž…ë ¥ : 1
+ìž…ë ¥ ì˜¤ë¥˜
+ìž…ë ¥ : 127
+2ì§„ìˆ˜ : 1111111
  */
 
 
@@ -23,7 +23,7 @@ public class Exam_02_2 {
 		while(true) {
 			bin = new int[10];
 			int cnt=0;
-			System.out.print("10Áø¼ö : ");
+			System.out.print("10ì§„ìˆ˜ : ");
 			int dec = sc.nextInt();
 			if(dec == -99) break;
 			if(dec >= 2 && dec <= 1024) {
@@ -37,12 +37,12 @@ public class Exam_02_2 {
 					temp = mok;
 					cnt++;
 				}while(mok!=0);
-				System.out.print("2Áø¼ö : ");
+				System.out.print("2ì§„ìˆ˜ : ");
 				for(int j = cnt-1; j >= 0; j--) {
 					System.out.print(bin[j]);
 				}
 				System.out.println();
-			}else System.out.println("ÀÔ·Â ¿À·ù");
+			}else System.out.println("ìž…ë ¥ ì˜¤ë¥˜");
 		}
 	
 		

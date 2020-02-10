@@ -4,16 +4,16 @@ public class TvTest3 {
 		
 		Tv tv1 = new Tv();
 		Tv tv2 = new Tv();
-		System.out.println("t1ÀÇ channel°ªÀº "+tv1.channel+"ÀÔ´Ï´Ù.");
-		System.out.println("t2ÀÇ channel°ªÀº "+tv2.channel+"ÀÔ´Ï´Ù.");
+		System.out.println("t1ì˜ channelê°’ì€ "+tv1.channel+"ì…ë‹ˆë‹¤.");
+		System.out.println("t2ì˜ channelê°’ì€ "+tv2.channel+"ì…ë‹ˆë‹¤.");
 		
 		tv2 = tv1;
 		
 		tv1.channel = 8;
-		System.out.println("t1ÀÇ channel°ªÀ» 8·Î Á¶Á¤ ÇÏ¿´½À´Ï´Ù.");
+		System.out.println("t1ì˜ channelê°’ì„ 8ë¡œ ì¡°ì • í•˜ì˜€ìŠµë‹ˆë‹¤.");
 		
-		System.out.println("t1ÀÇ channel°ªÀº "+tv1.channel+"ÀÔ´Ï´Ù.");
-		System.out.println("t2ÀÇ channel°ªÀº "+tv2.channel+"ÀÔ´Ï´Ù.");
+		System.out.println("t1ì˜ channelê°’ì€ "+tv1.channel+"ì…ë‹ˆë‹¤.");
+		System.out.println("t2ì˜ channelê°’ì€ "+tv2.channel+"ì…ë‹ˆë‹¤.");
 		
 		
 	}

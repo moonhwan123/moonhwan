@@ -10,32 +10,32 @@ public class Exam_14 {
 		int cnt;
 		
 		for(cnt = 0; cnt < 10; cnt++) {
-			System.out.print((cnt+1)+" ÀÔ·Â : ");
-			arr[cnt][0] = sc.nextInt(); // ¹øÈ£
+			System.out.print((cnt+1)+" ìž…ë ¥ : ");
+			arr[cnt][0] = sc.nextInt(); // ë²ˆí˜¸
 			if(arr[cnt][0]==-99)break;
 			name[cnt] = sc.next();
-			arr[cnt][1] = sc.nextInt(); // ±¹¾î
-			arr[cnt][2] = sc.nextInt(); // ¿µ¾î
-			arr[cnt][3] = sc.nextInt(); // ¼öÇÐ
+			arr[cnt][1] = sc.nextInt(); // êµ­ì–´
+			arr[cnt][2] = sc.nextInt(); // ì˜ì–´
+			arr[cnt][3] = sc.nextInt(); // ìˆ˜í•™
 			arr[cnt][4] = arr[cnt][1] +arr[cnt][2] +arr[cnt][3]; 
 			ave[cnt] = (int)(arr[cnt][4]/3.*100+0.5)/100.; 
 		}
 
 
-		// ¼®Â÷ °è»ê
+		// ì„ì°¨ ê³„ì‚°
 		for(int x = 0 ; x < cnt; x ++) {
-			int r = 1; // ¼®Â÷ °è»ê¿ë
+			int r = 1; // ì„ì°¨ ê³„ì‚°ìš©
 			for(int y = 0; y < cnt; y++) {
-				if(arr[x][4]<arr[y][4]) { // ÃÑÁ¡±âÁØ 
+				if(arr[x][4]<arr[y][4]) { // ì´ì ê¸°ì¤€ 
 					r++;
 				}
 			}
 			arr[x][5] = r;
 		}
 		
-		// 1Â÷ Ãâ·Â
+		// 1ì°¨ ì¶œë ¥
 		
-		System.out.println("¹øÈ£\tÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇÐ\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \tì„ì°¨");
 		for(int x = 0; x < cnt; x++) {
 			System.out.print(arr[x][0]+"\t");
 			System.out.print(name[x]+"\t");
@@ -47,7 +47,7 @@ public class Exam_14 {
 		}
 		
 		
-		// ¼ÒÆ®
+		// ì†ŒíŠ¸
 			for(int x = 0; x < cnt; x++) {
 				for(int y = x+1; y < cnt;y++) {
 					if(arr[x][4]<arr[y][4]) { 
@@ -68,8 +68,8 @@ public class Exam_14 {
 		
 		
 		
-		//2Â÷ Ãâ·Â
-		System.out.println("¹øÈ£\tÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇÐ\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
+		//2ì°¨ ì¶œë ¥
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \tì„ì°¨");
 		for(int x = 0; x < cnt; x++) {
 			System.out.print(arr[x][0]+"\t");
 			System.out.print(name[x]+"\t");
@@ -82,3 +82,4 @@ public class Exam_14 {
 		
 	}
 }
+

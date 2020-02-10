@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â (2~100)
-ÀÔ·Â°ªÀÌ -99ÀÌ¸é Á¾·á
-ÀÔ·ÂÀÚ·á Áß ¼Ò¼ö¸¦ ±¸ÇÏ¿© Ãâ·Â(ÃÖ´ë 5°³)
+í‚¤ë³´ë“œ ì…ë ¥ (2~100)
+ì…ë ¥ê°’ì´ -99ì´ë©´ ì¢…ë£Œ
+ì…ë ¥ìë£Œ ì¤‘ ì†Œìˆ˜ë¥¼ êµ¬í•˜ì—¬ ì¶œë ¥(ìµœëŒ€ 5ê°œ)
 
-ÀÔ·Â : 5
+ì…ë ¥ : 5
 ...
-ÀÔ·Â : -99
-¼Ò¼ö : XX	XX XX XX
+ì…ë ¥ : -99
+ì†Œìˆ˜ : XX	XX XX XX
  */
 
 public class Exam_04 {
@@ -21,7 +21,7 @@ public class Exam_04 {
 		int pcnt = 0;
 		
 		while(true) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			num = sc.nextInt();
 			
 			if(num == -99||pcnt == 5) break;
@@ -36,10 +36,10 @@ public class Exam_04 {
 					}
 				}
 
-			}else System.out.println("Àß¸øµÈ ÀÔ·Â°ª");
+			}else System.out.println("ì˜ëª»ëœ ì…ë ¥ê°’");
 			
 		}
-		System.out.println("<¼Ò¼ö¸®½ºÆ®>");
+		System.out.println("<ì†Œìˆ˜ë¦¬ìŠ¤íŠ¸>");
 		for(int j = 0; j < pcnt; j++) {
 			System.out.print(sosu[j]+"\t");
 		}

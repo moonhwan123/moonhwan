@@ -1,15 +1,15 @@
 /*
-for(ÃÊ±â°ª;Á¶°Ç½Ä;Áõ°¨½Ä){
-	¹®Àå;
+for(ì´ˆê¸°ê°’;ì¡°ê±´ì‹;ì¦ê°ì‹){
+	ë¬¸ìž¥;
 }
-¹Ýº¹È½¼ö°¡ Á¤ÇØÁ® ÀÖÀ»¶§ ÁÖ·Î ¸¹ÀÌ ¾´´Ù.
+ë°˜ë³µíšŸìˆ˜ê°€ ì •í•´ì ¸ ìžˆì„ë•Œ ì£¼ë¡œ ë§Žì´ ì“´ë‹¤.
  */
 
 
 public class Exam_01 {
 	public static void main(String[] args) {
 		
-		// 1 ~ 10 Ãâ·Â
+		// 1 ~ 10 ì¶œë ¥
 		
 		
 		int i = 0;

@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 /*
-ÀÔ·Â
-¹øÈ£ ±¹¾î ¿µ¾î ¼öÇĞ 
+ì…ë ¥
+ë²ˆí˜¸ êµ­ì–´ ì˜ì–´ ìˆ˜í•™ 
 
-Ãâ·Â
-¹øÈ£ ±¹¾î ¿µ¾î ¼öÇĞ ÃÑÁ¡ Æò±Õ
+ì¶œë ¥
+ë²ˆí˜¸ êµ­ì–´ ì˜ì–´ ìˆ˜í•™ ì´ì  í‰ê· 
  */
 
 
@@ -20,16 +20,16 @@ public class Exam_05 {
 		int cnt = 0;
 		
 		for(int x = 0; x < score.length; x++) {
-			System.out.print((x+1) + "¹ø ÀÔ·Â : ");
+			System.out.print((x+1) + "ë²ˆ ì…ë ¥ : ");
 			score[x][0] = sc.nextInt(); // int b1 = sc.nextInt();
-			score[x][1] = sc.nextInt(); // ±¹
-			score[x][2] = sc.nextInt(); // ¿µ
-			score[x][3] = sc.nextInt(); // ¼ö
+			score[x][1] = sc.nextInt(); // êµ­
+			score[x][2] = sc.nextInt(); // ì˜
+			score[x][3] = sc.nextInt(); // ìˆ˜
 		}
 
 		
-		// ÀÔ·Â ÀÚ·á Ãâ·Â
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ");
+		// ì…ë ¥ ìë£Œ ì¶œë ¥
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™");
 
 		for(int x = 0; x < score.length; x++) {
 			for(int y = 0; y < score[x].length-2; y++) {
@@ -38,7 +38,7 @@ public class Exam_05 {
 			System.out.println(); // System.out.print("\n");
 		}
 		
-		// ÃÑÁ¡, Æò±Õ º°µµ °è»ê
+		// ì´ì , í‰ê·  ë³„ë„ ê³„ì‚°
 /*	
 	   for(int x = 0; x < score.length; x++) {
 			score[x][4] = score[x][1]+score[x][2]+score[x][3];
@@ -53,8 +53,8 @@ public class Exam_05 {
 			score[x][5] = score[x][4]/3;
 		}
 		
-		// Ãâ·Â ÀÚ·á Ãâ·Â
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ");
+		// ì¶œë ¥ ìë£Œ ì¶œë ¥
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
 
 		for(int x = 0; x < score.length; x++) {
 			for(int y = 0; y < score[x].length; y++) {

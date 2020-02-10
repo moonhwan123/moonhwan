@@ -3,8 +3,8 @@ package aaaa;
 import java.util.Scanner;
 
 /*
-1. ¼±Çü °Ë»ö : Ã¹¹øÂ°ºÎÅÍ ³¡±îÁö Âß ºñ±³ÇÏ´Â°Í
-2. ÀÌÁø °Ë»ö : µ¥ÀÌÅÍ°¡ Á¤·Ä µÇ¾î ÀÖ¾î¾ßÇÔ
+1. ì„ í˜• ê²€ìƒ‰ : ì²«ë²ˆì§¸ë¶€í„° ëê¹Œì§€ ì­‰ ë¹„êµí•˜ëŠ”ê²ƒ
+2. ì´ì§„ ê²€ìƒ‰ : ë°ì´í„°ê°€ ì •ë ¬ ë˜ì–´ ìˆì–´ì•¼í•¨
  */
 
 public class Exam02 {
@@ -19,7 +19,7 @@ public class Exam02 {
 			System.out.print(score[x] + "\t");
 		}
 		System.out.println();
-		System.out.print("Ã£´Â°ª ÀÔ·Â : ");
+		System.out.print("ì°¾ëŠ”ê°’ ì…ë ¥ : ");
 		int var = sc.nextInt();
 
 		int low = 0;
@@ -30,11 +30,11 @@ public class Exam02 {
 			if (low <= high) {
 				mid = (low + high) / 2;
 			} else {
-				System.out.println(var + "Àº ¸®½ºÆ®¿¡ ¾øÀ½");
+				System.out.println(var + "ì€ ë¦¬ìŠ¤íŠ¸ì— ì—†ìŒ");
 				break;
 			}
 			if (var == score[mid]) {
-				System.out.println(var + "Àº " + (mid + 1) + "¹øÂ°¿¡ ÀÖ½À´Ï´Ù.");
+				System.out.println(var + "ì€ " + (mid + 1) + "ë²ˆì§¸ì— ìˆìŠµë‹ˆë‹¤.");
 				break;
 			}
 			if (var < score[mid]) {

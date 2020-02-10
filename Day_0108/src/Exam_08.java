@@ -1,5 +1,5 @@
 /*
-2Â÷¿ø ¹è¿­
+2ì°¨ì› ë°°ì—´
 
  */
 
@@ -8,14 +8,14 @@
 public class Exam_08 {
 	public static void main(String[] args) {
 		
-		int[][] score = new int[5][4]; //[row][col] -> [Çà][·Ä]
+		int[][] score = new int[5][4]; //[row][col] -> [í–‰][ë ¬]
 		
 		System.out.println("row : " + score.length);
 		System.out.println("col : " + score[0].length);
 		System.out.println("value : " + score[0][0]);
 		
 		int[] s = {1,2,3,4,5};
-		int[][] ss = {{1,2},{3,4,5},{1,2,3,4}}; // 1¹øÂ° ÁÙ 2Ä­ , 2¹øÂ° ÁÙ 3Ä­ , 3¹øÂ° ÁÙ 4Ä­
+		int[][] ss = {{1,2},{3,4,5},{1,2,3,4}}; // 1ë²ˆì§¸ ì¤„ 2ì¹¸ , 2ë²ˆì§¸ ì¤„ 3ì¹¸ , 3ë²ˆì§¸ ì¤„ 4ì¹¸
 		
 		for(int x = 0; x < s.length; x++) {
 			System.out.print(s[x]+"\t");

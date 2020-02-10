@@ -6,14 +6,14 @@ public class TvTest2 {
 		Tv t1 = new Tv();
 		Tv t2 = new Tv();
 		
-		System.out.println("t1ÀÇ channel°ªÀº " + t1.channel + "ÀÔ´Ï´Ù.");
-		System.out.println("t2ÀÇ channel°ªÀº " + t2.channel + "ÀÔ´Ï´Ù.");
+		System.out.println("t1ì˜ channelê°’ì€ " + t1.channel + "ì…ë‹ˆë‹¤.");
+		System.out.println("t2ì˜ channelê°’ì€ " + t2.channel + "ì…ë‹ˆë‹¤.");
 		
 		t1.channel = 7;
-		System.out.println("t1ÀÇ channel°ªÀ» 7·Î Á¶Á¤ ÇÏ¿´½À´Ï´Ù.");
+		System.out.println("t1ì˜ channelê°’ì„ 7ë¡œ ì¡°ì • í•˜ì˜€ìŠµë‹ˆë‹¤.");
 
-		System.out.println("t1ÀÇ channel°ªÀº " + t1.channel + "ÀÔ´Ï´Ù.");
-		System.out.println("t2ÀÇ channel°ªÀº " + t2.channel + "ÀÔ´Ï´Ù.");
+		System.out.println("t1ì˜ channelê°’ì€ " + t1.channel + "ì…ë‹ˆë‹¤.");
+		System.out.println("t2ì˜ channelê°’ì€ " + t2.channel + "ì…ë‹ˆë‹¤.");
 		
 	}
 

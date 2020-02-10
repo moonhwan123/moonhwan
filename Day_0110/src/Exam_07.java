@@ -1,13 +1,13 @@
 /*
-[¸Ş¼Òµå È£Ãâ ¹æ½Ä]
-2. ÂüÁ¶¿¡ ÀÇÇÑ È£Ãâ
+[ë©”ì†Œë“œ í˜¸ì¶œ ë°©ì‹]
+2. ì°¸ì¡°ì— ì˜í•œ í˜¸ì¶œ
  */
 public class Exam_07 {
 	public static void main(String[] args) {
 		
 		int a[] = {10,20};
 		
-		System.out.println("-------------±³È¯ Àü--------------");
+		System.out.println("-------------êµí™˜ ì „--------------");
 		System.out.println("a[0] = " + a[0]);
 		System.out.println("a[1] = " + a[1]);
 /*		
@@ -16,16 +16,17 @@ public class Exam_07 {
 		a[1] = c;
 */		
 		swap(a);
-		System.out.println("-------------±³È¯ ÈÄ--------------");
+		System.out.println("-------------êµí™˜ í›„--------------");
 		System.out.println("a[0] = " + a[0]);
 		System.out.println("a[1] = " + a[1]);
 		
 	}
 	
-	static void swap(int[] arr) { // ÂüÁ¶¿¡ ÀÇÇÑ È£Ãâ
+	static void swap(int[] arr) { // ì°¸ì¡°ì— ì˜í•œ í˜¸ì¶œ
 		int c = arr[0];
 		arr[0] = arr[1];
 		arr[1] = c;
 	}
 	
 }
+

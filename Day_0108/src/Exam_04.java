@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå (2~1024)ÀÔ·Â
-ÀÔ·Â °ªÀ» 2Áø¼ö º¯È¯ÇØ¼­ Ãâ·Â
-ÀÔ·Â °ªÀÌ -99 ÀÌ¸é Á¾·á 
+í‚¤ë³´ë“œ (2~1024)ìž…ë ¥
+ìž…ë ¥ ê°’ì„ 2ì§„ìˆ˜ ë³€í™˜í•´ì„œ ì¶œë ¥
+ìž…ë ¥ ê°’ì´ -99 ì´ë©´ ì¢…ë£Œ 
 
-¿¹½Ã)
-ÀÔ·Â : 10 
-2Áø¼ö : 1010
-ÀÔ·Â : 1
-ÀÔ·Â ¿À·ù
-ÀÔ·Â : 127
-2Áø¼ö : 1111111
+ì˜ˆì‹œ)
+ìž…ë ¥ : 10 
+2ì§„ìˆ˜ : 1010
+ìž…ë ¥ : 1
+ìž…ë ¥ ì˜¤ë¥˜
+ìž…ë ¥ : 127
+2ì§„ìˆ˜ : 1111111
  */
 
 
@@ -27,10 +27,10 @@ public class Exam_04 {
 			bin = new char[12];
 			String binary = "";
 			int cnt=0;
-			System.out.print("10Áø¼ö : ");
+			System.out.print("10ì§„ìˆ˜ : ");
 			int dec = sc.nextInt();
 			if(dec == -99) break;
-			System.out.print("º¯È¯ ÇÏ°í ½ÍÀº Áø¼ö ÀÔ·Â(2,8,16) : ");
+			System.out.print("ë³€í™˜ í•˜ê³  ì‹¶ì€ ì§„ìˆ˜ ìž…ë ¥(2,8,16) : ");
 			int jin = sc.nextInt();
 			
 			if(dec >= 2 && dec <= 3000) {
@@ -40,18 +40,18 @@ public class Exam_04 {
 				do {
 					mok = temp/jin;
 					nmg = temp%jin; 
-					bin[cnt] = str[nmg]; // ¹è¿­ ÀÌ¿ë
-					binary = str[nmg]+binary; // ¹®ÀÚ¿­ ¿¬»ê ÀÌ¿ë
+					bin[cnt] = str[nmg]; // ë°°ì—´ ì´ìš©
+					binary = str[nmg]+binary; // ë¬¸ìžì—´ ì—°ì‚° ì´ìš©
 					temp = mok;
 					cnt++;
 				}while(mok!=0);
-				System.out.print(jin+"Áø¼ö : ");
+				System.out.print(jin+"ì§„ìˆ˜ : ");
 				for(int j = cnt-1; j >= 0; j--) {
 					System.out.print(bin[j]);
 				}
 				System.out.println();
-				System.out.println(jin+"Áø¼ö : " +binary);
-			}else System.out.println("ÀÔ·Â ¿À·ù");
+				System.out.println(jin+"ì§„ìˆ˜ : " +binary);
+			}else System.out.println("ìž…ë ¥ ì˜¤ë¥˜");
 		}
 	
 		

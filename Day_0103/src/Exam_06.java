@@ -1,8 +1,9 @@
+
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â
-2. Á¤¼ö 10°³¸¦ ÀÔ·Â ÇÕÀ» Ãâ·Â(´Ü, ÀÔ·Â °ªÀÌ À½¼ö´Â ¹èÁ¦ÇÑ´Ù)
+í‚¤ë³´ë“œ ì…ë ¥
+2. ì •ìˆ˜ 10ê°œë¥¼ ì…ë ¥ í•©ì„ ì¶œë ¥(ë‹¨, ì…ë ¥ ê°’ì´ ìŒìˆ˜ëŠ” ë°°ì œí•œë‹¤)
  */
 
 
@@ -15,34 +16,34 @@ public class Exam_06 {
 		Scanner sc = new Scanner(System.in);
 		
 		
-		//while¹® ÀÌ¿ë
-/*		int cnt = 0; // Ä«¿îÆ® º¯¼ö
-		int total = 0; // ÇÕ°è º¯¼ö
+		//whileë¬¸ ì´ìš©
+/*		int cnt = 0; // ì¹´ìš´íŠ¸ ë³€ìˆ˜
+		int total = 0; // í•©ê³„ ë³€ìˆ˜
 		
 		while(cnt < 10) {
-			System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+			System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 			int num = sc.nextInt();
 			if(num > 0 ) {
 				total += num;
 				cnt++;
 			}
 		}
-		System.out.println("ÇÕ°è : " + total);
+		System.out.println("í•©ê³„ : " + total);
 */	
 		
 		
-		//for¹® ÀÌ¿ë
+		//forë¬¸ ì´ìš©
 		int sum = 0; 
 		for(int i = 1; i <= 10 ; i++) {
-			System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+			System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 			int num = sc.nextInt();
 			if(num > 0) {
 				sum += num;
-			}else i--; // À½¼ö°¡ µé¾î¿À¸é i¸¦ »©¹ö¸² 
+			}else i--; // ìŒìˆ˜ê°€ ë“¤ì–´ì˜¤ë©´ ië¥¼ ë¹¼ë²„ë¦¼ 
 		}
-		System.out.println("ÇÕ°è : " + sum);
+		System.out.println("í•©ê³„ : " + sum);
 		
-		//for(;;); -> for¹®ÀÇ ¹«ÇÑ¹İº¹
+		//for(;;); -> forë¬¸ì˜ ë¬´í•œë°˜ë³µ
 		
 		
 		
@@ -60,3 +61,4 @@ public class Exam_06 {
 		
 	}
 }
+

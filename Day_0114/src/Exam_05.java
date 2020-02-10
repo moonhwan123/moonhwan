@@ -1,6 +1,6 @@
 class DD{
-	//ÀÎ½ºÅÏ½º º¯¼ö¿Í Á¤Àû º¯¼öÀÇ Â÷ÀÌÁ¡À» È®½ÇÇÏ°Ô ¼÷ÁöÇÏÀÚ
-	static int cnt = 0; // Ã³À½¿¡ ÇÑ¹ø¸¸(Å¬·¡½º°¡ ·Îµù µÉ¶§) ÃÊ±âÈ­µÊ
+	//ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ì™€ ì •ì  ë³€ìˆ˜ì˜ ì°¨ì´ì ì„ í™•ì‹¤í•˜ê²Œ ìˆ™ì§€í•˜ìž
+	static int cnt = 0; // ì²˜ìŒì— í•œë²ˆë§Œ(í´ëž˜ìŠ¤ê°€ ë¡œë”© ë ë•Œ) ì´ˆê¸°í™”ë¨
 	int m = 0;
 	
 	void add() {

@@ -12,7 +12,7 @@ public class sosu {
 		int ssum=0;
 		
 		while(true) {
-			System.out.print("2~100 »çÀÌÀÇ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä >> ");
+			System.out.print("2~100 ì‚¬ì´ì˜ ì •ìˆ˜ë¥¼ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 			number = sc.nextInt();
 			
 			if(number == -99) break;
@@ -30,12 +30,12 @@ public class sosu {
 					
 				}
 			}
-			else System.out.println("ÀÔ·Â¿À·ù");
+			else System.out.println("ìž…ë ¥ì˜¤ë¥˜");
 		}
 		
-		System.out.println("ÀÔ·Â °¹¼ö : "+tcnt);
-		System.out.println("¼Ò¼ö °³¼ö : "+scnt);
-		System.out.println("¼Ò¼ö ÇÕ : "+ssum);
+		System.out.println("ìž…ë ¥ ê°¯ìˆ˜ : "+tcnt);
+		System.out.println("ì†Œìˆ˜ ê°œìˆ˜ : "+scnt);
+		System.out.println("ì†Œìˆ˜ í•© : "+ssum);
 		
 	}
 

@@ -7,14 +7,14 @@ public class Exam_02_test {
 		Scanner sc = new Scanner(System.in);
 		
 		
-		System.out.print("¹øÈ£ ÀÔ·Â : ");
-		int a = sc.nextInt(); // ¹øÈ£ //¹öÆÛ¿¡¼­ ²ôÁı¾î ³½´Ù
+		System.out.print("ë²ˆí˜¸ ì…ë ¥ : ");
+		int a = sc.nextInt(); // ë²ˆí˜¸ //ë²„í¼ì—ì„œ ë„ì§‘ì–´ ë‚¸ë‹¤
 		sc.nextLine();
-		System.out.print("±¹¾î ÀÔ·Â : ");
+		System.out.print("êµ­ì–´ ì…ë ¥ : ");
 		int b = sc.nextInt();
 		
-		System.out.println("¹øÈ£"+a);
-		System.out.println("±¹¾î"+b);
+		System.out.println("ë²ˆí˜¸"+a);
+		System.out.println("êµ­ì–´"+b);
 
 	}
 

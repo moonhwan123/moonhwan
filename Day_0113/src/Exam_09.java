@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î »ç¿ø¹øÈ£, ÀÌ¸§, ±Ş¿©¸¦ ÀÔ·Â(5¸í)
-ÀÔ·Â : 1101 È«±æµ¿ 345978
+í‚¤ë³´ë“œë¡œ ì‚¬ì›ë²ˆí˜¸, ì´ë¦„, ê¸‰ì—¬ë¥¼ ì…ë ¥(5ëª…)
+ì…ë ¥ : 1101 í™ê¸¸ë™ 345978
 .....
-ÀÔ·Â -99
+ì…ë ¥ -99
 
-[Ãâ·Â]
-»ç¹ø   ÀÌ¸§   ±Ş¿©   50,000    10,000    .......
+[ì¶œë ¥]
+ì‚¬ë²ˆ   ì´ë¦„   ê¸‰ì—¬   50,000    10,000    .......
 
  */
 
@@ -15,7 +15,7 @@ class Sawon{
 	int sabun;
 	String name;
 	int pay;
-	int money[] = new int[10]; // 5¸¸¿ø~1¿ø ±îÁö È­Æó¸Å¼ö ÀúÀå °ø°£
+	int money[] = new int[10]; // 5ë§Œì›~1ì› ê¹Œì§€ í™”íë§¤ìˆ˜ ì €ì¥ ê³µê°„
 	
 	Sawon() {}
 	Sawon(int sabun, String name , int pay){
@@ -38,7 +38,7 @@ class Sawon{
 				don=don/2;
 				sw=true;
 			}
-		}//for¹®³¡
+		}//forë¬¸ë
 	}
 
 	
@@ -57,7 +57,7 @@ public class Exam_09 {
 		Sawon s;
 		
 		for(int x = 0; x < sa.length; x++) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			int sabun = sc.nextInt();
 			String name = sc.next();
 			int pay = sc.nextInt();
@@ -69,7 +69,7 @@ public class Exam_09 {
 		}
 		/*
 		 	for(int x = 0; x < sa.length; x++) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			s = new Sawon();
 			s.sabun = sc.nextInt();
 			s.name = sc.next();
@@ -94,3 +94,4 @@ public class Exam_09 {
 		
 	}
 }
+

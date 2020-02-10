@@ -23,7 +23,7 @@ class Hak{
 	}
 	
 	void print() {
-		System.out.print("¹øÈ£\tÀÌ¸§\tÃÑÁ¡");
+		System.out.print("ë²ˆí˜¸\tì´ë¦„\tì´ì ");
 		System.out.print(this.bun+"\t"+this.name+"\t"+this.tot);
 	}
 	
@@ -38,14 +38,14 @@ class HakData{
 		this.hak = hak;
 	}
 	
-	//ÃÑÁ¡À» ÀÌ¿ëÇÑ °Ë»ö ¸Ş¼Òµå
+	//ì´ì ì„ ì´ìš©í•œ ê²€ìƒ‰ ë©”ì†Œë“œ
 	void totSearch(int tot) {
 		boolean sw = true;
 		for(int x = 0; x < hak.length; x++) {
 			if(tot == hak[x].tot) {
-				System.out.println("¹øÈ£ : "+hak[x].bun);
-				System.out.println("ÀÌ¸§ : "+hak[x].name);
-				System.out.print("Á¡¼ö : ");
+				System.out.println("ë²ˆí˜¸ : "+hak[x].bun);
+				System.out.println("ì´ë¦„ : "+hak[x].name);
+				System.out.print("ì ìˆ˜ : ");
 				for(int y = 0; y < hak[x].score.length; y++) {
 					System.out.print(hak[x].score[y]+"   ");
 				}
@@ -55,18 +55,18 @@ class HakData{
 			}
 		}
 		if(sw) {
-			System.out.println(tot+"Á¡Àº  ¾ø´Â ÃÑÁ¡");
+			System.out.println(tot+"ì ì€  ì—†ëŠ” ì´ì ");
 		}
 		
 	}
-	//¹øÈ£¸¦ ÀÌ¿ëÇÑ °Ë»ö ¸Ş¼Òµå
+	//ë²ˆí˜¸ë¥¼ ì´ìš©í•œ ê²€ìƒ‰ ë©”ì†Œë“œ
 	void bunSearch(int bun) {
 		boolean sw = true;
 		for(int x = 0; x < hak.length; x++) {
 			if(bun == hak[x].bun) {
-				System.out.println("¹øÈ£ : "+hak[x].bun);
-				System.out.println("ÀÌ¸§ : "+hak[x].name);
-				System.out.print("Á¡¼ö : ");
+				System.out.println("ë²ˆí˜¸ : "+hak[x].bun);
+				System.out.println("ì´ë¦„ : "+hak[x].name);
+				System.out.print("ì ìˆ˜ : ");
 				for(int y = 0; y < hak[x].score.length; y++) {
 					System.out.print(hak[x].score[y]+"   ");
 				}
@@ -76,14 +76,14 @@ class HakData{
 			}
 		}
 		if(sw) {
-			System.out.println(bun+"¹øÀº ¾ø´Â ¹øÈ£");
+			System.out.println(bun+"ë²ˆì€ ì—†ëŠ” ë²ˆí˜¸");
 		}
 	}
 	
-	//ÃÑÁ¡ Ãâ·Â ¸Ş¼­µå
+	//ì´ì  ì¶œë ¥ ë©”ì„œë“œ
 	void print() {
 		System.out.println("============================");
-		System.out.println("¹øÈ£\tÀÌ¸§\tÃÑÁ¡");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\tì´ì ");
 		for(int x = 0; x < hak.length; x++) {
 			System.out.print(hak[x].bun+"\t"+hak[x].name+"\t"+hak[x].tot+"\n");
 		}
@@ -110,13 +110,13 @@ public class Exam03 {
 		HakData hd = new HakData(hak);
 		
 		
-		System.out.print("°Ë»ö ´ë»ó ÇĞ»ı ¹øÈ£ : ");
+		System.out.print("ê²€ìƒ‰ ëŒ€ìƒ í•™ìƒ ë²ˆí˜¸ : ");
 		int bun = sc.nextInt();
 		hd.bunSearch(bun);
 		
 		hd.print();
 		
-		System.out.print("°Ë»ö ´ë»ó ÇĞ»ı ÃÑÁ¡ : ");
+		System.out.print("ê²€ìƒ‰ ëŒ€ìƒ í•™ìƒ ì´ì  : ");
 		int tot = sc.nextInt();
 		hd.totSearch(tot);
 		
@@ -127,3 +127,4 @@ public class Exam03 {
 		
 	}
 }
+

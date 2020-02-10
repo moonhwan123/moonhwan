@@ -3,16 +3,16 @@ public class Exam_05 {
 	public static void main(String[] args) {
 		
 		int[] score = {50,70,60,90,80};
-		System.out.print("Data(Á¤·ÄÀü) : ");
+		System.out.print("Data(ì •ë ¬ì „) : ");
 		for(int x = 0; x < score.length; x++) {
 			System.out.print(score[x]+"\t");
 		}
 		System.out.println();
 		
-		//¼±ÅÃÁ¤·Ä ÀÛ¾÷ (¾Õ¿¡¼­ºÎÅÍ °ªÀÌ °íÁ¤µÇ¸é¼­ ¹Ù²ñ)
-		for(int x = 0 ; x < score.length-1; x++) { //±âÁØ°ªÀÇ º¯È­
-			for(int y = x+1 ; y < score.length; y++) { //ºñ±³°ªÀÇ º¯È­
-				if(score[x] > score[y]) { // ¿À¸§Â÷¼ø
+		//ì„ íƒì •ë ¬ ì‘ì—… (ì•ì—ì„œë¶€í„° ê°’ì´ ê³ ì •ë˜ë©´ì„œ ë°”ë€œ)
+		for(int x = 0 ; x < score.length-1; x++) { //ê¸°ì¤€ê°’ì˜ ë³€í™”
+			for(int y = x+1 ; y < score.length; y++) { //ë¹„êµê°’ì˜ ë³€í™”
+				if(score[x] > score[y]) { // ì˜¤ë¦„ì°¨ìˆœ
 					int temp = score[x];
 					score[x] = score[y];
 					score[y] = temp;
@@ -20,7 +20,7 @@ public class Exam_05 {
 			}
 		}
 		
-		System.out.print("Data(Á¤·ÄÈÄ) : ");
+		System.out.print("Data(ì •ë ¬í›„) : ");
 		for(int x = 0; x < score.length; x++) {
 			System.out.print(score[x]+"\t");
 		}

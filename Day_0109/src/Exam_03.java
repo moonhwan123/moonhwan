@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
-ÀÌÂ÷¿ø ¹è¿­
+ì´ì°¨ì› ë°°ì—´
  */
 
 
@@ -16,7 +16,7 @@ public class Exam_03 {
 		int cnt = 0;
 		
 		for(int x = 0; x < score.length; x++) {
-			System.out.print((x+1) + "¹ø ÀÔ·Â : ");
+			System.out.print((x+1) + "ë²ˆ ì…ë ¥ : ");
 			score[x][0] = sc.nextInt(); // int b1 = sc.nextInt();
 			score[x][1] = sc.nextInt();
 			score[x][2] = sc.nextInt();
@@ -24,8 +24,8 @@ public class Exam_03 {
 		}
 
 		
-		//ÀÔ·ÂÀÚ·á Ãâ·Â
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ");
+		//ì…ë ¥ìë£Œ ì¶œë ¥
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™");
 /*		
 		for(int x = 0; x < score.length; x++) {
 			System.out.print(score[x][0]+"\t");

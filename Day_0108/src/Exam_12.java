@@ -1,4 +1,4 @@
-// ´ŞÆØÀÌ
+// ë‹¬íŒ½ì´
 public class Exam_12 {
 	public static void main(String[] args) {
 		

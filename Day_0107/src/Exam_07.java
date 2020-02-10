@@ -1,5 +1,5 @@
 /*
-10°³ÀÇ ¹è¿­¿¡ ÀúÀåµÈ µ¥ÀÌÅÍ Áß ÃÖ´ë, ÃÖ¼Ò°ª Ã£±â
+10ê°œì˜ ë°°ì—´ì— ì €ì¥ëœ ë°ì´í„° ì¤‘ ìµœëŒ€, ìµœì†Œê°’ ì°¾ê¸°
 
  */
 
@@ -20,14 +20,14 @@ public class Exam_07 {
 				min = score[x];
 			}
 		}
-		//Ãâ·Â
-		System.out.print("ÀÔ·Â ÀÚ·á : ");
+		//ì¶œë ¥
+		System.out.print("ì…ë ¥ ìë£Œ : ");
 		for(int x = 0; x < score.length; x++) {
 			System.out.print(score[x]+"\t");
 		}
 		System.out.println();
-		System.out.println("ÃÖ´ë °ª : " + max);
-		System.out.println("ÃÖ¼Ò °ª : " + min);
+		System.out.println("ìµœëŒ€ ê°’ : " + max);
+		System.out.println("ìµœì†Œ ê°’ : " + min);
 		
 		
 		

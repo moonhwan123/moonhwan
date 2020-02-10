@@ -9,7 +9,7 @@ public class Exam_04 {
 		
 		String[] name = {"AAA","BBB","CCC","DDD"};
 		
-		System.out.println("¹øÈ£\tÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇĞ");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™");
 		
 		for(int x = 0; x < hak.length; x++) {
 			System.out.print(hak[x][0]+"\t");

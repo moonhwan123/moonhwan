@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â
-1. Á¤¼ö 10°³¸¦ ÀÔ·Â ÈÄ ÇÕÀ» Ãâ·ÂÇÏ½Ã¿À
+í‚¤ë³´ë“œ ì…ë ¥
+1. ì •ìˆ˜ 10ê°œë¥¼ ì…ë ¥ í›„ í•©ì„ ì¶œë ¥í•˜ì‹œì˜¤
 
-2. Á¤¼ö 10°³¸¦ ÀÔ·Â ÇÕÀ» Ãâ·Â(´Ü, ÀÔ·Â °ªÀÌ À½¼ö´Â ¹èÁ¦ÇÑ´Ù)
+2. ì •ìˆ˜ 10ê°œë¥¼ ì…ë ¥ í•©ì„ ì¶œë ¥(ë‹¨, ì…ë ¥ ê°’ì´ ìŒìˆ˜ëŠ” ë°°ì œí•œë‹¤)
  */
 
 
@@ -16,17 +16,17 @@ public class Exam_05 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		//for¹® ÀÌ¿ë
+		//forë¬¸ ì´ìš©
 		int sum = 0; 
 		for(int i = 1; i <= 10 ; i++) {
-			System.out.print("Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+			System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 			int num = sc.nextInt();
 			sum += num;
 		}
-		System.out.println("ÇÕ°è : " + sum);
+		System.out.println("í•©ê³„ : " + sum);
 		
 		
-		//while¹® ÀÌ¿ë
+		//whileë¬¸ ì´ìš©
 		
 		
 		

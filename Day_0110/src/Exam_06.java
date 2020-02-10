@@ -1,21 +1,21 @@
 /*
-[¸Ş¼Òµå È£Ãâ ¹æ½Ä]
-1. °ª¿¡ ÀÇÇÑ È£Ãâ
+[ë©”ì†Œë“œ í˜¸ì¶œ ë°©ì‹]
+1. ê°’ì— ì˜í•œ í˜¸ì¶œ
 
 
  */
 public class Exam_06 {
 	public static void main(String[] args) {
 		
-		System.out.println("--------±³È¯Àü---------");
+		System.out.println("--------êµí™˜ì „---------");
 		int a = 10, b = 20;
 		System.out.println("a = "+a);
 		System.out.println("b = "+b);
 
-		// a, b ±³È¯ 
-		System.out.println("--------±³È¯ÈÄ---------");
-		swap(a,b); // ¿Ö ¾È¹Ù²îÁö? ->  °ª¿¡ ÀÇÇÑ È£ÃâÀÌ´Ù ÀÌ°Ç, a¿Íb ÅëÂ°·Î ³Ñ¾î °¡´Â°Ô ¾Æ´Ï°í
-		           //              aÀÇ°ª,bÀÇ°ªÀÌ ³Ñ¾î °£´Ù
+		// a, b êµí™˜ 
+		System.out.println("--------êµí™˜í›„---------");
+		swap(a,b); // ì™œ ì•ˆë°”ë€Œì§€? ->  ê°’ì— ì˜í•œ í˜¸ì¶œì´ë‹¤ ì´ê±´, aì™€b í†µì§¸ë¡œ ë„˜ì–´ ê°€ëŠ”ê²Œ ì•„ë‹ˆê³ 
+		           //              aì˜ê°’,bì˜ê°’ì´ ë„˜ì–´ ê°„ë‹¤
 
 		
 /*		
@@ -28,7 +28,7 @@ public class Exam_06 {
 
 	}
 	
-	static void swap(int x,int y) { // °ª¿¡ÀÇÇÑ È£Ãâ
+	static void swap(int x,int y) { // ê°’ì—ì˜í•œ í˜¸ì¶œ
 		int c = x;
 		x = y;
 		y = c;

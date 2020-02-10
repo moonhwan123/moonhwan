@@ -1,42 +1,41 @@
 
 
 
-
 public class Exam_12 {
 	public static void main(String[] args) {
 		
 		int score[][] = {{1,90,78,79,0,1},{5,95,80,70,0,1},
 				{2,79,88,77,0,1},{4,75,88,77,0,1},{3,95,88,75,0,1}};
-		double ave[] = new double[5]; // Æò±Õ ÀúÀå¿ë
+		double ave[] = new double[5]; // í‰ê·  ì €ì¥ìš©
 		
-		//ÀÔ·ÂÀÚ·á Ãâ·Â
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ");
+		//ì…ë ¥ìë£Œ ì¶œë ¥
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™");
 		for(int x = 0; x < score.length; x++) {
 			for(int y = 0; y<score[x].length-2; y++) {
 				System.out.print(score[x][y]+"\t");
 			}
 			System.out.println();
 		}
-		//ÃÑÁ¡,Æò±Õ °è»ê
+		//ì´ì ,í‰ê·  ê³„ì‚°
 		for(int x = 0 ; x < score.length; x++) {
 			for(int y = 1; y < 4; y++) {
 				score[x][4] += score[x][y];
 			}
-			ave[x] = ((int)(score[x][4] / 3. * 100 + 0.5))/100.; // Æò±Õ
+			ave[x] = ((int)(score[x][4] / 3. * 100 + 0.5))/100.; // í‰ê· 
 		}
 
 		
 
-		//¼®Â÷ °è»ê (±âº» µî¼ö¸¦ 1·Î ¼³Á¤ ÇßÀ»¶§)
+		//ì„ì°¨ ê³„ì‚° (ê¸°ë³¸ ë“±ìˆ˜ë¥¼ 1ë¡œ ì„¤ì • í–ˆì„ë•Œ)
 		for(int x = 0 ; x < score.length; x ++) {
 			for(int y = 0; y < score.length; y++) {
-				if(score[x][4]<score[y][4]) { // ÃÑÁ¡±âÁØ 
+				if(score[x][4]<score[y][4]) { // ì´ì ê¸°ì¤€ 
 					score[x][5]++;
 				}
 			}
 		}
-		//Ãâ·Â(Á¤·ÄÀü)
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
+		//ì¶œë ¥(ì •ë ¬ì „)
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \tì„ì°¨");
 		for(int x = 0; x < score.length; x++) {
 			for(int y = 0; y<score[x].length-1; y++) {
 				System.out.print(score[x][y]+"\t");
@@ -47,35 +46,17 @@ public class Exam_12 {
 		}
 
 
-		//¹øÈ£¸¦ ±âÁØÀ¸·Î ¿À¸§ Â÷¼ø Á¤·Ä
+		//ë²ˆí˜¸ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì˜¤ë¦„ ì°¨ìˆœ ì •ë ¬
 		for(int x = 0; x < score.length; x++) {
 			for(int y = x+1; y < score.length;y++) {
-				if(score[x][0]>score[y][0]) { // ¹øÈ£°¡ ±âÁØÀÌ±â ¶§¹®¿¡ [x][0]
+				if(score[x][0]>score[y][0]) { // ë²ˆí˜¸ê°€ ê¸°ì¤€ì´ê¸° ë•Œë¬¸ì— [x][0]
 					for(int k = 0; k < score[0].length; k++) {
 						int temp = score[x][k];
 						score[x][k] = score[y][k];
 						score[y][k] = temp;
-					}
-					double temp2 = ave[x];
-					ave[x] = ave[y];
-					ave[y] = temp2;
+						}
 				}
 			}
 		}
-		
-	
-		
-		//Ãâ·Â
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
-		for(int x = 0; x < score.length; x++) {
-			for(int y = 0; y<score[x].length-1; y++) {
-				System.out.print(score[x][y]+"\t");
-			}
-			System.out.print(ave[x]+"\t");
-			System.out.print(score[x][score[x].length-1]);
-			System.out.println();
-		}
-		
-		
 	}
 }

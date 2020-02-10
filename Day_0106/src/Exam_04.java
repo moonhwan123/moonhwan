@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î ±Ş¿©¸¦ ÀÔ·Â(1 ~ 500,000)
-ÀÔ·Â ÀÚ·á°¡ -999 ÀÌ¸é Á¾·á ¶Ç´Â  ÀÎ¿ø¼ö´Â ÃÖ´ë 10¸í
+í‚¤ë³´ë“œë¡œ ê¸‰ì—¬ë¥¼ ì…ë ¥(1 ~ 500,000)
+ì…ë ¥ ìë£Œê°€ -999 ì´ë©´ ì¢…ë£Œ ë˜ëŠ”  ì¸ì›ìˆ˜ëŠ” ìµœëŒ€ 10ëª…
 
-[ÅäÅ» °¹¼ö]
+[í† íƒˆ ê°¯ìˆ˜]
 50,000 : xx
 10,000 : xx
 5,000  : xx
@@ -26,7 +26,7 @@ public class Exam_04 {
 		while(true) {
 			int m = 50000;
 			boolean sw = true;
-			System.out.print("±Ş¿©¸¦ ÀÔ·Â ÇÏ¼¼¿ä(1 ~ 500,000) >> ");
+			System.out.print("ê¸‰ì—¬ë¥¼ ì…ë ¥ í•˜ì„¸ìš”(1 ~ 500,000) >> ");
 			int kyuryo = sc.nextInt();
 			
 			if(kyuryo == -999) break;
@@ -49,7 +49,7 @@ public class Exam_04 {
 					total[x]= total[x]+sum[x];
 				}
 				inwon++;
-			}else System.out.println("Àß ¸øµÈ °ª ÀÔ´Ï´Ù.");
+			}else System.out.println("ì˜ ëª»ëœ ê°’ ì…ë‹ˆë‹¤.");
 
 		}
 		
@@ -57,7 +57,7 @@ public class Exam_04 {
 		boolean sw = true;
 		
 		for(int x = 0; x <= 9; x++) {
-			System.out.println(m+"¿ø : "+total[x]+"°³");
+			System.out.println(m+"ì› : "+total[x]+"ê°œ");
 			if(sw) {
 				m = m/5;
 				sw = false;
@@ -67,7 +67,7 @@ public class Exam_04 {
 			}
 			
 		}
-		System.out.println("°è»êµÈ ÀÎ¿ø : "+inwon);
+		System.out.println("ê³„ì‚°ëœ ì¸ì› : "+inwon);
 		
 		
 		

@@ -14,14 +14,14 @@ public class Exam_02 {
 		
 		String str ;
 		str = new String("AAA");
-		System.out.println("str = "+str); // ¾ê´Â °ªÀÌ ÂïÈ÷°í -> ¿Ö? StringÀº Á» Æ¯ÀÌÇÑ ÄÉÀÌ½º¶ó¼­ ±×·³(¿À¹ö¶óÀÌµù µÇ¾îÀÖÀ½)
-		System.out.println("tv1 = "+tv1); // ¾ê´Â ÁÖ¼Ò°¡ ÂïÈù´Ù.
+		System.out.println("str = "+str); // ì–˜ëŠ” ê°’ì´ ì°íˆê³  -> ì™œ? Stringì€ ì¢€ íŠ¹ì´í•œ ì¼€ì´ìŠ¤ë¼ì„œ ê·¸ëŸ¼(ì˜¤ë²„ë¼ì´ë”© ë˜ì–´ìˆìŒ)
+		System.out.println("tv1 = "+tv1); // ì–˜ëŠ” ì£¼ì†Œê°€ ì°íŒë‹¤.
 		
-		System.out.println("Àü¿ø »óÅÂ : "+tv1.power);
+		System.out.println("ì „ì› ìƒíƒœ : "+tv1.power);
 		tv1.channelUp();
 		tv1.channelUp();
 		tv1.channelUp();
-		System.out.println("Ã¤³Î »óÅÂ : "+tv1.channel);
+		System.out.println("ì±„ë„ ìƒíƒœ : "+tv1.channel);
 		
 	}
 }

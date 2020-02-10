@@ -1,7 +1,7 @@
 /*
-[»ı¼ºÀÚ]
-1. »ı¼ºÀÚ ¿À¹ö ·Îµù
-2. »ı¼ºÀÚ È£Ãâ : this() , this
+[ìƒì„±ì]
+1. ìƒì„±ì ì˜¤ë²„ ë¡œë”©
+2. ìƒì„±ì í˜¸ì¶œ : this() , this
  */
 
 class EE{
@@ -9,18 +9,18 @@ class EE{
 	int y;
 	EE(){
 		this(100);
-		System.out.println("default »ı¼ºÀÚ È£Ãâ");
-//		this(100,200);     -> Ã¹ÁÙ¿¡ µü ÇÑ¹ø È£Ãâ °¡´ÉÇÔ
+		System.out.println("default ìƒì„±ì í˜¸ì¶œ");
+//		this(100,200);     -> ì²«ì¤„ì— ë”± í•œë²ˆ í˜¸ì¶œ ê°€ëŠ¥í•¨
 	}
 	EE(int x){
 		this(x,200);
 		this.x = x;
-		System.out.println("¸Å°³ º¯¼ö 1°³ »ı¼ºÀÚ È£Ãâ");
+		System.out.println("ë§¤ê°œ ë³€ìˆ˜ 1ê°œ ìƒì„±ì í˜¸ì¶œ");
 	}
 	EE(int x, int y){
 		this.x = x;
 		this.y = y;
-		System.out.println("¸Å°³ º¯¼ö 2°³ »ı¼ºÀÚ È£Ãâ");
+		System.out.println("ë§¤ê°œ ë³€ìˆ˜ 2ê°œ ìƒì„±ì í˜¸ì¶œ");
 	}
 }
 

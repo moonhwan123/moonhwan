@@ -1,19 +1,19 @@
 /*
- °ú¸ñ                            ÃÑÁ¡
+ ê³¼ëª©                            ì´ì 
  1  2  3  4  5  xx
  6  7  8  9  10 xx
  11 12 13 14 15 xx
  16 17 18 19 20 xx
  21 22 23 24 25 xx
  xx xx xx xx xx xx 
- °ú¸ñº° ÃÑÁ¡
+ ê³¼ëª©ë³„ ì´ì 
  */
 public class Exam_07 {
 	public static void main(String[] args) {
 		
 		int a[][] = new int[6][6];
 		int cnt = 0;
-		//ÀÔ·Â ÀÛ¾÷
+		//ì…ë ¥ ì‘ì—…
 		for(int x = 0; x < a.length-1; x++) {
 			for(int y = 0; y < a.length-1; y++) {
 				cnt++;
@@ -26,7 +26,7 @@ public class Exam_07 {
 		
 
 		
-		//Ãâ·Â ÀÛ¾÷
+		//ì¶œë ¥ ì‘ì—…
 		for(int x = 0; x < a.length; x++) {
 			for(int y = 0; y < a.length; y++) {
 				System.out.print(a[x][y]+"\t");

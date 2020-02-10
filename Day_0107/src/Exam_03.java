@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â (1~100) ÃÖ´ë 10°³ ÀÔ·Â 
-Â¦¼ö¸¸ Ãâ·Â
+í‚¤ë³´ë“œ ì…ë ¥ (1~100) ìµœëŒ€ 10ê°œ ì…ë ¥ 
+ì§ìˆ˜ë§Œ ì¶œë ¥
  */
 
 public class Exam_03 {
@@ -12,7 +12,7 @@ public class Exam_03 {
 
 /*
 		for(int i = 0; i < 10; i++) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			int a = sc.nextInt();
 			
 			if(a%2 == 0) {
@@ -23,20 +23,20 @@ public class Exam_03 {
 		
 		
 		int arr[] = new int[10];
-		//ÀÔ·Â ÀÛ¾÷
+		//ì…ë ¥ ì‘ì—…
 		for(int i = 0; i < arr.length; i++) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			int a = sc.nextInt();
 			arr[i] = a;
 		}
-		//Ãâ·Â
-		System.out.println("<<ÀÔ·Â ÀÚ·á >> ");
+		//ì¶œë ¥
+		System.out.println("<<ì…ë ¥ ìë£Œ >> ");
 		for(int i = 0; i < arr.length; i++) {
 				System.out.print(arr[i]+"\t");
 		}
 		//
 		System.out.println();
-		System.out.println("<<Â¦¼ö>> ");
+		System.out.println("<<ì§ìˆ˜>> ");
 		for(int i = 0; i < arr.length; i++) {
 			if(arr[i]%2==0) {
 				System.out.print(arr[i]+"\t");

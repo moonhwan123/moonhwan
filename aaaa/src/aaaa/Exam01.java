@@ -3,8 +3,8 @@ package aaaa;
 import java.util.Scanner;
 
 /*
-1. ¼±Çü °Ë»ö : Ã¹¹øÂ°ºÎÅÍ ³¡±îÁö Âß ºñ±³ÇÏ´Â°Í
-2. ÀÌÁø °Ë»ö : 
+1. ì„ í˜• ê²€ìƒ‰ : ì²«ë²ˆì§¸ë¶€í„° ëê¹Œì§€ ì­‰ ë¹„êµí•˜ëŠ”ê²ƒ
+2. ì´ì§„ ê²€ìƒ‰ : 
  */
 
 
@@ -20,18 +20,18 @@ public class Exam01 {
 			System.out.print(score[x]+"\t");
 		}
 		System.out.println();
-		System.out.print("Ã£´Â°ª ÀÔ·Â : ");
+		System.out.print("ì°¾ëŠ”ê°’ ì…ë ¥ : ");
 		int var = sc.nextInt();
 		
 		for(int x = 0; x < score.length; x++) {
 			if(var == score[x]) {
-				System.out.println(var+"´Â "+ x +"¹øÂ°°ªÀÔ´Ï´Ù.");
+				System.out.println(var+"ëŠ” "+ x +"ë²ˆì§¸ê°’ì…ë‹ˆë‹¤.");
 				sw = true;
 				continue;
 			}
 		}
 		if(!sw) {
-			System.out.println("¾ø´Â °ª");
+			System.out.println("ì—†ëŠ” ê°’");
 		}
 		
 	}

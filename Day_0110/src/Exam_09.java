@@ -1,14 +1,10 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â(10°³)
-¿À¸§ Â÷¼ø Á¤·Ä Ãâ·Â
-1. ÀÔ, Ãâ·ÂÀº main()¿¡¼­
-
 Source Data :  ------
 Sort Data : ------
 
-2. ¿À¸§ Â÷¼ø Á¤·ÄÀº ¸Ş¼Òµå ÀÌ¿ë
+2. ì˜¤ë¦„ ì°¨ìˆœ ì •ë ¬ì€ ë©”ì†Œë“œ ì´ìš©
  */
 public class Exam_09 {
 	public static void main(String[] args) {
@@ -16,22 +12,22 @@ public class Exam_09 {
 		Scanner sc = new Scanner(System.in);
 		int source[] = new int[10];
 		
-		//¹è¿­ ÀÔ·Â	
-		System.out.print("¹è¿­ ÀÔ·Â : ");
+		//ë°°ì—´ ì…ë ¥	
+		System.out.print("ë°°ì—´ ì…ë ¥ : ");
 		for(int x = 0; x < 10; x++) {
 			source[x] = sc.nextInt();
 		}
 		
 		//Source Data
 		printData("Source",source);
-		//Á¤·Ä¸Ş¼Òµå È£Ãâ
+		//ì •ë ¬ë©”ì†Œë“œ í˜¸ì¶œ
 		arrSort(source);
-		//Á¤·ÄÈÄ Ãâ·Â
+		//ì •ë ¬í›„ ì¶œë ¥
 		printData("Sort",source);
 		
 		
 	}
-	//¼±ÅÃÁ¤·Ä ¸Ş¼­µå
+	//ì„ íƒì •ë ¬ ë©”ì„œë“œ
 	static void arrSort(int arr[]) {
 		for(int x = 0; x < arr.length-1; x++) {
 			for(int  y = x+1; y < arr.length; y++) {
@@ -40,11 +36,11 @@ public class Exam_09 {
 					arr[x] = arr[y];
 					arr[y] = temp;
 				}
-			}//µÎ¹øÂ° for¹® ³¡
-		}//Ã¹¹øÂ° for¹® ³¡
-	}//¸Ş¼Òµå ³¡
+			}//ë‘ë²ˆì§¸ forë¬¸ ë
+		}//ì²«ë²ˆì§¸ forë¬¸ ë
+	}//ë©”ì†Œë“œ ë
 	
-	//¹è¿­ Ãâ·Â ¸Ş¼­µå
+	//ë°°ì—´ ì¶œë ¥ ë©”ì„œë“œ
 	static void printData(String str,int[] arr) {
 		System.out.println("["+str+"Data]");
 		for(int x = 0; x < arr.length; x++) {

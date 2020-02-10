@@ -5,14 +5,14 @@ public class Exam_09 {
 		int[][] a = new int[5][5];
 		
 		int k = 1;
-		//ÀÔ·Â
+		//ìž…ë ¥
 		for(int x = 0; x < a.length; x++) {
 			for(int y = x; y < a[0].length; y++) {
 				a[x][y] = k;
 				k++;
 			}
 		}
-		//Ãâ·Â
+		//ì¶œë ¥
 		for(int x = 0; x < a.length; x++) {
 			for(int y = 0; y < a[0].length; y++) {	
 				System.out.print(a[x][y]+"\t");				

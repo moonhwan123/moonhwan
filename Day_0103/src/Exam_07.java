@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î Á¤¼ö ÀÔ·Â
-1. ÀÔ·Â ¹üÀ§ (2 ~ 100)
-2. ÀÔ·ÂµÈ ¼ö¸¦ 2Áø¼ö·Î º¯È¯ÈÄ Ãâ·Â
-3. ÀÔ·Â ¿¹½Ã
-	Á¤¼ö ÀÔ·Â : 101
-	ÀÔ·Â¿À·ù --> ÀçÀÔ·Â
-	Á¤¼ö ÀÔ·Â : 10
-	10Áø¼ö (10) = 2Áø¼ö (1010)
+í‚¤ë³´ë“œë¡œ ì •ìˆ˜ ì…ë ¥
+1. ì…ë ¥ ë²”ìœ„ (2 ~ 100)
+2. ì…ë ¥ëœ ìˆ˜ë¥¼ 2ì§„ìˆ˜ë¡œ ë³€í™˜í›„ ì¶œë ¥
+3. ì…ë ¥ ì˜ˆì‹œ
+	ì •ìˆ˜ ì…ë ¥ : 101
+	ì…ë ¥ì˜¤ë¥˜ --> ì¬ì…ë ¥
+	ì •ìˆ˜ ì…ë ¥ : 10
+	10ì§„ìˆ˜ (10) = 2ì§„ìˆ˜ (1010)
  */
 
 
@@ -19,25 +19,25 @@ public class Exam_07 {
 		Scanner sc = new Scanner(System.in);
 		int num;
 		while(true) {
-			System.out.print("2~100 »çÀÌÀÇ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä >>");
+			System.out.print("2~100 ì‚¬ì´ì˜ ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” >>");
 			num = sc.nextInt();
 			if(num > 1 && num < 101) {
 				break;
-			}else System.out.println("ÀÔ·Â ¿À·ù !");
+			}else System.out.println("ì…ë ¥ ì˜¤ë¥˜ !");
 		}
 		
 		int temp = num;
-		String bin = ""; // 2Áø¼ö ±â¾ï¿ë
+		String bin = ""; // 2ì§„ìˆ˜ ê¸°ì–µìš©
 		int mok, nmg;
 		
 		do{
 			mok = temp/2;
 			nmg = temp%2;
-			bin = nmg + bin; // ¿©±â
+			bin = nmg + bin; // ì—¬ê¸°
 			temp = mok;
 		}while(mok != 0);
 		
-		System.out.println("10Áø¼ö("+num+")"+" = "+"2Áø¼ö("+bin+")");
+		System.out.println("10ì§„ìˆ˜("+num+")"+" = "+"2ì§„ìˆ˜("+bin+")");
 		
 		
 		

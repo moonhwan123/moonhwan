@@ -25,11 +25,11 @@ A ~ Z
  78910
  
 4)
-********* 9°³ 9
- *******  7°³ 9-2
-  *****   5°³ 9-4
-   ***    3°³ 9-6
-    *	  1°³ 9-8
+********* 9ê°œ 9
+ *******  7ê°œ 9-2
+  *****   5ê°œ 9-4
+   ***    3ê°œ 9-6
+    *	  1ê°œ 9-8
 
 5)
 *****
@@ -52,8 +52,8 @@ A ~ Z
 public class Exam_11 {
 	public static void main(String[] args) {
 		
-		//1¹ø)
-		System.out.println("1¹ø)");
+		//1ë²ˆ)
+		System.out.println("1ë²ˆ)");
 		int number = 1;
 		for(int i = 1; i <= 5; i++) {
 			for(int j = 1; j <= i; j++) {
@@ -64,9 +64,9 @@ public class Exam_11 {
 			System.out.println();
 		}
 		
-		//2¹ø)
+		//2ë²ˆ)
 		
-		System.out.println("2¹ø)");
+		System.out.println("2ë²ˆ)");
 		for(int i = 1; i <= 26; i++) {
 			char ch = 'A';
 			for(int j = 1; j <= i; j++) {
@@ -79,8 +79,8 @@ public class Exam_11 {
 		
 		
 		
-		//3¹ø)
-		System.out.println("3¹ø)");
+		//3ë²ˆ)
+		System.out.println("3ë²ˆ)");
 		int number1 = 1;
 		for(int i = 1; i <= 5; i++) {
 			for(int k = 5-i; k >= 1; k--) {
@@ -95,10 +95,10 @@ public class Exam_11 {
 		}
 		
 		
-		//4¹ø)
+		//4ë²ˆ)
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¹Ýº¹ÇÒ È½¼ö ÀÔ·Â>>");
+		System.out.print("ë°˜ë³µí•  íšŸìˆ˜ ìž…ë ¥>>");
 		int num = sc.nextInt();
 
 		for(int i = 1; i <= num; i++) {
@@ -113,8 +113,8 @@ public class Exam_11 {
 
 
 
-		//5¹ø)
-		System.out.println("5¹ø)");
+		//5ë²ˆ)
+		System.out.println("5ë²ˆ)");
 		for(int i = 1; i <= 9; i++) {
 			if(i<=5) {
 				for(int j = 1; j <= i-1; j++) {

@@ -1,6 +1,6 @@
 /*
-[¸Þ¼Òµå ¿À¹ö·Îµù]
-- ¸Þ¼Òµå "ÀÌ¸§"Àº ¸ðµÎ "µ¿ÀÏ" <-> º¯¼öÀÇ °¹¼ö, "º¯¼ö"ÀÇ "Å¸ÀÔ" Àº "´Þ¶ó"¾ßÇÔ
+[ë©”ì†Œë“œ ì˜¤ë²„ë¡œë”©]
+- ë©”ì†Œë“œ "ì´ë¦„"ì€ ëª¨ë‘ "ë™ì¼" <-> ë³€ìˆ˜ì˜ ê°¯ìˆ˜, "ë³€ìˆ˜"ì˜ "íƒ€ìž…" ì€ "ë‹¬ë¼"ì•¼í•¨
 
  */
 
@@ -9,14 +9,14 @@ class GG{
 		int s = a+b;
 		System.out.println("s = "+s);
 	}
-	void add (int ... a) { //°¡º¯ÀÎÀÚ - ÀÚµ¿À¸·Î ¹è¿­ Ã³¸®( ¸Å°³º¯¼ö°¡ ¸î°³ ¿ÃÁö ¸ð¸¦¶§)
+	void add (int ... a) { //ê°€ë³€ì¸ìž - ìžë™ìœ¼ë¡œ ë°°ì—´ ì²˜ë¦¬( ë§¤ê°œë³€ìˆ˜ê°€ ëª‡ê°œ ì˜¬ì§€ ëª¨ë¥¼ë•Œ)
 		int s = 0;
 		for(int x = 0; x<a.length; x++) {
 			s += a[x];
 		}
 		System.out.println("s = "+s);
 	}
-	void add2 (int[] arr) { //¹è¿­
+	void add2 (int[] arr) { //ë°°ì—´
 		int s = 0;
 		for(int x= 0; x< arr.length; x++) {
 			s += arr[x];
@@ -33,10 +33,10 @@ public class Exam_07 {
 		
 		GG g1 = new GG();
 		g1.add(10,20);
-		g1.add(1,2,3,4,5); // °¡º¯ÀÎÀÚ ¹æ½ÄÀ¸·Î °ªÀ» ¹è¿­ÀÌ¾Æ´Ñ ±×³É ³Ñ°ÜÁÜ
+		g1.add(1,2,3,4,5); // ê°€ë³€ì¸ìž ë°©ì‹ìœ¼ë¡œ ê°’ì„ ë°°ì—´ì´ì•„ë‹Œ ê·¸ëƒ¥ ë„˜ê²¨ì¤Œ
 		 
 		int arr[] = {1,2,3,4,5}; 
-		g1.add2(arr); // ¹è¿­ ¹æ½ÄÀ¸·Î °ªÀ» ¹è¿­ÀÇ ÇüÅÂ·Î ³Ñ°ÜÁÜ
+		g1.add2(arr); // ë°°ì—´ ë°©ì‹ìœ¼ë¡œ ê°’ì„ ë°°ì—´ì˜ í˜•íƒœë¡œ ë„˜ê²¨ì¤Œ
 		
 		
 		

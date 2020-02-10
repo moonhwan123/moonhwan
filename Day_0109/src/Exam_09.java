@@ -1,5 +1,5 @@
 /*
-ÀÌÂ÷¿ø ¹è¿­
+ì´ì°¨ì› ë°°ì—´
  */
 
 
@@ -10,25 +10,25 @@ public class Exam_09 {
 		int score[][] = {{1,90,78,79,0},{5,95,80,70,0},
 				{2,79,88,77,0},{4,75,88,77,0},{3,95,88,75,0}};
 		
-		//ÀÔ·ÂÀÚ·á Ãâ·Â
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ");
+		//ì…ë ¥ìë£Œ ì¶œë ¥
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™");
 		for(int x = 0; x < score.length; x++) {
 			for(int y = 0; y<score[x].length-1; y++) {
 				System.out.print(score[x][y]+"\t");
 			}
 			System.out.println();
 		}
-		//ÃÑÁ¡ °è»ê
+		//ì´ì  ê³„ì‚°
 		for(int x = 0 ; x < score.length; x++) {
 			for(int y = 1; y < 4; y++) {
 				score[x][4] += score[x][y];
 			}
 		}
 		
-		//¹øÈ£¸¦ ±âÁØÀ¸·Î ¿À¸§ Â÷¼ø Á¤·Ä
+		//ë²ˆí˜¸ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì˜¤ë¦„ ì°¨ìˆœ ì •ë ¬
 		for(int x = 0; x < score.length; x++) {
 			for(int y = x+1; y < score.length;y++) {
-				if(score[x][0]>score[y][0]) { // ¹øÈ£°¡ ±âÁØÀÌ±â ¶§¹®¿¡ [x][0]
+				if(score[x][0]>score[y][0]) { // ë²ˆí˜¸ê°€ ê¸°ì¤€ì´ê¸° ë•Œë¬¸ì— [x][0]
 					for(int k = 0; k < score[0].length; k++) {
 						int temp = score[x][k];
 						score[x][k] = score[y][k];
@@ -39,8 +39,8 @@ public class Exam_09 {
 		}
 		
 		
-		//Ãâ·Â
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡");
+		//ì¶œë ¥
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì ");
 		for(int x = 0; x < score.length; x++) {
 			for(int y = 0; y<score[x].length; y++) {
 				System.out.print(score[x][y]+"\t");

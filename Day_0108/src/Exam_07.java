@@ -5,18 +5,18 @@ public class Exam_07 {
 		int[] bun = {5,3,1,4,2};
 		int[] score = {50,70,60,90,80};
 		
-		//Ãâ·Â
+		//ì¶œë ¥
 		//1 	2	  3 	4     5
 		//60   80    70    90    50
 		
-		// ¹øÈ£°¡ ¹Ù²ğ¶§ Á¡¼öµµ °°ÀÌ ¹Ù²ã¶ó
-		System.out.println("[Á¤·Ä Àü]");
-		System.out.print("¹øÈ£ : \t");
+		// ë²ˆí˜¸ê°€ ë°”ë€”ë•Œ ì ìˆ˜ë„ ê°™ì´ ë°”ê¿”ë¼
+		System.out.println("[ì •ë ¬ ì „]");
+		System.out.print("ë²ˆí˜¸ : \t");
 		for(int x = 0; x < bun.length; x++) {
 			System.out.print(bun[x]+"\t");
 		}
 		System.out.println();
-		System.out.print("Á¡¼ö : \t");
+		System.out.print("ì ìˆ˜ : \t");
 		for(int x = 0; x < score.length; x++) {
 			System.out.print(score[x]+"\t");
 		}
@@ -37,13 +37,13 @@ public class Exam_07 {
 			}
 		}
 		
-		System.out.println("[Á¤·Ä ÈÄ]");
-		System.out.print("¹øÈ£ : \t");
+		System.out.println("[ì •ë ¬ í›„]");
+		System.out.print("ë²ˆí˜¸ : \t");
 		for(int x = 0; x < bun.length; x++) {
 			System.out.print(bun[x]+"\t");
 		}
 		System.out.println();
-		System.out.print("Á¡¼ö : \t");
+		System.out.print("ì ìˆ˜ : \t");
 		for(int x = 0; x < score.length; x++) {
 			System.out.print(score[x]+"\t");
 		}

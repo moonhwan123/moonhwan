@@ -1,6 +1,6 @@
 /*
-[ÇĞ»ı Å¬·¡½º Á¤ÀÇ]
-°á±¹ Å¬·¡½º´Â "»ç¿ëÀÚ Á¤ÀÇº¯¼ö(ÀÚ·áÇü)"
+[í•™ìƒ í´ë˜ìŠ¤ ì •ì˜]
+ê²°êµ­ í´ë˜ìŠ¤ëŠ” "ì‚¬ìš©ì ì •ì˜ë³€ìˆ˜(ìë£Œí˜•)"
  */
 
 class Student{
@@ -10,17 +10,17 @@ class Student{
 	int eng;
 	int mat;
 	int tot;
-	double ave; // ¿©±â ±îÁö ¼Ó¼º Á¤ÀÇ
+	double ave; // ì—¬ê¸° ê¹Œì§€ ì†ì„± ì •ì˜
 	
-	void totAccount() { // ÃÑÁ¡ °è»ê¿ë ¸Ş¼­µå
+	void totAccount() { // ì´ì  ê³„ì‚°ìš© ë©”ì„œë“œ
 		tot = kor+eng+mat;
 	}
-	void aveAccount() { // Æò±Õ °è»ê¿ë ¸Ş¼­µå
+	void aveAccount() { // í‰ê·  ê³„ì‚°ìš© ë©”ì„œë“œ
 		ave = tot /3.;
 	}
 	void dataPrint() {
-		System.out.println("[¼ºÀûÇ¥]");
-		System.out.print("ÇĞ¹ø\tÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ");
+		System.out.println("[ì„±ì í‘œ]");
+		System.out.print("í•™ë²ˆ\tì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
 		System.out.println();
 		System.out.print(studentNumber+"\t"+name+"\t"+kor+"\t");
 		System.out.print(eng+"\t"+mat+"\t"+tot+"\t");
@@ -32,13 +32,13 @@ class Student{
 public class Exam_01 {
 	public static void main(String[] args) {
 		
-		Student stu1; // stu1 = "·¹ÆÛ·±½º(ÂüÁ¶) º¯¼ö" (ÀÎ½ºÅÏ½º º¯¼ö-°´Ã¼¸¦ °¡¸®Å°´Â º¯¼ö)
-		stu1 = new Student(); // ÀÎ½ºÅÏ½º(°´Ã¼) »ı¼º(½ÇÁ¦·Î »ı¼º) , ºØ¾î»§ Æ²¿¡¼­ ºØ¾î»§À» ¸¸µç ´À³¦
-		//new¸¦ ÀÌ¿ëÇØ¼­ stu1¸¦ »ı¼ºÇÏ¸é °´Ã¼°¡ ¸¸µé¾îÁö°í stu1Àº Student¸¦ °¡¸®Å²´Ù.
-		//¹è¿­ÇÏ°í °°Àº ¿ø¸®
+		Student stu1; // stu1 = "ë ˆí¼ëŸ°ìŠ¤(ì°¸ì¡°) ë³€ìˆ˜" (ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜-ê°ì²´ë¥¼ ê°€ë¦¬í‚¤ëŠ” ë³€ìˆ˜)
+		stu1 = new Student(); // ì¸ìŠ¤í„´ìŠ¤(ê°ì²´) ìƒì„±(ì‹¤ì œë¡œ ìƒì„±) , ë¶•ì–´ë¹µ í‹€ì—ì„œ ë¶•ì–´ë¹µì„ ë§Œë“  ëŠë‚Œ
+		//newë¥¼ ì´ìš©í•´ì„œ stu1ë¥¼ ìƒì„±í•˜ë©´ ê°ì²´ê°€ ë§Œë“¤ì–´ì§€ê³  stu1ì€ Studentë¥¼ ê°€ë¦¬í‚¨ë‹¤.
+		//ë°°ì—´í•˜ê³  ê°™ì€ ì›ë¦¬
 		stu1.studentNumber = 1101;
-		//stu1.studentNumberÀÌ °¡¸®Å°´Â ³ğ
-		stu1.name = "È«±æµ¿";
+		//stu1.studentNumberì´ ê°€ë¦¬í‚¤ëŠ” ë†ˆ
+		stu1.name = "í™ê¸¸ë™";
 		stu1.kor = 90;
 		stu1.eng = 80;
 		stu1.mat = 70;
@@ -49,14 +49,14 @@ public class Exam_01 {
 		
 		
 		
-		Student stu2 = new Student(); // ¼±¾ğ°ú »ı¼ºÀ» µ¿½Ã¿¡ ÁøÇà
+		Student stu2 = new Student(); // ì„ ì–¸ê³¼ ìƒì„±ì„ ë™ì‹œì— ì§„í–‰
 		stu2.dataPrint();
 		
 		
 		
 		String str; 
 		str="aaa";
-		int a; // º¯¼ö 
+		int a; // ë³€ìˆ˜ 
 		a= 10;
 		
 	

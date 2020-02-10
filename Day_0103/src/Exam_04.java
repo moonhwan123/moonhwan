@@ -4,11 +4,11 @@
 public class Exam_04 {
 	public static void main(String[] args) {
 		
-		//ÃÊ±â°ªÀÌ 2°³ÀÎ for¹® -> Áõ°¨½Äµµ 2°³ÀÌ³ª , Á¶°Ç½ÄÀº ÇÏ³ª¸¸ ¿Ã¼ö ÀÖÀ½
+		//ì´ˆê¸°ê°’ì´ 2ê°œì¸ forë¬¸ -> ì¦ê°ì‹ë„ 2ê°œì´ë‚˜ , ì¡°ê±´ì‹ì€ í•˜ë‚˜ë§Œ ì˜¬ìˆ˜ ìžˆìŒ
 		for(int x = 1, y = 10 ; x <= 10; x++,y--) {
 			System.out.println(x + ":" + y);
 		}
-		//ÀÚ¹Ù¿¡¼­´Â ',' ´Â ¿¬»êÀÚ°¡ ¾Æ´Ô
+		//ìžë°”ì—ì„œëŠ” ',' ëŠ” ì—°ì‚°ìžê°€ ì•„ë‹˜
 		
 		
 		

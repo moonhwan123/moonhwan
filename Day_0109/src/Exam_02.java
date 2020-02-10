@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
-ÀÌÂ÷¿ø ¹è¿­
+ì´ì°¨ì› ë°°ì—´
  */
 
 
@@ -15,10 +15,10 @@ public class Exam_02 {
 		
 		int cnt = 0;
 		
-		System.out.print((cnt+1) + "¹ø ÀÔ·Â : ");
+		System.out.print((cnt+1) + "ë²ˆ ì…ë ¥ : ");
 		sc.nextInt();
-		//ÀÔ·ÂÀÚ·á Ãâ·Â
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ");
+		//ì…ë ¥ìë£Œ ì¶œë ¥
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™");
 /*		
 		for(int x = 0; x < score.length; x++) {
 			System.out.print(score[x][0]+"\t");

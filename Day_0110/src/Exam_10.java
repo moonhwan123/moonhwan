@@ -1,20 +1,20 @@
 /*
-2Â÷¿ø ¹è¿­¿¡ Data°¡ ÀÔ·Â µÇ¾î ÀÖÀ» °æ¿ì
+2ì°¨ì› ë°°ì—´ì— Dataê°€ ì…ë ¥ ë˜ì–´ ìˆì„ ê²½ìš°
 1: 9  90  80  89  80  90
 2: 5  77  88  99  90  70
  : .   .   .   .   .   .
 5: 55 77  77  99  50  79
 
-¹øÈ£¿Í 5°ú¸ñ Á¡¼ö
+ë²ˆí˜¸ì™€ 5ê³¼ëª© ì ìˆ˜
 
-1) ÀÔ·Â ÀÚ·á Ãâ·Â ¸Ş¼Òµå ±¸Çö(dataPrint())
-       ¹øÈ£       Á¡¼ö1    Á¡¼ö2    Á¡¼ö3    Á¡¼ö4    Á¡¼ö5
+1) ì…ë ¥ ìë£Œ ì¶œë ¥ ë©”ì†Œë“œ êµ¬í˜„(dataPrint())
+       ë²ˆí˜¸       ì ìˆ˜1    ì ìˆ˜2    ì ìˆ˜3    ì ìˆ˜4    ì ìˆ˜5
    ...
     
-2) ÃÑÁ¡ ±¸ÇÏ´Â ¸Ş¼Òµå ±¸Çö(dataTot())
-3) ÃÑÁ¡À» ±âÁØÀ¸·Î ³»¸²Â÷¼ø Á¤·Ä ¸Ş¼Òµå ±¸Çö(totSort())
-4) ÀüÃ¼ Ãâ·Â ¸Ş¼Òµå ±¸Çö(dataPrint2())
-       ¹øÈ£       Á¡¼ö1    Á¡¼ö2    Á¡¼ö3    Á¡¼ö4    Á¡¼ö5    ÃÑÁ¡
+2) ì´ì  êµ¬í•˜ëŠ” ë©”ì†Œë“œ êµ¬í˜„(dataTot())
+3) ì´ì ì„ ê¸°ì¤€ìœ¼ë¡œ ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬ ë©”ì†Œë“œ êµ¬í˜„(totSort())
+4) ì „ì²´ ì¶œë ¥ ë©”ì†Œë“œ êµ¬í˜„(dataPrint2())
+       ë²ˆí˜¸       ì ìˆ˜1    ì ìˆ˜2    ì ìˆ˜3    ì ìˆ˜4    ì ìˆ˜5    ì´ì 
    ...
 
 
@@ -23,29 +23,29 @@ public class Exam_10 {
 	
 	public static void main(String[] args) {
 		
-		//¹è¿­ ¼±¾ğ ¹× µ¥ÀÌÅÍ ÃÊ±âÈ­
+		//ë°°ì—´ ì„ ì–¸ ë° ë°ì´í„° ì´ˆê¸°í™”
 		int[][] score = {{1,90,80,89,80,90},{2,50,82,69,80,28},{3,20,57,82,23,45}
 		,{4,90,78,89,25,90},{5,95,90,89,79,94}};
 		int[] sum = new int[5];
 		
 		
-		//dataPrint() È£Ãâ
+		//dataPrint() í˜¸ì¶œ
 		dataprint(score);
 		
-		//dataTot() È£Ãâ
+		//dataTot() í˜¸ì¶œ
 		dataTot(sum,score);
 		
-		//dataSort() È£Ãâ
+		//dataSort() í˜¸ì¶œ
 		dataSort(sum,score);
 
-		//dataPrint2() È£Ãâ
+		//dataPrint2() í˜¸ì¶œ
 		dataprint2(sum,score);
 		
 
 	}
 	
 	static void dataprint(int[][] arr) {
-		System.out.print("¹øÈ£\t°ú¸ñ1\t°ú¸ñ2\t°ú¸ñ3\t°ú¸ñ4\t°ú¸ñ5\n");
+		System.out.print("ë²ˆí˜¸\tê³¼ëª©1\tê³¼ëª©2\tê³¼ëª©3\tê³¼ëª©4\tê³¼ëª©5\n");
 		for(int x = 0 ; x < arr.length; x++) {
 			for(int y = 0 ; y < arr[0].length; y++) {
 				System.out.print(arr[x][y]+"\t");
@@ -73,14 +73,14 @@ public class Exam_10 {
 					int temp2 = arr1[x];
 					arr1[x] = arr1[y];
 					arr1[y] = temp2;
-				}//if ³¡
+				}//if ë
 			}
 		}
 	}
 	
 	
 	static void dataprint2(int[]arr1,int[][] arr2) {
-		System.out.print("¹øÈ£\t°ú¸ñ1\t°ú¸ñ2\t°ú¸ñ3\t°ú¸ñ4\t°ú¸ñ5\tÃÑÁ¡\n");
+		System.out.print("ë²ˆí˜¸\tê³¼ëª©1\tê³¼ëª©2\tê³¼ëª©3\tê³¼ëª©4\tê³¼ëª©5\tì´ì \n");
 		for(int x = 0 ; x < arr2.length; x++) {
 			for(int y = 0 ; y < arr2[0].length; y++) {
 				System.out.print(arr2[x][y]+"\t");

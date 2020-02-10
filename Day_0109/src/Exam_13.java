@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â(ÇĞ»ı¼ºÀûÁ¤º¸ÀÔ·Â)(ÃÖ´ë 10¸í)
-1. ÀÔ·Â (¹øÈ£    ÀÌ¸§     ±¹¾î       ¿µ¾î      ¼öÇĞ)
-ÀÔ·Â : 1   È«±æµ¿    89 80 90
-ÀÔ·Â : 2   ÃÖ°­¹Î    3  1  5
-ÀÔ·Â : -99 --> Á¾·á
+í‚¤ë³´ë“œ ì…ë ¥(í•™ìƒì„±ì ì •ë³´ì…ë ¥)(ìµœëŒ€ 10ëª…)
+1. ì…ë ¥ (ë²ˆí˜¸    ì´ë¦„     êµ­ì–´       ì˜ì–´      ìˆ˜í•™)
+ì…ë ¥ : 1   í™ê¸¸ë™    89 80 90
+ì…ë ¥ : 2   ìµœê°•ë¯¼    3  1  5
+ì…ë ¥ : -99 --> ì¢…ë£Œ
 
-2. Ãâ·Â_1
-¹øÈ£   ÀÌ¸§   ±¹¾î   ¿µ¾î   ¼öÇĞ   ÃÑÁ¡   Æò±Õ   ¼®Â÷
+2. ì¶œë ¥_1
+ë²ˆí˜¸   ì´ë¦„   êµ­ì–´   ì˜ì–´   ìˆ˜í•™   ì´ì    í‰ê·    ì„ì°¨
 
-3. Ãâ·Â_2 ¼®Â÷¸¦ ±âÁØÀ¸·Î Ãâ·Â(Á¤·Ä)
-¹øÈ£   ÀÌ¸§   ±¹¾î   ¿µ¾î   ¼öÇĞ   ÃÑÁ¡   Æò±Õ   ¼®Â÷
+3. ì¶œë ¥_2 ì„ì°¨ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì¶œë ¥(ì •ë ¬)
+ë²ˆí˜¸   ì´ë¦„   êµ­ì–´   ì˜ì–´   ìˆ˜í•™   ì´ì    í‰ê·    ì„ì°¨
 
  */
 
@@ -22,45 +22,45 @@ public class Exam_13 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int arr[][] = new int[10][6]; // ¹øÈ£ ±¹¾î ¿µ¾î ¼öÇĞ ÃÑÁ¡ ¼®Â÷
-		String name[] = new String[10]; // ÀÌ¸§
-		double ave[] = new double[10]; // Æò±Õ
+		int arr[][] = new int[10][6]; // ë²ˆí˜¸ êµ­ì–´ ì˜ì–´ ìˆ˜í•™ ì´ì  ì„ì°¨
+		String name[] = new String[10]; // ì´ë¦„
+		double ave[] = new double[10]; // í‰ê· 
 		
 		
 		int cnt = 0;
-		//ÀÚ·á ÀÔ·Â
+		//ìë£Œ ì…ë ¥
 		while(cnt < 10) {
-			System.out.print("ÀÔ·Â (¹øÈ£    ÀÌ¸§     ±¹¾î       ¿µ¾î      ¼öÇĞ): ");
-			arr[cnt][0] = sc.nextInt(); // ¹øÈ£
+			System.out.print("ì…ë ¥ (ë²ˆí˜¸    ì´ë¦„     êµ­ì–´       ì˜ì–´      ìˆ˜í•™): ");
+			arr[cnt][0] = sc.nextInt(); // ë²ˆí˜¸
 			if(arr[cnt][0]== -99) break;
-			name[cnt]   = sc.next();    // ÀÌ¸§
-			arr[cnt][1] = sc.nextInt(); // ±¹
-			arr[cnt][2] = sc.nextInt(); // ¿µ
-			arr[cnt][3] = sc.nextInt(); // ¼ö
+			name[cnt]   = sc.next();    // ì´ë¦„
+			arr[cnt][1] = sc.nextInt(); // êµ­
+			arr[cnt][2] = sc.nextInt(); // ì˜
+			arr[cnt][3] = sc.nextInt(); // ìˆ˜
 			sc.nextLine();
 			cnt++;
 		}
 		
-		//ÃÑÁ¡, Æò±Õ °è»ê
+		//ì´ì , í‰ê·  ê³„ì‚°
 		for(int x = 0 ; x < cnt; x++) {
 			for(int y = 1; y < 4; y++) {
 				arr[x][4] += arr[x][y];
 			}
-			ave[x] = ((int)(arr[x][4] / 3. * 100 + 0.5))/100.; // Æò±Õ
+			ave[x] = ((int)(arr[x][4] / 3. * 100 + 0.5))/100.; // í‰ê· 
 		}
 		
-		//¼®Â÷ °è»ê 
+		//ì„ì°¨ ê³„ì‚° 
 		for(int x = 0 ; x < cnt; x ++) {
-			int r = 1; // ¼®Â÷ °è»ê¿ë
+			int r = 1; // ì„ì°¨ ê³„ì‚°ìš©
 			for(int y = 0; y < cnt; y++) {
-				if(arr[x][4]<arr[y][4]) { // ÃÑÁ¡±âÁØ 
+				if(arr[x][4]<arr[y][4]) { // ì´ì ê¸°ì¤€ 
 					r++;
 				}
 			}
 			arr[x][5] = r;
 		}
-		//Ãâ·Â
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
+		//ì¶œë ¥
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \tì„ì°¨");
 		for(int x = 0; x < cnt; x++) {
 			System.out.print(arr[x][0]+"\t");
 			System.out.print(name[x]+"\t");
@@ -73,7 +73,7 @@ public class Exam_13 {
 		}
 
 
-		//¼®Â÷¸¦ ±âÁØÀ¸·Î ¿À¸§ Â÷¼ø Á¤·Ä
+		//ì„ì°¨ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì˜¤ë¦„ ì°¨ìˆœ ì •ë ¬
 		for(int x = 0; x < cnt; x++) {
 			for(int y = x+1; y < cnt;y++) {
 				if(arr[x][4]<arr[y][4]) { 
@@ -92,7 +92,7 @@ public class Exam_13 {
 			}
 		}
 		
-		System.out.println("¹øÈ£\tÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \tì„ì°¨");
 		for(int x = 0; x < cnt; x++) {
 			System.out.print(arr[x][0]+"\t");
 			System.out.print(name[x]+"\t");

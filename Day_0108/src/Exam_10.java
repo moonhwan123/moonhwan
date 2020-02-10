@@ -36,14 +36,14 @@ public class Exam_10 {
 		int arr1[][] = new int[5][5];
 		
 		int k1 = 1;
-		//ÀÔ·Â
+		//ìž…ë ¥
 		for(int i = 0; i < arr1.length; i++) {
 			for(int j = 0; j < arr1[0].length; j++) {
 				arr1[j][i] = k1;
 				k1++;
 			}
 		}
-		//Ãâ·Â
+		//ì¶œë ¥
 		for(int x = 0; x < arr1.length; x++) {
 			for(int y = 0; y < arr1[0].length; y++) {	
 				System.out.print(arr1[x][y]+"\t");				
@@ -55,15 +55,15 @@ public class Exam_10 {
 		System.out.println("2)");
 		int arr2[][] = new int[5][5];
 		int k2 = 1;
-		//ÀÔ·Â
+		//ìž…ë ¥
 		for(int i = 0; i < arr2.length; i++) {
-			for(int j = 0; j < i+1; j++) { //j <= i µµ °°À½
+			for(int j = 0; j < i+1; j++) { //j <= i ë„ ê°™ìŒ
 				arr2[i][j] = k2;
 				k2++;
 			}
 		}
 
-		//Ãâ·Â
+		//ì¶œë ¥
 		for(int x = 0; x < arr2.length; x++) {
 			for(int y = 0; y < arr2[0].length; y++) {
 				if(arr2[x][y]==0) {
@@ -79,14 +79,14 @@ public class Exam_10 {
 		System.out.println("3)");
 		int[][] arr3 = new int[5][5];
 		int k3 = 0;
-		//ÀÔ·Â
+		//ìž…ë ¥
 		for(int i = 0; i < arr3.length; i++) {
 			for(int j = arr3.length-1-i; j < arr3.length; j++) {
 				k3++;
 				arr3[i][j] = k3;
 			}
 		}
-		//Ãâ·Â
+		//ì¶œë ¥
 		for(int x = 0; x < arr3.length; x++) {
 			for(int y = 0; y < arr3[0].length; y++) {
 				if(arr3[x][y]==0) {
@@ -102,7 +102,7 @@ public class Exam_10 {
 		System.out.println("4)");
 		int arr4[][] = new int[5][5];
 		int k4 = 1;
-		//ÀÔ·Â
+		//ìž…ë ¥
 		for(int i = 0; i < arr4.length; i++) {
 			for(int j = i; j >= 0; j--) {
 				arr4[i][j] = k4;
@@ -110,7 +110,7 @@ public class Exam_10 {
 			}
 		}
 
-		//Ãâ·Â
+		//ì¶œë ¥
 		for(int x = 0; x < arr4.length; x++) {
 			for(int y = 0; y < arr4[0].length; y++) {
 				if(arr4[x][y]==0) {

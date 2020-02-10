@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 /*
-[¸®ÅÏÅ¸ÀÔ°ú ¸Å°³º¯¼ö°¡ ÀÖ´Â °æ¿ì]
+[ë¦¬í„´íƒ€ì…ê³¼ ë§¤ê°œë³€ìˆ˜ê°€ ìˆëŠ” ê²½ìš°]
 
-Å°º¸µå·Î Á¤¼ö ÀÔ·Â
-ÀÔ·ÂµÈ Á¤¼ö ±îÁö ÇÕ°è Ãâ·Â
+í‚¤ë³´ë“œë¡œ ì •ìˆ˜ ì…ë ¥
+ì…ë ¥ëœ ì •ìˆ˜ ê¹Œì§€ í•©ê³„ ì¶œë ¥
 
  */
 public class Exam_08 {
@@ -12,14 +12,14 @@ public class Exam_08 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Á¤¼öÀÔ·Â : ");
+		System.out.print("ì •ìˆ˜ì…ë ¥ : ");
 		
 		int num = sc.nextInt();
 		int ss = intSum(num);
 		System.out.println(ss);
 	}
 	
-	static int intSum(int a) { // ¹è¿­Àº ¸®ÅÏ °ªÀÌ ÇÊ¿ä¾ø´Ù. why? °ªÀÌ ³Ñ¾î °¡´Â°Ô ¾Æ´Ï±â ¶§¹®
+	static int intSum(int a) { // ë°°ì—´ì€ ë¦¬í„´ ê°’ì´ í•„ìš”ì—†ë‹¤. why? ê°’ì´ ë„˜ì–´ ê°€ëŠ”ê²Œ ì•„ë‹ˆê¸° ë•Œë¬¸
 		int sum = 0;
 		
 		for(int x = 1; x <= a; x++) {
@@ -28,6 +28,6 @@ public class Exam_08 {
 
 		return sum;
 	}
-	//¹º°¡ ¸Ş¼ÒµåÀÇ °á°ú°ªÀ¸·Î ¹«¾ùÀÎ°¡¸¦ ÇØ¾ß ÇÒ °æ¿ì´Â ¸®ÅÏ°ªÀÌ ÇÊ¿äÇÏ´Ù.
+	//ë­”ê°€ ë©”ì†Œë“œì˜ ê²°ê³¼ê°’ìœ¼ë¡œ ë¬´ì—‡ì¸ê°€ë¥¼ í•´ì•¼ í•  ê²½ìš°ëŠ” ë¦¬í„´ê°’ì´ í•„ìš”í•˜ë‹¤.
 
 }

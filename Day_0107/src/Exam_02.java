@@ -11,11 +11,11 @@ public class Exam_02 {
 		bun[3] = 1000;
 		bun[4] = 10000;
 		
-		name[0] = "±èÀÚ¹İ";
-		name[1] = "È«±æµ¿";
+		name[0] = "ê¹€ìë°˜";
+		name[1] = "í™ê¸¸ë™";
 		name[2] = "C/C++";
-		name[3] = "ÃÖ°­¹Î";
-		name[4] = "°³º´½Å";
+		name[3] = "ìµœê°•ë¯¼";
+		name[4] = "ê°œë³‘ì‹ ";
 		
 		for(int i = 0; i < 5; i++) {
 			System.out.println(bun[i] + " : " + name[i]);

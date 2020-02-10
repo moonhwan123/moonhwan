@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 /*
-[Å°º¸µå ÀÔ·Â] 
-- ¹øÈ£, ÀÌ¸§, Á¡¼ö¸¦ ÀÔ·Â
+[í‚¤ë³´ë“œ ì…ë ¥] 
+- ë²ˆí˜¸, ì´ë¦„, ì ìˆ˜ë¥¼ ì…ë ¥
 
-¿¹½Ã)
-ÀÔ·Â : 1 È«±æµ¿ 100
+ì˜ˆì‹œ)
+ì…ë ¥ : 1 í™ê¸¸ë™ 100
 
-[Ãâ·Â]
-¹øÈ£     ÀÌ¸§     Á¡¼ö    ±×·¡ÇÁ (10Á¡´ç '*' 1°³)
-1   È«±æµ¿    100  *********
+[ì¶œë ¥]
+ë²ˆí˜¸     ì´ë¦„     ì ìˆ˜    ê·¸ë˜í”„ (10ì ë‹¹ '*' 1ê°œ)
+1   í™ê¸¸ë™    100  *********
  */
 class Hak3{
 	int bun;
@@ -19,12 +19,12 @@ class Hak3{
 	Hak3() {
 //		dataPrint();
 	}
-	Hak3(int bun, String name, int score){ // ÃÊ±âÈ­ ÀÛ¾÷À» ÇØÁÙ »ı¼ºÀÚ
-		//this(); // ÀÚ±âÀÚ½ÅÀÇ ¸Ş¼­µå == ÀÚ±âÀÚ½ÅÀÇ »ı¼ºÀÚ
+	Hak3(int bun, String name, int score){ // ì´ˆê¸°í™” ì‘ì—…ì„ í•´ì¤„ ìƒì„±ì
+		//this(); // ìê¸°ìì‹ ì˜ ë©”ì„œë“œ == ìê¸°ìì‹ ì˜ ìƒì„±ì
 		this.bun = bun;
 		this.name = name;
 		this.score = score;
-		//¿©±â¼­ this´Â ÀÚ±âÀÚ½Å(class)À» °¡¸£Å´
+		//ì—¬ê¸°ì„œ thisëŠ” ìê¸°ìì‹ (class)ì„ ê°€ë¥´í‚´
 		dataPrint();
 	}
 	void dataPrint() {
@@ -44,9 +44,9 @@ public class Exam_08 {
 		
 		
 		Scanner sc = new Scanner(System.in);
-		Hak3 hak; // ÀÌ³ğÀÌ ¹Û¿¡ ÀÖ´Â ÀÌÀ¯´Â º¯¼ö¸¦ ÇÑ¹ø¸¸ ¸¸µé¾î¼­ ±×°É °øÀ¯ÇÒ·Á°í
+		Hak3 hak; // ì´ë†ˆì´ ë°–ì— ìˆëŠ” ì´ìœ ëŠ” ë³€ìˆ˜ë¥¼ í•œë²ˆë§Œ ë§Œë“¤ì–´ì„œ ê·¸ê±¸ ê³µìœ í• ë ¤ê³ 
 		while(true) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			hak = new Hak3();
 			hak.bun = sc.nextInt();
 			if(hak.bun == -99) break;
@@ -60,7 +60,7 @@ public class Exam_08 {
 				}
 			}System.out.println();
 */			
-			//À§ ÁÖ¼® ºÎºĞÀ» ¸Ş¼­µå·Î »©¹ö¸²
+			//ìœ„ ì£¼ì„ ë¶€ë¶„ì„ ë©”ì„œë“œë¡œ ë¹¼ë²„ë¦¼
 			hak.dataPrint();
 		}
 		
@@ -70,3 +70,4 @@ public class Exam_08 {
 		
 	}
 }
+
