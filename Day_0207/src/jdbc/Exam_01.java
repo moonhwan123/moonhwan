@@ -1,9 +1,9 @@
 package jdbc;
 
 /*
-1. JDBC µå¶óÀÌ¹ö ·Îµù
-2. Ä¿³Ø¼Ç ¿¬°á
-3. ¸í·É¹® ½ÇÇà
+1. JDBC ë“œë¼ì´ë²„ ë¡œë”©
+2. ì»¤ë„¥ì…˜ ì—°ê²°
+3. ëª…ë ¹ë¬¸ ì‹¤í–‰
  */
 
 import java.sql.*;
@@ -11,24 +11,24 @@ import java.sql.*;
 public class Exam_01 {
 	public static void main(String[] args) {
 		
-		//JDBC µå¶óÀÌ¹ö ·Îµù
+		//JDBC ë“œë¼ì´ë²„ ë¡œë”©
 		
 		try {
 			Class.forName("oracle.jdbc.OracleDriver");
-			System.out.println("µå¶óÀÌ¹ö ·Îµù ¼º°ø");
+			System.out.println("ë“œë¼ì´ë²„ ë¡œë”© ì„±ê³µ");
 		} catch (Exception e) {
-			System.out.println("µå¶óÀÌ¹ö ·Îµù ½ÇÆĞ");
+			System.out.println("ë“œë¼ì´ë²„ ë¡œë”© ì‹¤íŒ¨");
 		}
 		
-		//Ä¿³Ø¼Ç ¿¬°á
+		//ì»¤ë„¥ì…˜ ì—°ê²°
 		String myURL = "jdbc:oracle:thin:@localhost:1521:orcl";
 		String myUser = "system";
 		String myPass = "1234";
 		try {
 			Connection con = DriverManager.getConnection(myURL,myUser,myPass);
-			System.out.println("Ä¿³Ø¼Ç ¿¬°á ¼º°ø");
+			System.out.println("ì»¤ë„¥ì…˜ ì—°ê²° ì„±ê³µ");
 		} catch (Exception e) {
-			System.out.println("Ä¿³Ø¼Ç ¿¬°á ½ÇÆĞ");
+			System.out.println("ì»¤ë„¥ì…˜ ì—°ê²° ì‹¤íŒ¨");
 			e.printStackTrace();
 		}
 		

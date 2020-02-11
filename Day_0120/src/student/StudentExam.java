@@ -8,10 +8,10 @@ public class StudentExam {
 		Scanner sc = new Scanner(System.in);
 		int jum[] = new int[10];
 		
-		System.out.print("¹øÈ£/ÀÌ¸§ >>");
+		System.out.print("ë²ˆí˜¸/ì´ë¦„ >>");
 		int bun = sc.nextInt();
 		String name = sc.next();
-		System.out.print("Á¡¼ö 10°³ ÀÔ·Â >> ");
+		System.out.print("ì ìˆ˜ 10ê°œ ìž…ë ¥ >> ");
 		for(int i = 0; i < jum.length; i++) {
 			jum[i] = sc.nextInt();
 		}

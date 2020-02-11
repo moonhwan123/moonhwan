@@ -1,11 +1,11 @@
 import java.util.Random;
 
 import java.util.Scanner;
-//import java.util.*; util¿¡ ÀÖ´Â ¸ğµç Å¬·¡½º ¼ÒÈ¯
-//import java.lang.*; Àº ±»ÀÌ ÀÓÆ÷Æ® ¾ÈÇØµµ µÇ´Â °Íµé
+//import java.util.*; utilì— ìˆëŠ” ëª¨ë“  í´ë˜ìŠ¤ ì†Œí™˜
+//import java.lang.*; ì€ êµ³ì´ ì„í¬íŠ¸ ì•ˆí•´ë„ ë˜ëŠ” ê²ƒë“¤
 
 /*
-[import¹® °ú  package(µğ·ºÅä¸®,Æú´õ)]
+[importë¬¸ ê³¼  package(ë””ë ‰í† ë¦¬,í´ë”)]
 
  */
 public class Exam_04 {

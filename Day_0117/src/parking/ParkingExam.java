@@ -12,7 +12,7 @@ public class ParkingExam {
 		int cnt = 0;
 		
 		while(cnt<100) {
-			System.out.print("ÀÔ·Â(Â÷·®¹øÈ£,ÁÖÂ÷½Ã°£(ºÐ)) : ");
+			System.out.print("ìž…ë ¥(ì°¨ëŸ‰ë²ˆí˜¸,ì£¼ì°¨ì‹œê°„(ë¶„)) : ");
 			String carNum = sc.next();
 			if(carNum.equals("0000")) break;
 			int parkTime = sc.nextInt();

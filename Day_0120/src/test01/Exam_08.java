@@ -11,7 +11,7 @@ class Parent{
 }
 
 class Child2 extends Parent{
-	void method2() { // ¿À¹ö¶óÀÌµù
+	void method2() { // ì˜¤ë²„ë¼ì´ë”©
 		System.out.println("Child_method2()");
 	}
 	void method3() {
@@ -35,8 +35,8 @@ public class Exam_08 {
 		
 		Parent pp = new Child2();
 		pp.method1();
-		pp.method2(); //ÁÖÀÇ! ¿À¹ö¶óÀÌµù µÈ ¸Ş¼­µå°¡ È£ÃâµÊ
-//		pp.method3(); //ÀÚ½ÄÀÌ ¸¸µç°Ç Á¢±Ù ºÒ°¡
+		pp.method2(); //ì£¼ì˜! ì˜¤ë²„ë¼ì´ë”© ëœ ë©”ì„œë“œê°€ í˜¸ì¶œë¨
+//		pp.method3(); //ìì‹ì´ ë§Œë“ ê±´ ì ‘ê·¼ ë¶ˆê°€
 		
 		
 	}

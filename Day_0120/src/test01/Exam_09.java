@@ -11,12 +11,12 @@ class BBBB extends AAAA{
 public class Exam_09 {
 	
 	static void test(AAAA parent) {
-		if(parent instanceof BBBB) { // instanceof : µ¿ÀÏÇÑ °´Ã¼ÀÎÁö ÆÇ´ÜÇÏ´Â ÇÔ¼ö
-		//  º¯¼ö                              Å¬·¡½º	
+		if(parent instanceof BBBB) { // instanceof : ë™ì¼í•œ ê°ì²´ì¸ì§€ íŒë‹¨í•˜ëŠ” í•¨ìˆ˜
+		//  ë³€ìˆ˜                              í´ë˜ìŠ¤	
 			BBBB bb = (BBBB)parent;
-			System.out.println("BBBB º¯È¯");
+			System.out.println("BBBB ë³€í™˜");
 		}else {
-			System.out.println("BBBB ºÒ°¡");
+			System.out.println("BBBB ë¶ˆê°€");
 		}
 	}
 

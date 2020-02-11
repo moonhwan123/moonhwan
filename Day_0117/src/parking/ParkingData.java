@@ -15,7 +15,7 @@ public class ParkingData {
 	
 	
 	void totalPrint(){
-		System.out.print("ÀÚµ¿Â÷¹øÈ£\tÁÖÂ÷½Ã°£\tÁÖÂ÷¿ä±İ\n");
+		System.out.print("ìë™ì°¨ë²ˆí˜¸\tì£¼ì°¨ì‹œê°„\tì£¼ì°¨ìš”ê¸ˆ\n");
 		for(int x = 0; x < cnt; x++) {
 			p1[x].print();
 		}
@@ -28,8 +28,8 @@ public class ParkingData {
 	}
 	
 	void today() {
-		System.out.println("[´çÀÏ °á»ê]");
-		System.out.print("ÃÑ ÁÖÂ÷´ë¼ö\t\tÃÑ ¿ä±İ\n");
+		System.out.println("[ë‹¹ì¼ ê²°ì‚°]");
+		System.out.print("ì´ ì£¼ì°¨ëŒ€ìˆ˜\t\tì´ ìš”ê¸ˆ\n");
 		System.out.print(cnt+"\t"+"\t"+todayFee());
 	}
 	

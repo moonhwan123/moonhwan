@@ -34,7 +34,7 @@ public class StudentData2 {
 	}
 	
 	void clsDataPrint() {
-		System.out.print("¹øÈ£\tÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\t¼®Â÷\n");
+		System.out.print("ë²ˆí˜¸\tì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \tì„ì°¨\n");
 		for(int x = 0; x < cnt; x++) {
 			arr[x].print();
 			

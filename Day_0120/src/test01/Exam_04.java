@@ -1,6 +1,6 @@
 package test01;
 
-//3¹ø¿¡¼­ ÇÑ°Å Å×½ºÆ®
+//3ë²ˆì—ì„œ í•œê±° í…ŒìŠ¤íŠ¸
 
 
 class Tv{
@@ -13,15 +13,15 @@ class Tv{
 	}
 	
 	void printTv() {
-		System.out.println("Tv ¸ðµ¨ : " + model);
-		System.out.println("Tv Å©±â : " + inch);
+		System.out.println("Tv ëª¨ë¸ : " + model);
+		System.out.println("Tv í¬ê¸° : " + inch);
 	}
 }
 
-final class DigitalTv extends Tv { // »ó¼Ó °ü°è¿¡ finalÀ» ºÙÀÌ¸é ´õÀÌ»ó »ó¼ÓÀ» Çã¶ô ÇÏÁö ¾Ê°Ú´Ù. ¶ó´Â ÀÇ¹Ì
+final class DigitalTv extends Tv { // ìƒì† ê´€ê³„ì— finalì„ ë¶™ì´ë©´ ë”ì´ìƒ ìƒì†ì„ í—ˆë½ í•˜ì§€ ì•Šê² ë‹¤. ë¼ëŠ” ì˜ë¯¸
 	
-	DigitalTv(){ // ¹«Á¶°Ç Á¶»óÅ¬·¡½ºÀÇ "µðÆúÆ® »ý¼ºÀÚ"°¡ ½ÇÇàµÊ
-		super("»ï¼º",16); // Á¶»óÅ¬·¡½ºÀÇ »ý¼ºÀÚ(Á¶»ó¿¡ µðÆúÆ®»ý¼ºÀÚ ¾øÀ¸¸é ÀÌ·±½ÄÀ¸·Î °­Á¦·Î È£Ãâ ÇØÁà¾ßµÊ)
+	DigitalTv(){ // ë¬´ì¡°ê±´ ì¡°ìƒí´ëž˜ìŠ¤ì˜ "ë””í´íŠ¸ ìƒì„±ìž"ê°€ ì‹¤í–‰ë¨
+		super("ì‚¼ì„±",16); // ì¡°ìƒí´ëž˜ìŠ¤ì˜ ìƒì„±ìž(ì¡°ìƒì— ë””í´íŠ¸ìƒì„±ìž ì—†ìœ¼ë©´ ì´ëŸ°ì‹ìœ¼ë¡œ ê°•ì œë¡œ í˜¸ì¶œ í•´ì¤˜ì•¼ë¨)
 	}
 	
 }

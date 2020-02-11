@@ -11,7 +11,7 @@ public class SawonExam {
 		int cnt = 0;
 		
 		while(cnt < 10) {
-			System.out.print("»ç¿ø Á¤º¸ : ");
+			System.out.print("ì‚¬ì› ì •ë³´ : ");
 			String buseo = sc.next();
 			if(buseo.equals("end")) break;
 			int sabun = sc.nextInt();

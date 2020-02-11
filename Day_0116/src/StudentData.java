@@ -1,19 +1,19 @@
 
 public class StudentData {
-	//¿©±â¼­ Å¬·¡½º ¹è¿­ ¸¸µé¾î¼­ Ã³¸®ÇØµµµÈ´Ù.
-	//±×¸®°í °°ÀÌ cntµµ ¹Þ¾Æ¼­ ¤¡¤¡ ±×·³ ¸Þ¼Òµå¿¡¼­ ¾È¹Þ¾ÆµµµÊ ¤·¤·
-	//±×·³ ´ç¿¬È÷ »ý¼ºÀÚ ·Î ¹Þ¾Æ Áà¾ß°ÚÁö?
-	//±×³É ³»°¡ÇÑ°Å Ã³·³ ¸Å°³º¯¼ö·Î ¹Þ¾Æµµ µÇ°í,
+	//ì—¬ê¸°ì„œ í´ëž˜ìŠ¤ ë°°ì—´ ë§Œë“¤ì–´ì„œ ì²˜ë¦¬í•´ë„ëœë‹¤.
+	//ê·¸ë¦¬ê³  ê°™ì´ cntë„ ë°›ì•„ì„œ ã„±ã„± ê·¸ëŸ¼ ë©”ì†Œë“œì—ì„œ ì•ˆë°›ì•„ë„ë¨ ã…‡ã…‡
+	//ê·¸ëŸ¼ ë‹¹ì—°ížˆ ìƒì„±ìž ë¡œ ë°›ì•„ ì¤˜ì•¼ê² ì§€?
+	//ê·¸ëƒ¥ ë‚´ê°€í•œê±° ì²˜ëŸ¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì•„ë„ ë˜ê³ ,
 	
 	
-	//±»ÀÌ ¸ÞÀÎ¿¡¼­ È£Ãâ ¾ÈÇØµµ µÇ°í, »ý¼ºÀÚ ³»¿¡¼­ ¸Þ¼­µå È£ÃâÇØ¼­ 
-	//¸ÞÀÎ¿¡¼­ Ãâ·Â ÇÏ´Â ¹æ¹ýµµ ÀÖÀ½.
+	//êµ³ì´ ë©”ì¸ì—ì„œ í˜¸ì¶œ ì•ˆí•´ë„ ë˜ê³ , ìƒì„±ìž ë‚´ì—ì„œ ë©”ì„œë“œ í˜¸ì¶œí•´ì„œ 
+	//ë©”ì¸ì—ì„œ ì¶œë ¥ í•˜ëŠ” ë°©ë²•ë„ ìžˆìŒ.
 	
 	
 
 	
 	
-	//¼®Â÷°è»ê
+	//ì„ì°¨ê³„ì‚°
 	void rank(Student[] cls1 ,int cnt) {
 		for(int x = 0; x < cnt ; x++) {
 			for(int y = 0; y < cnt; y++) {
@@ -24,7 +24,7 @@ public class StudentData {
 		}
 		
 	}
-	//¼®Â÷ ±âÁØ ¿À¸§ Â÷¼ø
+	//ì„ì°¨ ê¸°ì¤€ ì˜¤ë¦„ ì°¨ìˆœ
 	void sort(Student[] cls1 ,int cnt) {
 		for(int x = 0; x < cnt-1 ; x++) {
 			for(int y = x+1; y < cnt; y++) {
@@ -37,9 +37,9 @@ public class StudentData {
 		}
 	}
 	
-	//µ¥ÀÌÅÍ Ãâ·Â
+	//ë°ì´í„° ì¶œë ¥
 	void clsDataPrint(Student[] cls1,int cnt) {
-		System.out.print("¹øÈ£\tÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇÐ\tÃÑÁ¡\tÆò±Õ\t¼®Â÷\n");
+		System.out.print("ë²ˆí˜¸\tì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \tì„ì°¨\n");
 		for(int x = 0; x < cnt; x++) {
 			cls1[x].print();
 			

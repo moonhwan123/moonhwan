@@ -1,0 +1,13 @@
+select * from tab;
+select * from employee;
+
+select count(*) from EMPLOYEE;
+
+select * from employee;
+select * from EMPLOYEE where eno = 7788;
+select * from EMPLOYEE where ename = 'MARTIN';
+
+desc employee;  // employee테이블의 구조확인
+
+select * from employee;
+

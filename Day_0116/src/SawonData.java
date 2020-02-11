@@ -16,7 +16,7 @@ public class SawonData {
 	}
 	
 	void saPrint(Sawon sa[] ,int cnt) {
-		System.out.print("»ç¹ø\tÀÌ¸§\t±Ş¿©\t50,000¿ø\t10,000¿ø\t5,000¿ø\t1,000¿ø\t500¿ø\t100¿ø\t50¿ø\t10¿ø\t5¿ø\t1¿ø\n");
+		System.out.print("ì‚¬ë²ˆ\tì´ë¦„\tê¸‰ì—¬\t50,000ì›\t10,000ì›\t5,000ì›\t1,000ì›\t500ì›\t100ì›\t50ì›\t10ì›\t5ì›\t1ì›\n");
 		for(int x = 0; x < cnt; x++) {
 			sa[x].sPrint();
 		}
@@ -24,7 +24,7 @@ public class SawonData {
 	}
 	
 	private void addPrint(int cnt) {
-		System.out.print("ÇÕ°è\t\t");
+		System.out.print("í•©ê³„\t\t");
 		System.out.print(arrMoney[0]+"\t");
 		for(int x = 0 ; x < arr.length; x++){
 			System.out.print(arr[x]+"\t");

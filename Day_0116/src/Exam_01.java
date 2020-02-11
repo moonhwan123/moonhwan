@@ -1,28 +1,28 @@
 import java.util.Scanner;
 
 /*
-Å¬·¡½º ¹è¿­ Ã³¸® 
-Å°º¸µå ÀÔ·Â - ÃÖ´ë 10¸í
-ÀÔ·Â : ¹øÈ£  ÀÌ¸§  ±¹¾î  ¿µ¾î  ¼öÇĞ 
-¹øÈ£°¡ -99ÀÌ¸é Á¾·á
+í´ë˜ìŠ¤ ë°°ì—´ ì²˜ë¦¬ 
+í‚¤ë³´ë“œ ì…ë ¥ - ìµœëŒ€ 10ëª…
+ì…ë ¥ : ë²ˆí˜¸  ì´ë¦„  êµ­ì–´  ì˜ì–´  ìˆ˜í•™ 
+ë²ˆí˜¸ê°€ -99ì´ë©´ ì¢…ë£Œ
 
 
-Ãâ·Â (¼®Â÷¸¦ ±âÁØÀ¸·Î ¿À¸§ Â÷¼ø)
-¹øÈ£  ÀÌ¸§  ±¹¾î  ¿µ¾î  ¼öÇĞ  ÃÑÁ¡  Æò±Õ  ¼®Â÷ 
+ì¶œë ¥ (ì„ì°¨ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì˜¤ë¦„ ì°¨ìˆœ)
+ë²ˆí˜¸  ì´ë¦„  êµ­ì–´  ì˜ì–´  ìˆ˜í•™  ì´ì   í‰ê·   ì„ì°¨ 
 
-1. ÇĞ»ı Á¤º¸ Student Å¬·¡½º
-2. ÇĞ»ı Á¤º¸ Ã³¸® StudentData
-3. ÀÚ·á ÀÔ·Â main()
+1. í•™ìƒ ì •ë³´ Student í´ë˜ìŠ¤
+2. í•™ìƒ ì •ë³´ ì²˜ë¦¬ StudentData
+3. ìë£Œ ì…ë ¥ main()
  */
 public class Exam_01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		//ÀÔ·Â ÀÛ¾÷
+		//ì…ë ¥ ì‘ì—…
 		Student cls1[] = new Student[10];
 		int cnt = 0;
 		while(cnt<10) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ì…ë ¥ : ");
 			int bun = sc.nextInt();
 			if(bun == -99) break;
 			String name = sc.next();
@@ -36,11 +36,11 @@ public class Exam_01 {
 
 		StudentData sd = new StudentData();
 /*		
-		//¼®Â÷ , Á¤·Ä Ã³¸®
+		//ì„ì°¨ , ì •ë ¬ ì²˜ë¦¬
 		sd.rank(cls1, cnt);
 		sd.sort(cls1, cnt);
 		
-		// Ã³¸® ÈÄ µ¥ÀÌÅÍ Ãâ·Â
+		// ì²˜ë¦¬ í›„ ë°ì´í„° ì¶œë ¥
 		sd.clsDataPrint(cls1, cnt);
 */
 		

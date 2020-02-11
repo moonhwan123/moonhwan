@@ -8,7 +8,7 @@ public class SawonPayExam {
 		Sawon[] bu = new Sawon[10];
 		int cnt = 0;
 		while(cnt<10) {
-			System.out.print("»ç¿ø Á¤º¸[ID / µî±Þ(1~3) / ±Ù¹«½Ã°£(ÃÖ´ë 50½Ã°£ ±îÁö¸¸ ÀÎÁ¤ µË´Ï´Ù.)] >> ");
+			System.out.print("ì‚¬ì› ì •ë³´[ID / ë“±ê¸‰(1~3) / ê·¼ë¬´ì‹œê°„(ìµœëŒ€ 50ì‹œê°„ ê¹Œì§€ë§Œ ì¸ì • ë©ë‹ˆë‹¤.)] >> ");
 			String id = sc.next();
 			if(id.equals("end")) break;
 			int grade = sc.nextInt();

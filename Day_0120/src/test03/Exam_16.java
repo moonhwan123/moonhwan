@@ -19,8 +19,8 @@ public class Exam_16 {
 		c.test();
 		System.out.println("===============");
 		
-		//ÀÎÅÍÆäÀÌ½º ÀÍ¸í ±¸Çö
-		//ÀÍ¸í±¸Çö °´Ã¼
+		//ì¸í„°í˜ì´ìŠ¤ ìµëª… êµ¬í˜„
+		//ìµëª…êµ¬í˜„ ê°ì²´
 		Car cc = new Car() {
 			public void test() {
 				System.out.println("Car Call");

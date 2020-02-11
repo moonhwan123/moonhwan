@@ -40,18 +40,18 @@ public class SawonPay {
 	}
 	
 	void totalPrint() {
-		System.out.print("¾ÆÀÌµğ\tµî±Ş\t½Ã±Ş\t±Ù¹«½Ã°£\tÁÖ°£±Ş¿©\n");
+		System.out.print("ì•„ì´ë””\të“±ê¸‰\tì‹œê¸‰\tê·¼ë¬´ì‹œê°„\tì£¼ê°„ê¸‰ì—¬\n");
 		for(int x = 0 ; x < cnt; x++) {
 			bu[x].sawonPrint();
 		}
-		System.out.print("ÇÕ°è\t\t\t");
+		System.out.print("í•©ê³„\t\t\t");
 		System.out.print(timeTotal()+"\t"+weekPayTotal()+"\n");
 	}
 	
 	void topPrint() {
-		System.out.println("[ÁÖ°£ ±Ş¿©¸¦ °¡Àå ¸¹ÀÌ ¹ŞÀº »ç¿ø]");
+		System.out.println("[ì£¼ê°„ ê¸‰ì—¬ë¥¼ ê°€ì¥ ë§ì´ ë°›ì€ ì‚¬ì›]");
 		topWeekPay();
-		System.out.print("¾ÆÀÌµğ\tÁÖ°£±Ş¿©\n");
+		System.out.print("ì•„ì´ë””\tì£¼ê°„ê¸‰ì—¬\n");
 		System.out.println(bu[0].id+"\t"+bu[0].weekpay);
 	}
 	

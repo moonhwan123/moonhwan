@@ -1,0 +1,2 @@
+select count(*) from EMPLOYEE where dno = 30;
+select * from EMPLOYEE where dno = 30;

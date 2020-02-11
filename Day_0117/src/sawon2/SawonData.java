@@ -17,8 +17,8 @@ public class SawonData {
 	
 	void totalPrint() {
 		total=sa[0].getPay();
-		System.out.println("** ±Ş¿© °ü¸® ÇÁ·Î±×·¥ **");
-		System.out.print("ºÎ¼­¸í\t»ç¹ø\tÀÌ¸§\t±Ş¿©\n");
+		System.out.println("** ê¸‰ì—¬ ê´€ë¦¬ í”„ë¡œê·¸ë¨ **");
+		System.out.print("ë¶€ì„œëª…\tì‚¬ë²ˆ\tì´ë¦„\tê¸‰ì—¬\n");
 		System.out.println("-----------------------------");
 		
 		System.out.print(sa[0].getBuseo()+"\t"+sa[0].getSabun()+"\t");
@@ -34,7 +34,7 @@ public class SawonData {
 				total+=sa[x].getPay();
 				
 			}else {
-				System.out.println("ÇÕ°è\t\t\t"+total);
+				System.out.println("í•©ê³„\t\t\t"+total);
 				total=sa[x].getPay();
 				System.out.print(sa[x].getBuseo()+"\t"+sa[x].getSabun()+"\t");
 				System.out.print(sa[x].getName()+"\t"+sa[x].getPay()+"\n");
@@ -42,8 +42,8 @@ public class SawonData {
 			}	
 			payTotal +=  sa[x].getPay();
 		}
-		System.out.println("ÇÕ°è\t\t\t"+total);
-		System.out.println("ÃÑ ÇÕ°è\t\t\t"+(payTotal+sa[0].getPay()));
+		System.out.println("í•©ê³„\t\t\t"+total);
+		System.out.println("ì´ í•©ê³„\t\t\t"+(payTotal+sa[0].getPay()));
 		
 		
 

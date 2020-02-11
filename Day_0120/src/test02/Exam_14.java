@@ -1,27 +1,27 @@
 package test02;
 
 interface Control{
-	int MAX_VOLUME=10; // static final »ı·«
+	int MAX_VOLUME=10; // static final ìƒëµ
 	int MIN_VOLUME=0;
 	
 	void turnOn();
 	void turnOff();
 	void setVolume(int volume);
 	
-	//µğÆúÆ® ¸Ş¼Òµå (jdk1.8ºÎÅÍ °¡´É)
+	//ë””í´íŠ¸ ë©”ì†Œë“œ (jdk1.8ë¶€í„° ê°€ëŠ¥)
 	default void setMute(boolean mute) {
 		if(mute) {
-			System.out.println("¹«À½Ã³¸®");
+			System.out.println("ë¬´ìŒì²˜ë¦¬");
 		}else {
-			System.out.println("¹«À½ÇØÁ¦");
+			System.out.println("ë¬´ìŒí•´ì œ");
 		}
 	}
-	//½ºÅ×Æ½ ¸Ş¼Òµå
+	//ìŠ¤í…Œí‹± ë©”ì†Œë“œ
 	static void changeBattery() {
-		System.out.println("°ÇÀüÁö ±³Ã¼");
+		System.out.println("ê±´ì „ì§€ êµì²´");
 	}
-	//ÀÎÅÍÆäÀÌ½º ±¸¼º¿ä¼Ò
-	//»ó¼ö, Ãß»ó¸Ş¼Òµå, µğÆúÆ®¸Ş¼Òµå, ½ºÅ×Æ½ ¸Ş¼Òµå
+	//ì¸í„°í˜ì´ìŠ¤ êµ¬ì„±ìš”ì†Œ
+	//ìƒìˆ˜, ì¶”ìƒë©”ì†Œë“œ, ë””í´íŠ¸ë©”ì†Œë“œ, ìŠ¤í…Œí‹± ë©”ì†Œë“œ
 }
 
 class Tv implements Control {
@@ -45,7 +45,7 @@ class Tv implements Control {
 		}else if (volume < Control.MIN_VOLUME) {
 			this.volume = Control.MIN_VOLUME;
 		}
-		System.out.println("ÇöÀç TV º¼·ıÀº "+ this.volume+ "ÀÔ´Ï´Ù.");
+		System.out.println("í˜„ì¬ TV ë³¼ë¥¨ì€ "+ this.volume+ "ì…ë‹ˆë‹¤.");
 	}
 	
 	

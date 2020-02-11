@@ -1,20 +1,20 @@
 /*
-[»ó¼ö Á¤ÀÇ]
-¸®ÅÍ·²(10,'a',3.13, "aa")
-final »ç¿ë
+[ìƒìˆ˜ ì •ì˜]
+ë¦¬í„°ëŸ´(10,'a',3.13, "aa")
+final ì‚¬ìš©
 
-»ó¼ö ¸¸µå´Â keyword -> final
+ìƒìˆ˜ ë§Œë“œëŠ” keyword -> final
  */
 
 class AA{
 	final double PI = 3.14;
-	final static int MAX = 100; // ´ë¹®ÀÚ »ç¿ë
+	final static int MAX = 100; // ëŒ€ë¬¸ì ì‚¬ìš©
 }
 public class Exam_03 {
 	public static void main(String[] args) {
 		AA a = new AA();
 		int b = 3;
-//		a.PI = 314; finalÀÌ¶ó ¸ø¹Ù²Ş
+//		a.PI = 314; finalì´ë¼ ëª»ë°”ê¿ˆ
 		double d = b*a.PI;
 	}
 }

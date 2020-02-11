@@ -16,12 +16,12 @@ public abstract class Student {
 	}
 	
 	public void title() {
-		System.out.println("¹øÈ£\tÀÌ¸§\tÃÑÁ¡\tÆò±Õ");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\tì´ì \tí‰ê· ");
 		System.out.println(bun+"\t"+name+"\t"+tot+"\t"+ave+"\t");
 	}
 	
-	public abstract void account(); // ÃÑÁ¡, Æò±Õ(¼Ò¼öÁ¡ 2ÀÚ¸®)À» °è»ê ÈÄ Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
-	public abstract void scoreMax(); // Á¡¼ö ÃÖ´ë,ÃÖ¼Ò¸¦ ±¸ÇÏ¿© Ãâ·ÂÇÏ´Â ¸Ş¼Òµå
-	public abstract void scoreSelection(); // ¼±ÅÃÁ¤·ÄÀ» ÀÌ¿ëÇÏ¿© Á¡¼ö ¿À¸§Â÷¼ø
-	public abstract void scoreBubble(); // °ÅÇ°Á¤·ÄÀ» ÀÌ¿ëÇÏ¿© Á¡¼ö ³»¸²Â÷¼ø
+	public abstract void account(); // ì´ì , í‰ê· (ì†Œìˆ˜ì  2ìë¦¬)ì„ ê³„ì‚° í›„ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
+	public abstract void scoreMax(); // ì ìˆ˜ ìµœëŒ€,ìµœì†Œë¥¼ êµ¬í•˜ì—¬ ì¶œë ¥í•˜ëŠ” ë©”ì†Œë“œ
+	public abstract void scoreSelection(); // ì„ íƒì •ë ¬ì„ ì´ìš©í•˜ì—¬ ì ìˆ˜ ì˜¤ë¦„ì°¨ìˆœ
+	public abstract void scoreBubble(); // ê±°í’ˆì •ë ¬ì„ ì´ìš©í•˜ì—¬ ì ìˆ˜ ë‚´ë¦¼ì°¨ìˆœ
 }

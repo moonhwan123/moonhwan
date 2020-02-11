@@ -34,7 +34,7 @@ public class Sawon {
 				don=don/2;
 				sw=true;
 			}
-		}//for¹®³¡
+		}//forë¬¸ë
 	}
 	
 	

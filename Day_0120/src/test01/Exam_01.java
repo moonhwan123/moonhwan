@@ -1,11 +1,11 @@
 package test01;
 /*
-[»ó¼Ó]
-»ó¼ÓÀ» ¹Þ´Â ¼ø°£ ´Ù¸¥ °Å »ó¼Ó ¸ø¹ÞÀ½(´ÙÁß »ó¼ÓÀº ¿øÄ¢ÀûÀ¸·Î ºÒ°¡)
-Private´Â »ó¼ÓÀÌ ºÒ°¡
-Å¬·¡½º¿Í Å¬·¡½º °£ÀÇ "»ó¼Ó"
-<<OOO>> : ÀÎÅÍÆäÀÌ½º
-ÀÎÅÍÆäÀÌ½º¿Í Å¬·¡½º »çÀÌ¿¡´Â "±¸Çö" ÇÑ´Ù. ¶ó°í ÇÔ
+[ìƒì†]
+ìƒì†ì„ ë°›ëŠ” ìˆœê°„ ë‹¤ë¥¸ ê±° ìƒì† ëª»ë°›ìŒ(ë‹¤ì¤‘ ìƒì†ì€ ì›ì¹™ì ìœ¼ë¡œ ë¶ˆê°€)
+PrivateëŠ” ìƒì†ì´ ë¶ˆê°€
+í´ëž˜ìŠ¤ì™€ í´ëž˜ìŠ¤ ê°„ì˜ "ìƒì†"
+<<OOO>> : ì¸í„°íŽ˜ì´ìŠ¤
+ì¸í„°íŽ˜ì´ìŠ¤ì™€ í´ëž˜ìŠ¤ ì‚¬ì´ì—ëŠ” "êµ¬í˜„" í•œë‹¤. ë¼ê³  í•¨
  */
 
 class AA{
@@ -22,7 +22,7 @@ class AA{
 }
 
 class BB extends AA{
-	// privateÁ¦¿Ü ÇÏ°í »ó¼Ó ¹ÞÀ½
+	// privateì œì™¸ í•˜ê³  ìƒì† ë°›ìŒ
 	int d = 100;
 	
 	void test() {

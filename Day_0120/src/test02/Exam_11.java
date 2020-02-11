@@ -4,23 +4,23 @@ abstract class Animal{
 	String kind;
 	
 	void test() {
-		System.out.println("¿îµ¿À» ÇÕ´Ï´Ù.");
+		System.out.println("ìš´ë™ì„ í•©ë‹ˆë‹¤.");
 	}
 	
 	abstract void sound();
 }
 
 class Dog extends Animal{
-	@Override // @ : ¾Ö³ÊÅ×ÀÌ¼Ç
+	@Override // @ : ì• ë„ˆí…Œì´ì…˜
 	void sound() {
-		System.out.println("¸Û¸Û");
+		System.out.println("ë©ë©");
 	}
 }
 
 class Cat extends Animal{
 	@Override
 	void sound() {
-		System.out.println("¾ß¿Ë");
+		System.out.println("ì•¼ì˜¹");
 		
 	}
 }
@@ -50,3 +50,4 @@ public class Exam_11 {
 	
 	
 }
+

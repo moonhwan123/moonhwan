@@ -15,8 +15,8 @@ public class StudentHak extends Student {
 	public void account() {
 
 		
-		System.out.println("ÃÑÁ¡ : "+tot);
-		System.out.println("Æò±Õ : "+ave);
+		System.out.println("ì´ì  : "+tot);
+		System.out.println("í‰ê·  : "+ave);
 	}
 	@Override
 	public void scoreBubble() {
@@ -30,7 +30,7 @@ public class StudentHak extends Student {
 				}
 			}
 		}
-		System.out.println("[¹öºíÁ¤·Ä]");
+		System.out.println("[ë²„ë¸”ì •ë ¬]");
 		for(int i = 0; i < jum.length; i++ ) {
 			System.out.print(jum[i]+" ");
 		}
@@ -45,8 +45,8 @@ public class StudentHak extends Student {
 			if(Max<jum[i]) Max = jum[i];
 			if(Min>jum[i]) Min = jum[i];
 		}
-		System.out.println("ÃÖ´ë Á¡¼ö : " + Max);
-		System.out.println("ÃÖ¼Ò Á¡¼ö : " + Min);
+		System.out.println("ìµœëŒ€ ì ìˆ˜ : " + Max);
+		System.out.println("ìµœì†Œ ì ìˆ˜ : " + Min);
 		
 	}
 	@Override
@@ -61,7 +61,7 @@ public class StudentHak extends Student {
 				}
 			}
 		}
-		System.out.println("[¼±ÅÃÁ¤·Ä]");
+		System.out.println("[ì„ íƒì •ë ¬]");
 		for(int i = 0; i < jum.length; i++ ) {
 			System.out.print(jum[i]+" ");
 		}
