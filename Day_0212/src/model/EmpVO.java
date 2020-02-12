@@ -1,4 +1,4 @@
-package oracle.dto;
+package model;
 
 //VO = value object
 public class EmpVO {
