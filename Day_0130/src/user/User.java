@@ -22,7 +22,7 @@ public class User {
 	}
 	
 	
-	//equals¸Ş¼Òµå ¿À¹ö¶óÀÌµù
+	//equalsë©”ì†Œë“œ ì˜¤ë²„ë¼ì´ë”©
 	@Override
 	public boolean equals(Object obj) {
 		

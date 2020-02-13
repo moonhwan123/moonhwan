@@ -1,9 +1,9 @@
 package bytestream;
 
 /*
-[1Byte ÀÔÃâ·Â]
+[1Byte ì…ì¶œë ¥]
 
-1. ÄÜ¼Ö Ãâ·Â
+1. ì½˜ì†” ì¶œë ¥
 	- FileOutputStream
 	- BufferedOutputStream
 	- DataOutputStream
@@ -24,8 +24,8 @@ public class Exam_01 {
 			FileOutputStream fos = new FileOutputStream(FileDescriptor.out);
 			FileOutputStream fosf = new FileOutputStream(file);
 			byte[] data = {66,68,70,72,(byte)'!'};
-			fos.write(data); // ÄÜ¼Ö·Î Ãâ·Â
-			fosf.write(data); // ÆÄÀÏ·Î Ãâ·Â
+			fos.write(data); // ì½˜ì†”ë¡œ ì¶œë ¥
+			fosf.write(data); // íŒŒì¼ë¡œ ì¶œë ¥
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Set;
 
 /*
-[Set ÀÎÅÍÆäÀÌ½º] : ¼ø¼­°¡ ¾ø°í, Áßº¹µµ ºÒ°¡
+[Set ì¸í„°í˜ì´ìŠ¤] : ìˆœì„œê°€ ì—†ê³ , ì¤‘ë³µë„ ë¶ˆê°€
 
-- ±¸ÇöµÈ Å¬·¡½º : HashSet
+- êµ¬í˜„ëœ í´ë˜ìŠ¤ : HashSet
 
 
  */
@@ -21,11 +21,11 @@ public class Exam_02 {
 		set.add("C");
 		set.add("C++");
 		set.add("TomCat");
-		set.add("Java"); // Java°¡ µÎ°³ Áö¸¸ ÇÏ³ª¹Û¿¡ Ãâ·Â ¾ÈµÊ
+		set.add("Java"); // Javaê°€ ë‘ê°œ ì§€ë§Œ í•˜ë‚˜ë°–ì— ì¶œë ¥ ì•ˆë¨
 		set.add("Python");
 		
 		System.out.println(set);
-		System.out.println(set.size()); // Áßº¹ÇÏ³ª°¡ Á¦°Å µÇ¾î¼­ 6ÀÌ¾Æ´Ñ 5°¡ ÂïÈù´Ù.
+		System.out.println(set.size()); // ì¤‘ë³µí•˜ë‚˜ê°€ ì œê±° ë˜ì–´ì„œ 6ì´ì•„ë‹Œ 5ê°€ ì°íŒë‹¤.
 		
 		
 		List list = new ArrayList();

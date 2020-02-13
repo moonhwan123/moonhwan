@@ -12,7 +12,7 @@ public class sam_05 {
 			y*=-1;
 			i++;
 		}
-		System.out.println("s = +1-2+3- .... -10 ±îÁöÀÇ ÇÕ°è´Â "+sum+" ÀÔ´Ï´Ù.");
+		System.out.println("s = +1-2+3- .... -10 ê¹Œì§€ì˜ í•©ê³„ëŠ” "+sum+" ì…ë‹ˆë‹¤.");
 		
 	}
 }

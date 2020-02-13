@@ -3,7 +3,7 @@ package lotto;
 import java.util.*;
 
 /*
-[SetÀ» ÀÌ¿ëÇÑ ·Î¶Ç ¹øÈ£ ¸¸µé±â] 
+[Setì„ ì´ìš©í•œ ë¡œë˜ ë²ˆí˜¸ ë§Œë“¤ê¸°] 
  */
 
 public class SetLotto_01 {
@@ -11,22 +11,22 @@ public class SetLotto_01 {
 
 		Set set = new HashSet();
 		
-		// for¹® ÀÌ¿ë
+		// forë¬¸ ì´ìš©
 		for(int x = 0; set.size() < 6; x++) {
 			int lotto = (int)(Math.random()*45+1);
 			set.add(lotto);
 		}
 		
-		// while¹® ÀÌ¿ë (Double WrapperÅ¬·¡½º »ç¿ë)
+		// whileë¬¸ ì´ìš© (Double Wrapperí´ë˜ìŠ¤ ì‚¬ìš©)
 		while(set.size()<6) {
 			Double d = Math.random()*45+1;
 			set.add(d.intValue());
 		}
 		
-		// 1Â÷ Ãâ·Â
+		// 1ì°¨ ì¶œë ¥
 		System.out.println(set);
 		
-		// Á¤·Ä ÈÄ Ãâ·Â
+		// ì •ë ¬ í›„ ì¶œë ¥
 		List list = new ArrayList(set);
 		Collections.sort(list);
 		System.out.println(list);

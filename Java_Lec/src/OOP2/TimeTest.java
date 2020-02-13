@@ -1,35 +1,35 @@
 package OOP2;
 /*
- Á¢±Ù Á¦¾îÀÚ(Access Modifier)
- 	-¸â¹ö º¯¼ö ¶Ç´Â Å¬·¡½º »ç¿ë
- 	-¿ÜºÎ·ÎºÎÅÍÀÇ Á¢±ÙÀ» Á¦ÇÑ
- 	-Å¬·¡½º,¸â¹ö º¯¼ö,¸Þ¼­µå,»ý¼ºÀÚ
+ ì ‘ê·¼ ì œì–´ìž(Access Modifier)
+ 	-ë©¤ë²„ ë³€ìˆ˜ ë˜ëŠ” í´ëž˜ìŠ¤ ì‚¬ìš©
+ 	-ì™¸ë¶€ë¡œë¶€í„°ì˜ ì ‘ê·¼ì„ ì œí•œ
+ 	-í´ëž˜ìŠ¤,ë©¤ë²„ ë³€ìˆ˜,ë©”ì„œë“œ,ìƒì„±ìž
  	
- 	private - °°Àº Å¬·¡½º ³»¿¡¼­¸¸ Á¢±Ù
- 	default - °°Àº ÆÐÅ°Áö ³»¿¡¼­¸¸ Á¢±Ù °¡´É
- 	protected - °°Àº ÆÐÅ°Áö ³»¿¡¼­¸¸ Á¢±Ù °¡´É,´Ù¸¥ ÆÐÅ°ÁöÀÇ ÀÚ¼Õ Å¬·¡½º¿¡¼­¸¸ Á¢±Ù °¡´É
- 	public - Á¢±Ù Á¦ÇÑ X
+ 	private - ê°™ì€ í´ëž˜ìŠ¤ ë‚´ì—ì„œë§Œ ì ‘ê·¼
+ 	default - ê°™ì€ íŒ¨í‚¤ì§€ ë‚´ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥
+ 	protected - ê°™ì€ íŒ¨í‚¤ì§€ ë‚´ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥,ë‹¤ë¥¸ íŒ¨í‚¤ì§€ì˜ ìžì† í´ëž˜ìŠ¤ì—ì„œë§Œ ì ‘ê·¼ ê°€ëŠ¥
+ 	public - ì ‘ê·¼ ì œí•œ X
  	
- 	Á¦¾îÀÚ	°°Àº Å¬·¡½º		°°Àº ÆÐÅ°Áö		ÀÚ¼Õ Å¬·¡½º		 ÀüÃ¼
+ 	ì œì–´ìž	ê°™ì€ í´ëž˜ìŠ¤		ê°™ì€ íŒ¨í‚¤ì§€		ìžì† í´ëž˜ìŠ¤		 ì „ì²´
  	public		O			O			O		  O
  	protectd	O			O			O
  	default		O			O
  	private		O
  	
  	
- 	Á¢±Ù Á¦¾îÀÚ »ç¿ëÀÌÀ¯ ( Ä¸½¶È­ )
- 		-¿ÜºÎ·ÎºÎÅÍ µ¥ÀÌÅÍ º¸È£
- 		-¿ÜºÎ¿¡´Â ºÒÇÊ¿ä,³»ºÎÀûÀ¸·Î »ç¿ë µÇ´Â ºÎºÐÀ» °¨Ãß±â À§ÇØ
+ 	ì ‘ê·¼ ì œì–´ìž ì‚¬ìš©ì´ìœ  ( ìº¡ìŠí™” )
+ 		-ì™¸ë¶€ë¡œë¶€í„° ë°ì´í„° ë³´í˜¸
+ 		-ì™¸ë¶€ì—ëŠ” ë¶ˆí•„ìš”,ë‚´ë¶€ì ìœ¼ë¡œ ì‚¬ìš© ë˜ëŠ” ë¶€ë¶„ì„ ê°ì¶”ê¸° ìœ„í•´
  		
- 	Á¦¾îÀÚÀÇ Á¶ÇÕ
- 		Å¬·¡½º - public,(default),final,abstract
- 		¸Þ¼­µå - ¸ðµç Á¢±ÙÁ¦¾îÀÚ,final,abstract,static
- 		¸â¹öº¯¼ö - ¸ðµç Á¢±ÙÁ¦¾îÀÚ,final,static
- 		Áö¿ªº¯¼ö - final
+ 	ì œì–´ìžì˜ ì¡°í•©
+ 		í´ëž˜ìŠ¤ - public,(default),final,abstract
+ 		ë©”ì„œë“œ - ëª¨ë“  ì ‘ê·¼ì œì–´ìž,final,abstract,static
+ 		ë©¤ë²„ë³€ìˆ˜ - ëª¨ë“  ì ‘ê·¼ì œì–´ìž,final,static
+ 		ì§€ì—­ë³€ìˆ˜ - final
  		
- 		¸Þ¼­µå¿¡ private¿Í finalÀ» °°ÀÌ »ç¿ë X
- 		 	-Á¢±ÙÁ¦¾î°¡ privateÀÎ ¸Þ¼­µå´Â ¿À¹ö¶óÀÌµù ºÒ°¡
- 		 	 µÑ Áß ÇÏ³ª¸¸ ÃæºÐ
+ 		ë©”ì„œë“œì— privateì™€ finalì„ ê°™ì´ ì‚¬ìš© X
+ 		 	-ì ‘ê·¼ì œì–´ê°€ privateì¸ ë©”ì„œë“œëŠ” ì˜¤ë²„ë¼ì´ë”© ë¶ˆê°€
+ 		 	 ë‘˜ ì¤‘ í•˜ë‚˜ë§Œ ì¶©ë¶„
  */
 public class TimeTest {
 	public static void main(String[] args) {

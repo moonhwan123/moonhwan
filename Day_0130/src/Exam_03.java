@@ -1,13 +1,13 @@
 import java.util.regex.Pattern;
 
 /*
-[ÀÌ¸ŞÀÏ À¯È¿¼º °Ë»ç]
+[ì´ë©”ì¼ ìœ íš¨ì„± ê²€ì‚¬]
 1) abc@abc.com
 2) abc@abc.co.kr
 
-pattern) \w+@\w+.\w+ -> ÀÌ °æ¿ì¿¡´Â 1)¹øÀº Ä¿¹ö°¡ µÈ´Ù.
-		 \w+@\w+.\w+(\.\w+)? -> °ıÈ£¾ÈÀÇ °ÍÀº ÀÖ¾îµµ µÇ°í ¾ø¾îµµ µÈ´Ù. (±×·¡¼­ °ıÈ£ÀüÃ¼¿¡ ¹°À½Ç¥)
-		  						Á¡¾ÕÀÇ ¿ª½½·¡½¬°¡ ¾øÀ¸¸é Á¡ÀÌ ¹«Á¶°Ç ÀÖ¾î¾ß µÈ´Ù´Â Á¶°ÇÀÌ µÈ´Ù.
+pattern) \w+@\w+.\w+ -> ì´ ê²½ìš°ì—ëŠ” 1)ë²ˆì€ ì»¤ë²„ê°€ ëœë‹¤.
+		 \w+@\w+.\w+(\.\w+)? -> ê´„í˜¸ì•ˆì˜ ê²ƒì€ ìˆì–´ë„ ë˜ê³  ì—†ì–´ë„ ëœë‹¤. (ê·¸ë˜ì„œ ê´„í˜¸ì „ì²´ì— ë¬¼ìŒí‘œ)
+		  						ì ì•ì˜ ì—­ìŠ¬ë˜ì‰¬ê°€ ì—†ìœ¼ë©´ ì ì´ ë¬´ì¡°ê±´ ìˆì–´ì•¼ ëœë‹¤ëŠ” ì¡°ê±´ì´ ëœë‹¤.
 
  */
 
@@ -23,16 +23,17 @@ public class Exam_03 {
 		boolean bool2 = Pattern.matches(pat2, email2);
 		
 		if(bool1) {
-			System.out.println("Á¤»ó");
+			System.out.println("ì •ìƒ");
 		}else {
-			System.out.println("¿À·ù");
+			System.out.println("ì˜¤ë¥˜");
 		}
 		if(bool2) {
-			System.out.println("Á¤»ó");
+			System.out.println("ì •ìƒ");
 		}else {
-			System.out.println("¿À·ù");
+			System.out.println("ì˜¤ë¥˜");
 		}
 		
 		
 	}
 }
+

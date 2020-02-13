@@ -2,25 +2,25 @@ package OOP2;
 
 class Animal{
 	void breath() {
-		System.out.println("¼û½¬±â");
+		System.out.println("ìˆ¨ì‰¬ê¸°");
 	}
 }
 
 class Lion extends Animal{
 	public String toString() {
-		return "»çÀÚ";
+		return "ì‚¬ì";
 	}
 }
 
 class Rabbit extends Animal{
 	public String toString() {
-		return "Åä³¢";
+		return "í† ë¼";
 	}
 }
 
 class Monkey extends Animal{
 	public String toString() {
-		return "¿ø¼şÀÌ";
+		return "ì›ìˆ­ì´";
 	}
 }
 
@@ -28,7 +28,7 @@ class ZooKeeper{
 	
 	
 	void feed(Animal animal) {
-		System.out.println(animal+ " ¸ÔÀÌ ÁÖ±â");
+		System.out.println(animal+ " ë¨¹ì´ ì£¼ê¸°");
 	}
 }
 

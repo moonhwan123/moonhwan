@@ -19,7 +19,7 @@ public class ExceptionEx7 {
 			methodA();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			System.out.println("¸ŞÀÎ¿¡¼­ Ã³¸®");
+			System.out.println("ë©”ì¸ì—ì„œ ì²˜ë¦¬");
 		}
 		
 		

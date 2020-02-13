@@ -20,17 +20,17 @@ public class cartest {
 		k7.geartpye = "auto";
 		k7.door = 4;
 		
-		System.out.println("k5ÀÇ »ö»ó : "+k5.color);
-		System.out.println("k5ÀÇ º¯¼Ó±â Á¾·ù : "+k5.geartpye);
-		System.out.println("k5ÀÇ ¹® °¹¼ö : "+k5.door);
+		System.out.println("k5ì˜ ìƒ‰ìƒ : "+k5.color);
+		System.out.println("k5ì˜ ë³€ì†ê¸° ì¢…ë¥˜ : "+k5.geartpye);
+		System.out.println("k5ì˜ ë¬¸ ê°¯ìˆ˜ : "+k5.door);
 		
-		System.out.println("k3ÀÇ »ö»ó : "+k3.color);
-		System.out.println("k3ÀÇ º¯¼Ó±â Á¾·ù : "+k3.geartpye);
-		System.out.println("k3ÀÇ ¹® °¹¼ö : "+k3.door);
+		System.out.println("k3ì˜ ìƒ‰ìƒ : "+k3.color);
+		System.out.println("k3ì˜ ë³€ì†ê¸° ì¢…ë¥˜ : "+k3.geartpye);
+		System.out.println("k3ì˜ ë¬¸ ê°¯ìˆ˜ : "+k3.door);
 		
-		System.out.println("k7ÀÇ »ö»ó : "+k7.color);
-		System.out.println("k7ÀÇ º¯¼Ó±â Á¾·ù : "+k7.geartpye);
-		System.out.println("k7ÀÇ ¹® °¹¼ö : "+k7.door);
+		System.out.println("k7ì˜ ìƒ‰ìƒ : "+k7.color);
+		System.out.println("k7ì˜ ë³€ì†ê¸° ì¢…ë¥˜ : "+k7.geartpye);
+		System.out.println("k7ì˜ ë¬¸ ê°¯ìˆ˜ : "+k7.door);
 		*/
 		
 		
@@ -38,9 +38,9 @@ public class cartest {
 		Car k5 = new Car("blue","manual",4);
 		Car k9 = new Car("green","auto",4);
 		
-		System.out.println("k5ÀÇ »ö»ó : "+k5.color);
-		System.out.println("k5ÀÇ º¯¼Ó±â Á¾·ù : "+k5.geartpye);
-		System.out.println("k5ÀÇ ¹® °¹¼ö : "+k5.door);
+		System.out.println("k5ì˜ ìƒ‰ìƒ : "+k5.color);
+		System.out.println("k5ì˜ ë³€ì†ê¸° ì¢…ë¥˜ : "+k5.geartpye);
+		System.out.println("k5ì˜ ë¬¸ ê°¯ìˆ˜ : "+k5.door);
 		
 		
 		
@@ -51,9 +51,9 @@ public class cartest {
 }
 
 class Car{
-	String color; //»ö»ó
-	String geartpye; //º¯¼ÓÁ¾·ù
-	int door; // ¹®ÀÇ °¹¼ö
+	String color; //ìƒ‰ìƒ
+	String geartpye; //ë³€ì†ì¢…ë¥˜
+	int door; // ë¬¸ì˜ ê°¯ìˆ˜
 	
 	Car(){
 		

@@ -11,7 +11,7 @@ public class MemberExam {
 		int cnt = 0;
 
 		while (cnt < 10) {
-			System.out.print("ÀÚ·á ÀÔ·Â " + (cnt + 1) + " : ");
+			System.out.print("ìžë£Œ ìž…ë ¥ " + (cnt + 1) + " : ");
 			String str = sc.nextLine(); // String[] str = sc.nextLine().split(",");
 
 			if (str.equalsIgnoreCase("end"))

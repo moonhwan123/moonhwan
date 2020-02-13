@@ -7,7 +7,7 @@ public class Exam_06 {
 		Scanner sc = new Scanner(System.in);
 		
 		
-		System.out.print("ÀÔ·Â : ");
+		System.out.print("ìž…ë ¥ : ");
 		String str = sc.nextLine();
 		System.out.println(str);
 		

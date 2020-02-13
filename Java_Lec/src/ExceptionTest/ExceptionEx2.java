@@ -13,7 +13,7 @@ public class ExceptionEx2 {
 				result = number/(int)(Math.random()*10);
 				System.out.println(result);
 			} catch (Exception e) {
-				System.out.println("0À¸·Î´Â ³ª´­ ¼ö ¾ø½À´Ï´Ù.");
+				System.out.println("0ìœ¼ë¡œëŠ” ë‚˜ëˆŒ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 				//e.printStackTrace();
 			}
 		}

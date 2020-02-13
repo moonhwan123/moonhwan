@@ -5,10 +5,10 @@ import java.util.Iterator;
 
 /*
 [Iterator]
-	-ÄÃ·º¼Ç¿¡ ÀúÀåµÈ ¿ä¼ÒµéÀ» ÀÐ¾î¿À´Â ¹æ¹ýÀÇ Ç¥ÁØÈ­
-	-ÀúÀåµÈ °¢ ¿ä¼Ò¿¡ Á¢±ÙÇÏ´Â ±â´ÉÀ» °¡Áø IteratorÀÎÅÍÆäÀÌ½º Á¤ÀÇ
-	-Collection ÀÎÅÍÆäÀÌ½º¿¡´Â Iterator¸¦ ¹ÝÈ¯ÇÏ´Â iterator()À» Á¤ÀÇ
-	-Collection¿¡ Á¤ÀÇµÈ ¸Þ¼­µå ÀÌ¹Ç·Î List¿Í Set¿¡µµ Æ÷ÇÔ
+	-ì»¬ë ‰ì…˜ì— ì €ìž¥ëœ ìš”ì†Œë“¤ì„ ì½ì–´ì˜¤ëŠ” ë°©ë²•ì˜ í‘œì¤€í™”
+	-ì €ìž¥ëœ ê° ìš”ì†Œì— ì ‘ê·¼í•˜ëŠ” ê¸°ëŠ¥ì„ ê°€ì§„ Iteratorì¸í„°íŽ˜ì´ìŠ¤ ì •ì˜
+	-Collection ì¸í„°íŽ˜ì´ìŠ¤ì—ëŠ” Iteratorë¥¼ ë°˜í™˜í•˜ëŠ” iterator()ì„ ì •ì˜
+	-Collectionì— ì •ì˜ëœ ë©”ì„œë“œ ì´ë¯€ë¡œ Listì™€ Setì—ë„ í¬í•¨
  */
 
 public class IteratorEx1 {

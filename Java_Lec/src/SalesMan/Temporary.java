@@ -36,7 +36,7 @@ public class Temporary extends Employee {
 	@Override
 	public void print() {
 		display();
-		System.out.println(", ¿ù±Ş : "+pay() + "d¿ø");
+		System.out.println(", ì›”ê¸‰ : "+pay() + "dì›");
 	}
 
 }

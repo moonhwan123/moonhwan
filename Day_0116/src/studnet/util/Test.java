@@ -1,14 +1,14 @@
 package studnet.util;
 import static java.lang.System.out;
-//static import Å¬·¡½º ÀÌ¸§ »ı·« °¡´É
+//static import í´ë˜ìŠ¤ ì´ë¦„ ìƒëµ ê°€ëŠ¥
 
 public class Test {
 	public static void main(String[] args) {
 		
 		out.println("AAAA");
-		// ½ÃÇè¿¡¼­ ÀÌ·±°É ¹°¾î º¼¼öµµ ÀÖÀ½ - import static ... 
-		// ÀÓÆ÷Æ®¿Í ½ºÅÂÆ½ ÀÓÆ÷Æ®ÀÇ Â÷ÀÌ ?
-		// ÀÖ´Ù´Â °Í Á¤µµ¸¸ ¾Ë¾ÆµÎÀÚ
+		// ì‹œí—˜ì—ì„œ ì´ëŸ°ê±¸ ë¬¼ì–´ ë³¼ìˆ˜ë„ ìˆìŒ - import static ... 
+		// ì„í¬íŠ¸ì™€ ìŠ¤íƒœí‹± ì„í¬íŠ¸ì˜ ì°¨ì´ ?
+		// ìˆë‹¤ëŠ” ê²ƒ ì •ë„ë§Œ ì•Œì•„ë‘ì
 		
 	}
 }

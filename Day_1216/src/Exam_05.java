@@ -9,7 +9,7 @@
  
  */
 
-// ÀÌ½ºÄÉÀÌÇÁ¹®ÀÚ "\n" -> NewLine , "\r" -> return , "\t" -> tab
+// ì´ìŠ¤ì¼€ì´í”„ë¬¸ìž "\n" -> NewLine , "\r" -> return , "\t" -> tab
 
 
 public class Exam_05 {

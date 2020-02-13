@@ -1,9 +1,9 @@
 package iostream;
 
 /*
-[ÀÔÃâ·Â ½ºÆ®¸²]
-¹ÙÀÌÆ® ¹æ½Ä (InputStream , OutputStream)
-¹®ÀÚ(ÅØ½ºÆ®) ¹æ½Ä(Reader, Writer)
+[ì…ì¶œë ¥ ìŠ¤íŠ¸ë¦¼]
+ë°”ì´íŠ¸ ë°©ì‹ (InputStream , OutputStream)
+ë¬¸ì(í…ìŠ¤íŠ¸) ë°©ì‹(Reader, Writer)
 
 
 
@@ -18,15 +18,15 @@ public class Exam_01 {
 		
 		File f = new File("c:\\data\\work");
 		
-		if(f.exists()) { // ÆÄÀÏÀÌ³ª µğ·ºÅä¸®°¡  Á¸Àç ÇÏ´Â°¡?
-			f.delete(); // ÆÄÀÏ, µğ·ºÅä¸®¸¦ »èÁ¦
+		if(f.exists()) { // íŒŒì¼ì´ë‚˜ ë””ë ‰í† ë¦¬ê°€  ì¡´ì¬ í•˜ëŠ”ê°€?
+			f.delete(); // íŒŒì¼, ë””ë ‰í† ë¦¬ë¥¼ ì‚­ì œ
 		}
 		
 		try {
 			Thread.sleep(3000);
 		} catch (Exception e) {}
 		
-		System.out.println("½ÃÀÛ");
+		System.out.println("ì‹œì‘");
 		try {
 			Thread.sleep(3000);
 		} catch (Exception e) {}

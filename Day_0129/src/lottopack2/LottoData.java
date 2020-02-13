@@ -15,7 +15,7 @@ public class LottoData {
 		this.ltArr = ltArr;
 		this.gameCnt = gameCnt;
 
-		for (int i = 0; i < dangLotto.length; i++) { // ´çÃ·¹øÈ£ »ý¼º
+		for (int i = 0; i < dangLotto.length; i++) { // ë‹¹ì²¨ë²ˆí˜¸ ìƒì„±
 			dangLotto[i] = (int) (Math.random() * 45 + 1);
 			for (int y = 0; y < i; y++) {
 				if (dangLotto[i] == dangLotto[y]) {
@@ -25,9 +25,9 @@ public class LottoData {
 			}
 		}
 
-	}// »ý¼ºÀÚ ³¡
+	}// ìƒì„±ìž ë
 
-	void dangCheck() { // È¸Â÷º°·Î µî¼ö Ã¼Å©
+	void dangCheck() { // íšŒì°¨ë³„ë¡œ ë“±ìˆ˜ ì²´í¬
 		int dangCnt = 0;
 		for (int x = 0; x < gameCnt; x++) {
 			for (int y = 0; y < 6; y++) {
@@ -38,23 +38,23 @@ public class LottoData {
 				}
 			}
 			if (dangCnt == 6) {
-				rank = "1µî";
+				rank = "1ë“±";
 			} else if (dangCnt == 5) {
-				rank = "3µî";
+				rank = "3ë“±";
 				for (int z = 0; z < 6; z++) {
 					if (ltArr[x].lotto[z] == dangLotto[6]) {
-						rank = "2µî";
+						rank = "2ë“±";
 						break;
 					}
 				}
 			} else if (dangCnt == 4) {
-				rank = "4µî";
+				rank = "4ë“±";
 			} else if (dangCnt == 3) {
-				rank = "5µî";
+				rank = "5ë“±";
 			} else {
-				rank = "²Î";
+				rank = "ê½";
 			}
-			System.out.println((x + 1) + "È¸Â÷´Â " + rank + " ÀÔ´Ï´Ù.");
+			System.out.println((x + 1) + "íšŒì°¨ëŠ” " + rank + " ìž…ë‹ˆë‹¤.");
 			dangCnt = 0;
 		}
 
@@ -70,11 +70,11 @@ public class LottoData {
 				}
 			}
 		}
-		System.out.println("[´çÈ¸ ´çÃ· ¹øÈ£]");
+		System.out.println("[ë‹¹íšŒ ë‹¹ì²¨ ë²ˆí˜¸]");
 		for (int x = 0; x < 6; x++) {
 			System.out.print(dangLotto[x] + "\t");
 		}
-		System.out.println("---- º¸³Ê½º : " + dangLotto[6]);
+		System.out.println("---- ë³´ë„ˆìŠ¤ : " + dangLotto[6]);
 	}
 
 }

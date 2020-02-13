@@ -1,16 +1,15 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /*
-[ArraysÅ¬·¡½º¸¦ ÀÌ¿ëÇÑ ¹è¿­ÀÇ Á¤·Ä]
-Arrays.sort(arr); -> ±âº»ÀÚ·áÇü°ú ¹®ÀÚ¿­Àº Á¤·ÄÀÌ µÈ´Ù.
+[Arraysí´ë˜ìŠ¤ë¥¼ ì´ìš©í•œ ë°°ì—´ì˜ ì •ë ¬]
+Arrays.sort(arr); -> ê¸°ë³¸ìë£Œí˜•ê³¼ ë¬¸ìì—´ì€ ì •ë ¬ì´ ëœë‹¤.
  */
 
 public class Exam_09 {
 	public static void main(String[] args) {
 		
 		int arr[] = {90,87,95,80,75,60};
-		int var[][] = {{1,90,80,70},{4,60,87,70},{3,20,30,80}}; // ÀÓ¸¶´Â ¾ÈµÊ
+		int var[][] = {{1,90,80,70},{4,60,87,70},{3,20,30,80}}; // ì„ë§ˆëŠ” ì•ˆë¨
 		
 		for(int x = 0; x < arr.length; x++) {
 			System.out.print(arr[x]+" ");
@@ -25,7 +24,7 @@ public class Exam_09 {
 		}
 		System.out.println();
 		
-		String[] name = {"¹Ú","ÀÌ","³ª","±è"};
+		String[] name = {"ë°•","ì´","ë‚˜","ê¹€"};
 		
 		Arrays.parallelSort(name);
 		for(int x = 0; x < name.length; x++) {

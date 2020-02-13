@@ -2,9 +2,9 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î °ÔÀÓ¼ö ÀÔ·Â ¹Þ¾Æ¼­ Ãâ·Â
+í‚¤ë³´ë“œë¡œ ê²Œìž„ìˆ˜ ìž…ë ¥ ë°›ì•„ì„œ ì¶œë ¥
 
-°ÔÀÓ¼ö ÀÔ·Â : 5
+ê²Œìž„ìˆ˜ ìž…ë ¥ : 5
 1 : 4 23 12 3 2 1
 2 : 5 6 7 8 9 10 35
 .
@@ -21,15 +21,15 @@ public class Exam_09 {
 		int[] lotto = new int[6];
 		
 		
-		System.out.print("°ÔÀÓ ¼ö ÀÔ·Â : ");
+		System.out.print("ê²Œìž„ ìˆ˜ ìž…ë ¥ : ");
 		int game = sc.nextInt();
 		
 		for(int x = 0; x < game; x++) {
 			
 			for(int i = 0; i < lotto.length; i++) {
 				lotto[i] = (int)(Math.random()*45+1);
-				//¿©±â¼­ Áßº¹ Ã¼Å©(for¹® ÀÌ¿ë)
-				for(int y = 0; y < i; y++) { // x=0ÀÏ¶§´Â ÀÛµ¿¾ÈÇÔ
+				//ì—¬ê¸°ì„œ ì¤‘ë³µ ì²´í¬(forë¬¸ ì´ìš©)
+				for(int y = 0; y < i; y++) { // x=0ì¼ë•ŒëŠ” ìž‘ë™ì•ˆí•¨
 					if(lotto[i] == lotto[y]) {
 						i--;
 						break;
@@ -38,7 +38,7 @@ public class Exam_09 {
 			}
 			
 			Arrays.sort(lotto);
-			System.out.print((x+1)+"È¸)\t");
+			System.out.print((x+1)+"íšŒ)\t");
 			for(int a = 0; a < 6; a++) {
 				System.out.print(lotto[a]+"\t");
 			}

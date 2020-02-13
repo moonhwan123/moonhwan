@@ -1,7 +1,7 @@
 import java.util.Properties;
 
 /*
-[È¯°æº¯¼ö ¼öÁı]
+[í™˜ê²½ë³€ìˆ˜ ìˆ˜ì§‘]
 
 Properties property = System.getProperties();
 property.list(System.out);
@@ -16,7 +16,7 @@ System.getProperty();
 public class Exam_05 {
 	public static void main(String[] args) {
 		
-		//properties list Ãâ·ÂÇÏ±â
+		//properties list ì¶œë ¥í•˜ê¸°
 		Properties property = System.getProperties();
 		property.list(System.out);
 		System.out.println("----------------------------------");
@@ -26,10 +26,11 @@ public class Exam_05 {
 		String userName = System.getProperty("user.name");
 		String userHome = System.getProperty("user.home");
 		
-		System.out.println("¿î¿µÃ¼Á¦ ÀÌ¸§ : " + osName);
-		System.out.println("»ç¿ëÀÚ ÀÌ¸§ : " + userName);
-		System.out.println("»ç¿ëÀÚ È¨ µğ·ºÅä¸® ÀÌ¸§ : " + userHome);
+		System.out.println("ìš´ì˜ì²´ì œ ì´ë¦„ : " + osName);
+		System.out.println("ì‚¬ìš©ì ì´ë¦„ : " + userName);
+		System.out.println("ì‚¬ìš©ì í™ˆ ë””ë ‰í† ë¦¬ ì´ë¦„ : " + userHome);
 		
 		
 	}
 }
+

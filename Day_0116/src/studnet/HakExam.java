@@ -5,16 +5,16 @@ public class HakExam {
 		
 		Hak h = new Hak();
 		h.setBun(1);
-		h.setName("È«±æµ¿");
+		h.setName("í™ê¸¸ë™");
 		h.setKor(90);
 		h.setEng(80);
 		h.setMat(70);
 		
-		System.out.println("¹øÈ£ : " + h.getBun());
-		System.out.println("ÀÌ¸§ : " + h.getName());
-		System.out.println("±¹¾î : " + h.getKor());
-		System.out.println("¿µ¾î : " + h.getEng());
-		System.out.println("¼öÇĞ : " + h.getMat());
+		System.out.println("ë²ˆí˜¸ : " + h.getBun());
+		System.out.println("ì´ë¦„ : " + h.getName());
+		System.out.println("êµ­ì–´ : " + h.getKor());
+		System.out.println("ì˜ì–´ : " + h.getEng());
+		System.out.println("ìˆ˜í•™ : " + h.getMat());
 		
 		
 		

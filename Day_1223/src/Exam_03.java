@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î 10°³ÀÇ Á¡¼ö¸¦ ÀÔ·Â ¹Ş¾Æ¼­
-¹è¿­¿¡ ÀúÀåÈÄ ÃÑÁ¡, Æò±ÕÀ» ±¸ÇÏ¿© Ãâ·ÂÇØ¶ó
+í‚¤ë³´ë“œë¡œ 10ê°œì˜ ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ì„œ
+ë°°ì—´ì— ì €ì¥í›„ ì´ì , í‰ê· ì„ êµ¬í•˜ì—¬ ì¶œë ¥í•´ë¼
 
  */
 
@@ -10,7 +10,7 @@ public class Exam_03 {
 	
 	public static void main(String[] args) {
 		
-		//ÀÔ·ÂÀÛ¾÷
+		//ì…ë ¥ì‘ì—…
 		Scanner sc = new Scanner(System.in);
 		
 		int jumsu[] = new int[10];
@@ -19,7 +19,7 @@ public class Exam_03 {
 		
 		
 		for(int i = 0 ; i<10 ; i++) {
-			System.out.print(i+"¹øÂ° ÇĞ»ıÀÇ Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+			System.out.print(i+"ë²ˆì§¸ í•™ìƒì˜ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 			jumsu[i] = sc.nextInt();
 			sum += jumsu[i];
 		}
@@ -30,9 +30,9 @@ public class Exam_03 {
 		
 		int cnt = 0;
 		
-		//Ãâ·ÂÀÛ¾÷
+		//ì¶œë ¥ì‘ì—…
 		for(int i = 0 ; i<jumsu.length ; i++) {
-			System.out.print(i+"¹øÂ° ÇĞ»ıÀÇ Á¡¼ö´Â "+jumsu[i]+"\t");
+			System.out.print(i+"ë²ˆì§¸ í•™ìƒì˜ ì ìˆ˜ëŠ” "+jumsu[i]+"\t");
 			
 			cnt ++;
 			if(cnt == 5) {
@@ -42,7 +42,7 @@ public class Exam_03 {
 		}
 		System.out.println();
 		System.out.println("===================");
-		System.out.println("ÃÑÁ¡\tÆò±Õ");
+		System.out.println("ì´ì \tí‰ê· ");
 		System.out.println(sum+"\t"+ave);
 		
 		

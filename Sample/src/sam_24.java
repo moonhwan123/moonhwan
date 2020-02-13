@@ -4,7 +4,7 @@ public class sam_24 {
 		
 		int arr[] = {3,6,2,1,9};
 		
-		System.out.println("[Á¤·Ä Àü]");
+		System.out.println("[ì •ë ¬ ì „]");
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i]+"\t");
 		}System.out.println();
@@ -20,7 +20,7 @@ public class sam_24 {
 			}
 		}
 		
-		System.out.println("[Á¤·Ä ÈÄ]");
+		System.out.println("[ì •ë ¬ í›„]");
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i]+"\t");
 		}System.out.println();

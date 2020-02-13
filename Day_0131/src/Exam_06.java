@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 
 /*
-[¼ıÀÚ Çü½ÄÈ­]
+[ìˆ«ì í˜•ì‹í™”]
 DecimalFormat
  */
 public class Exam_06 {
@@ -9,8 +9,8 @@ public class Exam_06 {
 		int money = 751238600;
 		double money2 = 458200.7777;
 		
-		//£Ü
-		DecimalFormat df1 = new DecimalFormat("£Ü#,###");
+		//ï¿¦
+		DecimalFormat df1 = new DecimalFormat("ï¿¦#,###");
 		DecimalFormat df2 = new DecimalFormat("#,###.##");
 		
 		String str1 = df1.format(money);

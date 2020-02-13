@@ -11,7 +11,7 @@ public class Exam_06 {
 			if(i==10) break;
 			i++;
 		}
-		System.out.println("1ºÎÅÍ 10±îÁöÀÇ ÇÕ "+s);
+		System.out.println("1ë¶€í„° 10ê¹Œì§€ì˜ í•© "+s);
 		
 		
 		

@@ -6,7 +6,7 @@ public class LottoMain {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("°ÔÀÓ ¼ö ÀÔ·Â >> ");
+		System.out.print("ê²Œìž„ ìˆ˜ ìž…ë ¥ >> ");
 		int gameCnt = sc.nextInt();
 		
 		
@@ -16,3 +16,4 @@ public class LottoMain {
 		
 	}
 }
+

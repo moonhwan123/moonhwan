@@ -4,9 +4,9 @@ import java.util.*;
 
 /*
 [TreeMap]
--µé¾î°¥ ¶§ Å°°¡ ÀÚµ¿ Á¤·ÄµÊ
+-ë“¤ì–´ê°ˆ ë•Œ í‚¤ê°€ ìë™ ì •ë ¬ë¨
 
-Map.Entry<K , V> entry -> Å°¿Í °ªÀ» ½ÖÀ¸·Î »Ì¾Æ ¿À±â
+Map.Entry<K , V> entry -> í‚¤ì™€ ê°’ì„ ìŒìœ¼ë¡œ ë½‘ì•„ ì˜¤ê¸°
 
 
  */
@@ -17,42 +17,42 @@ public class Exam_03 {
 		TreeMap<Integer,String> score = new TreeMap<Integer,String>();
 		
 		
-		score.put(new Integer(87), "È«±æµ¿");
-		score.put(new Integer(90), "±è±æµ¿");
-		score.put(new Integer(45), "ÀÌ±æµ¿");
-		score.put(new Integer(75), "¹Ú±æµ¿");
-		score.put(new Integer(38), "ÃÖ±æµ¿");
-		score.put(new Integer(95), "¾È±æµ¿");
+		score.put(new Integer(87), "í™ê¸¸ë™");
+		score.put(new Integer(90), "ê¹€ê¸¸ë™");
+		score.put(new Integer(45), "ì´ê¸¸ë™");
+		score.put(new Integer(75), "ë°•ê¸¸ë™");
+		score.put(new Integer(38), "ìµœê¸¸ë™");
+		score.put(new Integer(95), "ì•ˆê¸¸ë™");
 		
 		System.out.println(score);
 		
 		System.out.println(score.get(87));
 		
 		
-		//Map.Entry¸¦ ÀÌ¿ëÇÏ¸é Å° ¿Í °ªÀ» ½ÖÀ¸·Î »ÌÀ» ¼ö ÀÖ´Ù.
+		//Map.Entryë¥¼ ì´ìš©í•˜ë©´ í‚¤ ì™€ ê°’ì„ ìŒìœ¼ë¡œ ë½‘ì„ ìˆ˜ ìˆë‹¤.
 		Map.Entry<Integer, String> entry = null;
 		
-		System.out.println("[°¡Àå ³·Àº Á¡¼ö] ");
+		System.out.println("[ê°€ì¥ ë‚®ì€ ì ìˆ˜] ");
 		entry = score.firstEntry();
 		System.out.println(entry.getKey() + " - " + entry.getValue());
 		
-		System.out.println("[°¡Àå ³ôÀº Á¡¼ö] ");
+		System.out.println("[ê°€ì¥ ë†’ì€ ì ìˆ˜] ");
 		entry = score.lastEntry();
 		System.out.println(entry.getKey() + " - " + entry.getValue());
 		
-		System.out.println("[85Á¡ ¾Æ·¡ Á¡¼ö] ");
+		System.out.println("[85ì  ì•„ë˜ ì ìˆ˜] ");
 		entry = score.lowerEntry(85);
 		System.out.println(entry.getKey() + " - " + entry.getValue());
 		
-		System.out.println("[75Á¡ À§ Á¡¼ö] ");
+		System.out.println("[75ì  ìœ„ ì ìˆ˜] ");
 		entry = score.higherEntry(75);
 		System.out.println(entry.getKey() + " - " + entry.getValue());
 		
-		System.out.println("[85Á¡ÀÌ°Å³ª ¹Ù·Î ¾Æ·¡ Á¡¼ö] ");
+		System.out.println("[85ì ì´ê±°ë‚˜ ë°”ë¡œ ì•„ë˜ ì ìˆ˜] ");
 		entry = score.floorEntry(85);
 		System.out.println(entry.getKey() + " - " + entry.getValue());
 		
-		System.out.println("[75Á¡ÀÌ°Å³ª ¹Ù·Î À§ Á¡¼ö] ");
+		System.out.println("[75ì ì´ê±°ë‚˜ ë°”ë¡œ ìœ„ ì ìˆ˜] ");
 		entry = score.ceilingEntry(75);
 		System.out.println(entry.getKey() + " - " + entry.getValue());
 		
@@ -60,7 +60,7 @@ public class Exam_03 {
 		
 		while(!score.isEmpty()) {
 			entry = score.pollFirstEntry();
-			System.out.println(entry.getKey() + " - " + entry.getValue() + ", ³²Àº °´Ã¼ : " + score.size());
+			System.out.println(entry.getKey() + " - " + entry.getValue() + ", ë‚¨ì€ ê°ì²´ : " + score.size());
 		}
 		
 		

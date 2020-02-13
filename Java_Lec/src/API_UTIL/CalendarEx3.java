@@ -7,7 +7,7 @@ public class CalendarEx3 {
 	public static void main(String[] args) {
 		
 		final int[] TIME_UNIT = {3600,60,1};
-		final String[] TIME_UNIT_NAME = {"½Ã","ºĞ","ÃÊ"};
+		final String[] TIME_UNIT_NAME = {"ì‹œ","ë¶„","ì´ˆ"};
 		
 		Calendar time1 = Calendar.getInstance();
 		Calendar time2 = Calendar.getInstance();
@@ -20,13 +20,13 @@ public class CalendarEx3 {
 		time2.set(Calendar.MINUTE, 30);
 		time2.set(Calendar.SECOND, 40);
 		
-		System.out.println("time1 : "+time1.get(Calendar.HOUR_OF_DAY)+"½Ã "+time1.get(Calendar.MINUTE)+"ºĞ "+time1.get(Calendar.SECOND)+"ÃÊ ");
-		System.out.println("time2 : "+time2.get(Calendar.HOUR_OF_DAY)+"½Ã "+time2.get(Calendar.MINUTE)+"ºĞ "+time2.get(Calendar.SECOND)+"ÃÊ ");
+		System.out.println("time1 : "+time1.get(Calendar.HOUR_OF_DAY)+"ì‹œ "+time1.get(Calendar.MINUTE)+"ë¶„ "+time1.get(Calendar.SECOND)+"ì´ˆ ");
+		System.out.println("time2 : "+time2.get(Calendar.HOUR_OF_DAY)+"ì‹œ "+time2.get(Calendar.MINUTE)+"ë¶„ "+time2.get(Calendar.SECOND)+"ì´ˆ ");
 		
 		
 		long difference = Math.abs(time2.getTimeInMillis() - time1.getTimeInMillis())/1000;
 		
-		System.out.println("Â÷ÀÌ´Â "+ difference+"ÃÊ");
+		System.out.println("ì°¨ì´ëŠ” "+ difference+"ì´ˆ");
 		
 		String tmp = "";
 		
@@ -34,7 +34,7 @@ public class CalendarEx3 {
 			tmp += difference/TIME_UNIT[i]+TIME_UNIT_NAME[i];
 			difference %= TIME_UNIT[i];
 		}
-		System.out.println("½ÃºĞÃÊ·Î º¯È¯ ÇÏ¸é "+tmp+" ÀÔ´Ï´Ù.");
+		System.out.println("ì‹œë¶„ì´ˆë¡œ ë³€í™˜ í•˜ë©´ "+tmp+" ì…ë‹ˆë‹¤.");
 	}
 
 }

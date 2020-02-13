@@ -8,14 +8,14 @@ public class Exam_03 {
 		File f = new File("c:\\data\\work\\filetest.txt");
 		
 		if(f.exists()) {
-			f.deleteOnExit(); // ÇÁ·Î±×·¥ Á¾·á½Ã »èÁ¦
-			System.out.println("ÆÄÀÏ¸í : " + f.getName());
-			System.out.println("ÆÄÀÏ°æ·Î : " + f.getPath());
-			System.out.println("ÆÄÀÏ°æ·Î : " + f.getParent());
-			System.out.println("ÆÄÀÏÅ©±â : " + f.length()+"kb");
-			System.out.println("ÆÄÀÏ ÃÖÁ¾ ¼öÁ¤ÀÏ : " + f.lastModified());
+			f.deleteOnExit(); // í”„ë¡œê·¸ë¨ ì¢…ë£Œì‹œ ì‚­ì œ
+			System.out.println("íŒŒì¼ëª… : " + f.getName());
+			System.out.println("íŒŒì¼ê²½ë¡œ : " + f.getPath());
+			System.out.println("íŒŒì¼ê²½ë¡œ : " + f.getParent());
+			System.out.println("íŒŒì¼í¬ê¸° : " + f.length()+"kb");
+			System.out.println("íŒŒì¼ ìµœì¢… ìˆ˜ì •ì¼ : " + f.lastModified());
 		}else {
-			System.out.println(f.getName() + "¶ó´Â ÆÄÀÏÀº Á¸Àç ÇÏÁö ¾Ê½À´Ï´Ù.");
+			System.out.println(f.getName() + "ë¼ëŠ” íŒŒì¼ì€ ì¡´ì¬ í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.");
 		}
 		
 		                                                   

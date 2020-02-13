@@ -1,17 +1,17 @@
 /*
-[SystemÅ¬·¡½º¿¡ ÀÇÇÑ ¹è¿­ º¹»ç]
-System.arraycopy(¿øº»¹è¿­,½ÃÀÛÀ§Ä¡,´ë»ó¹è¿­,½ÃÀÛÀ§Ä¡,Ç×¸ñ¼ö);
-ÁÖ¼Ò°¡ ¾Æ´Ñ °ªÀ» º¹»çÇÑ´Ù.
-ºó ¹è¿­¿¡ º¹»çµµ °¡´É
+[Systemí´ë˜ìŠ¤ì— ì˜í•œ ë°°ì—´ ë³µì‚¬]
+System.arraycopy(ì›ë³¸ë°°ì—´,ì‹œì‘ìœ„ì¹˜,ëŒ€ìƒë°°ì—´,ì‹œì‘ìœ„ì¹˜,í•­ëª©ìˆ˜);
+ì£¼ì†Œê°€ ì•„ë‹Œ ê°’ì„ ë³µì‚¬í•œë‹¤.
+ë¹ˆ ë°°ì—´ì— ë³µì‚¬ë„ ê°€ëŠ¥
  */
 public class Exam_06 {
 	public static void main(String[] args) {
 		
-		char[] arr1 = {'°¡','³ª','´Ù','¶ó'};
+		char[] arr1 = {'ê°€','ë‚˜','ë‹¤','ë¼'};
 		
 		char[] arr2 = {'a','b','c','d','e','f'};
 		
-		System.out.println("[¿øº» ¹è¿­ Ãâ·Â]");
+		System.out.println("[ì›ë³¸ ë°°ì—´ ì¶œë ¥]");
 		System.out.print("arr1 : ");
 		for(char ch : arr1) {
 			System.out.print(ch + "\t");
@@ -23,10 +23,10 @@ public class Exam_06 {
 		}
 		System.out.println();
 		
-		// ¹è¿­ º¹»ç 
-		System.arraycopy(arr1, 0, arr2, 2, 4); // ÁÖ¼Ò°¡ ¾Æ´Ñ °ªÀ» º¹»çÇÏ°í ÀÖ´Ù.
+		// ë°°ì—´ ë³µì‚¬ 
+		System.arraycopy(arr1, 0, arr2, 2, 4); // ì£¼ì†Œê°€ ì•„ë‹Œ ê°’ì„ ë³µì‚¬í•˜ê³  ìˆë‹¤.
 		
-		System.out.println("[º¹»çº» ¹è¿­ Ãâ·Â]");
+		System.out.println("[ë³µì‚¬ë³¸ ë°°ì—´ ì¶œë ¥]");
 		System.out.print("arr2 : ");
 		for(char ch : arr2) {
 			System.out.print(ch + "\t");

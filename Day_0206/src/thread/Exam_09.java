@@ -3,15 +3,15 @@ package thread;
 import java.awt.Toolkit;
 
 /*
-[¸ÖÆ¼ ½º·¹µå]
- - ½º·¹µå => ½ÇÇàÄÚµå
- - ½Ç½Ã°£¿¹¾à °°Àº °÷¿¡ ÀÚÁÖ »ç¿ëÇÑ´Ù.
+[ë©€í‹° ìŠ¤ë ˆë“œ]
+ - ìŠ¤ë ˆë“œ => ì‹¤í–‰ì½”ë“œ
+ - ì‹¤ì‹œê°„ì˜ˆì•½ ê°™ì€ ê³³ì— ìžì£¼ ì‚¬ìš©í•œë‹¤.
  
- 1) Thread Å¬·¡½º¸¦ »ó¼Ó ¹Þ¾Æ¼­
+ 1) Thread í´ëž˜ìŠ¤ë¥¼ ìƒì† ë°›ì•„ì„œ
  
   
- 2) Runnable ÀÎÅÍÆäÀÌ½º ±¸Çö
- 	= ¾ê´Â ¾î¶² Å¬·¡½º°¡ ´Ù¸¥ Å¬·¡½º¸¦ »ó¼Ó ¹ÞÀº»óÅÂÀÌ¸é ThreadÅ¬·¡½º¸¦ »ó¼Ó ¹ÞÀ» ¼ö ¾ø±â ¶§¹®¿¡ Á¸ÀçÇÑ´Ù.
+ 2) Runnable ì¸í„°íŽ˜ì´ìŠ¤ êµ¬í˜„
+ 	= ì–˜ëŠ” ì–´ë–¤ í´ëž˜ìŠ¤ê°€ ë‹¤ë¥¸ í´ëž˜ìŠ¤ë¥¼ ìƒì† ë°›ì€ìƒíƒœì´ë©´ Threadí´ëž˜ìŠ¤ë¥¼ ìƒì† ë°›ì„ ìˆ˜ ì—†ê¸° ë•Œë¬¸ì— ì¡´ìž¬í•œë‹¤.
 
 	
  */
@@ -22,16 +22,16 @@ public class Exam_09 {
 		Toolkit tool = Toolkit.getDefaultToolkit();
 
 		for (int i = 0; i < 10; i++) {
-			tool.beep(); // ºñÇÁÀ½ (¼Ò¸®)
+			tool.beep(); // ë¹„í”„ìŒ (ì†Œë¦¬)
 			try {
-				Thread.sleep(500); // sleep : ½ÃÇÇÀ¯¸¦ Àá±ñ ÀáÀç¿î´Ù 1000ÀÌ 1ÃÊ
+				Thread.sleep(500); // sleep : ì‹œí”¼ìœ ë¥¼ ìž ê¹ ìž ìž¬ìš´ë‹¤ 1000ì´ 1ì´ˆ
 			} catch (Exception e) {
 
 			}
 		}
 
 		for (int i = 0; i < 10; i++) {
-			System.out.println("ÄåÄå");
+			System.out.println("ì½¸ì½¸");
 			try {
 				Thread.sleep(500);
 			} catch (Exception e) {

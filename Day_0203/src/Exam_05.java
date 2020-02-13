@@ -12,16 +12,16 @@ public class Exam_05 {
 		list.add("!!!!");
 		list.add("DDDD");
 		
-		List list2 = list; // list°ú list2´Â °°Àº ÁÖ¼Ò ¸¦ ¾´´Ù.
-						   // µÎ °ªÀº °øÀ¯ µÈ´Ù.
+		List list2 = list; // listê³¼ list2ëŠ” ê°™ì€ ì£¼ì†Œ ë¥¼ ì“´ë‹¤.
+						   // ë‘ ê°’ì€ ê³µìœ  ëœë‹¤.
 		list2.add("FFFF");
 		
-		System.out.println("[È®Àå for¹®]");
+		System.out.println("[í™•ì¥ forë¬¸]");
 		for(String str : list) {
 			System.out.println(str);
 		}
 		
-		System.out.println("[±âº» for¹®]");
+		System.out.println("[ê¸°ë³¸ forë¬¸]");
 		for(int x = 0 ; x < list.size(); x++) {
 			System.out.println(list.get(x));
 		}
@@ -37,3 +37,4 @@ public class Exam_05 {
 		
 	}
 }
+

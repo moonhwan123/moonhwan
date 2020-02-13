@@ -1,7 +1,7 @@
 import java.util.regex.Pattern;
 
 /*
-[ÀüÈ­¹øÈ£ À¯È¿¼º °Ë»ç]
+[ì „í™”ë²ˆí˜¸ ìœ íš¨ì„± ê²€ì‚¬]
 010-1111-2222
 (010|011)-\d{3,4}-\d{4}
 
@@ -13,16 +13,17 @@ public class Exam_02 {
 	public static void main(String[] args) {
 		
 		String tel = "010-1234-1234";
-		String pat = "(010|011)-\\d{3,4}-\\d{4}"; // ÆĞÅÏ
+		String pat = "(010|011)-\\d{3,4}-\\d{4}"; // íŒ¨í„´
 		
 		boolean bool = Pattern.matches(pat,tel);
 		if(bool) {
-			System.out.println(tel+"Àº Á¤»ó");
+			System.out.println(tel+"ì€ ì •ìƒ");
 		}else {
-			System.out.println(tel+"Àº ¿À·ù");
+			System.out.println(tel+"ì€ ì˜¤ë¥˜");
 		}
 		
 		
 		
 	}
 }
+

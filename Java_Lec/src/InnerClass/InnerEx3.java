@@ -1,11 +1,11 @@
 package InnerClass;
 
 /*
- ³»ºÎÅ¬·¡½ºÀÇ Á¢±ÙÁ¦¾îÀÚ
- 	-º¯¼ö¿¡ »ç¿ë°¡´ÉÇÑ Á¢±ÙÁ¦¾îÀÚ¿Í µ¿ÀÏ
- 	-static Å¬·¡½º¸¸ static¸â¹ö Á¤ÀÇ °¡´É
- 	-³»ºÎ Å¬·¡½ºµµ ¿ÜºÎ Å¬·¡½ºÀÇ ¸â¹ö·Î °£ÁÖ, µ¿ÀÏÇÑ Á¢±Ù¼º
- 	-¿ÜºÎ Å¬·¡½ºÀÇ Áö¿ªº¯¼ö´Â finalÀÌ ºÙÀº »ó¼ö¸¸ Á¢±Ù °¡´É
+ ë‚´ë¶€í´ë˜ìŠ¤ì˜ ì ‘ê·¼ì œì–´ì
+ 	-ë³€ìˆ˜ì— ì‚¬ìš©ê°€ëŠ¥í•œ ì ‘ê·¼ì œì–´ìì™€ ë™ì¼
+ 	-static í´ë˜ìŠ¤ë§Œ staticë©¤ë²„ ì •ì˜ ê°€ëŠ¥
+ 	-ë‚´ë¶€ í´ë˜ìŠ¤ë„ ì™¸ë¶€ í´ë˜ìŠ¤ì˜ ë©¤ë²„ë¡œ ê°„ì£¼, ë™ì¼í•œ ì ‘ê·¼ì„±
+ 	-ì™¸ë¶€ í´ë˜ìŠ¤ì˜ ì§€ì—­ë³€ìˆ˜ëŠ” finalì´ ë¶™ì€ ìƒìˆ˜ë§Œ ì ‘ê·¼ ê°€ëŠ¥
  */
 
 public class InnerEx3 {
@@ -19,13 +19,13 @@ public class InnerEx3 {
 	}
 	
 	static class StaticInner{
-//		int siv = outerIv; --> ¿¡·¯¹ß»ı
+//		int siv = outerIv; --> ì—ëŸ¬ë°œìƒ
 		static int scv = outerCv;
 	}
 	
 	void myMethod() {
 		int lv = 0;
-		final int Lv = 0; // JDK1.8 ºÎÅÍ´Â final»ı·«°¡´É
+		final int Lv = 0; // JDK1.8 ë¶€í„°ëŠ” finalìƒëµê°€ëŠ¥
 		
 		class LocalInner{
 			int liv = outerIv;

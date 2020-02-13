@@ -5,32 +5,32 @@ public class sam_01 {
 		
 		Scanner sc = new Scanner(System.in);
 		while(true) {
-			System.out.print("Á¡¼ö ÀÔ·Â : ");
+			System.out.print("ì ìˆ˜ ì…ë ¥ : ");
 			int num = sc.nextInt();
 			if(num>100) {
-				System.out.println("ÀÔ·Â ¿À·ù!");
-				System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù.");
+				System.out.println("ì…ë ¥ ì˜¤ë¥˜!");
+				System.out.println("í”„ë¡œê·¸ë¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤.");
 				break;
 			}
 			
 			switch(num/10) {
 			case 10:
-			System.out.println("¼ö");
+			System.out.println("ìˆ˜");
 			break;
 			case 9:
-			System.out.println("¼ö");
+			System.out.println("ìˆ˜");
 			break;
 			case 8:
-			System.out.println("¿ì");
+			System.out.println("ìš°");
 			break;
 			case 7:
-			System.out.println("¿ì");
+			System.out.println("ìš°");
 			break;
 			case 6:
-			System.out.println("¾ç");
+			System.out.println("ì–‘");
 			break;
 			default:
-				System.out.println("°¡");
+				System.out.println("ê°€");
 			}
 		
 		}

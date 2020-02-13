@@ -1,12 +1,12 @@
 
 /*
-[¹®ÀÚ¿­ ºĞ¸®]
-substring(½ÃÀÛ, Àü±îÁö)
-substring(½ÃÀÛ) ºÎÅÍ ³¡±îÁö
+[ë¬¸ìì—´ ë¶„ë¦¬]
+substring(ì‹œì‘, ì „ê¹Œì§€)
+substring(ì‹œì‘) ë¶€í„° ëê¹Œì§€
 
-ÇöÀå¿¡¼­ ¸¹ÀÌ ¾´´Ù°í ÇÔ
+í˜„ì¥ì—ì„œ ë§ì´ ì“´ë‹¤ê³  í•¨
 
-p.469~471 ÀÚÁÖ¾²´Â ¸Ş¼Òµå
+p.469~471 ìì£¼ì“°ëŠ” ë©”ì†Œë“œ
 
  */
 
@@ -16,12 +16,12 @@ public class Exam_05 {
 		
 		String str = "Hello World Java";
 		
-		//ÀüÃ¼ ¹®ÀÚ¿­ ±æÀÌ °è»ê
+		//ì „ì²´ ë¬¸ìì—´ ê¸¸ì´ ê³„ì‚°
 		int length = str.length(); 
 		
-		//Hello¹®ÀÚ¸¸ ÃßÃâ
+		//Helloë¬¸ìë§Œ ì¶”ì¶œ
 		String a = str.substring(0,5);
-		//Java¹®ÀÚ¸¸ ÃßÃâ
+		//Javaë¬¸ìë§Œ ì¶”ì¶œ
 		String b = str.substring(12);
 		
 		System.out.println(length);

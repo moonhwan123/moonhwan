@@ -15,7 +15,7 @@ public class StringBufferTest {
 		System.out.println("sb1 == sb2? " + (sb1==sb2));
 		System.out.println("sb.equals ? " + sb1.equals(sb2));
 		
-		//StringBufferÀÇ ³»¿ëÀ» StringÀ¸·Î º¯È¯
+		//StringBufferì˜ ë‚´ìš©ì„ Stringìœ¼ë¡œ ë³€í™˜
 		String s = sb1.toString();
 		String s2 = sb2.toString();
 		System.out.println("s.equals ? " + s.equals(s2));

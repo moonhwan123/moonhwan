@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class Dictionary{
 	
-	private static String [] kor = {"»ç¶û","¾Æ±â","µ·","¹Ì·¡","Èñ¸Á"};
+	private static String [] kor = {"ì‚¬ë‘","ì•„ê¸°","ëˆ","ë¯¸ë˜","í¬ë§"};
 	private static String [] eng = {"love","baby","money","future","hope"};
 	
 	
@@ -32,10 +32,10 @@ public class StringPractice1 {
 		Scanner sc = new Scanner(System.in);
 		
 		Dictionary dic = new Dictionary();
-		System.out.println("ÇÑ¿µ ´Ü¾î °Ë»ö ÇÁ·Î±×·¥ ÀÔ´Ï´Ù.");
+		System.out.println("í•œì˜ ë‹¨ì–´ ê²€ìƒ‰ í”„ë¡œê·¸ë¨ ì…ë‹ˆë‹¤.");
 		
 		while(true) {
-			System.out.print("ÇÑ±Û ´Ü¾î?");
+			System.out.print("í•œê¸€ ë‹¨ì–´?");
 			String kor_input = sc.nextLine();
 			dic.kor2Eng(kor_input);
 		}

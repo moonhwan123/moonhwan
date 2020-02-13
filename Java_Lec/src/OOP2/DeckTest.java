@@ -3,13 +3,13 @@ package OOP2;
 public class DeckTest {
 
 	public static void main(String[] args) {
-		Deck d = new Deck(); // Ä«µå DeckÀ» »ý¼º
-		Card c = d.pick(0); // ¼¯±âÀü¿¡ Á¦ÀÏ À§¿¡ Ä«µå¸¦ »Ì´Â´Ù.
+		Deck d = new Deck(); // ì¹´ë“œ Deckì„ ìƒì„±
+		Card c = d.pick(0); // ì„žê¸°ì „ì— ì œì¼ ìœ„ì— ì¹´ë“œë¥¼ ë½‘ëŠ”ë‹¤.
 		System.out.println(c); // System.out.println(c.toString());
 		
-		d.shuffle(); // Ä«µå¸¦ ¼¯´Â´Ù.
+		d.shuffle(); // ì¹´ë“œë¥¼ ì„žëŠ”ë‹¤.
 		
-		c = d.pick(0); // ¼¯Àº ÈÄ¿¡ Á¦ÀÏ À§¿¡ Ä«µå
+		c = d.pick(0); // ì„žì€ í›„ì— ì œì¼ ìœ„ì— ì¹´ë“œ
 		System.out.println(c);
 		
 
@@ -19,10 +19,10 @@ public class DeckTest {
 
 
 class Deck{
-	final int CARD_NUM = 52; // Ä«µåÀÇ °¹¼ö
-	Card cardArr[] = new Card[CARD_NUM]; // Card °´Ã¼ ¹è¿­À» Æ÷ÇÔ
+	final int CARD_NUM = 52; // ì¹´ë“œì˜ ê°¯ìˆ˜
+	Card cardArr[] = new Card[CARD_NUM]; // Card ê°ì²´ ë°°ì—´ì„ í¬í•¨
 	
-	Deck() {//DeckÀÇ Ä«µå¸¦ ÃÊ±âÈ­ ÇÑ´Ù.
+	Deck() {//Deckì˜ ì¹´ë“œë¥¼ ì´ˆê¸°í™” í•œë‹¤.
 		int i = 0;
 		for(int k = Card.KIND_MAX; k > 0; k--) {
 			for(int n = 0; n < Card.NUM_MAX; n++) {
@@ -32,7 +32,7 @@ class Deck{
 		}
 		
 	}
-	Card pick(int index){// ÁöÁ¤µÈ À§Ä¡(index)¿¡ ÀÖ´Â Ä«µå ÇÏ³ª¸¦ ²¨³»¼­ ¹ÝÈ¯
+	Card pick(int index){// ì§€ì •ëœ ìœ„ì¹˜(index)ì— ìžˆëŠ” ì¹´ë“œ í•˜ë‚˜ë¥¼ êº¼ë‚´ì„œ ë°˜í™˜
 		return cardArr[index];
 	}
 	Card pick() {
@@ -51,8 +51,8 @@ class Deck{
 }
 
 class Card{
-	static final int KIND_MAX = 4; // Ä«µåÀÇ ÆÐÅÏ Á¾·ù 
-	static final int NUM_MAX = 13; // ÆÐÅÏº° Ä«µå¼ö
+	static final int KIND_MAX = 4; // ì¹´ë“œì˜ íŒ¨í„´ ì¢…ë¥˜ 
+	static final int NUM_MAX = 13; // íŒ¨í„´ë³„ ì¹´ë“œìˆ˜
 	
 	static int SPADE = 4;
 	static int DIAMOND = 3;

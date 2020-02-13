@@ -15,7 +15,7 @@ public class Exam_02 {
 		arr[3] = arr[0] + arr[1] + arr[2];
 		arr[4] = arr[3]/3;
 		
-		System.out.println("±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ");
+		System.out.println("êµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
 		System.out.println(arr[0]+"\t"+arr[1]+"\t"+arr[2]+"\t"+arr[3]+"\t"+arr[4]);
 		
 		

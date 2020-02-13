@@ -11,7 +11,7 @@ public class test2222 {
 		Scanner sc = new Scanner(new File("c:\\data\\test1.txt"));
 		Scanner sc2 = new Scanner(System.in);
 		
-		String[] arr= new String[20]; // Á¤´ä ¹Þ¾Æ¿À±â¿ë
+		String[] arr= new String[20]; // ì •ë‹µ ë°›ì•„ì˜¤ê¸°ìš©
 		Student stu = null;
 		String[] str = null;
 

@@ -4,67 +4,67 @@ public class OOP {
 
 	public static void main(String[] args) {
 		/*
-		 [Object Oriented Programming] - °´Ã¼ ÁöÇâ ÇÁ·Î±×·¡¹Ö
+		 [Object Oriented Programming] - ê°ì²´ ì§€í–¥ í”„ë¡œê·¸ëž˜ë°
 		 
-		 	-°´Ã¼ÁöÇâ ÀÌ·Ð
-		 		: ½ÇÁ¦ ¼¼°è´Â '»ç¹°(°´Ã¼)'·Î ÀÌ·ç¾îÁ® ÀÖÀ¸¸ç
-		 		: ¹ß»ýÇÏ´Â ¸ðµç '»ç°Ç'µéÀº '»ç¹°(°´Ã¼)'°£ÀÇ »óÈ£ ÀÛ¿ëÀÌ´Ù.
+		 	-ê°ì²´ì§€í–¥ ì´ë¡ 
+		 		: ì‹¤ì œ ì„¸ê³„ëŠ” 'ì‚¬ë¬¼(ê°ì²´)'ë¡œ ì´ë£¨ì–´ì ¸ ìžˆìœ¼ë©°
+		 		: ë°œìƒí•˜ëŠ” ëª¨ë“  'ì‚¬ê±´'ë“¤ì€ 'ì‚¬ë¬¼(ê°ì²´)'ê°„ì˜ ìƒí˜¸ ìž‘ìš©ì´ë‹¤.
 		 		
-		 		: ÀÌ °³³äÀ» Åä´ë·Î ÇÁ·Î±×·¡¹Ö ¾ð¾î Á¢¸ñ --> °´Ã¼ÁöÇâ ÇÁ·Î±×·¡¹Ö
+		 		: ì´ ê°œë…ì„ í† ëŒ€ë¡œ í”„ë¡œê·¸ëž˜ë° ì–¸ì–´ ì ‘ëª© --> ê°ì²´ì§€í–¥ í”„ë¡œê·¸ëž˜ë°
 		 		
 		 		
-		 	-Æ¯Â¡
-		 		1. ÄÚµåÀÇ Àç»ç¿ë¼ºÀÌ ³ô´Ù. (ÇÔ¼ö ¶Ç´Â ¸Þ¼­µå)
-		 		2. ÄÚµå¸¦ °ü¸®ÇÏ±â ÁÁ´Ù.
-		 		3. ÇÁ·Î±×·¥ÀÇ ½Å·Ú¼ºÀÌ ³ô¾Æ Áø´Ù.
+		 	-íŠ¹ì§•
+		 		1. ì½”ë“œì˜ ìž¬ì‚¬ìš©ì„±ì´ ë†’ë‹¤. (í•¨ìˆ˜ ë˜ëŠ” ë©”ì„œë“œ)
+		 		2. ì½”ë“œë¥¼ ê´€ë¦¬í•˜ê¸° ì¢‹ë‹¤.
+		 		3. í”„ë¡œê·¸ëž¨ì˜ ì‹ ë¢°ì„±ì´ ë†’ì•„ ì§„ë‹¤.
 		 		
-		 	-'Å¬·¡½º' ¿Í '°´Ã¼'
-		 		1. Å¬·¡½º´Â ÀÏÁ¾ÀÇ ¼³°èµµ
-		 		      °´Ã¼´Â ±× ¼³°èµµ¸¦ Åä´ë·Î ¸¸µé¾îÁø ½ÇÁ¦ »ç¹°
-		 		      ¾ÆÀÌÆù ¼³°èµµ -> ¾ÆÀÌÆù(S/N : 111)
-		 		      			¾ÆÀÌÆù(S/N : 222)
+		 	-'í´ëž˜ìŠ¤' ì™€ 'ê°ì²´'
+		 		1. í´ëž˜ìŠ¤ëŠ” ì¼ì¢…ì˜ ì„¤ê³„ë„
+		 		      ê°ì²´ëŠ” ê·¸ ì„¤ê³„ë„ë¥¼ í† ëŒ€ë¡œ ë§Œë“¤ì–´ì§„ ì‹¤ì œ ì‚¬ë¬¼
+		 		      ì•„ì´í° ì„¤ê³„ë„ -> ì•„ì´í°(S/N : 111)
+		 		      			ì•„ì´í°(S/N : 222)
 		 		
-		 		2. Å¬·¡½º(Class)
-		 			Á¤ÀÇ : °´Ã¼(»ç¹°)À» Á¤ÀÇ ÇØ³õÀº °Í(¾î¶°ÇÑ °´Ã¼¸¦ ¸¸µé °ÍÀÎÁö)
-		 			¿ëµµ : °´Ã¼¸¦ »ý¼º
+		 		2. í´ëž˜ìŠ¤(Class)
+		 			ì •ì˜ : ê°ì²´(ì‚¬ë¬¼)ì„ ì •ì˜ í•´ë†“ì€ ê²ƒ(ì–´ë– í•œ ê°ì²´ë¥¼ ë§Œë“¤ ê²ƒì¸ì§€)
+		 			ìš©ë„ : ê°ì²´ë¥¼ ìƒì„±
 		 			
-		 		3. °´Ã¼(Object)
-		 			Á¤ÀÇ : ½ÇÁ¦·Î Á¸ÀçÇÏ´Â °Í
-		 			¿ëµµ : Å¬·¡½º¿¡ Á¤ÀÇµÈ ´ë·Î »ç¿ëÇÑ´Ù.
+		 		3. ê°ì²´(Object)
+		 			ì •ì˜ : ì‹¤ì œë¡œ ì¡´ìž¬í•˜ëŠ” ê²ƒ
+		 			ìš©ë„ : í´ëž˜ìŠ¤ì— ì •ì˜ëœ ëŒ€ë¡œ ì‚¬ìš©í•œë‹¤.
 		 			
 		 			
-		 	-°´Ã¼/ÀÎ½ºÅÏ½º
-		 		ÀÎ½ºÅÏ½º : »ç·Ê,°æ¿ì,½ÇÃ¼
-		 				±âº»ÀûÀ¸·Î´Â °´Ã¼¿Í °°Àº ÀÇ¹Ì
-		 				¹®Àå¿¡ µû¶ó ±¸ºÐÇÑ´Ù.
-		 					*Å¬·¡½º(¼³°èµµ)¸¦ ÅëÇØ ½ÇÁ¦·Î ¸¸µé¾îÁø °´Ã¼¸¦ 'ÀÎ½ºÅÏ½º'¶ó°í ÇÑ´Ù.
+		 	-ê°ì²´/ì¸ìŠ¤í„´ìŠ¤
+		 		ì¸ìŠ¤í„´ìŠ¤ : ì‚¬ë¡€,ê²½ìš°,ì‹¤ì²´
+		 				ê¸°ë³¸ì ìœ¼ë¡œëŠ” ê°ì²´ì™€ ê°™ì€ ì˜ë¯¸
+		 				ë¬¸ìž¥ì— ë”°ë¼ êµ¬ë¶„í•œë‹¤.
+		 					*í´ëž˜ìŠ¤(ì„¤ê³„ë„)ë¥¼ í†µí•´ ì‹¤ì œë¡œ ë§Œë“¤ì–´ì§„ ê°ì²´ë¥¼ 'ì¸ìŠ¤í„´ìŠ¤'ë¼ê³  í•œë‹¤.
 		 					 	
-		 				 ¾ÆÀÌÆùÀº °´Ã¼ÀÌ´Ù.
-		 				¾ÆÀÌÆù ¼³°èµµ´Â °´Ã¼¸¦ ¸¸µé¼ö ÀÖ´Ù.
-		 				³»°¡ °¡Áø ¾ÆÀÌÆùÀº ÀÎ½ºÅÏ½ºÀÌ´Ù.
+		 				 ì•„ì´í°ì€ ê°ì²´ì´ë‹¤.
+		 				ì•„ì´í° ì„¤ê³„ë„ëŠ” ê°ì²´ë¥¼ ë§Œë“¤ìˆ˜ ìžˆë‹¤.
+		 				ë‚´ê°€ ê°€ì§„ ì•„ì´í°ì€ ì¸ìŠ¤í„´ìŠ¤ì´ë‹¤.
 		 			
-		 		°´Ã¼ÀÇ ±¸¼º ¿ä¼Ò : ¼Ó¼º, ±â´É
-		 			¼Ó¼º : ¾ÆÀÌÆù »ö»ó,Å©±â,Ä«¸Þ¶ó °¹¼ö
-		 			±â´É : »çÁøÀ» Âï´Â´Ù, ÀüÈ­¸¦ °Ç´Ù, ÀÎÅÍ³ÝÀ» ÇÑ´Ù
+		 		ê°ì²´ì˜ êµ¬ì„± ìš”ì†Œ : ì†ì„±, ê¸°ëŠ¥
+		 			ì†ì„± : ì•„ì´í° ìƒ‰ìƒ,í¬ê¸°,ì¹´ë©”ë¼ ê°¯ìˆ˜
+		 			ê¸°ëŠ¥ : ì‚¬ì§„ì„ ì°ëŠ”ë‹¤, ì „í™”ë¥¼ ê±´ë‹¤, ì¸í„°ë„·ì„ í•œë‹¤
 		 				
-		 			1) °´Ã¼´Â Å¬·¡½º¿¡¼­ Á¤ÀÇÇÑ ´Ù¼öÀÇ ¼Ó¼º°ú ±â´ÉÀ» °¡Áú ¼ö ÀÖ´Ù.
-		 			2) ¼Ó¼º = º¯¼ö(¸â¹öº¯¼ö,ÇÊµå)
-		 			3) ±â´É = ÇÔ¼ö(¸Þ¼­µå)
+		 			1) ê°ì²´ëŠ” í´ëž˜ìŠ¤ì—ì„œ ì •ì˜í•œ ë‹¤ìˆ˜ì˜ ì†ì„±ê³¼ ê¸°ëŠ¥ì„ ê°€ì§ˆ ìˆ˜ ìžˆë‹¤.
+		 			2) ì†ì„± = ë³€ìˆ˜(ë©¤ë²„ë³€ìˆ˜,í•„ë“œ)
+		 			3) ê¸°ëŠ¥ = í•¨ìˆ˜(ë©”ì„œë“œ)
 		 		
-		 		ÀÎ½ºÅÏ½ºÀÇ »ý¼º°ú »ç¿ë
-		 			//Å¬·¡½º¸í º´¼ö¸í;// Å¬·¡½ºÀÇ °´Ã¼¸¦ ÂüÁ¶ÇÏ±â À§ÇÑ ÂüÁ¶º¯¼ö¸¦ ¼±¾ð
-		 			//º¯¼ö¸í = new Å¬·¡½º¸í();// Å¬·¡½ºÀÇ °´Ã¼¸¦ »ý¼º ÈÄ, °´Ã¼ÀÇ ÁÖ¼Ò¸¦ ÂüÁ¶º¯¼ö¿¡ ÀúÀå
+		 		ì¸ìŠ¤í„´ìŠ¤ì˜ ìƒì„±ê³¼ ì‚¬ìš©
+		 			//í´ëž˜ìŠ¤ëª… ë³‘ìˆ˜ëª…;// í´ëž˜ìŠ¤ì˜ ê°ì²´ë¥¼ ì°¸ì¡°í•˜ê¸° ìœ„í•œ ì°¸ì¡°ë³€ìˆ˜ë¥¼ ì„ ì–¸
+		 			//ë³€ìˆ˜ëª… = new í´ëž˜ìŠ¤ëª…();// í´ëž˜ìŠ¤ì˜ ê°ì²´ë¥¼ ìƒì„± í›„, ê°ì²´ì˜ ì£¼ì†Œë¥¼ ì°¸ì¡°ë³€ìˆ˜ì— ì €ìž¥
 		 
 		 */
 		
-		TV tv; // TVÅ¬·¡½º Å¸ÀÔÀÇ ÂüÁ¶º¯¼ö tv¸¦ ¼±¾ð
-		tv = new TV(); // TVÀÎ½ºÅÏ½º¸¦ »ý¼ºÇÑ ÈÄ, »ý¼ºµÈ TV ÀÎ½ºÅÏ½º ÁÖ¼Ò¸¦ tv¿¡ ÀúÀå
+		TV tv; // TVí´ëž˜ìŠ¤ íƒ€ìž…ì˜ ì°¸ì¡°ë³€ìˆ˜ tvë¥¼ ì„ ì–¸
+		tv = new TV(); // TVì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•œ í›„, ìƒì„±ëœ TV ì¸ìŠ¤í„´ìŠ¤ ì£¼ì†Œë¥¼ tvì— ì €ìž¥
 		
 		tv.channel = 7;
-		System.out.println("ÇöÀç Ã¤³Î : "+tv.channel);
+		System.out.println("í˜„ìž¬ ì±„ë„ : "+tv.channel);
 		tv.channeldown();
-		System.out.println("ÇöÀç Ã¤³Î : "+tv.channel);
-		// ÀÎ½ºÅÏ½º´Â ÂüÁ¶º¯¼ö¸¦ ÅëÇØ¼­¸¸ ´Ù·ê ¼ö ÀÖÀ¸¸ç, ÂüÁ¶º¯¼öÀÇ Å¸ÀÔÀº ÀÎ½ºÅÏ½º Å¸ÀÔ°ú ÀÏÄ¡ÇØ¾ß ÇÑ´Ù.
+		System.out.println("í˜„ìž¬ ì±„ë„ : "+tv.channel);
+		// ì¸ìŠ¤í„´ìŠ¤ëŠ” ì°¸ì¡°ë³€ìˆ˜ë¥¼ í†µí•´ì„œë§Œ ë‹¤ë£° ìˆ˜ ìžˆìœ¼ë©°, ì°¸ì¡°ë³€ìˆ˜ì˜ íƒ€ìž…ì€ ì¸ìŠ¤í„´ìŠ¤ íƒ€ìž…ê³¼ ì¼ì¹˜í•´ì•¼ í•œë‹¤.
 		
 		System.out.println();
 		
@@ -73,9 +73,9 @@ public class OOP {
 
 		
 		samsung_tv.channel = 5;
-		System.out.println("ÇöÀç Ã¤³Î : "+samsung_tv.channel);
+		System.out.println("í˜„ìž¬ ì±„ë„ : "+samsung_tv.channel);
 		samsung_tv.channeldown();
-		System.out.println("ÇöÀç Ã¤³Î : "+samsung_tv.channel);
+		System.out.println("í˜„ìž¬ ì±„ë„ : "+samsung_tv.channel);
 		
 		System.out.println();
 		
@@ -84,16 +84,16 @@ public class OOP {
 		TV LG_tv = new TV();
 		
 		LG_tv.channel = 10;
-		System.out.println("ÇöÀç Ã¤³Î : "+LG_tv.channel);
+		System.out.println("í˜„ìž¬ ì±„ë„ : "+LG_tv.channel);
 		LG_tv.channelup();
-		System.out.println("ÇöÀç Ã¤³Î : "+LG_tv.channel);
+		System.out.println("í˜„ìž¬ ì±„ë„ : "+LG_tv.channel);
 		
-		//ÂüÁ¶º¯¼ö¿¡´Â ÇÏ³ªÀÇ °ª(ÁÖ¼Ò)¸¸ÀÌ ÀúÀåµÇ°í
-		//µÑ ÀÌ»óÀÇ ÂüÁ¶º¯¼ö°¡ ÇÏ³ªÀÇ ÀÎ½ºÅÏ½º¸¦ ÂüÁ¶´Â °¡´ÉÇÏ³ª,
-		//ÇÏ³ªÀÇ ÂüÁ¶º¯¼ö·Î ¿©·¯°³ÀÇ ÀÎ½ºÅÏ½º¸¦ °¡¸®Å°´Â °ÍÀº ¾ÈµÈ´Ù.
+		//ì°¸ì¡°ë³€ìˆ˜ì—ëŠ” í•˜ë‚˜ì˜ ê°’(ì£¼ì†Œ)ë§Œì´ ì €ìž¥ë˜ê³ 
+		//ë‘˜ ì´ìƒì˜ ì°¸ì¡°ë³€ìˆ˜ê°€ í•˜ë‚˜ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ì°¸ì¡°ëŠ” ê°€ëŠ¥í•˜ë‚˜,
+		//í•˜ë‚˜ì˜ ì°¸ì¡°ë³€ìˆ˜ë¡œ ì—¬ëŸ¬ê°œì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ê°€ë¦¬í‚¤ëŠ” ê²ƒì€ ì•ˆëœë‹¤.
 		
 		
-		//°´Ã¼ ¹è¿­
+		//ê°ì²´ ë°°ì—´
 		
 		TV[] tvArr = new TV[3];
 		
@@ -118,18 +118,18 @@ public class OOP {
 }
 
 
-//TV Å¬·¡½º ¸¸µé±â(¼³°èµµ ÀÛ¼º)
+//TV í´ëž˜ìŠ¤ ë§Œë“¤ê¸°(ì„¤ê³„ë„ ìž‘ì„±)
 
-//¼Ó¼º : »ö»ó, ±æÀÌ, Å©±â, ³ôÀÌ, Ã¤³Î....(º¯¼ö)
-//±â´É : ÄÑ±â, ²ô±â, º¼·ý ¾÷´Ù¿î, Ã¤³Î º¯°æ....(¸Þ¼­µå)
+//ì†ì„± : ìƒ‰ìƒ, ê¸¸ì´, í¬ê¸°, ë†’ì´, ì±„ë„....(ë³€ìˆ˜)
+//ê¸°ëŠ¥ : ì¼œê¸°, ë„ê¸°, ë³¼ë¥¨ ì—…ë‹¤ìš´, ì±„ë„ ë³€ê²½....(ë©”ì„œë“œ)
 
 class TV{
-	//TVÀÇ ¼Ó¼º(¸â¹öº¯¼ö, ÇÊµå)
-	String color; // »ö»ó
-	boolean power; // Àü¿ø
-	int channel; // Ã¤³Î
+	//TVì˜ ì†ì„±(ë©¤ë²„ë³€ìˆ˜, í•„ë“œ)
+	String color; // ìƒ‰ìƒ
+	boolean power; // ì „ì›
+	int channel; // ì±„ë„
 	
-	//TVÀÇ ±â´É
+	//TVì˜ ê¸°ëŠ¥
 	void power() {
 		power = !power;
 	}

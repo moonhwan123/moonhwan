@@ -74,4 +74,54 @@ public class DDLDao {
 	}
 	
 	
+	//업데이트 메소드
+	public int aaaUpdate(int dno, String dname, int score) {
+		String query = "update aaa set dname = ?, score = ? where dno = ?";
+		int row = 0;
+		try {
+			conn = manager.getConnection();
+			pstmt = conn.prepareStatement(query);
+			pstmt.setString(1, dname);
+			pstmt.setInt(2, score);
+			pstmt.setInt(3, dno);
+			row = pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				pstmt.close();
+				conn.close();
+			}catch (Exception e) {
+				
+			}	
+		}
+		return row;
+	}
+	
+	//삭제메소드
+	public int aaaDelete(int dno) {
+		String query = "delete from aaa where dno = ?";
+		int row = 0;
+		
+		try {
+			conn = manager.getConnection();
+			pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, dno);
+			row = pstmt.executeUpdate();	
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				pstmt.close();
+				conn.close();
+			}catch (Exception e) {
+				
+			}	
+		}
+		return row;
+	}
+	
+	
+	
 }

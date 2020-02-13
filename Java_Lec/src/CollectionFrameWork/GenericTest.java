@@ -9,17 +9,17 @@ public class GenericTest {
 		
 		/*
 		[Generic]
-			-ÄÃ·º¼ÇÀ» Æ¯Á¤ Å¸ÀÔ¿¡ ¸Â°Ô Çü½ÄÈ­ ÇØ³õÀº °³³ä
+			-ì»¬ë ‰ì…˜ì„ íŠ¹ì • íƒ€ìž…ì— ë§žê²Œ í˜•ì‹í™” í•´ë†“ì€ ê°œë…
 			
-			-Á¦³×¸¯ ¼±¾ð
-				1.Å¬·¡½ºÀÇ ¼±¾ðºÎÀÇ Å¬·¡½º¸í µÚ¿¡ Àü´Þ¹ÞÀº Å¸ÀÔÀÇ ¼ö¸¸Å­ , ·Î ±¸ºÐ
-				2.Generic TypeÀº  ²©¼è(<>) »çÀÌ¿¡ ÄÄÆÄÀÏ ÇÒ ´ç½Ã »ç¿ëµÉ °´Ã¼¸¦ Àû¾î ³õÀ¸¸é, °´Ã¼ ÀúÀå½Ã Á¦³×¸¯ Å¸ÀÔÀ¸·Î ÀúÀå
+			-ì œë„¤ë¦­ ì„ ì–¸
+				1.í´ëž˜ìŠ¤ì˜ ì„ ì–¸ë¶€ì˜ í´ëž˜ìŠ¤ëª… ë’¤ì— ì „ë‹¬ë°›ì€ íƒ€ìž…ì˜ ìˆ˜ë§Œí¼ , ë¡œ êµ¬ë¶„
+				2.Generic Typeì€  êº½ì‡ (<>) ì‚¬ì´ì— ì»´íŒŒì¼ í•  ë‹¹ì‹œ ì‚¬ìš©ë  ê°ì²´ë¥¼ ì ì–´ ë†“ìœ¼ë©´, ê°ì²´ ì €ìž¥ì‹œ ì œë„¤ë¦­ íƒ€ìž…ìœ¼ë¡œ ì €ìž¥
 				
-			-API¿¡¼­´Â T,E,K,V ±ÇÀå
-				T : Àü´ÞµÇ´Â °´Ã¼°¡ Çö °´Ã¼ ³»¿¡¼­ ÀÚ·áÇü(Type)À¸·Î ¾²ÀÏ¶§
-				E : Àü´ÞµÇ´Â °´Ã¼°¡ Çö °´Ã¼ ³»¿¡¼­ ¿ä¼Ò(Element)·Î ¾²ÀÏ¶§
-				K : Àü´ÞµÇ´Â °´Ã¼°¡ Çö °´Ã¼ ³»¿¡¼­ Å°(Key)·Î »ç¿ëµÉ¶§
-				V : Àü´ÞµÇ´Â °´Ã¼°¡ Çö °´Ã¼ ³»¿¡¼­ °ª(Value)À¸·Î »ç¿ëµÉ¶§
+			-APIì—ì„œëŠ” T,E,K,V ê¶Œìž¥
+				T : ì „ë‹¬ë˜ëŠ” ê°ì²´ê°€ í˜„ ê°ì²´ ë‚´ì—ì„œ ìžë£Œí˜•(Type)ìœ¼ë¡œ ì“°ì¼ë•Œ
+				E : ì „ë‹¬ë˜ëŠ” ê°ì²´ê°€ í˜„ ê°ì²´ ë‚´ì—ì„œ ìš”ì†Œ(Element)ë¡œ ì“°ì¼ë•Œ
+				K : ì „ë‹¬ë˜ëŠ” ê°ì²´ê°€ í˜„ ê°ì²´ ë‚´ì—ì„œ í‚¤(Key)ë¡œ ì‚¬ìš©ë ë•Œ
+				V : ì „ë‹¬ë˜ëŠ” ê°ì²´ê°€ í˜„ ê°ì²´ ë‚´ì—ì„œ ê°’(Value)ìœ¼ë¡œ ì‚¬ìš©ë ë•Œ
 			
 		 */
 
@@ -27,16 +27,16 @@ public class GenericTest {
 		
 		Box box = new Box();
 		box.set(new Integer(10));
-		System.out.println("Á¤¼ö : "+ box.get());
+		System.out.println("ì •ìˆ˜ : "+ box.get());
 		
 		BoxAll<Integer> ba = new BoxAll<Integer>();
 		ba.set(new Integer(10));
-		//ba.set("new"); -> Á¦³×¸¯¿¡¼­ Integer·Î °íÁ¤ ½ÃÄ×±â ¶§¹®¿¡ ¿¡·¯ ¹ß»ýÇÔ
-		System.out.println("Á¤¼ö : "+ ba.get());
+		//ba.set("new"); -> ì œë„¤ë¦­ì—ì„œ Integerë¡œ ê³ ì • ì‹œì¼°ê¸° ë•Œë¬¸ì— ì—ëŸ¬ ë°œìƒí•¨
+		System.out.println("ì •ìˆ˜ : "+ ba.get());
 		
 		BoxAll<String> ba2 = new BoxAll<String>();
-		ba2.set(new String("Á¦³×¸¯ Å¬·¡½º"));
-		System.out.println("¹®ÀÚ¿­ : "+ba2.get());
+		ba2.set(new String("ì œë„¤ë¦­ í´ëž˜ìŠ¤"));
+		System.out.println("ë¬¸ìžì—´ : "+ba2.get());
 		
 		
 		

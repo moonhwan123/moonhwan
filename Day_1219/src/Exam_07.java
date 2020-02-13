@@ -1,21 +1,21 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå ÀÔ·Â
-¹øÈ£:
-±¹¾î:
-¿µ¾î:
-¼öÇĞ:
+í‚¤ë³´ë“œ ì…ë ¥
+ë²ˆí˜¸:
+êµ­ì–´:
+ì˜ì–´:
+ìˆ˜í•™:
 
-Ãâ·Â
-¹øÈ£	±¹¾î 	¿µ¾î	¼öÇĞ	ÃÑÁ¡	Æò±Õ
+ì¶œë ¥
+ë²ˆí˜¸	êµ­ì–´ 	ì˜ì–´	ìˆ˜í•™	ì´ì 	í‰ê· 
 
-Ã³¸®Á¶°Ç
-ÃÑÁ¡ = ±¹¾î+¿µ¾î+¼öÇĞ
-Æò±Õ = ÃÑÁ¡/3.
-3°ú¸ñ ¸ğµÎ 40Á¡ ÀÌ»óÀÌ°í,Æò±Õ 60Á¡ ÀÌ»ó
-1°ú¸ñÀÌ¶óµµ 40¹Ì¸¸ÀÌ¸é '°ú¶ô'
-3°ú¸ñ ¸ğµÎ 40ÀÌ»óÀÌÁö¸¸ Æò±ÕÀÌ 60¹Ì¸¸ÀÌ¸é 'ºÒÇÕ°İ'
+ì²˜ë¦¬ì¡°ê±´
+ì´ì  = êµ­ì–´+ì˜ì–´+ìˆ˜í•™
+í‰ê·  = ì´ì /3.
+3ê³¼ëª© ëª¨ë‘ 40ì  ì´ìƒì´ê³ ,í‰ê·  60ì  ì´ìƒ
+1ê³¼ëª©ì´ë¼ë„ 40ë¯¸ë§Œì´ë©´ 'ê³¼ë½'
+3ê³¼ëª© ëª¨ë‘ 40ì´ìƒì´ì§€ë§Œ í‰ê· ì´ 60ë¯¸ë§Œì´ë©´ 'ë¶ˆí•©ê²©'
  */
 
 
@@ -25,16 +25,16 @@ public class Exam_07 {
 		
 		Scanner sc = new Scanner(System.in);
 	
-		System.out.print("¹øÈ£À» ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ë²ˆí˜¸ì„ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int num = sc.nextInt();
 		
-		System.out.print("±¹¾îÁ¡¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("êµ­ì–´ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int kor = sc.nextInt();
 		
-		System.out.print("¿µ¾îÁ¡¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ì˜ì–´ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int eng = sc.nextInt();
 		
-		System.out.print("¼öÇĞÁ¡¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ìˆ˜í•™ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int mat = sc.nextInt();
 		
 		int tot = kor + eng + mat;
@@ -47,7 +47,7 @@ public class Exam_07 {
 		if(ave >= 60) {
 			if(kor >= 40 && eng >= 40 && mat>= 40) {
 				str = "PASS";
-			}else str = "°ú¶ô";
+			}else str = "ê³¼ë½";
 		}else str = "NOT PASS";
 		
 		
@@ -59,11 +59,11 @@ public class Exam_07 {
 			if(ave<60) { 
 				str = "NOT PASS";
 			}
-			else str = "°ú¶ô";
+			else str = "ê³¼ë½";
 		}
 		*/
 		
-		System.out.println("¹øÈ£\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\tÆÇÁ¤");
+		System.out.println("ë²ˆí˜¸\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \tíŒì •");
 		System.out.println(num+"\t"+kor+"\t"+eng+"\t"+mat+"\t"+tot+"\t"+ave+"\t"+str);
 		
 		sc.close();

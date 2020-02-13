@@ -1,9 +1,9 @@
 package ExceptionTest;
 /*
-[°íÀÇÀûÀÎ ¿¹¿ÜÀÇ ¹ß»ı]
-	(1) throw »ç¿ë
-		1.¿¬»êÀÚ new¸¦ ÀÌ¿ëÇØ¼­ ¹ß»ı½ÃÅ°·Á´Â ¿¹¿ÜÅ¬·¡½ºÀÇ °´Ã¼ »ı¼º
-		2.Å°¿öµå throw·Î ¿¹¿Ü ¹ß»ı
+[ê³ ì˜ì ì¸ ì˜ˆì™¸ì˜ ë°œìƒ]
+	(1) throw ì‚¬ìš©
+		1.ì—°ì‚°ì newë¥¼ ì´ìš©í•´ì„œ ë°œìƒì‹œí‚¤ë ¤ëŠ” ì˜ˆì™¸í´ë˜ìŠ¤ì˜ ê°ì²´ ìƒì„±
+		2.í‚¤ì›Œë“œ throwë¡œ ì˜ˆì™¸ ë°œìƒ
 		
  */
 
@@ -12,14 +12,14 @@ public class ExceptionEx6 {
 	public static void main(String[] args) {
 		
 		try {
-			Exception e = new Exception("°íÀÇ ¹ß»ı½ÃÅ´");
+			Exception e = new Exception("ê³ ì˜ ë°œìƒì‹œí‚´");
 			throw e;
-			//throw new Exception("°íÀÇ ¹ß»ı"); -> À§¶û °°Àº ¸»ÀÓ
+			//throw new Exception("ê³ ì˜ ë°œìƒ"); -> ìœ„ë‘ ê°™ì€ ë§ì„
 		} catch (Exception e1) {
-			System.out.println("¿¡·¯ ¸Ş¼¼Áö : "+e1.getMessage());
+			System.out.println("ì—ëŸ¬ ë©”ì„¸ì§€ : "+e1.getMessage());
 			e1.printStackTrace();
 		}
-		System.out.println("ÇÁ·Î±×·¥ÀÌ Á¤»óÁ¾·á");
+		System.out.println("í”„ë¡œê·¸ë¨ì´ ì •ìƒì¢…ë£Œ");
 
 	}
 

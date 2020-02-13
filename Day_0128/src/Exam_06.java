@@ -4,8 +4,8 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 /*
-ÆÄÀÏ(input.txt)·Î ÇĞ»ıÁ¤º¸¸¦ ÀÔ·Â ¹Ş¾Æ¼­
-ÃÑÁ¡ Æò±ÕÀ» ±¸ÇÏ¿© Ãâ·Â 
+íŒŒì¼(input.txt)ë¡œ í•™ìƒì •ë³´ë¥¼ ì…ë ¥ ë°›ì•„ì„œ
+ì´ì  í‰ê· ì„ êµ¬í•˜ì—¬ ì¶œë ¥ 
  */
 
 

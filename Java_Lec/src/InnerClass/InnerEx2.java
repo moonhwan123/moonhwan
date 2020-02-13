@@ -5,13 +5,13 @@ public class InnerEx2 {
 	class InstanceInner{}
 	static class StaticInner{}
 	
-	//ÀÎ½ºÅÏ½º ¸â¹ö°£¿¡´Â ¼­·Î Á¢±Ù °¡´É
+	//ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ê°„ì—ëŠ” ì„œë¡œ ì ‘ê·¼ ê°€ëŠ¥
 	InstanceInner iv = new InstanceInner();
-	//static ¸â¹ö°£¿¡´Â ¼­·Î Á÷Á¢ Á¢±Ù °¡´É
+	//static ë©¤ë²„ê°„ì—ëŠ” ì„œë¡œ ì§ì ‘ ì ‘ê·¼ ê°€ëŠ¥
 	static StaticInner cv = new StaticInner();
 	
 	static void staticMethod() {
-//		InstanceInner obj1 = new InstanceInner();  --> ¿¡·¯¹ß»ı
+//		InstanceInner obj1 = new InstanceInner();  --> ì—ëŸ¬ë°œìƒ
 		StaticInner obj2 = new StaticInner();
 		
 		InnerEx2 outer = new InnerEx2();
@@ -19,7 +19,7 @@ public class InnerEx2 {
 	}
 	
 	void instanceMethod() {
-		//ÀÎ½ºÅÏ½º ¸Ş¼­µå¿¡¼­´Â ÀÎ½ºÅÏ½º ¸â¹ö¿Í static¸â¹ö ¸ğµÎ Á¢±Ù°¡´É
+		//ì¸ìŠ¤í„´ìŠ¤ ë©”ì„œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ ë©¤ë²„ì™€ staticë©¤ë²„ ëª¨ë‘ ì ‘ê·¼ê°€ëŠ¥
 		InstanceInner obj1 = new InstanceInner();
 		StaticInner obj2 = new StaticInner();
 //		LocalInner lv = new LocalInner();

@@ -7,11 +7,11 @@ public class Exam_05 {
 		AAA aa = new AAA();
 		aa.aa = 100;
 		aa.bb = 200;
-//  	aa.cc = 300; private¶ó¼­ ¾ÈµÊ
+//  	aa.cc = 300; privateë¼ì„œ ì•ˆë¨
 		
 		aa.aaa();
 		aa.bbb();
-//		aa.ccc(); private¶ó¼­ ¾ÈµÊ
+//		aa.ccc(); privateë¼ì„œ ì•ˆë¨
 		
 		
 		

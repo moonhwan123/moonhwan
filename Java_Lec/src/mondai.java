@@ -5,13 +5,13 @@ public class mondai {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		//ÃÖ´ë°ø¾à¼ö
+		//ìµœëŒ€ê³µì•½ìˆ˜
 		/*
-		 µÎ ¼öÀÇ ÃÖ´ë °ø¾à¼ö ±¸ÇÏ±â
+		 ë‘ ìˆ˜ì˜ ìµœëŒ€ ê³µì•½ìˆ˜ êµ¬í•˜ê¸°
 		 
-		 À¯Å¬¸®µå È£Á¦¹ı
-		 1. µÎ ¼ö °¡¿îµ¥ Å« ¼ö¸¦ big, ÀÛÀº¼ö¸¦ small¶ó°í ÇÑ´Ù.
-		 2. y°¡ 0ÀÌ¸é °ø¾à¼ö´Â x¿Í °°´Ù.
+		 ìœ í´ë¦¬ë“œ í˜¸ì œë²•
+		 1. ë‘ ìˆ˜ ê°€ìš´ë° í° ìˆ˜ë¥¼ big, ì‘ì€ìˆ˜ë¥¼ smallë¼ê³  í•œë‹¤.
+		 2. yê°€ 0ì´ë©´ ê³µì•½ìˆ˜ëŠ” xì™€ ê°™ë‹¤.
 		 3. nmg = big % small
 		 4. big = small
 		 5. small = nmg
@@ -26,7 +26,7 @@ public class mondai {
 		int small;
 		int nmg;
 		
-		System.out.println("µÎ ¼ö¸¦ ÀÔ·Â ÇØÁÖ¼¼¿ä : ");
+		System.out.println("ë‘ ìˆ˜ë¥¼ ì…ë ¥ í•´ì£¼ì„¸ìš” : ");
 		A = sc.nextInt();
 		B = sc.nextInt();
 		
@@ -44,7 +44,7 @@ public class mondai {
 		big = small;
 		small = nmg;
 		}
-		System.out.println("ÃÖ´ë °ø¾à¼ö´Â"+big);
+		System.out.println("ìµœëŒ€ ê³µì•½ìˆ˜ëŠ”"+big);
 		*/
 		
 		
@@ -54,17 +54,17 @@ public class mondai {
 		
 		
 		/*
-		 0 ÀÌÇÏÀÇ ¼ö°¡ ÀÔ·Â µÉ ¶§ ±îÁö Á¤¼ö¸¦ °è¼Ó ÀÔ·Â ¹Ş°í 5ÀÇ ¹è¼ö¿Í 7ÀÇ ¹è¼ö¸¦ Á¦¿ÜÇÑ ¼öµéÀÇ °¹¼ö¸¦ Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		 0 ì´í•˜ì˜ ìˆ˜ê°€ ì…ë ¥ ë  ë•Œ ê¹Œì§€ ì •ìˆ˜ë¥¼ ê³„ì† ì…ë ¥ ë°›ê³  5ì˜ ë°°ìˆ˜ì™€ 7ì˜ ë°°ìˆ˜ë¥¼ ì œì™¸í•œ ìˆ˜ë“¤ì˜ ê°¯ìˆ˜ë¥¼ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ë¨
 		 
-		 [Ãâ·Â°á°ú]
-		 °ªÀ» ÀÔ·Â ÇÏ¼¼¿ä : 100 80 20 28 3 34 2 0
-		 5¿Í 7ÀÇ ¹è¼ö¸¦ Á¦¿ÜÇÑ °¹¼ö : ~~
+		 [ì¶œë ¥ê²°ê³¼]
+		 ê°’ì„ ì…ë ¥ í•˜ì„¸ìš” : 100 80 20 28 3 34 2 0
+		 5ì™€ 7ì˜ ë°°ìˆ˜ë¥¼ ì œì™¸í•œ ê°¯ìˆ˜ : ~~
 		 */
 		
 		/*
 		int num=0;
 		int count=0;
-		System.out.print("°ªÀ» ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ê°’ì„ ì…ë ¥ í•˜ì„¸ìš” : ");
 		
 	
 		while(true)
@@ -77,18 +77,18 @@ public class mondai {
 		}
 		
 		System.out.println();
-		System.out.println("5¿Í 7ÀÇ ¹è¼ö¸¦ Á¦¿ÜÇÑ °¹¼ö´Â "+count+"°³ ÀÔ´Ï´Ù.");
+		System.out.println("5ì™€ 7ì˜ ë°°ìˆ˜ë¥¼ ì œì™¸í•œ ê°¯ìˆ˜ëŠ” "+count+"ê°œ ì…ë‹ˆë‹¤.");
 		*/
 		
 		
-		// 2019-09-19 [½Ç½À ¿¹Á¦ 2¹ø]
+		// 2019-09-19 [ì‹¤ìŠµ ì˜ˆì œ 2ë²ˆ]
 		
 		
 		
 		/*
 		int A;
 		int B;
-		System.out.print("µÎ ¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ë‘ ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		A= sc.nextInt();
 		B= sc.nextInt();
 		int DAN;
@@ -113,7 +113,7 @@ public class mondai {
 		/*
 		int A;
 		int B;
-		System.out.println("µÎ ¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.println("ë‘ ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		A= sc.nextInt();
 		B= sc.nextInt();
 		int DAN;
@@ -129,21 +129,21 @@ public class mondai {
 		}
 		*/
 		
-		//[¿¹Á¦ 3¹ø]
-		// ÃÊ¸¦ ÀÔ·Â ¹Ş°í ~½Ã~ºĞ ~ÃÊ ÀÇ ÇüÅÂ·Î ³ªÅ¸³»±â
+		//[ì˜ˆì œ 3ë²ˆ]
+		// ì´ˆë¥¼ ì…ë ¥ ë°›ê³  ~ì‹œ~ë¶„ ~ì´ˆ ì˜ í˜•íƒœë¡œ ë‚˜íƒ€ë‚´ê¸°
 		/*
-		System.out.print("ÃÊ¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ì´ˆë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int time = sc.nextInt();
 		int second = time % 60;
 		int minute = (time/60) % 60;
 		int hour = (time/60) / 60;
 		
-		System.out.printf("%dÃÊ´Â %d½Ã°£ %dºĞ %dÃÊ ÀÔ´Ï´Ù.", time,hour,minute,second);
+		System.out.printf("%dì´ˆëŠ” %dì‹œê°„ %dë¶„ %dì´ˆ ì…ë‹ˆë‹¤.", time,hour,minute,second);
 		System.out.println();
 		*/
 		
 		
-		//for¹® ÇÏ³ª¸¸ ¾²´Â ±¸±¸´Ü 
+		//forë¬¸ í•˜ë‚˜ë§Œ ì“°ëŠ” êµ¬êµ¬ë‹¨ 
 		
 		int dan = 1;
 		int gob = 0;

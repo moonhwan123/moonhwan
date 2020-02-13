@@ -4,22 +4,22 @@ public class MysqlDao implements DataAccessObject{
 
 	@Override
 	public void select() {
-		System.out.println("Mysql DB¿¡¼­ °Ë»ö");
+		System.out.println("Mysql DBì—ì„œ ê²€ìƒ‰");
 		
 	}
 	@Override
 	public void insert() {
-		System.out.println("Mysql DB¿¡¼­ »ğÀÔ");
+		System.out.println("Mysql DBì—ì„œ ì‚½ì…");
 		
 	}
 	@Override
 	public void update() {
-		System.out.println("Mysql DB¿¡¼­ ¼öÁ¤");
+		System.out.println("Mysql DBì—ì„œ ìˆ˜ì •");
 		
 	}
 	@Override
 	public void delete() {
-		System.out.println("Mysql DB¿¡¼­ »èÁ¦");
+		System.out.println("Mysql DBì—ì„œ ì‚­ì œ");
 		
 	}
 	

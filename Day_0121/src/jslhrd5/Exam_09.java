@@ -1,7 +1,7 @@
 package jslhrd5;
 /*
 hashCode();
-°´Ã¼¸¦ ½Äº°ÇÏ±âÀ§ÇÑ °íÀ¯ÇÑ °ª
+ê°ì²´ë¥¼ ì‹ë³„í•˜ê¸°ìœ„í•œ ê³ ìœ í•œ ê°’
  */
 
 class Student2 {
@@ -34,8 +34,8 @@ public class Exam_09 {
 	public static void main(String[] args) {
 		
 		
-		Student2 s1 = new Student2(1,"È«±æµ¿",90);
-		Student2 s2 = new Student2(1,"È«±æµ¿",90);
+		Student2 s1 = new Student2(1,"í™ê¸¸ë™",90);
+		Student2 s2 = new Student2(1,"í™ê¸¸ë™",90);
 		System.out.println(s1.toString());
 		System.out.println("s1 = "+s1);
 		System.out.println("s2 = "+s2.hashCode());

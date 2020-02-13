@@ -27,7 +27,7 @@ public class Regular extends Employee {
 	@Override
 	public void print() {
 		display();
-		System.out.println(", °íÁ¤±Ş : "+pay()+"¿ø");
+		System.out.println(", ê³ ì •ê¸‰ : "+pay()+"ì›");
 	}
 	
 	

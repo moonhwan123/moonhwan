@@ -2,7 +2,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /*
-¿À¸§Â÷¼ø Á¤·Ä
+ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
 
 
  */
@@ -15,7 +15,7 @@ public class Exam_07 {
 		
 		int arr[] = {10,34,12,67,6,8,68,34,99};
 		
-		//Á¤·Ä Àü
+		//ì •ë ¬ ì „
 		System.out.print("Source Data : ");
 		for(int i = 0; i<arr.length; i++) {
 			System.out.print(arr[i]+"\t");
@@ -23,7 +23,7 @@ public class Exam_07 {
 		System.out.println();
 		
 		
-		//Á¤·Ä ÈÄ
+		//ì •ë ¬ í›„
 		System.out.print("ASC Source Data : ");
 		
 		

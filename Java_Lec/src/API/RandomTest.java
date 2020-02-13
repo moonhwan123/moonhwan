@@ -7,18 +7,18 @@ public class RandomTest {
 	public static void main(String[] args) {
 		
 		//[Random Class]
-		//³­¼ö »ı¼ºÀÌ ¸ñÇ¥
+		//ë‚œìˆ˜ ìƒì„±ì´ ëª©í‘œ
 		
 		/*
 		
-		Random() : ÇöÀçÀÇ ½Ã°£À» Á¾ÀÚ °ªÀ¸·Î ÀÎ½ºÅÏ½º »ı¼º
-		Random(long seed) : seed¸¦ Á¾ÀÚ °ªÀ¸·Î ÇÏ´Â ÀÎ½ºÅÏ½º »ı¼º
+		Random() : í˜„ì¬ì˜ ì‹œê°„ì„ ì¢…ì ê°’ìœ¼ë¡œ ì¸ìŠ¤í„´ìŠ¤ ìƒì„±
+		Random(long seed) : seedë¥¼ ì¢…ì ê°’ìœ¼ë¡œ í•˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ ìƒì„±
 		
-		int nextInt() : ¹«ÀÛÀ§ int°ª ¹İÈ¯
-		int nextInt(int n) : 0º¸´Ù Å©°í nº¸´Ù ÀÛÀº int°ª ¹İÈ¯
-		boolean nextBoolean : ¹«ÀÛÀ§ÀÇ boolean°ª¹İÈ¯
-		long nextLong() : ¹«ÀÛÀ§ÀÇ long°ª ¹İÈ¯
-		double nextDouble() : ¹«ÀÛÀ§ÀÇ double°ª ¹İÈ¯
+		int nextInt() : ë¬´ì‘ìœ„ intê°’ ë°˜í™˜
+		int nextInt(int n) : 0ë³´ë‹¤ í¬ê³  në³´ë‹¤ ì‘ì€ intê°’ ë°˜í™˜
+		boolean nextBoolean : ë¬´ì‘ìœ„ì˜ booleanê°’ë°˜í™˜
+		long nextLong() : ë¬´ì‘ìœ„ì˜ longê°’ ë°˜í™˜
+		double nextDouble() : ë¬´ì‘ìœ„ì˜ doubleê°’ ë°˜í™˜
 		
 		 */
 		
@@ -27,10 +27,10 @@ public class RandomTest {
 		Random random2 = new Random(2);
 		
 		for(int i = 0 ; i < 5 ; i ++) {
-			System.out.println("±âº» »ı¼ºÀÚ : "+random.nextInt());
+			System.out.println("ê¸°ë³¸ ìƒì„±ì : "+random.nextInt());
 		}
 		for(int i = 0 ; i < 5 ; i ++) {
-			System.out.println("¹üÀ§ ÁöÁ¤ : "+random.nextInt(45));
+			System.out.println("ë²”ìœ„ ì§€ì • : "+random.nextInt(45));
 		}
 		for(int i = 0 ; i < 5 ; i ++) {
 			System.out.println("random1 : "+random1.nextInt(45));

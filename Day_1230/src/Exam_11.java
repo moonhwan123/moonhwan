@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 /*
-1.¼¼°³ÀÇ Á¤¼öÁß ´ë,Áß,¼Ò 
-´Ù Ã£À»¶§
-1219 10¹øµµ ´ëÁß¼Ò Ã£±âÀÓ
+1.ì„¸ê°œì˜ ì •ìˆ˜ì¤‘ ëŒ€,ì¤‘,ì†Œ 
+ë‹¤ ì°¾ì„ë•Œ
+1219 10ë²ˆë„ ëŒ€ì¤‘ì†Œ ì°¾ê¸°ìž„
  */
 
 
@@ -14,11 +14,11 @@ public class Exam_11 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö1À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜1ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int a = sc.nextInt();
-		System.out.print("Á¤¼ö2À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜2ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int b = sc.nextInt();
-		System.out.print("Á¤¼ö3À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜3ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int c = sc.nextInt();
 		
 		int max, mid, min;

@@ -1,9 +1,9 @@
 /*
-[Á¦¾î¹®]
+[ì œì–´ë¬¸]
 
-	1)if(Á¶°Ç½Ä)
-		¹®Àå1;
-	     ¹®Àå2;
+	1)if(ì¡°ê±´ì‹)
+		ë¬¸ìž¥1;
+	     ë¬¸ìž¥2;
 	     
 	
 	
@@ -16,10 +16,10 @@ public class Exam_03 {
 		int jumsu = 80;
 		
 		if (jumsu>= 80) {
-			System.out.println("ÇÕ°Ý");
+			System.out.println("í•©ê²©");
 			System.out.println(jumsu);
 		}
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ëž¨ ì¢…ë£Œ");
 		
 	}
 

@@ -31,7 +31,7 @@ public class Exam_01_sam {
 		AlphaTest2 alpha = new AlphaTest2();
 		
 		while(true) {
-			System.out.print("´Ü¾î : ");
+			System.out.print("ë‹¨ì–´ : ");
 			String word = sc.next().toUpperCase();
 			if(word.equalsIgnoreCase("END")) {
 				break;

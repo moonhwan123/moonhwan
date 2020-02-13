@@ -1,6 +1,6 @@
 /*
 String(byte[] bytes)
-byte[] ¹è¿­À» StringÀ¸·Î º¯È¯
+byte[] ë°°ì—´ì„ Stringìœ¼ë¡œ ë³€í™˜
  */
 
 
@@ -21,3 +21,4 @@ public class Exam_02 {
 		
 	}
 }
+

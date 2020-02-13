@@ -5,24 +5,24 @@ public class day4 {
 	public static void main(String[] args) {
 		
 		/*
-		 -¿¬»ê
-		 	: ÁÖ¾îÁø ½ÄÀ» °è»êÇÏ¿© °á°ú¸¦ ¾ò¾î³»´Â °úÁ¤
+		 -ì—°ì‚°
+		 	: ì£¼ì–´ì§„ ì‹ì„ ê³„ì‚°í•˜ì—¬ ê²°ê³¼ë¥¼ ì–»ì–´ë‚´ëŠ” ê³¼ì •
 		 	
-		 -¿¬»êÀÚ
-		 	: Æ¯Á¤ÇÑ ¿¬»êÀ» ¼öÇàÇÏ±â À§ÇØ »ç¿ëÇÏ´Â ±âÈ£
-		 	: ¿¬»êÀ» ÇÏ´Â '¿¬»êÀÚ' , ¿¬»êÀ» ´çÇÏ´Â 'ÇÇ¿¬»êÀÚ'·Î ±¸¼ºµÈ´Ù.
+		 -ì—°ì‚°ì
+		 	: íŠ¹ì •í•œ ì—°ì‚°ì„ ìˆ˜í–‰í•˜ê¸° ìœ„í•´ ì‚¬ìš©í•˜ëŠ” ê¸°í˜¸
+		 	: ì—°ì‚°ì„ í•˜ëŠ” 'ì—°ì‚°ì' , ì—°ì‚°ì„ ë‹¹í•˜ëŠ” 'í”¼ì—°ì‚°ì'ë¡œ êµ¬ì„±ëœë‹¤.
 		 	
-		 -»ê¼ú¿¬»êÀÚ
-		 	+ : ´õÇÏ±â
-		 	- : »©±â
-		 	* : °öÇÏ±â
-		 	/ : ³ª´©±â
-		 	% : ³ª¸ÓÁö
+		 -ì‚°ìˆ ì—°ì‚°ì
+		 	+ : ë”í•˜ê¸°
+		 	- : ë¹¼ê¸°
+		 	* : ê³±í•˜ê¸°
+		 	/ : ë‚˜ëˆ„ê¸°
+		 	% : ë‚˜ë¨¸ì§€
 		 	
 		 	
 		 */
 		
-		// µÎ ¼ö¸¦ ¹Ì¸® ¼³Á¤¼ö »çÄ¢¿¬»ê ¼öÇà ÈÄ Ãâ·Â
+		// ë‘ ìˆ˜ë¥¼ ë¯¸ë¦¬ ì„¤ì •ìˆ˜ ì‚¬ì¹™ì—°ì‚° ìˆ˜í–‰ í›„ ì¶œë ¥
 		/*
 		int a = 10;
 		int b = 3;
@@ -34,10 +34,10 @@ public class day4 {
 		System.out.println();
 		*/
 		
-		// µÎ ¼ö¸¦ ÀÔ·Â ¹Ş¾Æ¼­ »çÄ¢ ¿¬»ê ¼öÇà ÈÄ Ãâ·Â
+		// ë‘ ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ì„œ ì‚¬ì¹™ ì—°ì‚° ìˆ˜í–‰ í›„ ì¶œë ¥
 		Scanner sc = new Scanner(System.in);
 		/*
-		System.out.print("µÎ ¼ö ÀÔ·Â : ");
+		System.out.print("ë‘ ìˆ˜ ì…ë ¥ : ");
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 		System.out.println("num1 + num2 = "+(num1+num2));
@@ -49,36 +49,36 @@ public class day4 {
 		*/
 		
 		/*
-		 ¿ø ´Ş·¯ È¯À² º¯È¯ÇÏ±â
-		System.out.print("º¯È¯ ÇÒ ¿øÈ­¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		 ì› ë‹¬ëŸ¬ í™˜ìœ¨ ë³€í™˜í•˜ê¸°
+		System.out.print("ë³€í™˜ í•  ì›í™”ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int won = sc.nextInt();
 		double rate = 1100;
 		double dollar = won/rate;
 		
-		System.out.printf("%d¿øÀº $%.2f ÀÔ´Ï´Ù.",won,dollar);
+		System.out.printf("%dì›ì€ $%.2f ì…ë‹ˆë‹¤.",won,dollar);
 		System.out.println();
 		*/
 		/*
-		System.out.print("ÃÊ¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ì´ˆë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int time = sc.nextInt();
 		int second = time % 60;
 		int minute = (time/60) % 60;
 		int hour = (time/60) / 60;
 		
-		System.out.println(time + "ÃÊ´Â ");
-		System.out.println(hour + "½Ã°£,  ");
-		System.out.println(minute + "ºĞ, ");
-		System.out.println(second + "ÃÊ ÀÔ´Ï´Ù. ");
+		System.out.println(time + "ì´ˆëŠ” ");
+		System.out.println(hour + "ì‹œê°„,  ");
+		System.out.println(minute + "ë¶„, ");
+		System.out.println(second + "ì´ˆ ì…ë‹ˆë‹¤. ");
 		System.out.println();
 		*/
 		
 		/*
-		 -´ÜÇ× ¿¬»êÀÚ
-		 	: ÇÇ¿¬»êÀÚ°¡ ÇÏ³ªÀÎ ¿¬»êÀÚ
-		 		- : ºÎÈ£ ¿¬»êÀÚ(º¯¼öÀÇ ºÎÈ£ º¯°æ)
-		 		! : ºÎÁ¤ ¿¬»êÀÚ(True -> False , False -> True)
-		 		++ : Áõ°¡ ¿¬»êÀÚ(º¯¼ö¿¡ 1 Áõ°¡, a++ ¶Ç´Â ++a)
-		 		-- : °¨¼Ò ¿¬»êÀÚ(º¯¼ö¿¡ 1 °¨¼Ò, a-- ¶Ç´Â --a)
+		 -ë‹¨í•­ ì—°ì‚°ì
+		 	: í”¼ì—°ì‚°ìê°€ í•˜ë‚˜ì¸ ì—°ì‚°ì
+		 		- : ë¶€í˜¸ ì—°ì‚°ì(ë³€ìˆ˜ì˜ ë¶€í˜¸ ë³€ê²½)
+		 		! : ë¶€ì • ì—°ì‚°ì(True -> False , False -> True)
+		 		++ : ì¦ê°€ ì—°ì‚°ì(ë³€ìˆ˜ì— 1 ì¦ê°€, a++ ë˜ëŠ” ++a)
+		 		-- : ê°ì†Œ ì—°ì‚°ì(ë³€ìˆ˜ì— 1 ê°ì†Œ, a-- ë˜ëŠ” --a)
 		 	
 		 */
 		/*
@@ -94,24 +94,24 @@ public class day4 {
 		System.out.println(!b_bool);
 		
 		int num1 = 1;
-		System.out.println("ÇöÀç num1 = "+num1);
+		System.out.println("í˜„ì¬ num1 = "+num1);
 		num1++;
-		System.out.println("ÇöÀç num1 = "+num1);
+		System.out.println("í˜„ì¬ num1 = "+num1);
 		*/
 		
 		/*
-		 -Áõ°¨ ¿¬»êÀÚ
-		 	ÀüÀ§ : ¸í·É¹® ½ÇÇà Àü ¿¬»ê
-		 	ÈÄÀ§ : ¸í·É¹® ½ÇÇà ÈÄ ¿¬»ê
+		 -ì¦ê° ì—°ì‚°ì
+		 	ì „ìœ„ : ëª…ë ¹ë¬¸ ì‹¤í–‰ ì „ ì—°ì‚°
+		 	í›„ìœ„ : ëª…ë ¹ë¬¸ ì‹¤í–‰ í›„ ì—°ì‚°
 		 	
 		 */
 		
-		// ¾Æ·¡´Â Áõ°¨ ¿¬»êÀÚÀÇ ÀüÀ§ ÈÄÀ§ ºñ±³ÇÏ´Â ±¸¹®
+		// ì•„ë˜ëŠ” ì¦ê° ì—°ì‚°ìì˜ ì „ìœ„ í›„ìœ„ ë¹„êµí•˜ëŠ” êµ¬ë¬¸
 		/*
-		System.out.println("ÇöÀç num1 = "+num1);
-		System.out.println("ÇöÀç num1 = "+ ++num1);
-		System.out.println("ÇöÀç num1 = "+ num1++); // ¿©±â¼­´Â 3ÀÌ Ãâ·ÂµÇ´Âµ¥, ¿Ö³ÄÇÏ¸é ÇÁ¸°Æ® ¹®À» Ãâ·ÂÀ» ÇÑµÚ¿¡ ++¸¦ ¼öÇàÇÏ±â ¶§¹®ÀÌ´Ù.
-		System.out.println("ÇöÀç num1 = "+ num1);
+		System.out.println("í˜„ì¬ num1 = "+num1);
+		System.out.println("í˜„ì¬ num1 = "+ ++num1);
+		System.out.println("í˜„ì¬ num1 = "+ num1++); // ì—¬ê¸°ì„œëŠ” 3ì´ ì¶œë ¥ë˜ëŠ”ë°, ì™œëƒí•˜ë©´ í”„ë¦°íŠ¸ ë¬¸ì„ ì¶œë ¥ì„ í•œë’¤ì— ++ë¥¼ ìˆ˜í–‰í•˜ê¸° ë•Œë¬¸ì´ë‹¤.
+		System.out.println("í˜„ì¬ num1 = "+ num1);
 		*/
 		
 		int a,b,c,d;

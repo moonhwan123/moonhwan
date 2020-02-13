@@ -1,7 +1,7 @@
 import java.util.*;
 
 /*
-[SetÀ» Ãâ·ÂÇÏ´Â ¿©·¯°¡Áö ¹æ¹ıµé]
+[Setì„ ì¶œë ¥í•˜ëŠ” ì—¬ëŸ¬ê°€ì§€ ë°©ë²•ë“¤]
  */
 
 public class Exam_04 {
@@ -14,12 +14,12 @@ public class Exam_04 {
 		set.add("AAAA");
 		set.add("CCCC");
 		
-		// 1) 'È®Àå for¹®'À» ÀÌ¿ëÇÑ Ãâ·Â
+		// 1) 'í™•ì¥ forë¬¸'ì„ ì´ìš©í•œ ì¶œë ¥
 		for(String str : set) {
 			System.out.println(str);
 		}
 		
-		// 2) Iterator·Î º¯È¯ÇÏ¿© ¿øÇÏ´Â °ª »èÁ¦ 
+		// 2) Iteratorë¡œ ë³€í™˜í•˜ì—¬ ì›í•˜ëŠ” ê°’ ì‚­ì œ 
 		Iterator<String> iter = set.iterator();
 		
 		while(iter.hasNext()) {

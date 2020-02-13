@@ -6,9 +6,9 @@ public class CalendarEx2 {
 
 	public static void main(String[] args) {
 		
-//		set() - ³¯Â¥ ¹× ½Ã°£ ÁöÁ¤
+//		set() - ë‚ ì§œ ë° ì‹œê°„ ì§€ì •
 		
-		final String[] DAY_OF_WEEK = {"","ÀÏ","¿ù","È­","¼ö","¸ñ","±İ","Åä"};
+		final String[] DAY_OF_WEEK = {"","ì¼","ì›”","í™”","ìˆ˜","ëª©","ê¸ˆ","í† "};
 		
 		Calendar date1 = Calendar.getInstance();
 		Calendar date2 = Calendar.getInstance();
@@ -16,17 +16,17 @@ public class CalendarEx2 {
 		date1.set(2019, 10, 22);
 		date1.set(2019,Calendar.OCTOBER,10);
 		
-		System.out.println("date1Àº "+toString(date1));
+		System.out.println("date1ì€ "+toString(date1));
 		
-		System.out.println("date1Àº "+toString(date1)+DAY_OF_WEEK[date1.get(Calendar.DAY_OF_WEEK)]+"¿äÀÏ");
-		System.out.println("date2Àº "+toString(date2)+DAY_OF_WEEK[date2.get(Calendar.DAY_OF_WEEK)]+"¿äÀÏ");
+		System.out.println("date1ì€ "+toString(date1)+DAY_OF_WEEK[date1.get(Calendar.DAY_OF_WEEK)]+"ìš”ì¼");
+		System.out.println("date2ì€ "+toString(date2)+DAY_OF_WEEK[date2.get(Calendar.DAY_OF_WEEK)]+"ìš”ì¼");
 		
 		long difference = (date2.getTimeInMillis() - date1.getTimeInMillis())/1000 ;
-		System.out.println("date1 ºÎÅÍ Áö±İ±îÁö " + difference+ "ÃÊ°¡ Áö³µ½À´Ï´Ù.");
-		System.out.println("ÀÏ·Î °è»êÇÏ¸é , date1 ºÎÅÍ Áö±İ±îÁö " + difference/(24*60*60)+ "ÀÏÀÌ Áö³µ½À´Ï´Ù.");
+		System.out.println("date1 ë¶€í„° ì§€ê¸ˆê¹Œì§€ " + difference+ "ì´ˆê°€ ì§€ë‚¬ìŠµë‹ˆë‹¤.");
+		System.out.println("ì¼ë¡œ ê³„ì‚°í•˜ë©´ , date1 ë¶€í„° ì§€ê¸ˆê¹Œì§€ " + difference/(24*60*60)+ "ì¼ì´ ì§€ë‚¬ìŠµë‹ˆë‹¤.");
 	}
 	
 	public static String toString(Calendar date) {
-		return date.get(Calendar.YEAR)+"³â"+(date.get(Calendar.MONTH)+1)+"¿ù"+date.get(Calendar.DATE)+"ÀÏ ";
+		return date.get(Calendar.YEAR)+"ë…„"+(date.get(Calendar.MONTH)+1)+"ì›”"+date.get(Calendar.DATE)+"ì¼ ";
 	}
 }

@@ -7,8 +7,8 @@ class DataReturn{
 public class ReferenceReturn {
 
 	public static void main(String[] args) {
-		//ÂüÁ¶Çü ¹İÈ¯ Å¸ÀÔ
-		//°´Ã¼ÀÇ ÁÖ¼Ò°ª ¹İÈ¯
+		//ì°¸ì¡°í˜• ë°˜í™˜ íƒ€ì…
+		//ê°ì²´ì˜ ì£¼ì†Œê°’ ë°˜í™˜
 		
 		DataReturn d = new DataReturn();
 		d.x = 10;

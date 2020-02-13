@@ -1,8 +1,8 @@
 package studnet;
 /*
-ÀÚ¹Ù ºó ÆÄÀÏ(µ¥ÀÌÅÍ Àü¼Û¿ë) ¸¸µé±â - POJO (plan old java object)
+ìë°” ë¹ˆ íŒŒì¼(ë°ì´í„° ì „ì†¡ìš©) ë§Œë“¤ê¸° - POJO (plan old java object)
 java beans
-ÀÛ¸í ¹æ¹ı : Å¬·¡½º¸íBeans/ VO / DTO -> ÀÏ¹İ Å¬·¡½º¿Í ±¸ºĞ ÇÏ±â À§ÇÏ¿©
+ì‘ëª… ë°©ë²• : í´ë˜ìŠ¤ëª…Beans/ VO / DTO -> ì¼ë°˜ í´ë˜ìŠ¤ì™€ êµ¬ë¶„ í•˜ê¸° ìœ„í•˜ì—¬
 
 source - getter / setter
  */

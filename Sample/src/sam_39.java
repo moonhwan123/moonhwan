@@ -5,7 +5,7 @@ public class sam_39 {
 		int arr[][] = {{13,24,23,15,2},{23,45,13,76,1},{23,34,63,45,3}
 		,{21,43,76,34,4},{56,74,26,25,5}};
 		
-		System.out.println("[Á¤·Ä Àü]");
+		System.out.println("[ì •ë ¬ ì „]");
 		
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j < arr.length; j++) {
@@ -25,7 +25,7 @@ public class sam_39 {
 			}
 		}
 		
-		System.out.println("[Á¤·Ä ÈÄ]");
+		System.out.println("[ì •ë ¬ í›„]");
 		for(int i = 0; i < arr.length; i++) {
 			for(int j = 0; j < arr.length; j++) {
 				System.out.print(arr[i][j]+"\t");

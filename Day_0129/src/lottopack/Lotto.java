@@ -13,8 +13,8 @@ public class Lotto {
 		
 		for(int i = 0; i < dangLotto.length; i++) {
 			dangLotto[i] = (int)(Math.random()*45+1);
-			//¿©±â¼­ Áßº¹ Ã¼Å©(for¹® ÀÌ¿ë)
-			for(int y = 0; y < i; y++) { // x=0ÀÏ¶§´Â ÀÛµ¿¾ÈÇÔ
+			//ì—¬ê¸°ì„œ ì¤‘ë³µ ì²´í¬(forë¬¸ ì´ìš©)
+			for(int y = 0; y < i; y++) { // x=0ì¼ë•ŒëŠ” ìž‘ë™ì•ˆí•¨
 				if(dangLotto[i] == dangLotto[y]) {
 					i--;
 					break;
@@ -24,13 +24,13 @@ public class Lotto {
 		
 	}
 	
-	void makeBun(){ // ¹øÈ£ ¸¸µé±â ¸Þ¼­µå
+	void makeBun(){ // ë²ˆí˜¸ ë§Œë“¤ê¸° ë©”ì„œë“œ
 		int lotto[] = new int[7];
 		for(int a = 0; a < gameCnt; a++ ) {
 			for(int i = 0; i < lotto.length; i++) {
 				lotto[i] = (int)(Math.random()*45+1);
-				//¿©±â¼­ Áßº¹ Ã¼Å©(for¹® ÀÌ¿ë)
-				for(int y = 0; y < i; y++) { // x=0ÀÏ¶§´Â ÀÛµ¿¾ÈÇÔ
+				//ì—¬ê¸°ì„œ ì¤‘ë³µ ì²´í¬(forë¬¸ ì´ìš©)
+				for(int y = 0; y < i; y++) { // x=0ì¼ë•ŒëŠ” ìž‘ë™ì•ˆí•¨
 					if(lotto[i] == lotto[y]) {
 						i--;
 						break;
@@ -47,16 +47,17 @@ public class Lotto {
 			}
 			System.out.println();
 		}
-	}//¹øÈ£ ¸¸µé±â ¸Þ¼­µå ³¡
+	}//ë²ˆí˜¸ ë§Œë“¤ê¸° ë©”ì„œë“œ ë
 	
 	void dangPrint() {
-		System.out.println("[´çÈ¸ ´çÃ· ¹øÈ£]");
+		System.out.println("[ë‹¹íšŒ ë‹¹ì²¨ ë²ˆí˜¸]");
 		for(int x = 0 ; x < 6; x++) {
 			System.out.print(dangLotto[x]+"\t");
 		}
-		System.out.println("---- º¸³Ê½º : "+dangLotto[6]);
+		System.out.println("---- ë³´ë„ˆìŠ¤ : "+dangLotto[6]);
 	}
 	
 	
 
 }
+

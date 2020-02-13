@@ -2,25 +2,25 @@ package OOP2;
 
 
 /*
-[Ãß»ó Å¬·¡½º]
-	-Å¬·¡½º°¡ ¼³°èµµ ¶ó¸é, Ãß»óÅ¬·¡½º´Â '¹Ì¿Ï¼º ¼³°èµµ'
-	-Ãß»ó¸Ş¼­µå¸¦ ÇÏ³ªÀÌ»ó Æ÷ÇÔÇÏ°í ÀÖ´Â Å¬·¡½º
-	-ÀÏ¹İ¸Ş¼­µå°¡ Ãß»ó¸Ş¼­µå¸¦ È£ÃâÇÏ´Â °ÍÀº °¡´É(È£Ãâ½Ã ÇÊ¿äÇÑ°ÍÀº ¼±¾ğºÎ)
-	-¿Ï¼ºµÈ ÇüÅÂ°¡ ¾Æ´Ï¹Ç·Î 'ÀÎ½ºÅÏ½º »ı¼ºÀÌ ¾ÈµÊ'
-	-´Ù¸¥ Å¬·¡½º¸¦ ÀÛ¼º ÇÏ´Âµ¥¿¡ µµ¿òµÇ±â À§ÇÑ ¸ñÀû
+[ì¶”ìƒ í´ë˜ìŠ¤]
+	-í´ë˜ìŠ¤ê°€ ì„¤ê³„ë„ ë¼ë©´, ì¶”ìƒí´ë˜ìŠ¤ëŠ” 'ë¯¸ì™„ì„± ì„¤ê³„ë„'
+	-ì¶”ìƒë©”ì„œë“œë¥¼ í•˜ë‚˜ì´ìƒ í¬í•¨í•˜ê³  ìˆëŠ” í´ë˜ìŠ¤
+	-ì¼ë°˜ë©”ì„œë“œê°€ ì¶”ìƒë©”ì„œë“œë¥¼ í˜¸ì¶œí•˜ëŠ” ê²ƒì€ ê°€ëŠ¥(í˜¸ì¶œì‹œ í•„ìš”í•œê²ƒì€ ì„ ì–¸ë¶€)
+	-ì™„ì„±ëœ í˜•íƒœê°€ ì•„ë‹ˆë¯€ë¡œ 'ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ì´ ì•ˆë¨'
+	-ë‹¤ë¥¸ í´ë˜ìŠ¤ë¥¼ ì‘ì„± í•˜ëŠ”ë°ì— ë„ì›€ë˜ê¸° ìœ„í•œ ëª©ì 
 	
-[Ãß»ó ¸Ş¼­µå]
-	-¼±¾ğºÎ¸¸ ÀÖ°í, ±¸ÇöºÎ°¡ ¾ø´Â ¸Ş¼­µå
-	-²À ÇÊ¿äÇÏÁö¸¸ ÀÚ½Ä¸¶´Ù ´Ù¸£°Ô ±¸ÇöµÉ °æ¿ì »ç¿ë(°­Á¦¼º ºÎ¿©)
-	-Ãß»óÅ¬·¡½º¸¦ »ó¼Ó¹ŞÀº ÀÚ½ÄÅ¬·¡½º¿¡¼­ Ãß»ó¸Ş¼­µå ±¸ÇöºÎ¸¦ ¿Ï¼º
+[ì¶”ìƒ ë©”ì„œë“œ]
+	-ì„ ì–¸ë¶€ë§Œ ìˆê³ , êµ¬í˜„ë¶€ê°€ ì—†ëŠ” ë©”ì„œë“œ
+	-ê¼­ í•„ìš”í•˜ì§€ë§Œ ìì‹ë§ˆë‹¤ ë‹¤ë¥´ê²Œ êµ¬í˜„ë  ê²½ìš° ì‚¬ìš©(ê°•ì œì„± ë¶€ì—¬)
+	-ì¶”ìƒí´ë˜ìŠ¤ë¥¼ ìƒì†ë°›ì€ ìì‹í´ë˜ìŠ¤ì—ì„œ ì¶”ìƒë©”ì„œë“œ êµ¬í˜„ë¶€ë¥¼ ì™„ì„±
  */
 
 abstract class Pokemon{
-	// Æ÷Ä¹¸óÀÇ Ãß»óÅ¬·¡½º
+	// í¬ìº£ëª¬ì˜ ì¶”ìƒí´ë˜ìŠ¤
 	String name;
 	
-	abstract void attack(); // °ø°İ Ãß»ó¸Ş¼­µå
-	abstract void sound(); // ¼Ò¸® Ãß»ó¸Ş¼­µå
+	abstract void attack(); // ê³µê²© ì¶”ìƒë©”ì„œë“œ
+	abstract void sound(); // ì†Œë¦¬ ì¶”ìƒë©”ì„œë“œ
 	
 	public String getName() {
 		return this.name;
@@ -30,35 +30,35 @@ abstract class Pokemon{
 class Pikachu extends Pokemon{
 	
 	public Pikachu() {
-		this.name = "ÇÇÄ«Ãò";
+		this.name = "í”¼ì¹´ì¸„";
 	}
 	
 	@Override
 	void attack() {
-		System.out.println("Àü±â °ø°İ");
+		System.out.println("ì „ê¸° ê³µê²©");
 	}
 
 	@Override
 	void sound() {
-		System.out.println("ÇÇÄ« ÇÇÄ«");
+		System.out.println("í”¼ì¹´ í”¼ì¹´");
 	}
 	
 }
 
 class Squirtle extends Pokemon{
 	public Squirtle () {
-		this.name = "²¿ºÎ±â";
+		this.name = "ê¼¬ë¶€ê¸°";
 	}
 
 	@Override
 	void attack() {
-		System.out.println("¹°´ëÆ÷ °ø°İ");
+		System.out.println("ë¬¼ëŒ€í¬ ê³µê²©");
 		
 	}
 
 	@Override
 	void sound() {
-		System.out.println("²¿ºÏ ²¿ºÏ");
+		System.out.println("ê¼¬ë¶ ê¼¬ë¶");
 		
 	}
 }
@@ -70,7 +70,7 @@ public class AbstractTest {
 	public static void main(String[] args) {
 		
 		Pikachu pikachu = new Pikachu();
-		System.out.println("ÀÌ Æ÷ÄÏ¸óÀº : "+pikachu.getName());
+		System.out.println("ì´ í¬ì¼“ëª¬ì€ : "+pikachu.getName());
 		pikachu.attack();
 		pikachu.sound();
 						

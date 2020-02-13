@@ -5,23 +5,23 @@ public class Wrapper_auto {
 	public static void main(String[] args) {
 		
 		int i1 = 10;
-//		Integer wi = new Integer(i1);    --> ¹Ú½Ì
-		Integer wi = i1; // --> ¿ÀÅä¹Ú½Ì
+//		Integer wi = new Integer(i1);    --> ë°•ì‹±
+		Integer wi = i1; // --> ì˜¤í† ë°•ì‹±
 		
-//		int i2 = Integer.valueOf(wi);     --> ¾ð¹Ú½Ì
-		int i2 = wi; // --> ¿ÀÅä ¾ð¹Ú½Ì
+//		int i2 = Integer.valueOf(wi);     --> ì–¸ë°•ì‹±
+		int i2 = wi; // --> ì˜¤í†  ì–¸ë°•ì‹±
 		
 		double dl = 3.14;
-		Double wd = dl; // -->  ¿ÀÅä¹Ú½Ì
-		double dl2 = wd; // -->  ¿ÀÅä¾ð¹Ú½Ì
+		Double wd = dl; // -->  ì˜¤í† ë°•ì‹±
+		double dl2 = wd; // -->  ì˜¤í† ì–¸ë°•ì‹±
 		
 		
 		/*
-		ÂüÁ¶ÀûÀ¸·Î ·¡ÆÛ(Wrapper) Å¬·¡½º¿¡ ´ëÀÔµÈ °ªÀº 
-		== , != ¿Í °°Àº ºñ±³ ¿¬»êÀÚ¸¦ ÀÌ¿ëÇÏ¿© °ªÀÇ ºñ±³ ºÒ°¡
-		ÀÎ½ºÅÏ½º »ý¼ºÀ¸·Î ÀÎÇØ heap ¸Þ¸ð¸®¿¡ °ªÀÌ ÀúÀåµÇ°í º¯¼ö´Â ÂüÁ¶°ªÀ» °¡Áø´Ù.
+		ì°¸ì¡°ì ìœ¼ë¡œ ëž˜í¼(Wrapper) í´ëž˜ìŠ¤ì— ëŒ€ìž…ëœ ê°’ì€ 
+		== , != ì™€ ê°™ì€ ë¹„êµ ì—°ì‚°ìžë¥¼ ì´ìš©í•˜ì—¬ ê°’ì˜ ë¹„êµ ë¶ˆê°€
+		ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ìœ¼ë¡œ ì¸í•´ heap ë©”ëª¨ë¦¬ì— ê°’ì´ ì €ìž¥ë˜ê³  ë³€ìˆ˜ëŠ” ì°¸ì¡°ê°’ì„ ê°€ì§„ë‹¤.
 		
-		equals() ¸Þ¼­µå ÀÌ¿ë ¶Ç´Â , µ¥ÀÌÅÍ¸¦ ¾ð¹Ú½ÌÇÏ¿© °ªÀ» ºñ±³
+		equals() ë©”ì„œë“œ ì´ìš© ë˜ëŠ” , ë°ì´í„°ë¥¼ ì–¸ë°•ì‹±í•˜ì—¬ ê°’ì„ ë¹„êµ
 		
 		
 		 */

@@ -2,8 +2,8 @@ package API_UTIL;
 
 import java.util.Calendar;
 
-// add(int field, int amount) : ÁöÁ¤ÇÑ ÇÊµåÀÇ °ªÀ» ¿øÇÏ´Â ¸¸Å­ Áõ°¨
-// roll(int field, int amount) : ÁöÁ¤ÇÑ ÇÊµåÀÇ °ªÀ» ¿øÇÏ´Â ¸¸Å­ Áõ°¨ (´Ù¸¥ ÇÊµå¿¡ ¿µÇâÀ» ¹ÌÄ¡Áö ¾Ê´Â´Ù.)
+// add(int field, int amount) : ì§€ì •í•œ í•„ë“œì˜ ê°’ì„ ì›í•˜ëŠ” ë§Œí¼ ì¦ê°
+// roll(int field, int amount) : ì§€ì •í•œ í•„ë“œì˜ ê°’ì„ ì›í•˜ëŠ” ë§Œí¼ ì¦ê° (ë‹¤ë¥¸ í•„ë“œì— ì˜í–¥ì„ ë¯¸ì¹˜ì§€ ì•ŠëŠ”ë‹¤.)
 
 
 public class CalendarEx4 {
@@ -15,26 +15,26 @@ public class CalendarEx4 {
 		date.set(2005, 7,31);
 		System.out.println(toString(date));
 		
-		System.out.println("==1ÀÏÈÄ==");
+		System.out.println("==1ì¼í›„==");
 		date.add(Calendar.DATE, 1);
 		System.out.println(toString(date));
 		
-		System.out.println("==6´ŞÀü==");
+		System.out.println("==6ë‹¬ì „==");
 		date.add(Calendar.MONTH, -6);
 		System.out.println(toString(date));
 		
-		System.out.println("==31ÀÏ ÈÄ==");
+		System.out.println("==31ì¼ í›„==");
 		date.roll(Calendar.DATE, 31);
 		System.out.println(toString(date));
 		
-		System.out.println("==31ÀÏ ÈÄ==");
+		System.out.println("==31ì¼ í›„==");
 		date.add(Calendar.DATE, 31);
 		System.out.println(toString(date));
 		
 	}
 	
 	public static String toString(Calendar date) {
-		return date.get(Calendar.YEAR)+"³â"+(date.get(Calendar.MONTH)+1)+"¿ù"+date.get(Calendar.DATE)+"ÀÏ ";
+		return date.get(Calendar.YEAR)+"ë…„"+(date.get(Calendar.MONTH)+1)+"ì›”"+date.get(Calendar.DATE)+"ì¼ ";
 	}
 	
 }

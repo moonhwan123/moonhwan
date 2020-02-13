@@ -12,20 +12,20 @@ public class Exam_04 {
 		String bin = Integer.toBinaryString(a);
 		String oct = Integer.toOctalString(a);
 		String hex = Integer.toHexString(a);
-		System.out.println("10Áø¼ö 25´Â 2Áø¼ö·Î = "+bin);
-		System.out.println("10Áø¼ö 25´Â 8Áø¼ö·Î = "+oct);
-		System.out.println("10Áø¼ö 25´Â 16Áø¼ö·Î = "+hex);
+		System.out.println("10ì§„ìˆ˜ 25ëŠ” 2ì§„ìˆ˜ë¡œ = "+bin);
+		System.out.println("10ì§„ìˆ˜ 25ëŠ” 8ì§„ìˆ˜ë¡œ = "+oct);
+		System.out.println("10ì§„ìˆ˜ 25ëŠ” 16ì§„ìˆ˜ë¡œ = "+hex);
 		System.out.println();
 		
-		System.out.println("1010 -> 10Áø¼ö·Î " + Integer.parseInt("1010", 2));
+		System.out.println("1010 -> 10ì§„ìˆ˜ë¡œ " + Integer.parseInt("1010", 2));
 		System.out.println();
 		
 		int a1 = Integer.parseInt(bin,2);
 		int a2 = Integer.parseInt(oct,8);
 		int a3 = Integer.parseInt(hex,16);
-		System.out.println("2Áø¼ö"+bin+" -> 10Áø¼ö = " + a1);
-		System.out.println("8Áø¼ö"+oct+" -> 10Áø¼ö = " + a2);
-		System.out.println("16Áø¼ö"+hex+" -> 10Áø¼ö = " + a3);
+		System.out.println("2ì§„ìˆ˜"+bin+" -> 10ì§„ìˆ˜ = " + a1);
+		System.out.println("8ì§„ìˆ˜"+oct+" -> 10ì§„ìˆ˜ = " + a2);
+		System.out.println("16ì§„ìˆ˜"+hex+" -> 10ì§„ìˆ˜ = " + a3);
 		
 	
 		

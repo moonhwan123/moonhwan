@@ -1,5 +1,5 @@
 /*
-[arraycopy Å×½ºÆ®]
+[arraycopy í…ŒìŠ¤íŠ¸]
 
  */
 
@@ -11,7 +11,7 @@ public class Exam_07 {
 		int[][] var = {{1,2,3},{4,5,6}};
 		int[][] arr = new int[3][10];
 		
-		System.arraycopy(var, 0, arr, 0, var.length); // °ªÀ» º¹»ç ÇØ¾ß ÇÏ±â ¶§¹®¿¡ arr¹è¿­ÀÇ °ø°£À» È®º¸ ÇØ¾ßÇÔ
+		System.arraycopy(var, 0, arr, 0, var.length); // ê°’ì„ ë³µì‚¬ í•´ì•¼ í•˜ê¸° ë•Œë¬¸ì— arrë°°ì—´ì˜ ê³µê°„ì„ í™•ë³´ í•´ì•¼í•¨
 		
 		for(int x = 0 ; x < arr.length; x++) {
 			for(int y = 0 ; y < arr[x].length; y++) {

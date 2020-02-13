@@ -6,23 +6,23 @@ import java.util.List;
 
 public class ArrayListLinkedListTest {
 	public static void main(String[] args) {
-            // Ãß°¡ÇÒ µ¥ÀÌÅÍÀÇ °³¼ö¸¦ °í·ÁÇÏ¿© ÃæºĞÈ÷ Àâ¾Æ¾ßÇÑ´Ù.
+            // ì¶”ê°€í•  ë°ì´í„°ì˜ ê°œìˆ˜ë¥¼ ê³ ë ¤í•˜ì—¬ ì¶©ë¶„íˆ ì¡ì•„ì•¼í•œë‹¤.
             ArrayList al = new ArrayList(2000000);
             LinkedList ll = new LinkedList(); 
 
-            System.out.println("= ¼øÂ÷ÀûÀ¸·Î Ãß°¡ÇÏ±â ="); 
+            System.out.println("= ìˆœì°¨ì ìœ¼ë¡œ ì¶”ê°€í•˜ê¸° ="); 
             System.out.println("ArrayList :"+add1(al)); 
             System.out.println("LinkedList :"+add1(ll)); 
             System.out.println(); 
-            System.out.println("= Áß°£¿¡ Ãß°¡ÇÏ±â ="); 
+            System.out.println("= ì¤‘ê°„ì— ì¶”ê°€í•˜ê¸° ="); 
             System.out.println("ArrayList :"+add2(al)); 
             System.out.println("LinkedList :"+add2(ll)); 
             System.out.println(); 
-            System.out.println("= Áß°£¿¡¼­ »èÁ¦ÇÏ±â ="); 
+            System.out.println("= ì¤‘ê°„ì—ì„œ ì‚­ì œí•˜ê¸° ="); 
             System.out.println("ArrayList :"+remove2(al)); 
             System.out.println("LinkedList :"+remove2(ll)); 
             System.out.println(); 
-            System.out.println("= ¼øÂ÷ÀûÀ¸·Î »èÁ¦ÇÏ±â ="); 
+            System.out.println("= ìˆœì°¨ì ìœ¼ë¡œ ì‚­ì œí•˜ê¸° ="); 
             System.out.println("ArrayList :"+remove1(al)); 
             System.out.println("LinkedList :"+remove1(ll)); 
       } 

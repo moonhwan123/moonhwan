@@ -1,20 +1,20 @@
 import java.util.Scanner;
 
 /*
-[¹®ÀÚ¿­ Ã³¸® ¹× ÀÚ·áÇü ÀÔ·Â]
-	1. ¹®ÀÚ¿­Ã³¸®
-		-String class¸¦ ÀÌ¿ë
+[ë¬¸ìì—´ ì²˜ë¦¬ ë° ìë£Œí˜• ì…ë ¥]
+	1. ë¬¸ìì—´ì²˜ë¦¬
+		-String classë¥¼ ì´ìš©
 		
-	2. ÀÚ·áÇü ÀÔ·Â
-		-Scanner class¸¦ ÀÌ¿ë
+	2. ìë£Œí˜• ì…ë ¥
+		-Scanner classë¥¼ ì´ìš©
  */
 public class Exam_07 {
 	
 	public static void main(String[] args) {
 		
-		//[¹®ÀÚ¿­ Ã³¸® String class]
+		//[ë¬¸ìì—´ ì²˜ë¦¬ String class]
 		String str = "AAAA"; 
-		// StringÀº ±âº» ÀÚ·áÇüÀÌ ¾Æ´Ô!(Áß¿ä) , strº¯¼ö¿¡´Â 'ÁÖ¼Ò°ª'ÀÌ ÀúÀå µÇ¾îÀÖ´Ù. -> ±×·¡¼­ ÂüÁ¶Çü
+		// Stringì€ ê¸°ë³¸ ìë£Œí˜•ì´ ì•„ë‹˜!(ì¤‘ìš”) , strë³€ìˆ˜ì—ëŠ” 'ì£¼ì†Œê°’'ì´ ì €ì¥ ë˜ì–´ìˆë‹¤. -> ê·¸ë˜ì„œ ì°¸ì¡°í˜•
 		System.out.println(str);
 		System.out.println();
 		
@@ -22,9 +22,9 @@ public class Exam_07 {
 		//[Scanner class]
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("ÀÌ¸§À» ÀÔ·Â ÇÏ¼¼¿ä : ");
-		String name = sc.next(); // nextInt() - Á¤¼ö , nextDouble() - ½Ç¼ö
-		System.out.println("ÀÌ¸§Àº "+name+" ÀÔ´Ï´Ù.");
+		System.out.print("ì´ë¦„ì„ ì…ë ¥ í•˜ì„¸ìš” : ");
+		String name = sc.next(); // nextInt() - ì •ìˆ˜ , nextDouble() - ì‹¤ìˆ˜
+		System.out.println("ì´ë¦„ì€ "+name+" ì…ë‹ˆë‹¤.");
 		
 		sc.close();
 		

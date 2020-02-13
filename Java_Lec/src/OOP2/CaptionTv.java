@@ -6,8 +6,8 @@ class point{
 	
 }
 class point3D extends point {
-	// int x; ÇÊ¿ä x
-	// int y; ÇÊ¿ä x
+	// int x; í•„ìš” x
+	// int y; í•„ìš” x
 	int z;
 }
 
@@ -37,13 +37,13 @@ public class CaptionTv {
 	public static void main(String[] args) {
 		
 		/*
-		[»ó¼Ó]
-			-±âÁ¸ÀÇ Å¬·¡½º¸¦ Àç»ç¿ëÇØ¼­ »õ·Î¿î Å¬·¡½º ÀÛ¼º
-			-µÎ Å¬·¡½º¸¦ Á¶»ó°ú ÀÚ¼Õ(ºÎ¸ð,ÀÚ½Ä)ÀÇ °ü°è¸¦ ¸Î¾î ÁÖ´Â °Í
-			-ÀÚ¼Õ Å¬·¡½º´Â Á¶»óÅ¬·¡½ºÀÇ ¸ðµç ¸â¹ö¸¦ »ó¼Ó(»ý¼ºÀÚ,ÃÊ±âÈ­ ºí·°Àº »ó¼Ó¾ÈµÊ)
-			-ÀÚ¼ÕÀÇ ¸â¹ö °¹¼ö´Â Á¶»óº¸´Ù ÀûÀ» ¼ö ¾ø´Ù.(°°°Å³ª ¸¹´Ù.)
-			-»ç¿ë¹ý  
-				>> class ÀÚ¼ÕÅ¬·¡½º extends Á¶»óÅ¬·¡½º{
+		[ìƒì†]
+			-ê¸°ì¡´ì˜ í´ëž˜ìŠ¤ë¥¼ ìž¬ì‚¬ìš©í•´ì„œ ìƒˆë¡œìš´ í´ëž˜ìŠ¤ ìž‘ì„±
+			-ë‘ í´ëž˜ìŠ¤ë¥¼ ì¡°ìƒê³¼ ìžì†(ë¶€ëª¨,ìžì‹)ì˜ ê´€ê³„ë¥¼ ë§ºì–´ ì£¼ëŠ” ê²ƒ
+			-ìžì† í´ëž˜ìŠ¤ëŠ” ì¡°ìƒí´ëž˜ìŠ¤ì˜ ëª¨ë“  ë©¤ë²„ë¥¼ ìƒì†(ìƒì„±ìž,ì´ˆê¸°í™” ë¸”ëŸ­ì€ ìƒì†ì•ˆë¨)
+			-ìžì†ì˜ ë©¤ë²„ ê°¯ìˆ˜ëŠ” ì¡°ìƒë³´ë‹¤ ì ì„ ìˆ˜ ì—†ë‹¤.(ê°™ê±°ë‚˜ ë§Žë‹¤.)
+			-ì‚¬ìš©ë²•  
+				>> class ìžì†í´ëž˜ìŠ¤ extends ì¡°ìƒí´ëž˜ìŠ¤{
 				
 				  }
 		 */

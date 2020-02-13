@@ -5,20 +5,20 @@ public class Exam_04 {
 	public static void main(String[] args) {
 		
 		List list = new Vector();
-//		list.capacity();  È£Ãâ ºÒ°¡ capacity´Â VectorÀÇ ¸Ş¼­µåÀÌ±â ¶§¹®ÀÌ´Ù.
+//		list.capacity();  í˜¸ì¶œ ë¶ˆê°€ capacityëŠ” Vectorì˜ ë©”ì„œë“œì´ê¸° ë•Œë¬¸ì´ë‹¤.
 		
 		Vector vc = new Vector();
 		vc.capacity();
-		System.out.println(vc.size()); // ½ÇÁ¦ ÀúÀåµÈ ¿ÀºêÁ§Æ® °¹¼ö
-		System.out.println(vc.capacity()); // È®º¸µÈ °ø°£(±âº»Å©±â´Â 10 ÀÌÁö¸¸ , StringBufferÃ³·³ ÀÚµ¿À¸·Î º¯µ¿µÊ)
+		System.out.println(vc.size()); // ì‹¤ì œ ì €ì¥ëœ ì˜¤ë¸Œì íŠ¸ ê°¯ìˆ˜
+		System.out.println(vc.capacity()); // í™•ë³´ëœ ê³µê°„(ê¸°ë³¸í¬ê¸°ëŠ” 10 ì´ì§€ë§Œ , StringBufferì²˜ëŸ¼ ìë™ìœ¼ë¡œ ë³€ë™ë¨)
 		
 		System.out.println("=================");
 		
 		vc.add("AAAA");
-		vc.add(0, "BBBB"); // »ğÀÔµÇ¸é ¿ø·¡ÀÖ´ø ³ğµéÀº µÚ·Î »èÁ¦ µÇ´Â°Ô ¾Æ´Ï¶ó, "¹Ğ¸°´Ù."
+		vc.add(0, "BBBB"); // ì‚½ì…ë˜ë©´ ì›ë˜ìˆë˜ ë†ˆë“¤ì€ ë’¤ë¡œ ì‚­ì œ ë˜ëŠ”ê²Œ ì•„ë‹ˆë¼, "ë°€ë¦°ë‹¤."
 		vc.add("DDDD");
-		//±×·¡¼­ »ğÀÔ»èÁ¦°¡ ºó¹øÈ÷ ÀÏ¾î³ª¸é ±×¸¸Å­ ¼Óµµ°¡ ´À·ÁÁü (¼ÓµµÀúÇÏÀÇ ¿äÀÎ)
-		//±×·± »óÈ²¿¡¼­´Â LinkedList¸¦ »ç¿ëÇÑ´Ù.
+		//ê·¸ë˜ì„œ ì‚½ì…ì‚­ì œê°€ ë¹ˆë²ˆíˆ ì¼ì–´ë‚˜ë©´ ê·¸ë§Œí¼ ì†ë„ê°€ ëŠë ¤ì§ (ì†ë„ì €í•˜ì˜ ìš”ì¸)
+		//ê·¸ëŸ° ìƒí™©ì—ì„œëŠ” LinkedListë¥¼ ì‚¬ìš©í•œë‹¤.
 		
 		for(int x = 0 ; x < vc.size(); x++) {
 			System.out.println(vc.get(x));
@@ -28,3 +28,4 @@ public class Exam_04 {
 		
 	}
 }
+

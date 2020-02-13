@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 /*
 
-if(Á¶°Ç½Ä){ // Âü
-	¹®Àå1;
-}else{ // °ÅÁş
-	¹®Àå2
+if(ì¡°ê±´ì‹){ // ì°¸
+	ë¬¸ì¥1;
+}else{ // ê±°ì§“
+	ë¬¸ì¥2
 }
-  ¹®Àå3;
+  ë¬¸ì¥3;
 
 
-¹®Á¦ : Å°º¸µå·Î Á¡¼ö¸¦ ÀÔ·Â ¹Ş¾Æ¼­ 85Á¡ ÀÌ»ó ÀÌ¸é 'ÇÕ°İ'
-           ¾Æ´Ï¸é 'ºÒÇÕ°İ'
+ë¬¸ì œ : í‚¤ë³´ë“œë¡œ ì ìˆ˜ë¥¼ ì…ë ¥ ë°›ì•„ì„œ 85ì  ì´ìƒ ì´ë©´ 'í•©ê²©'
+           ì•„ë‹ˆë©´ 'ë¶ˆí•©ê²©'
 
  */
 
@@ -22,7 +22,7 @@ public class Exam_04 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int jumsu = sc.nextInt();
 		
 		String str = "";
@@ -33,7 +33,7 @@ public class Exam_04 {
 		else {
 			str = "NOT PASS";
 		}
-		System.out.println("°á°ú : " + str);
+		System.out.println("ê²°ê³¼ : " + str);
 		
 		sc.close();
 		

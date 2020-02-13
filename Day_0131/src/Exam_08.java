@@ -8,12 +8,12 @@ import java.util.Date;
 public class Exam_08 {
 	public static void main(String[] args) {
 		Date today = new Date(); 
-		System.out.println("ÇöÀç ³¯Â¥ : "+today);
+		System.out.println("í˜„ìž¬ ë‚ ì§œ : "+today);
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		String now1 = sdf.format(today);
 		
-		System.out.println("³¯Â¥ º¯È¯ : " + now1);
+		System.out.println("ë‚ ì§œ ë³€í™˜ : " + now1);
 		
 		
 		

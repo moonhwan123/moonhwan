@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class sam_08 {
 	public static void main(String[] args) {
 		
-		System.out.println("[ÀÔ·ÂÇÑ ¼ö Áß ÃÖ´ë,ÃÖ¼Ò °ªÀ» Ã£´Â ÇÁ·Î±×·¥ ÀÔ´Ï´Ù.]");
+		System.out.println("[ì…ë ¥í•œ ìˆ˜ ì¤‘ ìµœëŒ€,ìµœì†Œ ê°’ì„ ì°¾ëŠ” í”„ë¡œê·¸ë¨ ì…ë‹ˆë‹¤.]");
 		
 		Scanner sc = new Scanner(System.in);
 		int max = 0;
 		int min = 999;
 		
 		while(true) {
-			System.out.print("ÀÔ·Â (-99¸¦ ÀÔ·Â ÇÏ¸é Á¾·á) : ");
+			System.out.print("ì…ë ¥ (-99ë¥¼ ì…ë ¥ í•˜ë©´ ì¢…ë£Œ) : ");
 			int num = sc.nextInt();
 			if(num==-99) break;
 			if(max < num) {

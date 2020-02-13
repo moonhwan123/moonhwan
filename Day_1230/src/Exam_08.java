@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 /*
-1.¼¼°³ÀÇ Á¤¼öÁß °¡Àå Å«°ª Ã£±â
+1.ì„¸ê°œì˜ ì •ìˆ˜ì¤‘ ê°€ì¥ í°ê°’ ì°¾ê¸°
 
-2.¼¼°³ÀÇ Á¤¼öÁß °¡Àå Å«°ª Ã£±â
+2.ì„¸ê°œì˜ ì •ìˆ˜ì¤‘ ê°€ì¥ í°ê°’ ì°¾ê¸°
 
 
  */
@@ -16,15 +16,15 @@ public class Exam_08 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö1À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜1ì„ ì…ë ¥ í•˜ì„¸ìš” >> ");
 		int a = sc.nextInt();
-		System.out.print("Á¤¼ö2À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜2ì„ ì…ë ¥ í•˜ì„¸ìš” >> ");
 		int b = sc.nextInt();
-		System.out.print("Á¤¼ö3À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜3ì„ ì…ë ¥ í•˜ì„¸ìš” >> ");
 		int c = sc.nextInt();
 		
 		
-		// 1. Å«°ª Ã£±â
+		// 1. í°ê°’ ì°¾ê¸°
 		int max = 0;
 		
 		if(a>b) {
@@ -43,7 +43,7 @@ public class Exam_08 {
 		
 		System.out.println("max = " + max);
 		
-		// 2. ÀÛÀº°ª Ã£±â
+		// 2. ì‘ì€ê°’ ì°¾ê¸°
 		int min = 0;
 		
 		

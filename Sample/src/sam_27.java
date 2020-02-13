@@ -18,11 +18,11 @@ public class sam_27 {
 		}
 		
 		for(int i = 0; i < score.length; i++) {
-			System.out.print(score[i]+"Á¡"+"\t");
+			System.out.print(score[i]+"ì "+"\t");
 		}
 		System.out.println();
 		for(int i = 0; i < score.length; i++) {
-			System.out.print(rank[i]+"µî"+"\t");
+			System.out.print(rank[i]+"ë“±"+"\t");
 		}
 		
 	}

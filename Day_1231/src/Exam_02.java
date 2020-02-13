@@ -5,7 +5,7 @@ if()
 
 
 switch ~ case
-90ÀÌ»ó , 80ÀÌ»ó, 70ÀÌ»ó, 60ÀÌ»ó , 60¹Ì¸¸
+90ì´ìƒ , 80ì´ìƒ, 70ì´ìƒ, 60ì´ìƒ , 60ë¯¸ë§Œ
 100~90 , 89~80 , 79~70 , 69~60, 59~0
 
  */
@@ -16,16 +16,16 @@ public class Exam_02 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Á¡¼ö ÀÔ·Â : ");
+		System.out.print("ì ìˆ˜ ì…ë ¥ : ");
 		int var = sc.nextInt();
 		
-		String str = ""; // String str = null; ÀÌ°Å¶ûÀº ´Ù¸¥°ÅÀÓ
+		String str = ""; // String str = null; ì´ê±°ë‘ì€ ë‹¤ë¥¸ê±°ì„
 		//char ch = 'A';
 		
-		switch(var/10) { //¼ö½Ä ¶Ç´Â º¯¼ö°¡ µé¾î°¨(Á¤¼ö,¹®ÀÚ,¹®ÀÚ¿­)
-			case 10:	// °ª(Á¤¼ö,¹®ÀÚ,¹®ÀÚ¿­)
+		switch(var/10) { //ìˆ˜ì‹ ë˜ëŠ” ë³€ìˆ˜ê°€ ë“¤ì–´ê°(ì •ìˆ˜,ë¬¸ì,ë¬¸ìì—´)
+			case 10:	// ê°’(ì •ìˆ˜,ë¬¸ì,ë¬¸ìì—´)
 				str = "A";
-				break; // ÀÌ°Ô ¾øÀ¸¸é -> Á¶°Ç ¸¸Á·½Ã ¹Ø¿¡ ²¨µµ ´Ù ½ÇÇàµÇ¾î ¹ö¸²
+				break; // ì´ê²Œ ì—†ìœ¼ë©´ -> ì¡°ê±´ ë§Œì¡±ì‹œ ë°‘ì— êº¼ë„ ë‹¤ ì‹¤í–‰ë˜ì–´ ë²„ë¦¼
 			case 9:
 				str = "A";
 				break;
@@ -43,7 +43,7 @@ public class Exam_02 {
 				
 		}
 		
-		System.out.println("´ç½ÅÀÇ ¼ºÀûÀº"+str+"Á¡ ÀÔ´Ï´Ù.");
+		System.out.println("ë‹¹ì‹ ì˜ ì„±ì ì€"+str+"ì  ì…ë‹ˆë‹¤.");
 		
 		
 		

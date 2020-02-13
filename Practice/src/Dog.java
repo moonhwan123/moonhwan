@@ -8,7 +8,7 @@ public class Dog {
 		this.age=0;
 		this.name = "";
 		this.breed = "";
-		System.out.print("ÀÌ¸§ : "+name+"Á¾·ù"+breed);
+		System.out.print("ì´ë¦„ : "+name+"ì¢…ë¥˜"+breed);
 	}
 	Dog(String name, int age){
 		this.name = name;

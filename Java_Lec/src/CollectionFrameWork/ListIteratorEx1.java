@@ -19,7 +19,7 @@ public class ListIteratorEx1 {
 		ListIterator it = list.listIterator();
 		
 		while(it.hasNext()) {
-			System.out.print(it.next()); // ¼ø¹æÇâÀ¸·Î ÁøÇà
+			System.out.print(it.next()); // ìˆœë°©í–¥ìœ¼ë¡œ ì§„í–‰
 		}
 		
 		System.out.println();
@@ -27,7 +27,7 @@ public class ListIteratorEx1 {
 		ListIterator it1 = list.listIterator();
 		
 		while(it1.hasNext()) {
-			System.out.print(it1.previous()); // ¿ª¹æÇâÀ¸·Î ÁøÇà
+			System.out.print(it1.previous()); // ì—­ë°©í–¥ìœ¼ë¡œ ì§„í–‰
 		}
 
 	}

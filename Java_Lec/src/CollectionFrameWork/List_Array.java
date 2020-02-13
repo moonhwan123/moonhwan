@@ -7,22 +7,22 @@ import java.util.Comparator;
 
 /*
 void add (int index, Object o)
-	-indexÀÇ À§Ä¡¿¡ ¿ä¼Ò Ãß°¡
+	-indexì˜ ìœ„ì¹˜ì— ìš”ì†Œ ì¶”ê°€
 
 Element get (int index)
-	-index À§Ä¡¿¡ ÀÖ´Â ¿ä¼Ò¸¦ ¹İÈ¯
+	-index ìœ„ì¹˜ì— ìˆëŠ” ìš”ì†Œë¥¼ ë°˜í™˜
 
 int indexOf(Object O)
-	-¿ä¼Ò O °¡ ÀÖ´Â À§Ä¡¸¦ ¹İÈ¯
+	-ìš”ì†Œ O ê°€ ìˆëŠ” ìœ„ì¹˜ë¥¼ ë°˜í™˜
 	
 ListIterator listiterator()
-	-ListIterator °´Ã¼¸¦ ¹İÈ¯
+	-ListIterator ê°ì²´ë¥¼ ë°˜í™˜
 	
 Object remove(int index)
-	-index À§Ä¡ÀÇ ¿ä¼Ò »èÁ¦
+	-index ìœ„ì¹˜ì˜ ìš”ì†Œ ì‚­ì œ
 	
 Object Set(int index, Object Element)
-	-ÁöÁ¤ÇÑ indexÀÇ ¿ä¼Ò¸¦ element·Î º¯°æ
+	-ì§€ì •í•œ indexì˜ ìš”ì†Œë¥¼ elementë¡œ ë³€ê²½
  */
 
 public class List_Array {
@@ -34,14 +34,14 @@ public class List_Array {
 		list.add("B");
 		list.add("C");
 		list.add("D");
-		System.out.println("ÃÊ±â »óÅÂ");
+		System.out.println("ì´ˆê¸° ìƒíƒœ");
 		System.out.println(list);
 		
-		System.out.println("ÀÎµ¦½º 2 À§Ä¡ÀÇ °ª Á¦°Å");
+		System.out.println("ì¸ë±ìŠ¤ 2 ìœ„ì¹˜ì˜ ê°’ ì œê±°");
 		list.remove(2);
 		System.out.println(list);
 		
-		System.out.println("ÀÎµ¦½º 2¹ø À§Ä¡ÀÇ °ª ¹İÈ¯");
+		System.out.println("ì¸ë±ìŠ¤ 2ë²ˆ ìœ„ì¹˜ì˜ ê°’ ë°˜í™˜");
 		System.out.println(list.get(2));
 		System.out.println();
 		
@@ -59,7 +59,7 @@ public class List_Array {
 		
 		
 		ArrayList list2 = new ArrayList(list1.subList(1, 4));
-		//fromindex·Ñ ºÎÅÍ toindex»çÀÌ¿¡ ÀúÀåµÈ °´Ã¼ ¹İÈ¯
+		//fromindexë¡¤ ë¶€í„° toindexì‚¬ì´ì— ì €ì¥ëœ ê°ì²´ ë°˜í™˜
 		
 		print(list1, list2);
 		
@@ -67,24 +67,24 @@ public class List_Array {
 		Collections.sort(list2);
 		print(list1, list2);
 		
-		list1.sort(Comparator.naturalOrder()); // ¿À¸§ Â÷¼ø
-		list1.sort(Comparator.reverseOrder()); // ³»¸² Â÷¼ø
+		list1.sort(Comparator.naturalOrder()); // ì˜¤ë¦„ ì°¨ìˆœ
+		list1.sort(Comparator.reverseOrder()); // ë‚´ë¦¼ ì°¨ìˆœ
 		
 		System.out.println("list1.ContainAll(list2) : "+ list1.containsAll(list2));
 		System.out.println();
-		//contains() : ÁöÁ¤µÈ °´Ã¼°¡ ArrayList¿¡ Æ÷ÇÔµÇ¾î ÀÖ´ÂÁö È®ÀÎ
-		//containsAll() : Ã¹ ¹øÂ° ¸®½ºÆ®°¡ µÎ¹øÂ° ¸®½ºÆ®ÀÇ ¸ğµç ¿ä¼Ò¸¦ Æ÷ÇÔ ½Ã true
+		//contains() : ì§€ì •ëœ ê°ì²´ê°€ ArrayListì— í¬í•¨ë˜ì–´ ìˆëŠ”ì§€ í™•ì¸
+		//containsAll() : ì²« ë²ˆì§¸ ë¦¬ìŠ¤íŠ¸ê°€ ë‘ë²ˆì§¸ ë¦¬ìŠ¤íŠ¸ì˜ ëª¨ë“  ìš”ì†Œë¥¼ í¬í•¨ ì‹œ true
 		
 		list2.add("B");
 		list2.add("C");
 		list2.add(3,"A");
 		print(list1, list2);
-		list2.set(3, "AA"); // set() : ¿øÇÏ´Â À§Ä¡ÀÇ °ªÀ» ¹Ù²Ş
+		list2.set(3, "AA"); // set() : ì›í•˜ëŠ” ìœ„ì¹˜ì˜ ê°’ì„ ë°”ê¿ˆ
 		print(list1, list2);
 		System.out.println();
 		
 		System.out.println("list1.retainAll(list2) : "+ list1.retainAll(list2));
-		//list2¿Í °øÅë¿ä¼Ò Á¦¿ÜÇÏ°í´Â ¸ğµÎ »èÁ¦
+		//list2ì™€ ê³µí†µìš”ì†Œ ì œì™¸í•˜ê³ ëŠ” ëª¨ë‘ ì‚­ì œ
 		print(list1, list2);
 		System.out.println();
 		
@@ -93,7 +93,7 @@ public class List_Array {
 				list2.remove(i);
 			}
 		}
-		//Áö¿ì°í ½ÍÀ»¶§´Â µÚ¿¡¼­ ºÎÅÍ Áö¿ö¾ßµÊ
+		//ì§€ìš°ê³  ì‹¶ì„ë•ŒëŠ” ë’¤ì—ì„œ ë¶€í„° ì§€ì›Œì•¼ë¨
 		
 		
 		

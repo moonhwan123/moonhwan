@@ -1,9 +1,9 @@
 /*
-[°´Ã¼ ºñ±³]
+[ê°ì²´ ë¹„êµ]
 
  */
 class DataA{
-	static int id = 10; // staticÀÌ ºÙÀº ¾ÖµéÀº Å¬·¡½º°¡ ·Îµù µÇ´Â ¼ø°£ ¸¸µé¾î Áö¹Ç·Î, ÂüÁ¶º¯¼ö¸¦ ÅëÇÏÁö ¾Ê°íµµ Á¢±ÙÀÌ °¡´ÉÇÏ´Ù.
+	static int id = 10; // staticì´ ë¶™ì€ ì• ë“¤ì€ í´ëž˜ìŠ¤ê°€ ë¡œë”© ë˜ëŠ” ìˆœê°„ ë§Œë“¤ì–´ ì§€ë¯€ë¡œ, ì°¸ì¡°ë³€ìˆ˜ë¥¼ í†µí•˜ì§€ ì•Šê³ ë„ ì ‘ê·¼ì´ ê°€ëŠ¥í•˜ë‹¤.
 	int pw = 111;
 	
 	boolean equals(DataA a) {

@@ -11,7 +11,7 @@ public class Exam5_6 {
 		for(int i = 0; i < coinUnit.length; i++) {
 			int mok = money/coinUnit[i];
 			int nmg = money%coinUnit[i];
-			System.out.println(coinUnit[i]+"¿ø : " + mok);
+			System.out.println(coinUnit[i]+"ì› : " + mok);
 			money = nmg;
 			
 		}

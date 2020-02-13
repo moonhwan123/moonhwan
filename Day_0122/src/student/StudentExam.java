@@ -19,68 +19,68 @@ public class StudentExam {
 		String imsiStr;
 		
 		while(cnt<10) {
-			System.out.print("ÀÔ·Â(¹øÈ£,ÀÌ¸§,±¹,¿µ,¼ö) >> ");
+			System.out.print("ì…ë ¥(ë²ˆí˜¸,ì´ë¦„,êµ­,ì˜,ìˆ˜) >> ");
 			String str = sc.nextLine();
 			
 			String[] str1 = str.split(",");
 			
 			if(str.equalsIgnoreCase("end")) break;
 			
-			//¼ıÀÚ ¿À·ù ÆÇº°
+			//ìˆ«ì ì˜¤ë¥˜ íŒë³„
 			check = str1[0].charAt(0);
-			if(Character.isDigit(check)) { // ¸¸Á·½Ã ¼ıÀÚÀÓ
+			if(Character.isDigit(check)) { // ë§Œì¡±ì‹œ ìˆ«ìì„
 				imsi = Integer.parseInt(str1[0]);
 				if(imsi < 1 || imsi > 10) {
-					System.out.println("¼ıÀÚ ¹üÀ§ ÃÊ°ú ¿À·ù, ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä!");
+					System.out.println("ìˆ«ì ë²”ìœ„ ì´ˆê³¼ ì˜¤ë¥˜, ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”!");
 					break;
 				}
-			}else { // ¼ıÀÚ ¾Æ´Ô
-				System.out.println("¼ıÀÚ°¡ ¾Æ´Õ´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä!");
+			}else { // ìˆ«ì ì•„ë‹˜
+				System.out.println("ìˆ«ìê°€ ì•„ë‹™ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”!");
 				break;
 			}
-			//ÀÌ¸§ÆÇº°
+			//ì´ë¦„íŒë³„
 			if(str1[1].length() < 1 || str1[1].length() > 10) {
-				System.out.println("ÀÌ¸§ÀÌ ÀûÀıÇÏÁö ¾Ê½À´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä!");
+				System.out.println("ì´ë¦„ì´ ì ì ˆí•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”!");
 				break;
 			}
 			
-			//±¹¾îÁ¡¼öÆÇº°
+			//êµ­ì–´ì ìˆ˜íŒë³„
 			imsiStr = str1[2].trim();
 			check = imsiStr.charAt(0);
-			if(Character.isDigit(check)) { // ÀÌ°Å ³ÑÀ¸¸é ±¹¾îÁ¡¼ö´Â ¼ıÀÚ´Ù
+			if(Character.isDigit(check)) { // ì´ê±° ë„˜ìœ¼ë©´ êµ­ì–´ì ìˆ˜ëŠ” ìˆ«ìë‹¤
 				imsi1 = Integer.parseInt(imsiStr);
 				if(imsi1 < 0 || imsi1 > 100) {
-					System.out.println("Á¡¼ö ÀÔ·Â ¿À·ù! ´Ù½ÃÀÔ·ÂÇÏ¼¼¿ä!");
+					System.out.println("ì ìˆ˜ ì…ë ¥ ì˜¤ë¥˜! ë‹¤ì‹œì…ë ¥í•˜ì„¸ìš”!");
 					break;
 				}
-			}else { // ¼ıÀÚ ¾Æ´Ô
-				System.out.println("¿Ã¹Ù¸¥ ±¹¾îÁ¡¼ö°¡ ¾Æ´Õ´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä!");
+			}else { // ìˆ«ì ì•„ë‹˜
+				System.out.println("ì˜¬ë°”ë¥¸ êµ­ì–´ì ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”!");
 				break;
 			}
-			//¿µ¾îÁ¡¼öÆÇº°
+			//ì˜ì–´ì ìˆ˜íŒë³„
 			imsiStr = str1[3].trim();
 			check = imsiStr.charAt(0);
-			if(Character.isDigit(check)) { // ÀÌ°Å ³ÑÀ¸¸é ±¹¾îÁ¡¼ö´Â ¼ıÀÚ´Ù
+			if(Character.isDigit(check)) { // ì´ê±° ë„˜ìœ¼ë©´ êµ­ì–´ì ìˆ˜ëŠ” ìˆ«ìë‹¤
 				imsi2 = Integer.parseInt(imsiStr);
 				if(imsi2 < 0 || imsi2 > 100) {
-					System.out.println("Á¡¼ö ÀÔ·Â ¿À·ù! ´Ù½ÃÀÔ·ÂÇÏ¼¼¿ä!");
+					System.out.println("ì ìˆ˜ ì…ë ¥ ì˜¤ë¥˜! ë‹¤ì‹œì…ë ¥í•˜ì„¸ìš”!");
 					break;
 				}
-			}else { // ¼ıÀÚ ¾Æ´Ô
-				System.out.println("¿Ã¹Ù¸¥ ¿µ¾îÁ¡¼ö°¡ ¾Æ´Õ´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä!");
+			}else { // ìˆ«ì ì•„ë‹˜
+				System.out.println("ì˜¬ë°”ë¥¸ ì˜ì–´ì ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”!");
 				break;
 			}
-			//¼öÇĞÁ¡¼öÆÇº°
+			//ìˆ˜í•™ì ìˆ˜íŒë³„
 			imsiStr = str1[4].trim();
 			check = imsiStr.charAt(0);
-			if(Character.isDigit(check)) { // ÀÌ°Å ³ÑÀ¸¸é ±¹¾îÁ¡¼ö´Â ¼ıÀÚ´Ù
+			if(Character.isDigit(check)) { // ì´ê±° ë„˜ìœ¼ë©´ êµ­ì–´ì ìˆ˜ëŠ” ìˆ«ìë‹¤
 				imsi3 = Integer.parseInt(imsiStr);
 				if(imsi3 < 0 || imsi3 > 100) {
-					System.out.println("Á¡¼ö ÀÔ·Â ¿À·ù! ´Ù½ÃÀÔ·ÂÇÏ¼¼¿ä!");
+					System.out.println("ì ìˆ˜ ì…ë ¥ ì˜¤ë¥˜! ë‹¤ì‹œì…ë ¥í•˜ì„¸ìš”!");
 					break;
 				}
-			}else { // ¼ıÀÚ ¾Æ´Ô
-				System.out.println("¿Ã¹Ù¸¥ ¼öÇĞÁ¡¼ö°¡ ¾Æ´Õ´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä!");
+			}else { // ìˆ«ì ì•„ë‹˜
+				System.out.println("ì˜¬ë°”ë¥¸ ìˆ˜í•™ì ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”!");
 				break;
 			}
 			

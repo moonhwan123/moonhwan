@@ -3,10 +3,10 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
- 1.¹®ÀÚ¿­À» ³¯Â¥ÇüÀ¸·Î º¯È¯
+ 1.ë¬¸ìì—´ì„ ë‚ ì§œí˜•ìœ¼ë¡œ ë³€í™˜
  SimpleDateFormat -> parse(str);
  
- 2.³¯Â¥ÇüÀ» ¹®ÀÚ¿­·Î º¯È¯
+ 2.ë‚ ì§œí˜•ì„ ë¬¸ìì—´ë¡œ ë³€í™˜
  
  
  */
@@ -29,3 +29,4 @@ public class Exam_09 {
 		
 	}
 }
+

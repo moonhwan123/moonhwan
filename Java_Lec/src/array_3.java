@@ -5,38 +5,38 @@ public class array_3 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		//´Ü¾î ¸ÂÃß±â
+		//ë‹¨ì–´ ë§ì¶”ê¸°
 		/*
 		String[][] words = {
 				// 0,0    0,1
-				{"chair","ÀÇÀÚ"},
-				{"computer","ÄÄÇ»ÅÍ"},
-				{"integer","Á¤¼ö"}
+				{"chair","ì˜ì"},
+				{"computer","ì»´í“¨í„°"},
+				{"integer","ì •ìˆ˜"}
 		};
 		
 		
 		
 		for(int i = 0 ; i < words.length; i++) {
-			System.out.printf("Q%d. %s ÀÇ ¶æÀº?", i+1,words[i][0]);
+			System.out.printf("Q%d. %s ì˜ ëœ»ì€?", i+1,words[i][0]);
 			String tmp = sc.nextLine();
 			
 			if(tmp.equals(words[i][1])) {
-				System.out.println("Á¤´ä ÀÔ´Ï´Ù. \n\n");
+				System.out.println("ì •ë‹µ ì…ë‹ˆë‹¤. \n\n");
 			
 			}
 			else {
-				System.out.printf("Æ²·È½À´Ï´Ù. Á¤´äÀº %s ÀÔ´Ï´Ù.\n\n",words[i][1]);
+				System.out.printf("í‹€ë ¸ìŠµë‹ˆë‹¤. ì •ë‹µì€ %s ì…ë‹ˆë‹¤.\n\n",words[i][1]);
 			}
 		}
 		*/
 	
 		
-	// ÀÔ·Â¹ŞÀº ¼ıÀÚ¸¸Å­ÀÇ ÇàÀ» °¡Áö´Â »ç°¢Çü Ã¤¿ì±â
-	// (Áö±×Àç±×, ´ŞÆØÀÌ, ¸¶¹æÁø)
+	// ì…ë ¥ë°›ì€ ìˆ«ìë§Œí¼ì˜ í–‰ì„ ê°€ì§€ëŠ” ì‚¬ê°í˜• ì±„ìš°ê¸°
+	// (ì§€ê·¸ì¬ê·¸, ë‹¬íŒ½ì´, ë§ˆë°©ì§„)
 		
-		//ÀÏ¹İ
+		//ì¼ë°˜
 		/*
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·Â ÇÏ¼¼¿ä >");
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥ í•˜ì„¸ìš” >");
 		int num = sc.nextInt();
 		int cnt = 1;
 		int[][] lec = new int[num][num];
@@ -53,9 +53,9 @@ public class array_3 {
 		*/
 		
 		
-		//Áö±×Àç±×
-		System.out.println("Áö±× Àç±× ¹è¿­");
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·Â ÇÏ¼¼¿ä >");
+		//ì§€ê·¸ì¬ê·¸
+		System.out.println("ì§€ê·¸ ì¬ê·¸ ë°°ì—´");
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥ í•˜ì„¸ìš” >");
 		int num = sc.nextInt();
 		int cnt = 1;
 		int[][] lec = new int[num][num];
@@ -87,14 +87,14 @@ public class array_3 {
 		
 		
 		
-	// 10°³ÀÇ Á¤¼ö¸¦ 1Â÷¿ø ¹è¿­¿¡ ÀÔ·Â ¹Ş°í ÃÖ´ë,ÃÖ¼Ò,ÇÕ,Æò±Õ ±¸ÇÏ±â
+	// 10ê°œì˜ ì •ìˆ˜ë¥¼ 1ì°¨ì› ë°°ì—´ì— ì…ë ¥ ë°›ê³  ìµœëŒ€,ìµœì†Œ,í•©,í‰ê·  êµ¬í•˜ê¸°
 		
 		/*
 		int sum = 0;
 		double ava = 0;
 		int[] NUM = new int[10]; 
 		
-		System.out.print("Á¤¼ö¸¦ ÀÔ·Â ÇØ ÁÖ¼¼¿ä > ");
+		System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥ í•´ ì£¼ì„¸ìš” > ");
 		
 		for(int I = 0; I < NUM.length; I++) {
 		NUM[I] = sc.nextInt();
@@ -104,10 +104,10 @@ public class array_3 {
 		ava = sum/NUM.length;
 		Arrays.sort(NUM);
 		
-		System.out.printf("ÃÖ´ë : %d \n",NUM[0]);
-		System.out.printf("ÃÖ¼Ò : %d \n",NUM[9]);
-		System.out.printf("ÇÕ°è : %d \n",sum);
-		System.out.printf("Æò±Õ : %.2f \n",ava);
+		System.out.printf("ìµœëŒ€ : %d \n",NUM[0]);
+		System.out.printf("ìµœì†Œ : %d \n",NUM[9]);
+		System.out.printf("í•©ê³„ : %d \n",sum);
+		System.out.printf("í‰ê·  : %.2f \n",ava);
 		*/
 		
 		System.out.println();
@@ -116,13 +116,13 @@ public class array_3 {
 		
 		
 		
-	// ±æÀÌ°¡ 10ÀÎ ¹è¿­À» ¼±¾ğÇÏ°í, ¼ıÀÚ¸¦ °¢ ¹è¿­¾È¿¡ ÀÔ·Â ¹ŞÀº ÈÄ -> ÀÔ·Â ¹ŞÀº¼ö : È¦¼ö ÀÏ¶§ ¹è¿­ÀÇ ¾Õ ºÎÅÍ // ÀÔ·Â ¹ŞÀº¼ö°¡ : Â¦¼ö ¹è¿­ÀÇ µÚ ºÎÅÍ	
+	// ê¸¸ì´ê°€ 10ì¸ ë°°ì—´ì„ ì„ ì–¸í•˜ê³ , ìˆ«ìë¥¼ ê° ë°°ì—´ì•ˆì— ì…ë ¥ ë°›ì€ í›„ -> ì…ë ¥ ë°›ì€ìˆ˜ : í™€ìˆ˜ ì¼ë•Œ ë°°ì—´ì˜ ì• ë¶€í„° // ì…ë ¥ ë°›ì€ìˆ˜ê°€ : ì§ìˆ˜ ë°°ì—´ì˜ ë’¤ ë¶€í„°	
 		
 		/*
 		int bae[] = new int[10];
 		int num_2,front = 0, rear = 9;
 		
-		System.out.println("ÃÑ 10°³ÀÇ ¼ıÀÚ ÀÔ·Â > ");
+		System.out.println("ì´ 10ê°œì˜ ìˆ«ì ì…ë ¥ > ");
 		
 		for(int i_2 = 0; i_2 < bae.length; i_2++) 
 		{
@@ -141,7 +141,7 @@ public class array_3 {
 			
 			
 		}
-		System.out.println("¹è¿­ ¿ä¼Ò Ãâ·Â");
+		System.out.println("ë°°ì—´ ìš”ì†Œ ì¶œë ¥");
 		for(int i_2 = 0; i_2 < bae.length; i_2 ++) {
 			System.out.print(" "+bae[i_2]);
 		}

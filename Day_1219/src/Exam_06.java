@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-ÀÔ·ÂµÈ Á¤¼öÀÇ °ªÀÌ 70 ~ 90 ÀÏ¶§ ÇÕ°İ
-±×·¸Áö ¾ÊÀ¸¸é ¾Ï°Íµµ ¾ÈÇÔ
+ì…ë ¥ëœ ì •ìˆ˜ì˜ ê°’ì´ 70 ~ 90 ì¼ë•Œ í•©ê²©
+ê·¸ë ‡ì§€ ì•Šìœ¼ë©´ ì•”ê²ƒë„ ì•ˆí•¨
 
  */
 public class Exam_06 {
@@ -13,34 +13,34 @@ public class Exam_06 {
 		
 		
 		/*
-		System.out.print("Á¡¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int jumsu = sc.nextInt();
 		
 		if(jumsu >= 70) {
-			if(jumsu <= 90) System.out.println("ÇÕ°İ");
+			if(jumsu <= 90) System.out.println("í•©ê²©");
 		}
 		*/
 
 		
 		
 		/*
-		System.out.print("Á¡¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int jumsu = sc.nextInt();
 		
 		if(jumsu >= 70) {
-			if(jumsu <= 90) System.out.println("ÇÕ°İ");
-			else System.out.println("ÀÀ ºÒÇÕ°İ");
+			if(jumsu <= 90) System.out.println("í•©ê²©");
+			else System.out.println("ì‘ ë¶ˆí•©ê²©");
 		}
-		else System.out.println("ÀÀ ºÒÇÕ°İ");
+		else System.out.println("ì‘ ë¶ˆí•©ê²©");
 		*/
 		
-		System.out.print("Á¡¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int jumsu = sc.nextInt();
 		
 		if(jumsu >= 70 && jumsu <= 90) {
-			System.out.println("ÇÕ°İ");
+			System.out.println("í•©ê²©");
 		}
-		else System.out.println("ºÒÇÕ°İ");
+		else System.out.println("ë¶ˆí•©ê²©");
 		
 		
 		

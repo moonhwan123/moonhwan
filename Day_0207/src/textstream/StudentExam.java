@@ -7,11 +7,11 @@ import java.util.List;
 import java.util.TreeSet;
 
 /*
-ÆÄÀÏ·Î ºÎÅÍ ÀÔ·Â (data.txt)
-Ãâ·Â ¿¹½Ã (ÆÄÀÏ Ãâ·Â : dataout.txt , ÄÜ¼Ö Ãâ·Â)
+íŒŒì¼ë¡œ ë¶€í„° ì…ë ¥ (data.txt)
+ì¶œë ¥ ì˜ˆì‹œ (íŒŒì¼ ì¶œë ¥ : dataout.txt , ì½˜ì†” ì¶œë ¥)
 
-¹øÈ£    ÀÌ¸§    ¼ºº°    ±¹¾î    ¿µ¾î    ¼öÇĞ    ÃÑÁ¡     Æò±Õ
-1   È«±æµ¿   ³²ÁÂ     .   .   .
+ë²ˆí˜¸    ì´ë¦„    ì„±ë³„    êµ­ì–´    ì˜ì–´    ìˆ˜í•™    ì´ì      í‰ê· 
+1   í™ê¸¸ë™   ë‚¨ì¢Œ     .   .   .
  */
 
 public class StudentExam {
@@ -21,7 +21,7 @@ public class StudentExam {
 		BufferedReader br2 = new BufferedReader(new FileReader(new File("c:\\data\\data.txt")));
 		
 		PrintWriter pw3 = new PrintWriter(new BufferedWriter(new FileWriter(new File("c:\\data\\dataout.txt"))));
-		pw3.println("¹øÈ£\tÀÌ¸§\t¼ºº°\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ");
+		pw3.println("ë²ˆí˜¸\tì´ë¦„\tì„±ë³„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
 		List<Student> list = new ArrayList<Student>();
 		TreeSet<Student> ts = new TreeSet<Student>();
 		
@@ -30,8 +30,8 @@ public class StudentExam {
 			
 			String[] dataArr = data.split(",");
 			
-			if(dataArr[2].equalsIgnoreCase("m")) dataArr[2] = "³²ÀÚ";
-			else dataArr[2] = "¿©ÀÚ";
+			if(dataArr[2].equalsIgnoreCase("m")) dataArr[2] = "ë‚¨ì";
+			else dataArr[2] = "ì—¬ì";
 			
 
 			int[] score = new int[3];

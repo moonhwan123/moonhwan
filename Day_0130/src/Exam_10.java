@@ -1,9 +1,9 @@
 import java.util.Arrays;
 
 /*
-[Å¬·¡½º ¹è¿­ Á¤·ÄÇÏ±â]
-Comparable ÀÎÅÍÆäÀÌ½º¸¦ ±¸ÇöÈÄ
-compareTo()¸Ş¼­µå¸¦ ¿À¹ö¶óÀÌµù
+[í´ë˜ìŠ¤ ë°°ì—´ ì •ë ¬í•˜ê¸°]
+Comparable ì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í›„
+compareTo()ë©”ì„œë“œë¥¼ ì˜¤ë²„ë¼ì´ë”©
 
  */
 
@@ -23,9 +23,9 @@ class Member implements Comparable<Member>{
 }
 public class Exam_10 {
 	public static void main(String[] args) {
-		Member m1 = new Member("È«±æµ¿");
-		Member m2 = new Member("±è±æµ¿");
-		Member m3 = new Member("ÀÌ±æµ¿");
+		Member m1 = new Member("í™ê¸¸ë™");
+		Member m2 = new Member("ê¹€ê¸¸ë™");
+		Member m3 = new Member("ì´ê¸¸ë™");
 		
 		Member[] memArr = {m1,m2,m3};
 		
@@ -44,3 +44,4 @@ public class Exam_10 {
 		
 	}
 }
+

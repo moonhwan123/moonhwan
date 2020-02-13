@@ -1,9 +1,9 @@
 package jslhrd2;
 
 public class Hak {
-	int bun;  //ÇĞ»ı¹øÈ£
-	String name; //ÀÌ¸§
-	int score; //Á¡¼ö
+	int bun;  //í•™ìƒë²ˆí˜¸
+	String name; //ì´ë¦„
+	int score; //ì ìˆ˜
 	
 	void print() {
 		System.out.println(bun+"\t"+name+"\t"+score);

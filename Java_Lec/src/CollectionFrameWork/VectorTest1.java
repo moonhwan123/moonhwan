@@ -10,7 +10,7 @@ public class VectorTest1 {
 		Scanner sc = new Scanner(System.in);
 		Vector<Integer> v = new Vector<Integer>();
 		
-		System.out.print("Á¤¼ö(-1)ÀÌ ÀÔ·Â µÉ¶§ ±îÁö >> ");
+		System.out.print("ì •ìˆ˜(-1)ì´ ì…ë ¥ ë ë•Œ ê¹Œì§€ >> ");
 		
 		while (true) {
 			int num = sc.nextInt();
@@ -24,7 +24,7 @@ public class VectorTest1 {
 		
 		
 //		v.sort(null);
-//		System.out.println("°¡Àå Å«¼ö´Â "+v.get(v.size()-1));
+//		System.out.println("ê°€ì¥ í°ìˆ˜ëŠ” "+v.get(v.size()-1));
 		
 		
 

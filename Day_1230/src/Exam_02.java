@@ -2,7 +2,7 @@
 public class Exam_02 {
 	public static void main(String[] args) {
 		
-		// Áß°ýÈ£ À¯¹«¿¡ µû¸¥ Â÷ÀÌ ¼÷ÁöÇÏ±â
+		// ì¤‘ê´„í˜¸ ìœ ë¬´ì— ë”°ë¥¸ ì°¨ì´ ìˆ™ì§€í•˜ê¸°
 		int a = 70;
 		
 		if(a>=80)

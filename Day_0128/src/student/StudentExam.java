@@ -12,10 +12,10 @@ public class StudentExam {
 		
 		String[] str = null;
 		Student stu;
-		Student stuArr[] = new Student[20]; // ÇÐ»ý Å¬·¡½º ¹è¿­
+		Student stuArr[] = new Student[20]; // í•™ìƒ í´ëž˜ìŠ¤ ë°°ì—´
 		int cnt=0;
 		
-		System.out.print("Á¤´äÀ» ÀÔ·Â ÇÏ¼¼¿ä(20°³) >> ");
+		System.out.print("ì •ë‹µì„ ìž…ë ¥ í•˜ì„¸ìš”(20ê°œ) >> ");
 		String dap = sc2.next();
 		
 		

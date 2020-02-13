@@ -9,19 +9,19 @@ public class LottoMain {
 		
 		Scanner sc = new Scanner(System.in);
 
-		System.out.print("°ÔÀÓ ¼ö ÀÔ·Â : ");
+		System.out.print("ê²Œì„ ìˆ˜ ì…ë ¥ : ");
 		int gameCnt = sc.nextInt();
-		Lotto[] ltArr = new Lotto[gameCnt]; // LottoÅ¬·¡½º ¹è¿­
+		Lotto[] ltArr = new Lotto[gameCnt]; // Lottoí´ë˜ìŠ¤ ë°°ì—´
 		Lotto lt;
 		int cnt = 0;
 		
-		//gameCnt¸¸Å­ °ÔÀÓÀ» ½ÇÇà ÈÄ , ·£´ıÀ¸·Î »ı¼ºµÈ 6ÀÚ¸® ¼ö¸¦ Å¬·¡½º ¹è¿­¿¡ ÀúÀå ÈÄ Ãâ·Â
+		//gameCntë§Œí¼ ê²Œì„ì„ ì‹¤í–‰ í›„ , ëœë¤ìœ¼ë¡œ ìƒì„±ëœ 6ìë¦¬ ìˆ˜ë¥¼ í´ë˜ìŠ¤ ë°°ì—´ì— ì €ì¥ í›„ ì¶œë ¥
 		for(int x = 0; x < gameCnt; x++) {
 			int[] lotto = new int[6];
-			//¹øÈ£»ı¼º
+			//ë²ˆí˜¸ìƒì„±
 			for(int i = 0; i < lotto.length; i++) {
 				lotto[i] = (int)(Math.random()*45+1);
-				 //Áßº¹Ã¼Å©
+				 //ì¤‘ë³µì²´í¬
 				for(int y = 0; y < i; y++) {
 					if(lotto[i] == lotto[y]) {
 						i--;
@@ -29,18 +29,18 @@ public class LottoMain {
 					}
 				}
 			}
-			lt = new Lotto(lotto); // °´Ã¼¿¡ ÀúÀå
+			lt = new Lotto(lotto); // ê°ì²´ì— ì €ì¥
 			 
-			ltArr[cnt] = lt; // °´Ã¼¸¦ Å¬·¡½º ¹è¿­¿¡ ÀúÀå
+			ltArr[cnt] = lt; // ê°ì²´ë¥¼ í´ë˜ìŠ¤ ë°°ì—´ì— ì €ì¥
 			
 			cnt++;	
 			System.out.println((x+1)+")\t"+lt);
 		}
 		
-		// Á¤º¸¸¦ Ã³¸®ÇÒ LottoDataÅ¬·¡½º °´Ã¼ »ı¼º
+		// ì •ë³´ë¥¼ ì²˜ë¦¬í•  LottoDataí´ë˜ìŠ¤ ê°ì²´ ìƒì„±
 		LottoData ld = new LottoData(ltArr,gameCnt); 
-		ld.dangPrint(); // ´çÃ· ¹øÈ£ Ãâ·Â ¸Ş¼Òµå
-		ld.dangCheck(); // ´çÃ· È®ÀÎ ÈÄ °á°ú Ãâ·Â ¸Ş¼Òµå
+		ld.dangPrint(); // ë‹¹ì²¨ ë²ˆí˜¸ ì¶œë ¥ ë©”ì†Œë“œ
+		ld.dangCheck(); // ë‹¹ì²¨ í™•ì¸ í›„ ê²°ê³¼ ì¶œë ¥ ë©”ì†Œë“œ
 		
 		
 

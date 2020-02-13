@@ -6,8 +6,8 @@ public class Exam_08 {
 		
 		for(int x = 0; x < lotto.length; x++) {
 			lotto[x] = (int)(Math.random()*45+1);
-			//¿©±â¼­ Áßº¹ Ã¼Å©(for¹® ÀÌ¿ë)
-			for(int y = 0; y < x; y++) { // x=0ÀÏ¶§´Â ÀÛµ¿¾ÈÇÔ
+			//ì—¬ê¸°ì„œ ì¤‘ë³µ ì²´í¬(forë¬¸ ì´ìš©)
+			for(int y = 0; y < x; y++) { // x=0ì¼ë•ŒëŠ” ìž‘ë™ì•ˆí•¨
 				if(lotto[x] == lotto[y]) {
 					x--;
 					break;

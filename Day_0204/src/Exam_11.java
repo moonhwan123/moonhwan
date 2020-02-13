@@ -16,14 +16,14 @@ public class Exam_11 {
 		String pw = "90";
 		
 		if(map.containsKey(id)) {
-			//System.out.println("Á¸ÀçÇÏ´Â ¾ÆÀÌµğ");
+			//System.out.println("ì¡´ì¬í•˜ëŠ” ì•„ì´ë””");
 			if(map.get(id).equals(pw)) {
-				System.out.println("·Î±×ÀÎ ¼º°ø");
+				System.out.println("ë¡œê·¸ì¸ ì„±ê³µ");
 			}else {
-				System.out.println("ºñ¹ø¿À·ù");
+				System.out.println("ë¹„ë²ˆì˜¤ë¥˜");
 			}
 		}else {
-			System.out.println("Á¸ÀçÇÏÁö ¾Ê´Â ¾ÆÀÌµğ");
+			System.out.println("ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ì•„ì´ë””");
 		}
 		
 		

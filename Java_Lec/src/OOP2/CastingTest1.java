@@ -1,8 +1,8 @@
 package OOP2;
 /*
- ÂüÁ¶º¯¼öÀÇ Çüº¯È¯
- 	-¼­·Î »ó¼Ó°ü°è¿¡ ÀÖ´Â Å¸ÀÔ°£ÀÇ Çüº¯È¯¸¸ °¡´É
- 	-ÀÚ½Ä Å¸ÀÔ¿¡¼­ ºÎ¸ğÅ¸ÀÔÀ¸·Î Çüº¯È¯ ½Ã »ı·« °¡´É
+ ì°¸ì¡°ë³€ìˆ˜ì˜ í˜•ë³€í™˜
+ 	-ì„œë¡œ ìƒì†ê´€ê³„ì— ìˆëŠ” íƒ€ì…ê°„ì˜ í˜•ë³€í™˜ë§Œ ê°€ëŠ¥
+ 	-ìì‹ íƒ€ì…ì—ì„œ ë¶€ëª¨íƒ€ì…ìœ¼ë¡œ í˜•ë³€í™˜ ì‹œ ìƒëµ ê°€ëŠ¥
  */
 public class CastingTest1 {
 	public static void main(String[] args) {
@@ -14,7 +14,7 @@ public class CastingTest1 {
 		
 		car = fe;//Car fe = (Car)new FireEngine():
 //		car.water();
-		fe2 = (FireEngine)car;//ÀÚ½ÄÅ¸ÀÔ <-ºÎ¸ğÅ¸ÀÔ
+		fe2 = (FireEngine)car;//ìì‹íƒ€ì… <-ë¶€ëª¨íƒ€ì…
 		fe2.water();
 		
 		

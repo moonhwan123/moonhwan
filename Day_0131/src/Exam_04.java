@@ -19,7 +19,7 @@ public class Exam_04 {
 		
 		sDay.add(Calendar.DATE, -sDay.get(Calendar.DAY_OF_WEEK));
 		
-		System.out.println("           " + args[0] + "³â" + args[1] + "¿ù");
+		System.out.println("           " + args[0] + "ë…„" + args[1] + "ì›”");
 		System.out.println("  SU  MO  TU  WE  TH  FR  SA");
 		
 		for(int n = 1; sDay.before(eDay)||sDay.equals(eDay)
@@ -32,3 +32,4 @@ public class Exam_04 {
 		
 	}
 }
+

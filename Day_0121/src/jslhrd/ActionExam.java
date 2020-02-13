@@ -12,8 +12,8 @@ public class ActionExam {
 		Action action2 = new Action() {
 			
 			public void work() {
-				System.out.println("[½ÇÇà°á°ú]");
-				System.out.println("º¹»ç¸¦ ÇÕ´Ï´Ù.");
+				System.out.println("[ì‹¤í–‰ê²°ê³¼]");
+				System.out.println("ë³µì‚¬ë¥¼ í•©ë‹ˆë‹¤.");
 			}
 			
 		};

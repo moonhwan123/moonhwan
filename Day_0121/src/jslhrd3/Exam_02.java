@@ -1,8 +1,8 @@
 package jslhrd3;
 
 /*
-[2.Á¤Àû(static)ÁßÃ¸ Å¬·¡½º]
-static ¸â¹ö¸¸ Æ÷ÇÔ
+[2.ì •ì (static)ì¤‘ì²© í´ë˜ìŠ¤]
+static ë©¤ë²„ë§Œ í¬í•¨
 
  */
 
@@ -16,10 +16,10 @@ class Outer1{
 		
 	}
 	
-	static class Inner1{ // static(Á¤Àû) ÁßÃ¸ - Á¤Àû ¸â¹ö¸¸ Æ÷ÇÔ°¡´É
+	static class Inner1{ // static(ì •ì ) ì¤‘ì²© - ì •ì  ë©¤ë²„ë§Œ í¬í•¨ê°€ëŠ¥
 		int a = 100;
 		static int b = 200;
-		void disp_in() { // ÀÏ¹İÀûÀÎ ¸â¹ö´Â ¿©±â¼­ »ç¿ë ºÒ°¡ÇÏ´Ù.
+		void disp_in() { // ì¼ë°˜ì ì¸ ë©¤ë²„ëŠ” ì—¬ê¸°ì„œ ì‚¬ìš© ë¶ˆê°€í•˜ë‹¤.
 //			System.out.println("x = "+x);
 			System.out.println("y = "+y);
 			System.out.println("a = "+a);
@@ -34,13 +34,13 @@ public class Exam_02 {
 	public static void main(String[] args) {
 		Outer1 ot = new Outer1();
 		
-//		Outer1.Inner1 oi = ot.new Inner1(); // Á¤ÀûÁßÃ¸ÀÏ¶§´Â ÀÌ·¸°Ô ºÒ°¡
+//		Outer1.Inner1 oi = ot.new Inner1(); // ì •ì ì¤‘ì²©ì¼ë•ŒëŠ” ì´ë ‡ê²Œ ë¶ˆê°€
 		
 		Outer1.Inner1 oi = new Outer1.Inner1();
 		oi.disp_in();
 		
 		System.out.println();
-		System.out.println("Outer1.y = "+Outer1.y); // staticÀÌ ºÙ´Â °ÍÀº °´Ã¼ »ı¼º ÇÏÁö ¾Ê¾Æµµ OK -> ÁÖ·Î °ªÀ» °øÀ¯ÇÒ¶§
+		System.out.println("Outer1.y = "+Outer1.y); // staticì´ ë¶™ëŠ” ê²ƒì€ ê°ì²´ ìƒì„± í•˜ì§€ ì•Šì•„ë„ OK -> ì£¼ë¡œ ê°’ì„ ê³µìœ í• ë•Œ
 		System.out.println("Outer1.Inner1.b = "+Outer1.Inner1.b);
 		
 		

@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class sam_09 {
 	public static void main(String[] args) {
 		
-		System.out.println("[ÀÔ·ÂÇÑ ¼ö Áß ÃÖ´ë,ÃÖ¼Ò °ªÀ» Ã£´Â ÇÁ·Î±×·¥ ÀÔ´Ï´Ù.]");
+		System.out.println("[ì…ë ¥í•œ ìˆ˜ ì¤‘ ìµœëŒ€,ìµœì†Œ ê°’ì„ ì°¾ëŠ” í”„ë¡œê·¸ë¨ ì…ë‹ˆë‹¤.]");
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÃÊ±â °ªÀ» ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ì´ˆê¸° ê°’ì„ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int num = sc.nextInt();
 		int max = num;
 		int min = num;
 		
 		while(true) {
-			System.out.print("ºñ±³ÇÒ °ªµéÀ» ÀÔ·Â ÇÏ¼¼¿ä(-99ÀÔ·Â½Ã Á¾·á) : ");
+			System.out.print("ë¹„êµí•  ê°’ë“¤ì„ ì…ë ¥ í•˜ì„¸ìš”(-99ì…ë ¥ì‹œ ì¢…ë£Œ) : ");
 			num = sc.nextInt();
 			if(num == -99) break;
 			

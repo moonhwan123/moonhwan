@@ -1,25 +1,25 @@
 /*
-   ¹øÈ£	ÀÌ¸§		Á¡¼ö
-  01	È«±æµ¿	90
+   ë²ˆí˜¸	ì´ë¦„		ì ìˆ˜
+  01	í™ê¸¸ë™	90
  */
 
 public class Exam_06 {
 	
 	public static void main(String[] args) {
 		
-		System.out.print("¹øÈ£\tÀÌ¸§\tÁ¡¼ö\n");
+		System.out.print("ë²ˆí˜¸\tì´ë¦„\tì ìˆ˜\n");
 		System.out.print("01\t");
-		System.out.print("È«±æµ¿\t");
+		System.out.print("í™ê¸¸ë™\t");
 		System.out.print(90+"\n");
 		System.out.println();
-		System.out.println("[Çü½ÄÁöÁ¤Ãâ·Â]");
-		System.out.printf("%10s",123); // Çü½ÄÁöÁ¤ Ãâ·Â
+		System.out.println("[í˜•ì‹ì§€ì •ì¶œë ¥]");
+		System.out.printf("%10s",123); // í˜•ì‹ì§€ì • ì¶œë ¥
 		
 		System.out.println();
 		
-		System.out.printf("10À» 10Áø¼ö·Î = %d\n",10); //%d : 10Áø¼ö
-		System.out.printf("10À» 8Áø¼ö·Î = %o\n",10); //%o : 8Áø¼ö
-		System.out.printf("10À» 16Áø¼ö·Î = %x\n",10); //%x : 16Áø¼ö
+		System.out.printf("10ì„ 10ì§„ìˆ˜ë¡œ = %d\n",10); //%d : 10ì§„ìˆ˜
+		System.out.printf("10ì„ 8ì§„ìˆ˜ë¡œ = %o\n",10); //%o : 8ì§„ìˆ˜
+		System.out.printf("10ì„ 16ì§„ìˆ˜ë¡œ = %x\n",10); //%x : 16ì§„ìˆ˜
 		
 		
 		

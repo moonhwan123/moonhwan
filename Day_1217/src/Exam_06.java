@@ -1,8 +1,8 @@
 import java.io.IOException;
 
 /*
-¹®Á¦) Å°º¸µå·Î 1¹®ÀÚ ÀÔ·Â
-	ÀÔ·ÂµÈ ¹®ÀÚ¸¦ ÀÌ¿ëÇØ¼­ (*) ÀÔ·ÂµÈ °æ¿ì
+ë¬¸ì œ) í‚¤ë³´ë“œë¡œ 1ë¬¸ì ì…ë ¥
+	ì…ë ¥ëœ ë¬¸ìë¥¼ ì´ìš©í•´ì„œ (*) ì…ë ¥ëœ ê²½ìš°
 	    *
 	   ***
 	  *****
@@ -15,7 +15,7 @@ public class Exam_06 {
 	
 	public static void main(String[] args) throws IOException {
 		
-		System.out.print("¿øÇÏ´Â ¹®ÀÚ ÀÔ·Â : ");
+		System.out.print("ì›í•˜ëŠ” ë¬¸ì ì…ë ¥ : ");
 		char a = (char)System.in.read();
 		
 		System.out.println("     "+a);

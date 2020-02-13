@@ -13,7 +13,7 @@ public class Main {
 				arr.add(x);
 			}
 		}
-		System.out.println(num+"ÀÇ ÀÎµ¦½º´Â " + arr + "ÀÔ´Ï´Ù.");
+		System.out.println(num+"ì˜ ì¸ë±ìŠ¤ëŠ” " + arr + "ìž…ë‹ˆë‹¤.");
 	}
 
 	public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class Main {
 		
 		System.out.println(list);
 
-		System.out.print("Ã£°í ½ÍÀº °ª >> ");
+		System.out.print("ì°¾ê³  ì‹¶ì€ ê°’ >> ");
 		int num = sc.nextInt();
 		
 		index(list,num);

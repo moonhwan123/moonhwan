@@ -10,7 +10,7 @@ public class Exam_07 {
 		int cnt =0;
 		
 		while(cnt<10) {
-			System.out.print("ÀÔ·Â : ");
+			System.out.print("ìž…ë ¥ : ");
 			int sab = sc.nextInt();
 			if(sab == -99) {
 				break;
@@ -22,11 +22,11 @@ public class Exam_07 {
 		}
 		
 		SawonData saD = new SawonData();
-		saD.sourceDataPrint(sa, cnt); // ¿øº» µ¥ÀÌÅÍ Ãâ·Â
-		System.out.print("»ç¿ø¹øÈ£¸¦ ±âÁØÀ¸·Î Á¤·Ä(1:¿À¸§Â÷¼ø/2:³»¸²Â÷¼ø) : ");
+		saD.sourceDataPrint(sa, cnt); // ì›ë³¸ ë°ì´í„° ì¶œë ¥
+		System.out.print("ì‚¬ì›ë²ˆí˜¸ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì •ë ¬(1:ì˜¤ë¦„ì°¨ìˆœ/2:ë‚´ë¦¼ì°¨ìˆœ) : ");
 		int n = sc.nextInt();
-		saD.sortDataPrint(sa,cnt,n); // ¼ÒÆ® ½ÇÇà , nÀº 
-		saD.sourceDataPrint(sa,cnt); // ¼ÒÆ® ÈÄ µ¥ÀÌÅÍ Ãâ·Â
+		saD.sortDataPrint(sa,cnt,n); // ì†ŒíŠ¸ ì‹¤í–‰ , nì€ 
+		saD.sourceDataPrint(sa,cnt); // ì†ŒíŠ¸ í›„ ë°ì´í„° ì¶œë ¥
 		
 		
 	}

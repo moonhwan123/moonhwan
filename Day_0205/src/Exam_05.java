@@ -3,14 +3,14 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 /*
-uncompressÇÔ¼ö´Â ¼ýÀÚ¿Í ¾ËÆÄºªÀ¸·Î ±¸¼ºµÈ ¹®ÀÚ¿­À» ÀÔ·Â ¹Þ¾Æ¼­
-¼ýÀÚ¸¸Å­ ¾ËÆÄºªÀ» ¹Ýº¹½ÃÄÑ º¯È¯ÇÏ´Â ÇÔ¼öÀÌ´Ù.
-¿¹)
+uncompressí•¨ìˆ˜ëŠ” ìˆ«ìžì™€ ì•ŒíŒŒë²³ìœ¼ë¡œ êµ¬ì„±ëœ ë¬¸ìžì—´ì„ ìž…ë ¥ ë°›ì•„ì„œ
+ìˆ«ìžë§Œí¼ ì•ŒíŒŒë²³ì„ ë°˜ë³µì‹œì¼œ ë³€í™˜í•˜ëŠ” í•¨ìˆ˜ì´ë‹¤.
+ì˜ˆ)
 uncompress('2a5b1c') -> aabbbbbc
 uncompress('3x5y2z') -> xxxyyyyyzz
 
-ÀÌ¶§ ¼ýÀÚ´Â 1~9»çÀÌ¿¡ ÀÖ´Â ¼ýÀÚÀÌ´Ù.
-¼ýÀÚ¿Í ¹®ÀÚ¿­ÀÌ ¹Ýº¹µÇ¾î ³ª¿Â´Ù. Áï 1~9 »çÀÌÀÇ ¼ýÀÚ µÚ¿¡ ¾ËÆÄºªÀÌ ÇÏ³ª ³ª¿À´Â ÆÐÅÏÀÌ ¹Ýº¹µÈ´Ù.
+ì´ë•Œ ìˆ«ìžëŠ” 1~9ì‚¬ì´ì— ìžˆëŠ” ìˆ«ìžì´ë‹¤.
+ìˆ«ìžì™€ ë¬¸ìžì—´ì´ ë°˜ë³µë˜ì–´ ë‚˜ì˜¨ë‹¤. ì¦‰ 1~9 ì‚¬ì´ì˜ ìˆ«ìž ë’¤ì— ì•ŒíŒŒë²³ì´ í•˜ë‚˜ ë‚˜ì˜¤ëŠ” íŒ¨í„´ì´ ë°˜ë³µëœë‹¤.
 
 #main
 	S = ['2a5b1c' , '3x5y2z' , '2m4n' , '9o']

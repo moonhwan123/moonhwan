@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î Á¤¼ö 2°³ ÀÔ·Â ÈÄ Å©±â ºñ±³ÇÏ±â
+í‚¤ë³´ë“œë¡œ ì •ìˆ˜ 2ê°œ ìž…ë ¥ í›„ í¬ê¸° ë¹„êµí•˜ê¸°
 
  */
 
@@ -12,19 +12,19 @@ public class Exam_03 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö1À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜1ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int num1 = sc.nextInt();
-		System.out.print("Á¤¼ö2À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜2ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int num2 = sc.nextInt();
 		
 		if(num1 > num2) {
-			System.out.println("Á¤¼ö1 > Á¤¼ö2");
+			System.out.println("ì •ìˆ˜1 > ì •ìˆ˜2");
 		}
 		if(num1 < num2) {
-			System.out.println("Á¤¼ö1 < Á¤¼ö2");
+			System.out.println("ì •ìˆ˜1 < ì •ìˆ˜2");
 		}
 		if(num1 == num2) {
-			System.out.println("Á¤¼ö1 == Á¤¼ö2");
+			System.out.println("ì •ìˆ˜1 == ì •ìˆ˜2");
 		}
 		
 		

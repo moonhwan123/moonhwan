@@ -12,39 +12,39 @@ public class wrapper_string_change {
 		String str2 = Integer.toString(i); // int -> String
 		String str3 = String.valueOf(i); // int -> String
 		String str4 = i+""; // int -> String
-		System.out.println(str1+str2+str3+str4); // 4°³´Ù ¹®ÀÚ¿­ÀÓ
+		System.out.println(str1+str2+str3+str4); // 4ê°œë‹¤ ë¬¸ìžì—´ìž„
 
 		
-		String str = "100"; // 100AÃ³·³ ¹®ÀÚ°¡ ²¸ÀÕÀ¸¸é ¾ÈµÊ
+		String str = "100"; // 100Aì²˜ëŸ¼ ë¬¸ìžê°€ ê»´ìž‡ìœ¼ë©´ ì•ˆë¨
 		
 		Integer wi1 = new Integer(str); // String -> Integer
 		int i1 = wi1.intValue();
 		int i2 = wi1; // Auto Unboxing
-		int i3 = Integer.parseInt(str); // °¡Àå ¸¹ÀÌ¾¸
+		int i3 = Integer.parseInt(str); // ê°€ìž¥ ë§Žì´ì”€
 		
 		System.out.println(i1+i2+i3);
 		
 		
 		/*
 		 
-		1. String -> ±âº» ÀÚ·áÇü
+		1. String -> ê¸°ë³¸ ìžë£Œí˜•
 			
-			(1)·¡ÆÛ Å¬·¡½º °´Ã¼ »ý¼º (»ý¼ºÀÚÀÇ ¸Å°³º¯¼ö °ª¿¡ ¹®ÀÚ¿­ Àü´Þ) ÈÄ ¾ð¹Ú½Ì ¶Ç´Â ¿ÀÅä¾ð¹Ú½Ì
+			(1)ëž˜í¼ í´ëž˜ìŠ¤ ê°ì²´ ìƒì„± (ìƒì„±ìžì˜ ë§¤ê°œë³€ìˆ˜ ê°’ì— ë¬¸ìžì—´ ì „ë‹¬) í›„ ì–¸ë°•ì‹± ë˜ëŠ” ì˜¤í† ì–¸ë°•ì‹±
 				ex) Integer wi = new Integer("10");
 					int i = wi.invalue; / int i = wi;
 					
-			(2)·¡ÆÛ Å¬·¡½ºÀÇ Á¤Àû(static)¸Þ¼Òµå (parse ±âº»ÀÚ·áÇü(¹®ÀÚ¿­))·Î º¯È¯
+			(2)ëž˜í¼ í´ëž˜ìŠ¤ì˜ ì •ì (static)ë©”ì†Œë“œ (parse ê¸°ë³¸ìžë£Œí˜•(ë¬¸ìžì—´))ë¡œ ë³€í™˜
 			
 			
-		2. ±âº» ÀÚ·áÇü -> String
+		2. ê¸°ë³¸ ìžë£Œí˜• -> String
 			
-			(1)±âº» ÀÚ·áÇü ¹Ú½Ì(·¡ÆÛ Å¬·¡½º °´Ã¼ »ý¼º) ÈÄ ·¡ÆÛ Å¬·¡½ºÀÇ toString()¸Þ¼Òµå ÀÌ¿ë
+			(1)ê¸°ë³¸ ìžë£Œí˜• ë°•ì‹±(ëž˜í¼ í´ëž˜ìŠ¤ ê°ì²´ ìƒì„±) í›„ ëž˜í¼ í´ëž˜ìŠ¤ì˜ toString()ë©”ì†Œë“œ ì´ìš©
 			
-			(2)·¡ÆÛ Å¬·¡½ºÀÇ Á¤Àû ¸Þ¼ÒµåÀÎ toString(±âº»ÀÚ·áÇü) ÀÌ¿ë
+			(2)ëž˜í¼ í´ëž˜ìŠ¤ì˜ ì •ì  ë©”ì†Œë“œì¸ toString(ê¸°ë³¸ìžë£Œí˜•) ì´ìš©
 			
-			(3)String Å¬·¡½ºÀÇ Á¤Àû ¸Þ¼ÒµåÀÎ valueOf(±âº»ÀÚ·áÇü) ÀÌ¿ë
+			(3)String í´ëž˜ìŠ¤ì˜ ì •ì  ë©”ì†Œë“œì¸ valueOf(ê¸°ë³¸ìžë£Œí˜•) ì´ìš©
 			
-			(4)±âº»ÀÚ·áÇü "" ´õÇÏ±â(+) ¿¬»ê
+			(4)ê¸°ë³¸ìžë£Œí˜• "" ë”í•˜ê¸°(+) ì—°ì‚°
 			
 		 */
 

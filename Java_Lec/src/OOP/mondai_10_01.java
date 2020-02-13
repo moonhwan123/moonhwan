@@ -17,9 +17,9 @@ class Song{
 	}
 
 	void show() {
-		System.out.print(year + "³â ");
-		System.out.print(country+"±¹ÀûÀÇ ");
-		System.out.print(artist+"ÀÌ ºÎ¸¥ ");
+		System.out.print(year + "ë…„ ");
+		System.out.print(country+"êµ­ì ì˜ ");
+		System.out.print(artist+"ì´ ë¶€ë¥¸ ");
 		System.out.print(title);
 	}
 }
@@ -62,7 +62,7 @@ public class mondai_10_01 {
 		System.out.println();
 		
 		
-		System.out.println("°è»ê±â ½ÃÀÛ , ¼ıÀÚÀÔ·Â");
+		System.out.println("ê³„ì‚°ê¸° ì‹œì‘ , ìˆ«ìì…ë ¥");
 		int a,b;
 		
 		Scanner sc = new Scanner(System.in);

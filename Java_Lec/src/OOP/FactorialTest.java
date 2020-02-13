@@ -4,18 +4,18 @@ public class FactorialTest {
 
 	public static void main(String[] args) {
 		/*
-		 -Àç±Í È£Ãâ
-		 	: ¸Þ¼­µå ³»¿¡¼­ ÀÚ±âÀÚ½ÅÀ» ¹Ýº¹ÀûÀ¸·Î È£Ãâ
-		 	: Àç±ÍÈ£ÃâÀº ¹Ýº¹¹®À¸·Î ¹Ù²Ü ¼ö ÀÖÀ¸¸ç ¹Ýº¹¹® º¸´Ù ¼º´ÉÀÌ ³ª»Ý
-		 	: ÀÌÇØÇÏ±â ½±°í, °£°áÇÑ ÄÚµåÀÛ¼º °¡´É
+		 -ìž¬ê·€ í˜¸ì¶œ
+		 	: ë©”ì„œë“œ ë‚´ì—ì„œ ìžê¸°ìžì‹ ì„ ë°˜ë³µì ìœ¼ë¡œ í˜¸ì¶œ
+		 	: ìž¬ê·€í˜¸ì¶œì€ ë°˜ë³µë¬¸ìœ¼ë¡œ ë°”ê¿€ ìˆ˜ ìžˆìœ¼ë©° ë°˜ë³µë¬¸ ë³´ë‹¤ ì„±ëŠ¥ì´ ë‚˜ì¨
+		 	: ì´í•´í•˜ê¸° ì‰½ê³ , ê°„ê²°í•œ ì½”ë“œìž‘ì„± ê°€ëŠ¥
 		 	
-		 	¿¹ ) ÆÑÅä¸®¾ó,Á¦°ö,Æ®¸®¿îÇà,Æú´õ¸ñ·ÏÇ¥½Ã
+		 	ì˜ˆ ) íŒ©í† ë¦¬ì–¼,ì œê³±,íŠ¸ë¦¬ìš´í–‰,í´ë”ëª©ë¡í‘œì‹œ
 		 */
 		
 		
 		
 		
-		//Á¦°ö¿¬»ê
+		//ì œê³±ì—°ì‚°
 		
 		int x = 2;
 		int n = 5;
@@ -27,7 +27,7 @@ public class FactorialTest {
 		}
 		System.out.println(result);
 		
-		//ÆåÅä¸®¾ó
+		//íŽ™í† ë¦¬ì–¼
 		//5! = 1x2x3x4x5
 		
 		System.out.println(fact(5));

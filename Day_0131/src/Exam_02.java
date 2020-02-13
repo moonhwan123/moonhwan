@@ -2,19 +2,19 @@ import java.util.Calendar;
 
 /*
 Calender
-¿ùÀº 0-11
-¿äÀÏ (1~7) 1 : ÀÏ¿äÀÏ
-YEAR,MONTH,DATE ³â,¿ù,ÀÏ
-HOUR,MINUTE,SECNOD ½Ã,ºĞ,ÃÊ , AM_PM
+ì›”ì€ 0-11
+ìš”ì¼ (1~7) 1 : ì¼ìš”ì¼
+YEAR,MONTH,DATE ë…„,ì›”,ì¼
+HOUR,MINUTE,SECNOD ì‹œ,ë¶„,ì´ˆ , AM_PM
 DAY_OF_WEEK 
 
  */
 public class Exam_02 {
 	public static void main(String[] args) {
 		
-		Calendar cal = Calendar.getInstance(); //new »ç¿ë ºÒ°¡
+		Calendar cal = Calendar.getInstance(); //new ì‚¬ìš© ë¶ˆê°€
 		int year = cal.get(Calendar.YEAR);
-		int month = cal.get(Calendar.MONTH)+1; //0~11¿ù
+		int month = cal.get(Calendar.MONTH)+1; //0~11ì›”
 		int day = cal.get(Calendar.DATE);
 		
 		System.out.println(year+"-"+month+"-"+day);

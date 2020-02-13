@@ -12,11 +12,11 @@ public class DateFormatEx2 {
 		cal.set(2005, 9,3);
 		
 		Date day = cal.getTime();
-		//Date ÀÎ½ºÅÏ½º¸¸ format ¸Ş¼­µå »ç¿ë°¡´É
+		//Date ì¸ìŠ¤í„´ìŠ¤ë§Œ format ë©”ì„œë“œ ì‚¬ìš©ê°€ëŠ¥
 		
 		SimpleDateFormat sdf1,sdf2,sdf3,sdf4;
 		sdf1 = new SimpleDateFormat("yyyy-MM-dd");
-		sdf2 = new SimpleDateFormat("''yy³â MMM ddÀÏ E¿äÀÏ");
+		sdf2 = new SimpleDateFormat("''yyë…„ MMM ddì¼ Eìš”ì¼");
 		sdf3 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS");
 		sdf4 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS a");
 		

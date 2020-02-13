@@ -3,10 +3,10 @@ package textstream;
 import java.io.*;
 
 /*
-[ÅØ½ºÆ® ÀÔÃâ·Â]
+[í…ìŠ¤íŠ¸ ì…ì¶œë ¥]
 Reader / Writer
-InputStreamReader / OutputStreamWriter <-- ÄÜ¼Ö ÀÔÃâ·Â
-FileReader / FileWriter                <-- ÆÄÀÏ ÀÔÃâ·Â
+InputStreamReader / OutputStreamWriter <-- ì½˜ì†” ì…ì¶œë ¥
+FileReader / FileWriter                <-- íŒŒì¼ ì…ì¶œë ¥
 BufferedReader / BufferedWriter
 				 PrintWriter
 				 
@@ -19,21 +19,21 @@ public class Exam_01 {
 		
 		File file = new File("c:\\data\\work\\data3.txt");
 		
-		//ÄÜ¼Ö Ãâ·Â
+		//ì½˜ì†” ì¶œë ¥
 		OutputStreamWriter osw = new OutputStreamWriter(System.out);
 		BufferedWriter bw = new BufferedWriter(osw);
 		PrintWriter pw = new PrintWriter(bw);
 		
 		PrintWriter pw2 = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
 		
-		pw.println("È­¸é Ãâ·Â Å×½ºÆ® ÀÔ´Ï´Ù.");
+		pw.println("í™”ë©´ ì¶œë ¥ í…ŒìŠ¤íŠ¸ ì…ë‹ˆë‹¤.");
 		
 		pw.close();
 		
-		//ÆÄÀÏ Ãâ·Â	
+		//íŒŒì¼ ì¶œë ¥	
 		PrintWriter pw3 = new PrintWriter(new BufferedWriter(new FileWriter(file)));
 		
-		pw3.println("ÆÄÀÏ Ãâ·Â Å×½ºÆ®");
+		pw3.println("íŒŒì¼ ì¶œë ¥ í…ŒìŠ¤íŠ¸");
 		pw3.close();
 		
 		

@@ -5,29 +5,29 @@ public class Exam_05 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("³â¿ù ÀÔ·Â : ");
+		System.out.print("ë…„ì›” ì…ë ¥ : ");
 		
 		String[] day = sc.nextLine().split(",");
 		
 		int year = Integer.parseInt(day[0]);
 		int month = Integer.parseInt(day[1]);
 		
-		System.out.println("\t\t\t ["+year+"³â "+month+"¿ù]");
-		System.out.println("ÀÏ\t¿ù\tÈ­\t¼ö\t¸ñ\t±İ\tÅä");
+		System.out.println("\t\t\t ["+year+"ë…„ "+month+"ì›”]");
+		System.out.println("ì¼\tì›”\tí™”\tìˆ˜\tëª©\tê¸ˆ\tí† ");
 		
-		//³â,¿ù À» ÀÌ¿ëÇÑ calender°´Ã¼ »ı¼º
+		//ë…„,ì›” ì„ ì´ìš©í•œ calenderê°ì²´ ìƒì„±
 		GregorianCalendar calender = new GregorianCalendar(year,month-1,1);
 		
-		//ÇØ´ç ¿ù ÀÇ ¸¶Áö¸·³¯ ±¸ÇÏ±â
+		//í•´ë‹¹ ì›” ì˜ ë§ˆì§€ë§‰ë‚  êµ¬í•˜ê¸°
 		int maxday = calender.getActualMaximum(calender.DAY_OF_MONTH);
-		//¿äÀÏ ±¸ÇÏ±â
+		//ìš”ì¼ êµ¬í•˜ê¸°
 		int week = calender.get(calender.DAY_OF_WEEK);
 		
-		//½ÃÀÛ¿äÀÏ Àü ±îÁö °ø¹é Ãâ·Â
+		//ì‹œì‘ìš”ì¼ ì „ ê¹Œì§€ ê³µë°± ì¶œë ¥
 		for(int x = 0; x < (week-1); x++) {
 			System.out.print("\t");
 		}
-		//ÀÏÀÚ Ãâ·Â
+		//ì¼ì ì¶œë ¥
 		for(int x = 1; x <= maxday; x++) {
 			if(week <= 7) {
 				System.out.print(x + "\t");
@@ -44,3 +44,4 @@ public class Exam_05 {
 		
 	}
 }
+

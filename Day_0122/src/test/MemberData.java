@@ -19,9 +19,9 @@ public class MemberData {
 		for (int x = 0; x < cnt; x++) {
 			String imsi = mem[x].jumin.substring(7);
 			if (imsi.equals("1") || imsi.equals("3") || imsi.equals("5") || imsi.equals("7")) {
-				mem[x].gender = "³²";
+				mem[x].gender = "ë‚¨";
 			} else if (imsi.equals("2") || imsi.equals("4") || imsi.equals("6") || imsi.equals("8")) {
-				mem[x].gender = "¿©";
+				mem[x].gender = "ì—¬";
 			}
 		}
 
@@ -42,7 +42,7 @@ public class MemberData {
 	}
 
 	void MemberPrint() {
-		System.out.println("ÀÌ¸§\tÀüÈ­\t\t¼ºº°\t³ªÀÌ");
+		System.out.println("ì´ë¦„\tì „í™”\t\tì„±ë³„\të‚˜ì´");
 		for (int x = 0; x < cnt; x++) {
 			System.out.print(mem[x].name + "\t" + mem[x].phone + "\t" + mem[x].gender + "\t" + mem[x].age + "\n");
 		}

@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-public class Exam_06 { // ¸ŞÀÎÀÌ µé¾î°¡ ÀÖ´Â Å¬·¡½º -> ½ÇÇà Å¬·¡½º
+public class Exam_06 { // ë©”ì¸ì´ ë“¤ì–´ê°€ ìˆëŠ” í´ë˜ìŠ¤ -> ì‹¤í–‰ í´ë˜ìŠ¤
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
 		Hak[] stu = new Hak[5];
 		
 /*		
-		Hak h2 = new Hak(1,"È«±æµ¿",90);
-		stu[0] = h2; // °´Ã¼¸¦ »ı¼ºÇØ¼­ ³Ñ±è
+		Hak h2 = new Hak(1,"í™ê¸¸ë™",90);
+		stu[0] = h2; // ê°ì²´ë¥¼ ìƒì„±í•´ì„œ ë„˜ê¹€
 		h2 = new Hak (2,"aaa",80);
 		stu[1] = h2; 
 		stu[2] = new Hak(3,"ddd",30);

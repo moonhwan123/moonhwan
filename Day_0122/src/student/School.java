@@ -32,7 +32,7 @@ public class School {
 	}
 	
 	void print() {
-		System.out.println("¹øÈ£\tÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \tì„ì°¨");
 		for(int x = 0 ; x < cnt; x++) {
 			System.out.println(stu[x]);
 		}
@@ -58,3 +58,4 @@ public class School {
 	}
 
 }
+

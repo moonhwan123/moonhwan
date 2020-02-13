@@ -7,13 +7,13 @@ public class ExceptionEx5 {
 
 		
 		try {
-			System.out.println("¿ÜºÎ·Î Á¢¼Ó");
+			System.out.println("ì™¸ë¶€ë¡œ ì ‘ì†");
 			int c = 2/0;
-			System.out.println("¿¬°áÇØÁ¦");
+			System.out.println("ì—°ê²°í•´ì œ");
 		} catch (ArithmeticException ae) {
-			System.out.println("»ê¼ú ¿À·ù ¹ß»ı");
+			System.out.println("ì‚°ìˆ  ì˜¤ë¥˜ ë°œìƒ");
 		} finally {
-			System.out.println("¹«Á¶°Ç ¿¬°á ÇØÁ¦"); //¿¹¿Ü ¹ß»ı À¯¹«¿Í °ü°è¾øÀÌ ½ÇÇàµÊ
+			System.out.println("ë¬´ì¡°ê±´ ì—°ê²° í•´ì œ"); //ì˜ˆì™¸ ë°œìƒ ìœ ë¬´ì™€ ê´€ê³„ì—†ì´ ì‹¤í–‰ë¨
 		}
 
 	}

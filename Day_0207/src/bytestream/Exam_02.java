@@ -7,10 +7,10 @@ public class Exam_02 {
 		
 		File file = new File("c:\\data\\work\\data.txt");
 		
-//		// Å°º¸µå ÀÔ·Â 
+//		// í‚¤ë³´ë“œ ìž…ë ¥ 
 //		FileInputStream fi = new FileInputStream(FileDescriptor.in);
 //		
-//		System.out.print("ÀÔ·Â : ");
+//		System.out.print("ìž…ë ¥ : ");
 //		try {
 //			int b = fi.read();
 //		} catch (IOException e) {

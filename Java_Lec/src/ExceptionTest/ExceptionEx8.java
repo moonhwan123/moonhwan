@@ -4,22 +4,22 @@ public class ExceptionEx8 {
 
 	public static void main(String[] args) {
 		try {
-			System.out.println("¿ÜºÎ try");
+			System.out.println("ì™¸ë¶€ try");
 			try {
-				System.out.println("³»ºÎ try");
+				System.out.println("ë‚´ë¶€ try");
 				Exception e = new Exception();
 				throw e; 
 			} catch (Exception e) {
-				System.out.println("³»ºÎ Exception : "+ e);
-				System.out.println("¿¹¿Ü ´øÁö±â ÇÑ¹ø ´õ");
+				System.out.println("ë‚´ë¶€ Exception : "+ e);
+				System.out.println("ì˜ˆì™¸ ë˜ì§€ê¸° í•œë²ˆ ë”");
 				throw e;
 			} finally {
-				System.out.println("finally ±¸¹® Ãâ·Â");
+				System.out.println("finally êµ¬ë¬¸ ì¶œë ¥");
 			}
 		} catch (Exception e) {
-			System.out.println("¿ÜºÎ Exception : " + e);
+			System.out.println("ì™¸ë¶€ Exception : " + e);
 		}
-		System.out.println("Á¾·á");
+		System.out.println("ì¢…ë£Œ");
 	}
 
 }

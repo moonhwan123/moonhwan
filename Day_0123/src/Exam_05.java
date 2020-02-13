@@ -1,6 +1,6 @@
 /*
-[MathÇÔ¼ö]
-¸ğµç ¸Ş¼Òµå´Â static¸Ş¼ÒµåÀÌ´Ù.
+[Mathí•¨ìˆ˜]
+ëª¨ë“  ë©”ì†Œë“œëŠ” staticë©”ì†Œë“œì´ë‹¤.
 
 
 
@@ -9,7 +9,7 @@
 public class Exam_05 {
 	public static void main(String[] args) {
 		
-		//¼ÂÂ° ÀÚ¸®¿¡¼­ ¹İ¿Ã¸²
+		//ì…‹ì§¸ ìë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼
 		double b = 3.14567;
 		double b2 = Math.round(b*100)/100.;
 		System.out.println(b2);

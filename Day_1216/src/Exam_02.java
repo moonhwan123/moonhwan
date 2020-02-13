@@ -6,7 +6,7 @@ public class Exam_02 {
 		System.out.print("1234");
 		System.out.print(100);
 		
-		System.out.println(); // ÁÙ ¹Ù²Þ
+		System.out.println(); // ì¤„ ë°”ê¿ˆ
 		
 		System.out.print("10 + 20 = ");
 		System.out.print(10 + 20);
@@ -14,7 +14,7 @@ public class Exam_02 {
 		System.out.println();
 		
 		System.out.println("10 + 20 = " + (10 + 20));
-		System.out.println("a = "+20+30); // '¹®ÀÚ¿­ + ¼ýÀÚ = ¹®ÀÚ¿­' µÇ°í ³ª¼­ ´Ù½Ã +30 ÀÌ µÇ¹Ç·Î '2030' ÀÌ ³ª¿Â´Ù.
+		System.out.println("a = "+20+30); // 'ë¬¸ìžì—´ + ìˆ«ìž = ë¬¸ìžì—´' ë˜ê³  ë‚˜ì„œ ë‹¤ì‹œ +30 ì´ ë˜ë¯€ë¡œ '2030' ì´ ë‚˜ì˜¨ë‹¤.
 		
 		/*
 		System.out.println(20+30); // -> 50

@@ -3,17 +3,17 @@ import java.io.IOException; // ctrl + shift + o
 
 /*
 
-[Ç¥ÁØÀÔÃâ·Â] - System.in / System.out
-	Ãâ·Â - print(), println()
-	ÀÔ·Â - System.in.read(); -> 1¹®ÀÚ ÀÔ·Â , ¿¹¿ÜÃ³¸® ÇÊ¼ö 
+[í‘œì¤€ì…ì¶œë ¥] - System.in / System.out
+	ì¶œë ¥ - print(), println()
+	ì…ë ¥ - System.in.read(); -> 1ë¬¸ì ì…ë ¥ , ì˜ˆì™¸ì²˜ë¦¬ í•„ìˆ˜ 
 	
  */
 
-public class Exam_01 { // mainÀÌ ÀÖÀ¸¸é ½ÇÇàÅ¬·¡½º
+public class Exam_01 { // mainì´ ìˆìœ¼ë©´ ì‹¤í–‰í´ë˜ìŠ¤
 	
 	public static void main(String[] args) throws IOException {
 		
-		System.out.print("ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì…ë ¥í•˜ì„¸ìš” : ");
 		System.in.read();
 		
 	}

@@ -5,10 +5,10 @@ public class sam_28 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("[2Áø °Ë»ö ÇÁ·Î±×·¥ÀÔ´Ï´Ù.]");
+		System.out.println("[2ì§„ ê²€ìƒ‰ í”„ë¡œê·¸ëž¨ìž…ë‹ˆë‹¤.]");
 		int arr[] = {1,5,10,17,28,43,67,88,92};
 		
-		System.out.print("Ã£À» Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì°¾ì„ ì •ìˆ˜ë¥¼ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int key = sc.nextInt();
 		int low = 0;
 		int high = arr.length-1;
@@ -18,11 +18,11 @@ public class sam_28 {
 			if(low <= high) {
 				mid = (low + high)/2;
 			}else {
-				System.out.println(key+"Àº ¸®½ºÆ®¿¡ ¾øÀ½");
+				System.out.println(key+"ì€ ë¦¬ìŠ¤íŠ¸ì— ì—†ìŒ");
 				break;
 			}
 			if(key == arr[mid]) {
-				System.out.println(key+"Àº "+(mid+1)+"¹øÂ°¿¡ ÀÖ½À´Ï´Ù.");
+				System.out.println(key+"ì€ "+(mid+1)+"ë²ˆì§¸ì— ìžˆìŠµë‹ˆë‹¤.");
 				break;
 			}
 			if(key < arr[mid]){

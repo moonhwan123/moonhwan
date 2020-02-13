@@ -1,8 +1,8 @@
 import java.io.IOException;
 
 /*
-1¹®ÀÚ ÀÔ·Â
-System.in.read() --> 1¹®ÀÚ ÀÔ·Â¹Ş¾Æ¼­ int(Á¤¼ö)·Î ¹İÈ¯
+1ë¬¸ì ì…ë ¥
+System.in.read() --> 1ë¬¸ì ì…ë ¥ë°›ì•„ì„œ int(ì •ìˆ˜)ë¡œ ë°˜í™˜
  */
 
 
@@ -10,23 +10,23 @@ System.in.read() --> 1¹®ÀÚ ÀÔ·Â¹Ş¾Æ¼­ int(Á¤¼ö)·Î ¹İÈ¯
 public class Exam_03 {
 	public static void main(String[] args) throws IOException {
 		
-		System.out.print("ÀÔ·Â : ");
+		System.out.print("ì…ë ¥ : ");
 		byte[] bytes = new byte[100];
 		int cnt = System.in.read(bytes);
 		
-		System.out.println("±ÛÀÚ¼ö = "+(cnt-2));
+		System.out.println("ê¸€ììˆ˜ = "+(cnt-2));
 		
-		String str = new String(bytes,0,cnt-2); // ¿£ÅÍ ¶§¹®¿¡ -2 ÇØÁØ´Ù.
+		String str = new String(bytes,0,cnt-2); // ì—”í„° ë•Œë¬¸ì— -2 í•´ì¤€ë‹¤.
 
-		System.out.println("ÀÔ·Â ÀÚ·á = "+str);
-		System.out.println("±ÛÀÚ¼ö = "+str.length());
+		System.out.println("ì…ë ¥ ìë£Œ = "+str);
+		System.out.println("ê¸€ììˆ˜ = "+str.length());
 		
 		
 		String s = "123";
 		if(s.isEmpty()) {
-			System.out.println("¹®ÀÚ¿­ÀÌ ºñ¾î ÀÖÀ½");
+			System.out.println("ë¬¸ìì—´ì´ ë¹„ì–´ ìˆìŒ");
 		}else {
-			System.out.println("±ÛÀÚ : "+s);
+			System.out.println("ê¸€ì : "+s);
 		}
 		
 //		System.out.println("s.isEmpty() = "+s.isEmpty());

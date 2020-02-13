@@ -29,7 +29,7 @@ public class Manager extends Regular {
 	@Override
 	public void print() {
 		display();
-		System.out.println(", ¼ö·É¾× : "+pay()+"¿ø");
+		System.out.println(", ìˆ˜ë ¹ì•¡ : "+pay()+"ì›");
 	}
 	
 }

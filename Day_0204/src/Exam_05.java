@@ -19,7 +19,7 @@ public class Exam_05 {
 		System.out.println("2 : " + list);
 		System.out.println("3 : " + list.get(2));
 		
-		Collections.sort(list); // ±âº»ÀÚ·áÇü°ú ¹®ÀÚ¿­¸¸ °¡´É
+		Collections.sort(list); // ê¸°ë³¸ìë£Œí˜•ê³¼ ë¬¸ìì—´ë§Œ ê°€ëŠ¥
 		System.out.println("4 : " + list);
 		
 		

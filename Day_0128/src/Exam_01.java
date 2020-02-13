@@ -3,16 +3,16 @@ import java.util.Collections;
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î ¿µ¹® ´Ü¾î¸¦ ÀÔ·Â
-¿µ¹®ÀÚÀÇ ºóµµ¼ö¸¦ Ãâ·Â(´ë¼Ò¹®ÀÚ ±¸ºĞ¾øÀ½)
+í‚¤ë³´ë“œë¡œ ì˜ë¬¸ ë‹¨ì–´ë¥¼ ì…ë ¥
+ì˜ë¬¸ìì˜ ë¹ˆë„ìˆ˜ë¥¼ ì¶œë ¥(ëŒ€ì†Œë¬¸ì êµ¬ë¶„ì—†ìŒ)
 
-[ÀÔ·Â ¿¹½Ã]
-´Ü¾î : Apple
-´Ü¾î : Seoul
+[ì…ë ¥ ì˜ˆì‹œ]
+ë‹¨ì–´ : Apple
+ë‹¨ì–´ : Seoul
 .....
-´Ü¾î : end (¶Ç´Â END) --> Á¾·á
+ë‹¨ì–´ : end (ë˜ëŠ” END) --> ì¢…ë£Œ
 
-[Ãâ·Â ¿¹½Ã]
+[ì¶œë ¥ ì˜ˆì‹œ]
 A  B  C  D  . . . . Z
 0  2  1  0  . . . . 1
 
@@ -63,7 +63,7 @@ class AlphaTest{
 				}
 			}
 		}
-		System.out.println("[°¡Àå ¸¹ÀÌ »ç¿ëµÈ ¾ËÆÄºª]");
+		System.out.println("[ê°€ì¥ ë§ì´ ì‚¬ìš©ëœ ì•ŒíŒŒë²³]");
 		System.out.print((char)cntArr[0][0]);
 	}
 	
@@ -78,7 +78,7 @@ public class Exam_01 {
 		AlphaTest al = null;
 		
 		while(true) {
-			 System.out.print("´Ü¾î : ");
+			 System.out.print("ë‹¨ì–´ : ");
 			 String alpha = sc.next();
 			 alpha = alpha.toLowerCase();
 			 if(alpha.equals("end")) {
@@ -92,3 +92,4 @@ public class Exam_01 {
 
 	}
 }
+

@@ -6,18 +6,18 @@ public class DocumentTest {
 	String name;
 	
 	public DocumentTest() {
-		this("Á¦¸ñ¾øÀ½"+ ++count);
+		this("ì œëª©ì—†ìŒ"+ ++count);
 	}
 	public DocumentTest(String name) {
 		this.name = name;
-		System.out.println("¹®¼­ "+this.name +"°¡ »ı¼ºµÇ¾ú½À´Ï´Ù.");
+		System.out.println("ë¬¸ì„œ "+this.name +"ê°€ ìƒì„±ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		
 	}
 	
 	public static void main(String[] args) {
 		DocumentTest d1 = new DocumentTest();
-		DocumentTest d2 = new DocumentTest("ÀÚ¹Ù.txt");
+		DocumentTest d2 = new DocumentTest("ìë°”.txt");
 		DocumentTest d3 = new DocumentTest();
-		DocumentTest d4 = new DocumentTest("ÀÚ¹Ù.txt");
+		DocumentTest d4 = new DocumentTest("ìë°”.txt");
 	}
 }

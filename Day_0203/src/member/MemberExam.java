@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /*
-[Å°º¸µå ÀÔ·Â]
-¾ÆÀÌµğ, ÀÌ¸§ , ³ªÀÌ ÀÔ·Â Member °´Ã¼¸¦ »ı¼º
+[í‚¤ë³´ë“œ ì…ë ¥]
+ì•„ì´ë””, ì´ë¦„ , ë‚˜ì´ ì…ë ¥ Member ê°ì²´ë¥¼ ìƒì„±
 
--ÀÔ·Â Áß ¾ÆÀÌµğ°¡ 'end'ÀÌ¸é ÀüÃ¼ Ãâ·Â ÈÄ Á¾·á
--ArrayList ÀÌ¿ë
--¾ÆÀÌµğ°¡ °°Àº °æ¿ì "Áßº¹µÈ ¾ÆÀÌµğ ÀÔ´Ï´Ù." Ãâ·Â ÈÄ ÀçÀÔ·Â ¹Ş¾Æ¶ó
+-ì…ë ¥ ì¤‘ ì•„ì´ë””ê°€ 'end'ì´ë©´ ì „ì²´ ì¶œë ¥ í›„ ì¢…ë£Œ
+-ArrayList ì´ìš©
+-ì•„ì´ë””ê°€ ê°™ì€ ê²½ìš° "ì¤‘ë³µëœ ì•„ì´ë”” ì…ë‹ˆë‹¤." ì¶œë ¥ í›„ ì¬ì…ë ¥ ë°›ì•„ë¼
 
-[´ÙÀ½°ú °°ÀÌ Ãâ·Â]
-¾ÆÀÌµğ       ÀÌ¸§       ³ªÀÌ
+[ë‹¤ìŒê³¼ ê°™ì´ ì¶œë ¥]
+ì•„ì´ë””       ì´ë¦„       ë‚˜ì´
 uesr01  aaa   29
  */
 public class MemberExam {
@@ -22,7 +22,7 @@ public class MemberExam {
 		Member m;
 		
 		while(true) {
-			System.out.print("¾ÆÀÌµğ, ÀÌ¸§ ,³ªÀÌ ¼øÀ¸·Î ÀÔ·Â ÇÏ¼¼¿ä >> ");
+			System.out.print("ì•„ì´ë””, ì´ë¦„ ,ë‚˜ì´ ìˆœìœ¼ë¡œ ì…ë ¥ í•˜ì„¸ìš” >> ");
 			String str = sc.nextLine();
 			String[] strArr = str.split(",");
 			
@@ -31,14 +31,14 @@ public class MemberExam {
 			m = new Member(strArr[0],strArr[1],Integer.parseInt(strArr[2]));
 			
 			if(memList.contains(m)) {
-				System.out.println("Áßº¹µÈ ¾ÆÀÌµğ ÀÔ´Ï´Ù.");
+				System.out.println("ì¤‘ë³µëœ ì•„ì´ë”” ì…ë‹ˆë‹¤.");
 			}else {
 				memList.add(m);
 			}
 			
 		}
 		
-		System.out.println("¾ÆÀÌµğ\tÀÌ¸§\t³ªÀÌ");
+		System.out.println("ì•„ì´ë””\tì´ë¦„\të‚˜ì´");
 //		for(int x = 0 ; x < memList.size() ; x++) {
 //			System.out.print(memList.get(x));
 //		}
@@ -53,4 +53,7 @@ public class MemberExam {
 		
 		
 	}
-}
+
+		
+	}
+

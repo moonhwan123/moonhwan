@@ -1,7 +1,7 @@
 /*
-Ç¥ÁØ ÀÔÃâ·Â
-System.out -> Ãâ·Â
-System.in -> ÀÔ·Â
+í‘œì¤€ ìž…ì¶œë ¥
+System.out -> ì¶œë ¥
+System.in -> ìž…ë ¥
 
 
  */

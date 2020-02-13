@@ -1,7 +1,7 @@
 /*
 
 
-/ : ³ª´©±â ¿¬»êÀÚ ( Á¤¼ö¿Í Á¤¼öÀÇ ¿¬»êÀº Á¤¼ö , ³ª¸ÓÁö´Â ½Ç¼ö)
+/ : ë‚˜ëˆ„ê¸° ì—°ì‚°ìž ( ì •ìˆ˜ì™€ ì •ìˆ˜ì˜ ì—°ì‚°ì€ ì •ìˆ˜ , ë‚˜ë¨¸ì§€ëŠ” ì‹¤ìˆ˜)
 
 
  */
@@ -13,7 +13,7 @@ public class Exam_01 {
 		System.out.println("a = " + a++);
 		System.out.println("a = " + a--);
 		System.out.println("a = " + -a);
-		System.out.println("a = " + ~a); // -ºÙ¿©¼­ 1
+		System.out.println("a = " + ~a); // -ë¶™ì—¬ì„œ 1
 		System.out.println("a = " + (float)a);
 		System.out.println("a = " + (a>3));
 		System.out.println("a = " + !(a>3));

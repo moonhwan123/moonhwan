@@ -1,8 +1,8 @@
 package jslhrd5;
 
 /*
-cloneÀÌ ¸ÔÈ÷´Â ³ğµé
-´ëÇ¥ÀûÀ¸·Î ¹è¿­,ÄÃ·¢¼Ç(java.util¾È¿¡ ÀÖ´Â ³ğµé)
+cloneì´ ë¨¹íˆëŠ” ë†ˆë“¤
+ëŒ€í‘œì ìœ¼ë¡œ ë°°ì—´,ì»¬ë™ì…˜(java.utilì•ˆì— ìˆëŠ” ë†ˆë“¤)
  */
 
 public class Exam_10 {
@@ -10,25 +10,25 @@ public class Exam_10 {
 		
 
 		int a[] = {10,20,30,40,50};
-		int b[] = a; // ÁÖ¼Ò¸¦ º¹»çÇÑ´Ù. °á±¹ a[] , b[]´Â °°Àº ÁÖ¼Ò¸¦ °¡¸®Å°°í ÀÖÀ½
-		int c[] = a.clone(); // '°ª'¸¸ º¹»ç°¡ µÇ°í, ÁÖ¼Ò´Â º¹Á¦°¡ ¾ÈµÊ
+		int b[] = a; // ì£¼ì†Œë¥¼ ë³µì‚¬í•œë‹¤. ê²°êµ­ a[] , b[]ëŠ” ê°™ì€ ì£¼ì†Œë¥¼ ê°€ë¦¬í‚¤ê³  ìˆìŒ
+		int c[] = a.clone(); // 'ê°’'ë§Œ ë³µì‚¬ê°€ ë˜ê³ , ì£¼ì†ŒëŠ” ë³µì œê°€ ì•ˆë¨
 	
 		b[0] = 77;
 		c[1] = 99;
 		
-		System.out.println("a[] - ¿øº»");
+		System.out.println("a[] - ì›ë³¸");
 		for(int x = 0 ; x < a.length; x++) {
  			System.out.print(a[x]+"\t");
 		}
 		System.out.println();
 		
-		System.out.println("b[] - a[]ÀÇ ÁÖ¼Òº¹»ç");
+		System.out.println("b[] - a[]ì˜ ì£¼ì†Œë³µì‚¬");
 		for(int x = 0 ; x < a.length; x++) {
  			System.out.print(b[x]+"\t");
 		}
 		System.out.println();
 		
-		System.out.println("c[] - a[]¸¦ Å¬·Ğ");
+		System.out.println("c[] - a[]ë¥¼ í´ë¡ ");
 		for(int x = 0 ; x < a.length; x++) {
  			System.out.print(c[x]+"\t");
 		}

@@ -9,7 +9,7 @@ class BeepTask implements Runnable{
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		for (int i = 0; i < 10; i++) {
 			tool.beep(); 
-			System.out.println("»©¾×");
+			System.out.println("ë¹¼ì•¡");
 			try {
 				Thread.sleep(500); 
 			} catch (Exception e) {
@@ -29,14 +29,14 @@ public class Exam_11 {
 		BeepTask beep2 = new BeepTask();
 		
 		
-//		beep.start(); => ÀÌ°Å ¾ÈµÊ
+//		beep.start(); => ì´ê±° ì•ˆë¨
 		
-		//±×·¡¼­ RunnableÀ» ±¸Çö ÇßÀ»¶§´Â ÀÌ °úÁ¤À» ÇÑ¹ø ´õ °ÅÃÄ¾ß µÈ´Ù.
+		//ê·¸ë˜ì„œ Runnableì„ êµ¬í˜„ í–ˆì„ë•ŒëŠ” ì´ ê³¼ì •ì„ í•œë²ˆ ë” ê±°ì³ì•¼ ëœë‹¤.
 		Thread thread = new Thread(beep);
 		thread.start();
 		
 		for (int i = 0; i < 10; i++) {
-			System.out.println("³¢¿¡¿¢");
+			System.out.println("ë¼ì—ì—‘");
 			try {
 				Thread.sleep(500);
 			} catch (Exception e) {

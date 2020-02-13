@@ -4,11 +4,11 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
-		String name[] = {"È«±æµ¿", "±è±æµ¿", "¹Ú±æµ¿", "ÀÌ±æµ¿", "ÃÖ±æµ¿"};
+		String name[] = {"í™ê¸¸ë™", "ê¹€ê¸¸ë™", "ë°•ê¸¸ë™", "ì´ê¸¸ë™", "ìµœê¸¸ë™"};
 	    int age[] = {20, 25, 30, 35, 40};
-	    char gender[] = {'³²', '¿©','³²', '¿©'};
-	    String address[] = {"´ë±¸½Ã µ¿±¸ ½Å¾Ï4µ¿", "¼­¿ï½Ã µ¿±¸ ½Å¾Ï4µ¿", 
-		"ºÎ»ê½Ã µ¿±¸ ½Å¾Ï4µ¿", "ÀÎÃµ½Ã µ¿±¸ ½Å¾Ï4µ¿", "±¤ÁÖ½Ã µ¿±¸ ½Å¾Ï4µ¿"};
+	    char gender[] = {'ë‚¨', 'ì—¬','ë‚¨', 'ì—¬'};
+	    String address[] = {"ëŒ€êµ¬ì‹œ ë™êµ¬ ì‹ ì•”4ë™", "ì„œìš¸ì‹œ ë™êµ¬ ì‹ ì•”4ë™", 
+		"ë¶€ì‚°ì‹œ ë™êµ¬ ì‹ ì•”4ë™", "ì¸ì²œì‹œ ë™êµ¬ ì‹ ì•”4ë™", "ê´‘ì£¼ì‹œ ë™êµ¬ ì‹ ì•”4ë™"};
 	    
 	    StudentClass[] stu = new StudentClass[10];
 	    
@@ -25,10 +25,10 @@ public class MainClass {
 	    	stu[k].showStudentInfo();
 	    }
 	    
-	    stu[9].setName("Àü¿ìÄ¡");
+	    stu[9].setName("ì „ìš°ì¹˜");
 	    stu[9].setAge(24);
-	    stu[9].setGender('³²');
-	    stu[9].setAddress("Á¶¼± ÇÑ¾çÀÎ±Ù µÎ¸Ş»ê°ñ");
+	    stu[9].setGender('ë‚¨');
+	    stu[9].setAddress("ì¡°ì„  í•œì–‘ì¸ê·¼ ë‘ë©”ì‚°ê³¨");
 	    
 	    stu[9].showStudentInfo();
 

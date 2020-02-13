@@ -19,7 +19,7 @@ public class Exam_07 {
 		
 		Box2<String> box = new Box2<String>();
 		
-		box.set("ȫ�浿");
+		box.set("홍길동");
 		String name = box.get();
 		
 		Box2<Integer> box2 = new Box2<Integer>();

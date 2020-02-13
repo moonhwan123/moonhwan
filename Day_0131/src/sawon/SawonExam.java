@@ -6,12 +6,12 @@ import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /*
- ªÁπ¯        ¿Ã∏ß        ±ﬁø©
+ ÏÇ¨Î≤à        Ïù¥Î¶Ñ        Í∏âÏó¨
 1101   aaa    345,800
 .
 .
 .
-«’∞Ë                      xxx,xxx,xxx
+Ìï©Í≥Ñ                      xxx,xxx,xxx
  */
 public class SawonExam {
 	public static void main(String[] args) throws FileNotFoundException {
@@ -28,7 +28,7 @@ public class SawonExam {
 		Scanner sc2 = new Scanner(new File("c:\\data\\sawon.txt"));
 		String[] str;
 		int tot=0;
-		System.out.println("ªÁπ¯\t¿Ã∏ß\t±ﬁø©");
+		System.out.println("ÏÇ¨Î≤à\tÏù¥Î¶Ñ\tÍ∏âÏó¨");
 		while(sc2.hasNext()) {
 			str = sc2.nextLine().split(",");
 			Sawon sa = new Sawon(Integer.parseInt(str[0]),str[1],Integer.parseInt(str[2]));
@@ -40,7 +40,7 @@ public class SawonExam {
 		
 		
 		String str1 = df1.format(tot);
-		System.out.println("«’∞Ë \t\t"+str1);
+		System.out.println("Ìï©Í≥Ñ \t\t"+str1);
 		
 		
 	}

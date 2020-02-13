@@ -21,12 +21,12 @@ public class Exam_01 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println(list);
-		System.out.print("ÀÔ·Â : ");
+		System.out.print("ì…ë ¥ : ");
 		int val = sc.nextInt();
 		
 		int index = 0;
 
-		System.out.print(val + "ÀÇ ÀÎµ¦½º´Â ");
+		System.out.print(val + "ì˜ ì¸ë±ìŠ¤ëŠ” ");
 		
 		while(index < list.size()) {
 			index = index(index, val);
@@ -37,7 +37,7 @@ public class Exam_01 {
 			index++;
 			
 		}
-		System.out.println(" ÀÔ´Ï´Ù.");
+		System.out.println(" ì…ë‹ˆë‹¤.");
 		
 	}
 }

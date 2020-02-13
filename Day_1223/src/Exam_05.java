@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î ÀÓÀÇÀÇ Á¤¼ö data 10°³ ÀÔ·Â
-´Ü, data´Â 50ÀÌ»ó 100ÀÌÇÏ¸¸ ÀÔ·Â
+í‚¤ë³´ë“œë¡œ ì„ì˜ì˜ ì •ìˆ˜ data 10ê°œ ì…ë ¥
+ë‹¨, dataëŠ” 50ì´ìƒ 100ì´í•˜ë§Œ ì…ë ¥
  */
 
 
@@ -13,11 +13,11 @@ public class Exam_05 {
 		Scanner sc = new Scanner(System.in);
 		
 		int arr[] = new int[10];
-		int cnt = 0; //data °¹¼ö Ä«¿îÆ® 
+		int cnt = 0; //data ê°¯ìˆ˜ ì¹´ìš´íŠ¸ 
 		
 		
 		while(true) {
-			System.out.print("Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+			System.out.print("ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 			int num = sc.nextInt();
 			if(num>=50 && num<=100) {
 				arr[cnt] = num;

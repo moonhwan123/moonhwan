@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 /*
-[1~45 ·Î¶Ç °ÔÀÓ ¸¸µé±â]
+[1~45 ë¡œë˜ ê²Œì„ ë§Œë“¤ê¸°]
 
 42 34 12 23 3 5 7
 
@@ -21,13 +21,13 @@ public class Exam_07 {
 			boolean flag = false;
 			int bun = (int)(Math.random()*45+1);
 			
-			//Áßº¹È®ÀÎ
+			//ì¤‘ë³µí™•ì¸
 			for(int x = 0; x <= cnt; x++) {
 				if(bun == lotto[x]) {
 					flag = true;
 					break;
 				}
-			}//for ¹® ³¡
+			}//for ë¬¸ ë
 			
 			if(!flag) {
 				lotto[cnt] = bun;

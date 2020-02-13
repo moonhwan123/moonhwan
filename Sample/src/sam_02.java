@@ -4,9 +4,9 @@ public class sam_02 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Ã¹¹øÂ° Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä >>");
+		System.out.print("ì²«ë²ˆì§¸ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” >>");
 		int num_1 = sc.nextInt();
-		System.out.print("µÎ¹øÂ° Á¤¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä(Ã¹¹øÂ° Á¤¼ö¿Í °°Àº °ªÀº ÀÔ·ÂÇÏÁö ¸¶½Ã¿À) >>");
+		System.out.print("ë‘ë²ˆì§¸ ì •ìˆ˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš”(ì²«ë²ˆì§¸ ì •ìˆ˜ì™€ ê°™ì€ ê°’ì€ ìž…ë ¥í•˜ì§€ ë§ˆì‹œì˜¤) >>");
 		int num_2 = sc.nextInt();
 		System.out.println();
 		

@@ -12,8 +12,8 @@ public class LottoData {
 		this.gameCnt = gameCnt;
 		for(int i = 0; i < dangLotto.length; i++) {
 			dangLotto[i] = (int)(Math.random()*45+1);
-			//¿©±â¼­ Áßº¹ Ã¼Å©(for¹® ÀÌ¿ë)
-			for(int y = 0; y < i; y++) { // x=0ÀÏ¶§´Â ÀÛµ¿¾ÈÇÔ
+			//ì—¬ê¸°ì„œ ì¤‘ë³µ ì²´í¬(forë¬¸ ì´ìš©)
+			for(int y = 0; y < i; y++) { // x=0ì¼ë•ŒëŠ” ìž‘ë™ì•ˆí•¨
 				if(dangLotto[i] == dangLotto[y]) {
 					i--;
 					break;

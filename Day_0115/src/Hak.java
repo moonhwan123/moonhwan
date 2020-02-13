@@ -2,7 +2,7 @@ public class Hak{
 	int bun;
 	String name;
 	int score;
-	//»ı¼ºÀÚ ¿À¹ö·Îµù
+	//ìƒì„±ì ì˜¤ë²„ë¡œë”©
 	Hak(){}
 	Hak(int bun, String name, int score){
 		this.bun = bun;
@@ -10,12 +10,12 @@ public class Hak{
 		this.score = score;
 	}
 	
-	//¸Ş¼­µå ¿À¹ö·Îµù
-	void print() { // ¸â¹ö ¸Ş¼­µå
+	//ë©”ì„œë“œ ì˜¤ë²„ë¡œë”©
+	void print() { // ë©¤ë²„ ë©”ì„œë“œ
 		System.out.print(bun+"\t"+name+"\t"+score);
 		System.out.println();
 	}
-	void print(int sw) { // ¸â¹ö ¸Ş¼­µå
+	void print(int sw) { // ë©¤ë²„ ë©”ì„œë“œ
 		System.out.print(sw+"\t"+bun+"\t"+name+"\t"+score);
 	}
 }

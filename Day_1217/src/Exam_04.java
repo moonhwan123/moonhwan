@@ -2,7 +2,7 @@ import java.io.IOException;
 
 /*
 [System.in.read();]
-- 1¹®ÀÚ¸¦ Å°º¸µå·Î ÀÔ·Â ¹Ş¾Æ¼­ 'Á¤¼ö'·Î º¯È¯
+- 1ë¬¸ìë¥¼ í‚¤ë³´ë“œë¡œ ì…ë ¥ ë°›ì•„ì„œ 'ì •ìˆ˜'ë¡œ ë³€í™˜
 
  */
 
@@ -10,7 +10,7 @@ public class Exam_04 {
 	
 	public static void main(String[] args) throws IOException {
 		 
-		System.out.print("ÀÔ·Â ÇÏ¼¼¿ä : "); // A¸¦ ÀÔ·ÂÇÑ´Ù°í °¡Á¤ , 123À» ÀÔ·ÂÇÑ´Ù°í °¡Á¤ 
+		System.out.print("ì…ë ¥ í•˜ì„¸ìš” : "); // Aë¥¼ ì…ë ¥í•œë‹¤ê³  ê°€ì • , 123ì„ ì…ë ¥í•œë‹¤ê³  ê°€ì • 
 		int ch1 = System.in.read();     // 65(A)         ,  49(1)
 		int ch2= System.in.read();      // 13(\r)        ,  50(2)
 		int ch3 = System.in.read();     // 10(\n)        ,  51(3)

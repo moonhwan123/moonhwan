@@ -4,7 +4,7 @@ public class ActionTest implements Action {
 
 	@Override
 	public void work() {
-		System.out.println("º¹»ç¸¦ ÇÕ´Ï´Ù.");
+		System.out.println("ë³µì‚¬ë¥¼ í•©ë‹ˆë‹¤.");
 		
 	}
 	

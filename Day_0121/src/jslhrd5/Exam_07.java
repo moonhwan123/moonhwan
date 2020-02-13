@@ -12,7 +12,7 @@ class AA {
 	public boolean equals(Object obj) {
 		if(obj instanceof AA) {
 			return a == ((AA)obj).a;
-						// ¸Å°³º¯¼ö·Î ¹Ş´Â °ÍÀÌ ObjectÅ¬·¡½º¶ó¼­ °­Á¦·Î AA·Î ÄÉ½ºÆÃ ÇØÁà¾ßÇÔ
+						// ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ëŠ” ê²ƒì´ Objectí´ë˜ìŠ¤ë¼ì„œ ê°•ì œë¡œ AAë¡œ ì¼€ìŠ¤íŒ… í•´ì¤˜ì•¼í•¨
 		}else {
 			return false;
 		}

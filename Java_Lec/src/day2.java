@@ -3,21 +3,21 @@ public class day2 {
 
 	public static void main(String[] args) {
 		
-		// Swap ¾Ë°í¸®Áò
+		// Swap ì•Œê³ ë¦¬ì¦˜
 		
 		int num1 = 10, num2 = 20;
 		
 		
-		System.out.printf("ÇöÀç num1¿¡´Â : %d\n",num1);
-		System.out.printf("ÇöÀç num2¿¡´Â : %d\n",num2);
+		System.out.printf("í˜„ì¬ num1ì—ëŠ” : %d\n",num1);
+		System.out.printf("í˜„ì¬ num2ì—ëŠ” : %d\n",num2);
 		System.out.println();
 		
 		int temp = num1;
 		num1 = num2;
 		num2 = temp;
 		
-		System.out.printf("¹Ù²ï °ª num1¿¡´Â : %d\n",num1);
-		System.out.printf("¹Ù²ï °ª num2¿¡´Â : %d\n",num2);
+		System.out.printf("ë°”ë€ ê°’ num1ì—ëŠ” : %d\n",num1);
+		System.out.printf("ë°”ë€ ê°’ num2ì—ëŠ” : %d\n",num2);
 			
 	}
 

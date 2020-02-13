@@ -1,17 +1,17 @@
 package treeset;
 import java.util.*;
 /*
-[TreeSetÀÇ ´ëÇ¥ÀûÀÎ ¸Ş¼­µå]
-set.headSet(); => ()º¸´Ù ÀÛÀº°ª
-set.tailSet(); => ()º¸´Ù Å«°ª
-set.first(); => Á¦ÀÏ Ã¹¹øÂ° °ª (°¡Àå ÀÛÀº °ª)
-set.last(); => Á¦ÀÏ ¸¶Áö¸· °ª (°¡Àå Å« °ª)
-set.lower(); => () ¹Ù·Î ¾Æ·¡ °ª
-set.higher(); => () ¹Ù·Î À§ °ª
-set.floor(); => () ÀÌ°Å³ª ¹Ù·Î ¾Æ·¡
-set.ceiling() => () ÀÌ°Å³ª ¹Ù·Î À§
+[TreeSetì˜ ëŒ€í‘œì ì¸ ë©”ì„œë“œ]
+set.headSet(); => ()ë³´ë‹¤ ì‘ì€ê°’
+set.tailSet(); => ()ë³´ë‹¤ í°ê°’
+set.first(); => ì œì¼ ì²«ë²ˆì§¸ ê°’ (ê°€ì¥ ì‘ì€ ê°’)
+set.last(); => ì œì¼ ë§ˆì§€ë§‰ ê°’ (ê°€ì¥ í° ê°’)
+set.lower(); => () ë°”ë¡œ ì•„ë˜ ê°’
+set.higher(); => () ë°”ë¡œ ìœ„ ê°’
+set.floor(); => () ì´ê±°ë‚˜ ë°”ë¡œ ì•„ë˜
+set.ceiling() => () ì´ê±°ë‚˜ ë°”ë¡œ ìœ„
 
-set.pollFirst(); => °¡Àå ¾Õ¿¡ ÀÖ´Â °ªÀ» ²¨³»¿ÂÈÄ "»èÁ¦" <-> set.pollLast();
+set.pollFirst(); => ê°€ì¥ ì•ì— ìˆëŠ” ê°’ì„ êº¼ë‚´ì˜¨í›„ "ì‚­ì œ" <-> set.pollLast();
 
  */
 
@@ -26,20 +26,20 @@ public class Exam_02 {
 			set.add(score[x]);
 		}
 		
-		System.out.println("50º¸´Ù ÀÛÀº °ª : " + set.headSet(50));
-		System.out.println("50º¸´Ù Å« °ª : " + set.tailSet(50));
-		System.out.println("°¡Àå ÀÛÀº °ª : " + set.first());
-		System.out.println("°¡Àå Å« °ª : " + set.last());
-		System.out.println("90Á¡ ¹Ù·Î ¾Æ·¡ : " + set.lower(90));
-		System.out.println("90Á¡ ¹Ù·Î À§ : " + set.higher(90));
-		System.out.println("90Á¡ ÀÌ°Å³ª ¹Ù·Î ¾Æ·¡ : " + set.floor(90));
-		System.out.println("90Á¡ ÀÌ°Å³ª ¹Ù·Î ¾Æ·¡ : " + set.ceiling(90));
+		System.out.println("50ë³´ë‹¤ ì‘ì€ ê°’ : " + set.headSet(50));
+		System.out.println("50ë³´ë‹¤ í° ê°’ : " + set.tailSet(50));
+		System.out.println("ê°€ì¥ ì‘ì€ ê°’ : " + set.first());
+		System.out.println("ê°€ì¥ í° ê°’ : " + set.last());
+		System.out.println("90ì  ë°”ë¡œ ì•„ë˜ : " + set.lower(90));
+		System.out.println("90ì  ë°”ë¡œ ìœ„ : " + set.higher(90));
+		System.out.println("90ì  ì´ê±°ë‚˜ ë°”ë¡œ ì•„ë˜ : " + set.floor(90));
+		System.out.println("90ì  ì´ê±°ë‚˜ ë°”ë¡œ ì•„ë˜ : " + set.ceiling(90));
 		
-		// ÄÃ·º¼Ç¿¡¼­ Á¦°Å
+		// ì»¬ë ‰ì…˜ì—ì„œ ì œê±°
 		while(!set.isEmpty()) {
 			int sc = (int)set.pollFirst();
 			System.out.println(sc);
-			System.out.println("³²Àº °´Ã¼ ¼ö : " + set.size());
+			System.out.println("ë‚¨ì€ ê°ì²´ ìˆ˜ : " + set.size());
 		}
 		
 		

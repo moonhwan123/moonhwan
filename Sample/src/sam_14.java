@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class sam_14 {
 	public static void main(String[] args) {
 		
-		System.out.println("[2ºÎÅÍ ÀÔ·ÂÇÑ ¼ö±îÁöÀÇ ¼Ò¼öÀÇ °¹¼ö¸¦ Ãâ·ÂÇÕ´Ï´Ù.]");
+		System.out.println("[2ë¶€í„° ì…ë ¥í•œ ìˆ˜ê¹Œì§€ì˜ ì†Œìˆ˜ì˜ ê°¯ìˆ˜ë¥¼ ì¶œë ¥í•©ë‹ˆë‹¤.]");
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -11,7 +11,7 @@ public class sam_14 {
 		int j = 2;
 		int nmg;
 		int cnt = 0;
-		System.out.print("ÀÔ·Â : " );
+		System.out.print("ì…ë ¥ : " );
 		int num = sc.nextInt();
 		while(i != num) {
 			nmg = i % j;
@@ -24,7 +24,7 @@ public class sam_14 {
 				j = 2;
 			}else j++;
 		}
-		System.out.println("2ºÎÅÍ "+num+"±îÁöÀÇ ¼Ò¼öÀÇ °¹¼ö´Â "+cnt+"°³ ÀÔ´Ï´Ù.");
+		System.out.println("2ë¶€í„° "+num+"ê¹Œì§€ì˜ ì†Œìˆ˜ì˜ ê°¯ìˆ˜ëŠ” "+cnt+"ê°œ ì…ë‹ˆë‹¤.");
 		
 		
 		

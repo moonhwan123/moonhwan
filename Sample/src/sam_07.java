@@ -7,15 +7,15 @@ public class sam_07 {
 		int cnt = 0;
 		int sum = 0;
 		while(true) {
-			System.out.print("°¡»êÇÒ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä(0À» ÀÔ·ÂÇÏ¸é Á¾·á) >>");
+			System.out.print("ê°€ì‚°í•  ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš”(0ì„ ì…ë ¥í•˜ë©´ ì¢…ë£Œ) >>");
 			int num = sc.nextInt();
 			if(num == 0) break;
 			sum += num;
 			cnt++;
 		}
 		
-		System.out.println("´©ÀûÇÕ°è = "+sum);
-		System.out.println("´©Àû°Ç¼ö = "+cnt);
+		System.out.println("ëˆ„ì í•©ê³„ = "+sum);
+		System.out.println("ëˆ„ì ê±´ìˆ˜ = "+cnt);
 		
 	}
 }

@@ -6,7 +6,7 @@ class Circle{
 	private double x,y;
 	private int radius;
 	public Circle(double x, double y, int radius) {
-		this.x = x; //x,y,radius ÃÊ±âÈ­
+		this.x = x; //x,y,radius ì´ˆê¸°í™”
 		this.y = y;
 		this.radius = radius;
 	}
@@ -24,13 +24,13 @@ public class CircleManager {
 		
 		for(int i = 0; i<c.length; i++) {
 			System.out.print("x,y,radius >>");
-			double x = sc.nextDouble(); //x °ª ÀĞ±â
-			double y = sc.nextDouble(); //y °ª ÀĞ±â
-			int radius = sc.nextInt();	//radius °ª ÀĞ±â
-			c[i] = new Circle(x,y,radius); //Circle °´Ã¼ »ı¼º
+			double x = sc.nextDouble(); //x ê°’ ì½ê¸°
+			double y = sc.nextDouble(); //y ê°’ ì½ê¸°
+			int radius = sc.nextInt();	//radius ê°’ ì½ê¸°
+			c[i] = new Circle(x,y,radius); //Circle ê°ì²´ ìƒì„±
 		}
 		for(int i = 0; i<c.length; i++) {
-			c[i].show(); //¸ğµç Circle°´Ã¼ Ãâ·Â
+			c[i].show(); //ëª¨ë“  Circleê°ì²´ ì¶œë ¥
 		}
 		sc.close();
 

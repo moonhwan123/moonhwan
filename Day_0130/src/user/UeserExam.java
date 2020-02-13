@@ -1,6 +1,6 @@
 package user;
 /*
-[Å¬·¡½º ¹è¿­À» ÀÌ¿ëÇÑ °Ë»ö ±â´É ±¸Çö]
+[í´ë˜ìŠ¤ ë°°ì—´ì„ ì´ìš©í•œ ê²€ìƒ‰ ê¸°ëŠ¥ êµ¬í˜„]
  */
 
 import java.util.Scanner;
@@ -18,20 +18,20 @@ public class UeserExam {
 		String idPat = "\\w{1,10}";
 		String emailPat = "\\w+@\\w+.\\w+(\\.\\w+)?";
 		
-		//ÀÔ·Â 
+		//ì…ë ¥ 
 		while(cnt<10) {
 			String userId;
 			String name;
 			String email;
 			
 			while(true) {
-				System.out.print("È¸¿ø ÀÌ¸§ : ");
+				System.out.print("íšŒì› ì´ë¦„ : ");
 				name = sc.nextLine();
 				boolean check = Pattern.matches(namePat, name);
 				if(check) {
 					break;
 				}else {
-					System.out.println("ÀÌ¸§ ÀÔ·Â ¿À·ù! ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä >>");
+					System.out.println("ì´ë¦„ ì…ë ¥ ì˜¤ë¥˜! ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš” >>");
 				}
 			}
 			
@@ -39,13 +39,13 @@ public class UeserExam {
 				break;
 			}
 			
-			System.out.print("È¸¿ø ID : ");
+			System.out.print("íšŒì› ID : ");
 			userId = sc.nextLine();
 			
 			if(cnt>=1) {
 				for(int x = 0; x < cnt; x++) {
 					if(userId.equals(userArr[x].userId)) {
-						System.out.println("Áßº¹µÈ ¾ÆÀÌµğ ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä >> ");
+						System.out.println("ì¤‘ë³µëœ ì•„ì´ë”” ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš” >> ");
 						userId = sc.nextLine();
 						x = 0;
 					}
@@ -53,13 +53,13 @@ public class UeserExam {
 			}
 		
 			while(true) {
-				System.out.print("ÀÌ¸ŞÀÏ : ");
+				System.out.print("ì´ë©”ì¼ : ");
 				email = sc.nextLine();
 				boolean check = Pattern.matches(emailPat, email);
 				if(check) {
 					break;
 				}else {
-					System.out.println("ÀÌ¸ŞÀÏ ÀÔ·Â Çü½Ä ¿À·ù! ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä >>");
+					System.out.println("ì´ë©”ì¼ ì…ë ¥ í˜•ì‹ ì˜¤ë¥˜! ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš” >>");
 				}
 			}
 			
@@ -69,16 +69,16 @@ public class UeserExam {
 	
 		}
 		
-		System.out.println("°íÀ¯¹øÈ£\tÀÌ¸§\tID\tÀÌ¸ŞÀÏ");
+		System.out.println("ê³ ìœ ë²ˆí˜¸\tì´ë¦„\tID\tì´ë©”ì¼");
 		for(int x = 0 ; x < cnt; x++) {
 			System.out.println(userArr[x]);
 		}
 		
 		
-		//°Ë»ö
+		//ê²€ìƒ‰
 		UserData ud = new UserData(userArr, cnt);
 		while(true) {
-			System.out.print("°Ë»öÇÒ ¾ÆÀÌµğ¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+			System.out.print("ê²€ìƒ‰í•  ì•„ì´ë””ë¥¼ ì…ë ¥í•˜ì„¸ìš” >> ");
 			String userId = sc.nextLine();
 			ud.idCheck(userId);
 			if(userId.equalsIgnoreCase("end")) {

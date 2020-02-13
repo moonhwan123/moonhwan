@@ -9,11 +9,11 @@ public class ExceptionEx4 {
 			int c = b/a[1];
 			System.out.println(c);
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("¹è¿­ ¹üÀ§ ÃÊ°ú ¿À·ù ¹ß»ı");
+			System.out.println("ë°°ì—´ ë²”ìœ„ ì´ˆê³¼ ì˜¤ë¥˜ ë°œìƒ");
 		} catch (ArithmeticException ae) {
-			System.out.println("»ê¼ú ¿À·ù ¹ß»ı");
-		} catch(Exception ee) { // ¹«½¼ ¿À·ù ÀÎÁö ¸ğ¸§ ±×³É ÀÌ°Å ¾²¸éµÊ
-			System.out.println("¿À·ù ¹ß»ı");
+			System.out.println("ì‚°ìˆ  ì˜¤ë¥˜ ë°œìƒ");
+		} catch(Exception ee) { // ë¬´ìŠ¨ ì˜¤ë¥˜ ì¸ì§€ ëª¨ë¦„ ê·¸ëƒ¥ ì´ê±° ì“°ë©´ë¨
+			System.out.println("ì˜¤ë¥˜ ë°œìƒ");
 		}
 		
 	}

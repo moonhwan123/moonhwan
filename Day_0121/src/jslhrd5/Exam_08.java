@@ -29,13 +29,13 @@ class Student{
 public class Exam_08 {
 	public static void main(String[] args) {
 		
-		Student s1 = new Student(1,"È«±æµ¿",90);
-		Student s2 = new Student(2,"±èÀÚ¹Ù",80);
+		Student s1 = new Student(1,"í™ê¸¸ë™",90);
+		Student s2 = new Student(2,"ê¹€ìë°”",80);
 		
 		if(s1.equals(s2)) {
-			System.out.println("s1,s2´Â °°Àº ÇĞ»ıÀÔ´Ï´Ù.");
+			System.out.println("s1,s2ëŠ” ê°™ì€ í•™ìƒì…ë‹ˆë‹¤.");
 		}else {
-			System.out.println("s1,s2´Â ´Ù¸¥ ÇĞ»ıÀÔ´Ï´Ù.");
+			System.out.println("s1,s2ëŠ” ë‹¤ë¥¸ í•™ìƒì…ë‹ˆë‹¤.");
 		}
 		
 	}

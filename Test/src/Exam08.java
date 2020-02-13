@@ -19,7 +19,7 @@ class HakData{
 		this.hak = hak;
 	}
 	void Hakprint() {
-		System.out.println("¹øÈ£\tÀÌ¸§\tÁ¡¼ö");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\tì ìˆ˜");
 		for(int x = 0; x < hak.length; x++) {
 			System.out.print(hak[x].bun+"\t"+hak[x].name+"\t");
 			for(int y = 0; y < hak[x].score.length; y++) {
@@ -47,9 +47,9 @@ class HakData{
 }
 
 /*
-Ãâ·Â
-¹øÈ£    ÀÌ¸§     Á¡¼ö
-1   È«±æµ¿  77 88 87 95 75
+ì¶œë ¥
+ë²ˆí˜¸    ì´ë¦„     ì ìˆ˜
+1   í™ê¸¸ë™  77 88 87 95 75
  */
 
 public class Exam08 {

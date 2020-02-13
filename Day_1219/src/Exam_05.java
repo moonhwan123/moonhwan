@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
 /*
-а╓╪Ж 2╟Ё ют╥б е╘╠Б ╨Я╠Ёго╠Б
- ©╧) 79,88 ют╥б╫ц 
+Л═∙Л┬≤ 2Й╟° Л·┘К═╔ М│╛Й╦╟ К╧└Й╣░М∙≤Й╦╟
+ Л≤┬) 79,88 Л·┘К═╔Л▀° 
  	= 79<=88
  	
- 	70,60 ют╥б╫ц
+ 	70,60 Л·┘К═╔Л▀°
  	= 70>=60
  	
  */
@@ -17,7 +17,7 @@ public class Exam_05 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("а╓╪Ж ╣н╟Ё╦╕ ют╥бго╪╪©Д : ");
+		System.out.print("Л═∙Л┬≤ К▒░Й╟°К╔╪ Л·┘К═╔М∙≤Л└╦Л ■ : ");
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 		

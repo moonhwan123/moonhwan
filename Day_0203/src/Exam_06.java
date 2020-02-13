@@ -6,25 +6,26 @@ public class Exam_06 {
 	public static void main(String[] args) {
 		List<String> str = new ArrayList<String>();
 		
-		str.add("±èÀÚ¹Ù");
-		str.add("È«±æµ¿");
+		str.add("ê¹€ìë°”");
+		str.add("í™ê¸¸ë™");
 		str.add("Java");
 		str.add("1234");
 		str.add("Korea");
 		
-		System.out.println("===Á¤·Ä Àü===");
+		System.out.println("===ì •ë ¬ ì „===");
 		for(String s : str) {
 			System.out.println(s);
 		}
-		System.out.println("===Á¤·Ä ÈÄ===");
+		System.out.println("===ì •ë ¬ í›„===");
 		Collections.sort(str);
 		for(String s : str) {
 			System.out.println(s);
 		}
 		
-		//±Ùµ¥ ¿©±â¼­ »ç¿ëÀÚ Á¤ÀÇ Å¬·¡½º´Â Á¤·ÄÀÌ ºÒ°¡ ÇÏ´Ù
+		//ê·¼ë° ì—¬ê¸°ì„œ ì‚¬ìš©ì ì •ì˜ í´ë˜ìŠ¤ëŠ” ì •ë ¬ì´ ë¶ˆê°€ í•˜ë‹¤
 		
 		
 		
 	}
 }
+

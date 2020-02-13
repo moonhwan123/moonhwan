@@ -5,37 +5,37 @@ class MemberCall {
 	static int cv = 20;
 
 	int iv2 = cv;
-//	static int cv2 = iv;		// ¿¡·¯. Å¬·¡½ºº¯¼ö´Â ÀÎ½ºÅÏ½º º¯¼ö¸¦ »ç¿ëÇÒ ¼ö ¾øÀ½.
-	static int cv2 = new MemberCall().iv;	 // ÀÌÃ³·³ °´Ã¼¸¦ »ı¼ºÇØ¾ß »ç¿ë°¡´É.
+//	static int cv2 = iv;		// ì—ëŸ¬. í´ë˜ìŠ¤ë³€ìˆ˜ëŠ” ì¸ìŠ¤í„´ìŠ¤ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•  ìˆ˜ ì—†ìŒ.
+	static int cv2 = new MemberCall().iv;	 // ì´ì²˜ëŸ¼ ê°ì²´ë¥¼ ìƒì„±í•´ì•¼ ì‚¬ìš©ê°€ëŠ¥.
 		
-	//Âü°í
+	//ì°¸ê³ 
 //	MemberCall c = new MemberCall();
 //	int result = c.instanceMethod1();
 //	
 //	int result = new MemberCall().instanceMethod1();
-//	´Ü ÂüÁ¶º¯¼ö¸¦ ¼±¾ğÇÏ´Â ÇüÅÂ°¡ ¾Æ´Ï¹Ç·Î Àç»ç¿ëÀº ºÒ°¡
+//	ë‹¨ ì°¸ì¡°ë³€ìˆ˜ë¥¼ ì„ ì–¸í•˜ëŠ” í˜•íƒœê°€ ì•„ë‹ˆë¯€ë¡œ ì¬ì‚¬ìš©ì€ ë¶ˆê°€
 	static void staticMethod1() {
 		System.out.println(cv);
-//		System.out.println(iv); // ¿¡·¯. Å¬·¡½º¸Ş¼­µå¿¡¼­ ÀÎ½ºÅÏ½ºº¯¼ö¸¦ »ç¿ëºÒ°¡.
+//		System.out.println(iv); // ì—ëŸ¬. í´ë˜ìŠ¤ë©”ì„œë“œì—ì„œ ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ë¥¼ ì‚¬ìš©ë¶ˆê°€.
 		MemberCall c = new MemberCall();	
-		System.out.println(c.iv);   // °´Ã¼¸¦ »ı¼ºÇÑ ÈÄ¿¡¾ß ÀÎ½ºÅÏ½ºº¯¼öÀÇ ÂüÁ¶°¡´É.
+		System.out.println(c.iv);   // ê°ì²´ë¥¼ ìƒì„±í•œ í›„ì—ì•¼ ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ì˜ ì°¸ì¡°ê°€ëŠ¥.
 		
 }
 
 	void instanceMethod1() {
 		System.out.println(cv);		
-		System.out.println(iv); // ÀÎ½ºÅÏ½º¸Ş¼­µå¿¡¼­´Â ÀÎ½ºÅÏ½ºº¯¼ö¸¦ ¹Ù·Î »ç¿ë°¡´É.
+		System.out.println(iv); // ì¸ìŠ¤í„´ìŠ¤ë©”ì„œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ë³€ìˆ˜ë¥¼ ë°”ë¡œ ì‚¬ìš©ê°€ëŠ¥.
 }
 
 	static void staticMethod2() {
 		staticMethod1();
-//		instanceMethod1(); // ¿¡·¯. Å¬·¡½º¸Ş¼­µå¿¡¼­´Â ÀÎ½ºÅÏ½º¸Ş¼­µå¸¦ È£ÃâÇÒ ¼ö ¾øÀ½.
+//		instanceMethod1(); // ì—ëŸ¬. í´ë˜ìŠ¤ë©”ì„œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ë©”ì„œë“œë¥¼ í˜¸ì¶œí•  ìˆ˜ ì—†ìŒ.
 		MemberCall c = new MemberCall();
-		c.instanceMethod1(); // ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇÑ ÈÄ¿¡¾ß È£ÃâÇÒ ¼ö ÀÖÀ½.
+		c.instanceMethod1(); // ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•œ í›„ì—ì•¼ í˜¸ì¶œí•  ìˆ˜ ìˆìŒ.
  	}
 	
-	void instanceMethod2() {	// ÀÎ½ºÅÏ½º¸Ş¼­µå¿¡¼­´Â ÀÎ½ºÅÏ½º¸Ş¼­µå¿Í Å¬·¡½º¸Ş¼­µå
-		staticMethod1();		//  ¸ğµÎ ÀÎ½ºÅÏ½º »ı¼º¾øÀÌ ¹Ù·Î È£ÃâÀÌ °¡´ÉÇÏ´Ù.
+	void instanceMethod2() {	// ì¸ìŠ¤í„´ìŠ¤ë©”ì„œë“œì—ì„œëŠ” ì¸ìŠ¤í„´ìŠ¤ë©”ì„œë“œì™€ í´ë˜ìŠ¤ë©”ì„œë“œ
+		staticMethod1();		//  ëª¨ë‘ ì¸ìŠ¤í„´ìŠ¤ ìƒì„±ì—†ì´ ë°”ë¡œ í˜¸ì¶œì´ ê°€ëŠ¥í•˜ë‹¤.
 		instanceMethod1();
 	}
 	

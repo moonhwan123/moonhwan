@@ -9,8 +9,8 @@ class Beep extends Thread{
 	public void run() {
 		Toolkit tool = Toolkit.getDefaultToolkit();
 		for (int i = 0; i < 10; i++) {
-			tool.beep(); // ºñÇÁÀ½ (¼Ò¸®)
-			System.out.println("¸Û¸Û");
+			tool.beep(); // ë¹„í”„ìŒ (ì†Œë¦¬)
+			System.out.println("ë©ë©");
 			try {
 				Thread.sleep(500); 
 			} catch (Exception e) {
@@ -18,7 +18,7 @@ class Beep extends Thread{
 			}
 		}
 		
-	}//run ³¡
+	}//run ë
 	
 	
 }
@@ -32,7 +32,7 @@ public class Exam_10 {
 		b.start();
 		
 		for (int i = 0; i < 10; i++) {
-			System.out.println("ÄåÄå");
+			System.out.println("ì½¸ì½¸");
 			try {
 				Thread.sleep(500);
 			} catch (Exception e) {

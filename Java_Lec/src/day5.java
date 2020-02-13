@@ -5,12 +5,12 @@ public class day5 {
 	public static void main(String[] args) {
 		
 		/*
-		 -´ëÀÔ ¿¬»êÀÚ
+		 -ëŒ€ìž… ì—°ì‚°ìž
 		 	
-		 	= : ¿ÞÂÊÀÇ ÇÇ¿¬»êÀÚ¿¡ ¿À¸¥ÂÊ  ´ëÀÔ
+		 	= : ì™¼ìª½ì˜ í”¼ì—°ì‚°ìžì— ì˜¤ë¥¸ìª½  ëŒ€ìž…
 		 		num = 1 + 2
 		 	
-		 	º¹ÇÕ ´ëÀÔ ¿¬»êÀÚ
+		 	ë³µí•© ëŒ€ìž… ì—°ì‚°ìž
 		 		a+=b : a = a + b
 		 		a-=b : a = a - b
 		 		a*=b : a = a * b
@@ -38,16 +38,16 @@ public class day5 {
 		
 		
 		/*
-		 -ºñ±³ ¿¬»êÀÚ
+		 -ë¹„êµ ì—°ì‚°ìž
 		 
-		 	: ¾çº¯À» ºñ±³ÇÏ¿© °°À¸¸é True ´Ù¸£¸é False
+		 	: ì–‘ë³€ì„ ë¹„êµí•˜ì—¬ ê°™ìœ¼ë©´ True ë‹¤ë¥´ë©´ False
 		 	
-		 	== : °°´Ù 
-		 	>  : Å©´Ù
-		 	<  : ÀÛ´Ù
-		 	>= : Å©°Å³ª °°´Ù
-		 	<= : ÀÛ°Å³ª °°´Ù
-		 	!= : °°Áö ¾Ê´Ù
+		 	== : ê°™ë‹¤ 
+		 	>  : í¬ë‹¤
+		 	<  : ìž‘ë‹¤
+		 	>= : í¬ê±°ë‚˜ ê°™ë‹¤
+		 	<= : ìž‘ê±°ë‚˜ ê°™ë‹¤
+		 	!= : ê°™ì§€ ì•Šë‹¤
 		 
 		 
 		 */
@@ -62,24 +62,24 @@ public class day5 {
 		System.out.println(a+b>c);
 		System.out.println();
 		
-		System.out.println('a'>'b'); // ¹®ÀÚ´Â ÀÚµ¿À¸·Î ¾Æ½ºÅ° ÄÚµåÇ¥¿¡ ÀÖ´Â °ªÀ¸·Î °è»êÇÑ´Ù.
+		System.out.println('a'>'b'); // ë¬¸ìžëŠ” ìžë™ìœ¼ë¡œ ì•„ìŠ¤í‚¤ ì½”ë“œí‘œì— ìžˆëŠ” ê°’ìœ¼ë¡œ ê³„ì‚°í•œë‹¤.
 		System.out.println(!(3!=2));
 		System.out.println();
 		
 		String str = "Hello Java";
 		System.out.println(str == "Hello java");
-		// ÀÚ¹Ù¿¡¼­´Â ´ë¼Ò¹®ÀÚ ´Ù¸£°Ô Ãë±Þ
+		// ìžë°”ì—ì„œëŠ” ëŒ€ì†Œë¬¸ìž ë‹¤ë¥´ê²Œ ì·¨ê¸‰
 		System.out.println(str.equals("Hello Java"));
 		
 		
 		/*
-		 -³í¸® ¿¬»êÀÚ
+		 -ë…¼ë¦¬ ì—°ì‚°ìž
 		 
-		 	: ¿©·¯°¡Áö Á¶°ÇÀ» µ¿½Ã¿¡ °Ë»çÇÏ´Â °æ¿ì »ç¿ë
-		 	: ºñ±³ÇÏ´Â µÎ °ªÀÌ Boolean ÇüÅÂ ÀÌ¿©¾ßÇÔ
+		 	: ì—¬ëŸ¬ê°€ì§€ ì¡°ê±´ì„ ë™ì‹œì— ê²€ì‚¬í•˜ëŠ” ê²½ìš° ì‚¬ìš©
+		 	: ë¹„êµí•˜ëŠ” ë‘ ê°’ì´ Boolean í˜•íƒœ ì´ì—¬ì•¼í•¨
 		 	
-		 	&&(AND) : µÑ´Ù True ÀÏ¶§ True
-		 	||(OR) : µÑ Áß ÇÏ³ª¸¸ True¸é True
+		 	&&(AND) : ë‘˜ë‹¤ True ì¼ë•Œ True
+		 	||(OR) : ë‘˜ ì¤‘ í•˜ë‚˜ë§Œ Trueë©´ True
 		 	!(NOT) : True -> False , False -> True
 		 	
 		 */
@@ -93,16 +93,16 @@ public class day5 {
 		// (ch >= 'A') && (ch <= 'Z') ;
 		
 		/*
-		 -ºñÆ®¿¬»ê
+		 -ë¹„íŠ¸ì—°ì‚°
 		 	
-		 	ºñÆ® AND(&) : ºñÆ® ´ÜÀ§ÀÇ AND¿¬»ê
-		 	ºñÆ® OR(|) : ºñÆ® ´ÜÀ§ÀÇ OR¿¬»ê
-		 	ºñÆ® XOR(^) : ºñÆ® ´ÜÀ§ÀÇ XOR¿¬»ê
-		 	ºñÆ® NOT(~) : ºÎÈ£ ¹ÝÀü
+		 	ë¹„íŠ¸ AND(&) : ë¹„íŠ¸ ë‹¨ìœ„ì˜ ANDì—°ì‚°
+		 	ë¹„íŠ¸ OR(|) : ë¹„íŠ¸ ë‹¨ìœ„ì˜ ORì—°ì‚°
+		 	ë¹„íŠ¸ XOR(^) : ë¹„íŠ¸ ë‹¨ìœ„ì˜ XORì—°ì‚°
+		 	ë¹„íŠ¸ NOT(~) : ë¶€í˜¸ ë°˜ì „
 		 	
-		 -½ÃÇÁÆ® ¿¬»êÀÚ
-		 	>> : ¿À¸¥ÂÊÀ¸·Î ºñÆ® ÀÌµ¿ (ºñÆ® ÇÏ³ª ÀÌµ¿ / 2)
-		 	<< : ¿ÞÂÊÀ¸·Î ºñÆ® ÀÌµ¿ (ºñÆ® ÇÏ³ª ÀÌµ¿ * 2)
+		 -ì‹œí”„íŠ¸ ì—°ì‚°ìž
+		 	>> : ì˜¤ë¥¸ìª½ìœ¼ë¡œ ë¹„íŠ¸ ì´ë™ (ë¹„íŠ¸ í•˜ë‚˜ ì´ë™ / 2)
+		 	<< : ì™¼ìª½ìœ¼ë¡œ ë¹„íŠ¸ ì´ë™ (ë¹„íŠ¸ í•˜ë‚˜ ì´ë™ * 2)
 		 	
 		 */
 		System.out.println();
@@ -116,27 +116,27 @@ public class day5 {
 		System.out.println(bit_b<<1);
 		
 		/*
-		 -»ïÇ× ¿¬»êÀÚ
+		 -ì‚¼í•­ ì—°ì‚°ìž
 		 	
-		 	: Ç×ÀÌ ¼¼°³ÀÎ ¿¬»êÀÚ
-		 	: Á¶°Ç½ÄÀÇ °á°ú¿¡ µû¶ó °á°ú ¹ÝÈ¯
-		 	: Á¶°Ç? Ç×¸ñ1(Âü) : Ç×¸ñ2(°ÅÁþ)
+		 	: í•­ì´ ì„¸ê°œì¸ ì—°ì‚°ìž
+		 	: ì¡°ê±´ì‹ì˜ ê²°ê³¼ì— ë”°ë¼ ê²°ê³¼ ë°˜í™˜
+		 	: ì¡°ê±´? í•­ëª©1(ì°¸) : í•­ëª©2(ê±°ì§“)
 		 */
 		
 		System.out.println();
 		int age= 17;
-		System.out.println(age>19?"¼ºÀÎ":"Ã»¼Ò³â");
+		System.out.println(age>19?"ì„±ì¸":"ì²­ì†Œë…„");
 		
-		// ¿¬½À¹®Á¦
-		// µÎ °³ÀÇ °ªÀ» ÀÔ·Â ¹Þ°í , µÎ ¼öÁß¿¡ °¡Àå Å« ¼ö¸¦ È­¸é¿¡ Ãâ·ÂÇØ¶ó
-		// ÀÀ¿ë , ¼¼ °³ÀÇ ¼ö¸¦ ÀÔ·Â ¹Þ°í, °¡Àå Å«¼ö
+		// ì—°ìŠµë¬¸ì œ
+		// ë‘ ê°œì˜ ê°’ì„ ìž…ë ¥ ë°›ê³  , ë‘ ìˆ˜ì¤‘ì— ê°€ìž¥ í° ìˆ˜ë¥¼ í™”ë©´ì— ì¶œë ¥í•´ë¼
+		// ì‘ìš© , ì„¸ ê°œì˜ ìˆ˜ë¥¼ ìž…ë ¥ ë°›ê³ , ê°€ìž¥ í°ìˆ˜
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("µÎ ¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä :");
+		System.out.println("ë‘ ìˆ˜ë¥¼ ìž…ë ¥ í•˜ì„¸ìš” :");
 		int num_A = sc.nextInt();
 		int num_B = sc.nextInt();
 	
-		System.out.println("µÎ ¼öÁß Å« ¼ö´Â "+(num_A<num_B?num_B:num_A));
+		System.out.println("ë‘ ìˆ˜ì¤‘ í° ìˆ˜ëŠ” "+(num_A<num_B?num_B:num_A));
 		
 		sc.close();
 		

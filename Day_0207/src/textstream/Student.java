@@ -24,11 +24,11 @@ public class Student implements Comparable<Student>{
 	@Override
 	public int compareTo(Student s) {
 		if(bun < s.bun) {
-			return -1; // ºñ±³ÇÏ´Â °ªÀÌ Å©¸é
+			return -1; // ë¹„êµí•˜ëŠ” ê°’ì´ í¬ë©´
 		}else if(bun == s.bun) {
 			return 0; 
 		}else {
-			return 1; // ºñ±³ÇÏ´Â °ªÀÌ ÀÛÀ¸¸é
+			return 1; // ë¹„êµí•˜ëŠ” ê°’ì´ ì‘ìœ¼ë©´
 		}
 	}
 	

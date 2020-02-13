@@ -5,23 +5,23 @@ public class day3 {
 	public static void main(String[] args) {
 		
 	/*
-	 -ÀÚ¹Ù Å° ÀÔ·Â
+	 -ìë°” í‚¤ ì…ë ¥
 	 
 	 	System.in
-	 	: Å°º¸µå·ÎºÎÅÍ Á÷Á¢ ÀĞ´Â ÀÚ¹ÙÀÇ Ç¥ÁØ ÀÔ·Â ½ºÆ®¸²(Èå¸§)
-	 	: Å° °ªÀ» ¹ÙÀÌÆ®(¹®ÀÚ ¾Æ´Ô)·Î ¸®ÅÏ
+	 	: í‚¤ë³´ë“œë¡œë¶€í„° ì§ì ‘ ì½ëŠ” ìë°”ì˜ í‘œì¤€ ì…ë ¥ ìŠ¤íŠ¸ë¦¼(íë¦„)
+	 	: í‚¤ ê°’ì„ ë°”ì´íŠ¸(ë¬¸ì ì•„ë‹˜)ë¡œ ë¦¬í„´
 	 		Ex) 0 1 0 0 1 1
-	 			¹ÙÀÌÆ® ´ÜÀ§ÀÇ µ¥ÀÌÅÍ¸¦ º¯È¯ÇÒ ÇÊ¿ä°¡ ÀÖ´Ù.
+	 			ë°”ì´íŠ¸ ë‹¨ìœ„ì˜ ë°ì´í„°ë¥¼ ë³€í™˜í•  í•„ìš”ê°€ ìˆë‹¤.
 	 	
 	 	Scanner Class
-	 	: System.in ¿¡°Ô Å°¸¦ ÀĞ°ÔÇÏ°í ÀĞÀº ³»¿ëÀ» Á¤¼ö,½Ç¼ö,¹®ÀÚ¿­ µî À¸·Î º¯È¯ÇÏ¿© ¹İÈ¯
+	 	: System.in ì—ê²Œ í‚¤ë¥¼ ì½ê²Œí•˜ê³  ì½ì€ ë‚´ìš©ì„ ì •ìˆ˜,ì‹¤ìˆ˜,ë¬¸ìì—´ ë“± ìœ¼ë¡œ ë³€í™˜í•˜ì—¬ ë°˜í™˜
 	 		
-	 		next() - ¹®ÀÚ¿­·Î ¹İÈ¯
-	 		nextShort() - short Å¸ÀÔÀ¸·Î ¹İÈ¯
-	 		nextInt() - int Å¸ÀÔÀ¸·Î ¹İÈ¯
-	 		nextFloat() - Float Å¸ÀÔÀ¸·Î ¹İÈ¯
-	 		nextLine() - \nÀ» Æ÷ÇÔÀ» ÇÑ ¶óÀÎÀ» ÀĞ°í \nÀ» ¹ö¸° ¹®ÀÚ¿­ ¹İÈ¯
-	 		hasNext() - ÇöÀç ÀÔ·ÂµÈ ÅäÅ«ÀÌ ÀÖÀ¸¸é True ¾Æ´Ï¸é EOF false ¹İÈ¯
+	 		next() - ë¬¸ìì—´ë¡œ ë°˜í™˜
+	 		nextShort() - short íƒ€ì…ìœ¼ë¡œ ë°˜í™˜
+	 		nextInt() - int íƒ€ì…ìœ¼ë¡œ ë°˜í™˜
+	 		nextFloat() - Float íƒ€ì…ìœ¼ë¡œ ë°˜í™˜
+	 		nextLine() - \nì„ í¬í•¨ì„ í•œ ë¼ì¸ì„ ì½ê³  \nì„ ë²„ë¦° ë¬¸ìì—´ ë°˜í™˜
+	 		hasNext() - í˜„ì¬ ì…ë ¥ëœ í† í°ì´ ìˆìœ¼ë©´ True ì•„ë‹ˆë©´ EOF false ë°˜í™˜
 	 		
 	 	
 	 	
@@ -33,19 +33,19 @@ public class day3 {
 		
 		/*
 		String name = sc.next();
-		System.out.println("ÀÌ¸§Àº "+name);
+		System.out.println("ì´ë¦„ì€ "+name);
 		
 		String city = sc.next();
-		System.out.println("µµ½Ã´Â "+city);
+		System.out.println("ë„ì‹œëŠ” "+city);
 		
 		int age = sc.nextInt();
-		System.out.println("³ªÀÌ´Â "+age+"»ì");
+		System.out.println("ë‚˜ì´ëŠ” "+age+"ì‚´");
 		
 		String str = sc.nextLine();
 		System.out.println("Test = "+str);
 		*/
 		
-		sc.close(); // ÀÚ¹Ù´Â ±»ÀÌ ¾È´İ¾Æµµ µÇ±äÇÔ , µÇµµ·ÏÀÌ¸é ´İÀÚ
+		sc.close(); // ìë°”ëŠ” êµ³ì´ ì•ˆë‹«ì•„ë„ ë˜ê¸´í•¨ , ë˜ë„ë¡ì´ë©´ ë‹«ì
 		
 		
 	

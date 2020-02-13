@@ -1,19 +1,19 @@
 package jslhrd2;
 
 /*
-¹øÈ£     ÀÌ¸§      Á¡¼ö     ÇÕ°è      Æò±Õ
-1   È«±æµ¿       50   50    50
-¹øÈ£     ÀÌ¸§      Á¡¼ö                        ÇÕ°è     Æò±Õ
-1   È«±æµ¿      90,80,70,60   xxx  xxx.x
+ë²ˆí˜¸     ì´ë¦„      ì ìˆ˜     í•©ê³„      í‰ê· 
+1   í™ê¸¸ë™       50   50    50
+ë²ˆí˜¸     ì´ë¦„      ì ìˆ˜                        í•©ê³„     í‰ê· 
+1   í™ê¸¸ë™      90,80,70,60   xxx  xxx.x
  */
 
 public class HakExam {
 
 	public static void main(String[] args) {
 		
-		Hak data = new HakData(1,"È«±æµ¿",90);
+		Hak data = new HakData(1,"í™ê¸¸ë™",90);
 		data.print();
-	    data = new HakData(1,"È«±æµ¿",new int[] {90,80,70,60,80});
+	    data = new HakData(1,"í™ê¸¸ë™",new int[] {90,80,70,60,80});
 		data.print();
 		
 		

@@ -4,8 +4,8 @@ public class Exam_03 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in); // Ctrl + shift + o
-		//sc - º¯¼ö(ÂüÁ¶Çü)
-		//new - ¿¬»êÀÚ (°´Ã¼»ı¼º)
+		//sc - ë³€ìˆ˜(ì°¸ì¡°í˜•)
+		//new - ì—°ì‚°ì (ê°ì²´ìƒì„±)
 		//int num = 10;
 		//System.out.println("num = " + num);
 		//System.out.println("sc = " + sc);
@@ -17,11 +17,11 @@ public class Exam_03 {
 		double b = sc.nextDouble();
 		System.out.println("b = "+b);
 		
-		String c = sc.next(); // ¾ê³×µéÀº ½ºÆäÀÌ½º±îÁö ÀÎ½Ä
+		String c = sc.next(); // ì–˜ë„¤ë“¤ì€ ìŠ¤í˜ì´ìŠ¤ê¹Œì§€ ì¸ì‹
 		System.out.println("c = "+c);
-		// ±×·¡¼­ ¿¬¼Ó ÀÔ·Â ÇÒ‹š °Á ½ºÆäÀÌ½º ÃÄÁÖ¸éµÊ
+		// ê·¸ë˜ì„œ ì—°ì† ì…ë ¥ í• ë–„ ê± ìŠ¤í˜ì´ìŠ¤ ì³ì£¼ë©´ë¨
 		
-		//String d = sc.nextLine(); // ¾ê´Â ÇÑÁÙÀ» °Á ÅëÂÅ·Î ÀÎ½Ä
+		//String d = sc.nextLine(); // ì–˜ëŠ” í•œì¤„ì„ ê± í†µì©¨ë¡œ ì¸ì‹
 		
 		
 		

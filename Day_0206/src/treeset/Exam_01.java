@@ -3,11 +3,11 @@ package treeset;
 import java.util.*;
 
 /*
-Ãß°¡) ¹è¿­Àº ½ÇÁ¦ °ªÀÌ ÀúÀå µÇÁö¸¸
-          ¸®½ºÆ®(ÄÃ·º¼Ç)´Â "°´Ã¼"°¡ ÀúÀå (ÁÖ¼Ò°¡ ÀúÀå)
+ì¶”ê°€) ë°°ì—´ì€ ì‹¤ì œ ê°’ì´ ì €ì¥ ë˜ì§€ë§Œ
+          ë¦¬ìŠ¤íŠ¸(ì»¬ë ‰ì…˜)ëŠ” "ê°ì²´"ê°€ ì €ì¥ (ì£¼ì†Œê°€ ì €ì¥)
 	
 
-[°Ë»ö±â´ÉÀ» °­È­ÇÑ ÄÃ·¢¼Ç]
+[ê²€ìƒ‰ê¸°ëŠ¥ì„ ê°•í™”í•œ ì»¬ë™ì…˜]
 TresSet 
 
  */
@@ -15,8 +15,8 @@ public class Exam_01 {
 	public static void main(String[] args) {
 		
 //		Set set = new HashSet();
-//		set.add(10); // ½ÇÁ¦°ª 10 ÀÌ ¾Æ´Ï¶ó ¿ÀÅä¹Ú½Ì µÇ¾î¼­ Integer°´Ã¼°¡ ÀúÀåµÊ
-//		set.add(new Integer(10)); // ±×·¡¼­ ½ÇÁúÀûÀ¸·Ğ ÀÌ·¸°Ô ÇØ¾ßµÊ
+//		set.add(10); // ì‹¤ì œê°’ 10 ì´ ì•„ë‹ˆë¼ ì˜¤í† ë°•ì‹± ë˜ì–´ì„œ Integerê°ì²´ê°€ ì €ì¥ë¨
+//		set.add(new Integer(10)); // ê·¸ë˜ì„œ ì‹¤ì§ˆì ìœ¼ë¡  ì´ë ‡ê²Œ í•´ì•¼ë¨
 		
 		TreeSet set = new TreeSet();
 		
@@ -25,7 +25,7 @@ public class Exam_01 {
 			set.add(num);
 		}
 		System.out.println(set);
-		// TresSetÀº ÀÚµ¿ Á¤·Ä µÇ¾î¼­ Ãâ·ÂµÊ
+		// TresSetì€ ìë™ ì •ë ¬ ë˜ì–´ì„œ ì¶œë ¥ë¨
 		
 		
 		Set set2 = new HashSet();

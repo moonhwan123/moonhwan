@@ -14,12 +14,12 @@ public class WordReplace {
 		
 		StringBuffer sb = new StringBuffer(text);
 		
-		System.out.print("¸í·É : ");
+		System.out.print("ëª…ë ¹ : ");
 		String cmd = sc.nextLine();
 		
 		while(true) {
-		if(cmd.equals("±×¸¸")) {
-			System.out.println("Á¾·á ÇÕ´Ï´Ù.");
+		if(cmd.equals("ê·¸ë§Œ")) {
+			System.out.println("ì¢…ë£Œ í•©ë‹ˆë‹¤.");
 			break;
 			}
 		
@@ -27,19 +27,19 @@ public class WordReplace {
 		
 		String[] tokens = cmd.split("!");
 		if(tokens.length != 2) {
-			System.out.println("Àß¸øµÈ ¸í·É¾î ÀÔ´Ï´Ù.");
+			System.out.println("ì˜ëª»ëœ ëª…ë ¹ì–´ ì…ë‹ˆë‹¤.");
 		}
 		
 		else {
 			if(tokens[0].length() == 0 || tokens[1].length() == 0) {
-				System.out.println("Àß¸øµÈ ¸í·É¾î ÀÔ´Ï´Ù.");
+				System.out.println("ì˜ëª»ëœ ëª…ë ¹ì–´ ì…ë‹ˆë‹¤.");
 				continue;
 			}
 		
 		int index = sb.indexOf(tokens[0]);
 		
 		if(index == -1) {
-			System.out.println("Ã£À» ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ì°¾ì„ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			continue;
 		}
 		

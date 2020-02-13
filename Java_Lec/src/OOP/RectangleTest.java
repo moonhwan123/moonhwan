@@ -28,7 +28,7 @@ class Rectangle{
 	
 	void show() {
 		System.out.printf("x1 : %d, x2 : %d, y1 : %d, y2 : %d\n",x1,x2,y1,y2);
-		System.out.println("³ĞÀÌ : "+square());
+		System.out.println("ë„“ì´ : "+square());
 	}
 	
 	boolean equals(Rectangle r) {
@@ -43,7 +43,7 @@ public class RectangleTest {
 
 	public static void main(String[] args) {
 		
-		Rectangle r = new Rectangle(); //ÀÎÀÚ°¡ ¾ø´Â °´Ã¼ »ı¼º
+		Rectangle r = new Rectangle(); //ì¸ìê°€ ì—†ëŠ” ê°ì²´ ìƒì„±
 		Rectangle s = new Rectangle(1,1,2,3);
 		
 		r.show();
@@ -53,7 +53,7 @@ public class RectangleTest {
 		r.show();
 		System.out.println(r.square());
 		if(r.equals(s))
-			System.out.println("µÎ »ç°¢ÇüÀº °°½À´Ï´Ù.");
+			System.out.println("ë‘ ì‚¬ê°í˜•ì€ ê°™ìŠµë‹ˆë‹¤.");
 		
 		
 

@@ -3,9 +3,9 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 /*
-1. ÇöÀç ³¯Â¥
+1. í˜„ì¬ ë‚ ì§œ
 Date now = new Data();
-1.8 ÀÌÈÄ¿¡¼­ »ç¿ë°¡´É
+1.8 ì´í›„ì—ì„œ ì‚¬ìš©ê°€ëŠ¥
 
  */
 public class Exam_10 {
@@ -17,9 +17,9 @@ public class Exam_10 {
 		
 		LocalDateTime today = LocalDateTime.now();
 		
-		System.out.println("³¯Â¥ : "+now);
-		System.out.println("½Ã°£ : "+time);
-		System.out.println("³¯Â¥/½Ã°£ : "+today);
+		System.out.println("ë‚ ì§œ : "+now);
+		System.out.println("ì‹œê°„ : "+time);
+		System.out.println("ë‚ ì§œ/ì‹œê°„ : "+today);
 		
 		
 	}

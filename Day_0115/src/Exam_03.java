@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 /*
-1.[ÀÔ·Â¿¹½Ã]
-10Áø¼ö : 25
-º¯È¯ : 2
+1.[ì…ë ¥ì˜ˆì‹œ]
+10ì§„ìˆ˜ : 25
+ë³€í™˜ : 2
 
-2.[Ãâ·Â¿¹½Ã]
-10Áø¼ö : 25
-2Áø¼ö : 11001
+2.[ì¶œë ¥ì˜ˆì‹œ]
+10ì§„ìˆ˜ : 25
+2ì§„ìˆ˜ : 11001
  */
 class ConvNumber{
 	int dec;
@@ -30,7 +30,7 @@ class ConvNumber{
 		do {
 			mok = temp/conv;
 			nmg = temp%conv; 
-			binary = str[nmg]+binary; // ¹®ÀÚ¿­ ¿¬»ê ÀÌ¿ë
+			binary = str[nmg]+binary; // ë¬¸ìì—´ ì—°ì‚° ì´ìš©
 			temp = mok;	
 		}while(mok!=0);
 		return binary;
@@ -42,11 +42,11 @@ public class Exam_03 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("10Áø¼ö : ");
+		System.out.print("10ì§„ìˆ˜ : ");
 		int dec = sc.nextInt();
 		int conv =0;
 		while(conv != 2 && conv != 8 && conv!= 16) {
-			System.out.print("º¯È¯ÇÒ Áø¼ö : ");
+			System.out.print("ë³€í™˜í•  ì§„ìˆ˜ : ");
 			conv = sc.nextInt();
 		}
 		
@@ -55,8 +55,8 @@ public class Exam_03 {
 
 		
 		ConvNumber conv1 = new ConvNumber(dec,conv);
-		System.out.println("10 Áø¼ö : " + dec);
-		System.out.println(conv+"Áø¼ö : "+conv1.conversion());
+		System.out.println("10 ì§„ìˆ˜ : " + dec);
+		System.out.println(conv+"ì§„ìˆ˜ : "+conv1.conversion());
 		
 	}
 

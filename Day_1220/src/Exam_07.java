@@ -5,8 +5,8 @@ public class Exam_07 {
 		
 		// 1)
 		System.out.println("1)");
-		for(int i = 1; i <= 5; i++) {// ÁÙ¼ö
-			for(int j = 1; j <= 5; j++) { // ÁÙ´ç Ä­¼ö
+		for(int i = 1; i <= 5; i++) {// ì¤„ìˆ˜
+			for(int j = 1; j <= 5; j++) { // ì¤„ë‹¹ ì¹¸ìˆ˜
 			System.out.print("*");	
 			}
 			System.out.println();

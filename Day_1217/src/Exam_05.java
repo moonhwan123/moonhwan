@@ -3,10 +3,10 @@ public class Exam_05 {
 	
 	public static void main(String[] args) throws Exception{
 		
-		System.out.print("1¹®ÀÚ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("1ë¬¸ì ì…ë ¥ í•˜ì„¸ìš” : ");
 		int var = System.in.read();
 		
-		System.out.println("Ãâ·Â : " + (char)var); // Çüº¯È¯
+		System.out.println("ì¶œë ¥ : " + (char)var); // í˜•ë³€í™˜
 	}
 
 }

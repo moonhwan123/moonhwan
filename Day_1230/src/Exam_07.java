@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-Á¤¼ö 1°³ ÀÔ·Â
-'A' ~ 'F' ÆÇ´Ü
+ì •ìˆ˜ 1ê°œ ìž…ë ¥
+'A' ~ 'F' íŒë‹¨
 
  */
 
@@ -13,7 +13,7 @@ public class Exam_07 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¡¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì ìˆ˜ë¥¼ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int a = sc.nextInt();
 		
 		if (a>=90) System.out.println("A");

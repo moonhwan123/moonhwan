@@ -1,27 +1,27 @@
 import java.io.IOException;
 
 /*
-Ç¥ÁØÀÔ·Â
-System.in.read(); -- 1¹®ÀÚ ÀÔ·Â -- Á¤¼ö·Î º¯È¯
-¹Ýµå½Ã ¿¹¿ÜÃ³¸® ÇÊ¿ä
+í‘œì¤€ìž…ë ¥
+System.in.read(); -- 1ë¬¸ìž ìž…ë ¥ -- ì •ìˆ˜ë¡œ ë³€í™˜
+ë°˜ë“œì‹œ ì˜ˆì™¸ì²˜ë¦¬ í•„ìš”
  */
 
 
 public class Exam_02 {
 	public static void main(String[] args) throws IOException {
 		
-		System.out.print("1¹®ÀÚ ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("1ë¬¸ìž ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		
 		System.in.read();
 		System.in.read();
-		int ch = System.in.read(); // 'A'¸¦ ÀÔ·ÂÇÏ¸é A¿¡ ÇØ´çÇÏ´Â ¾Æ½ºÅ° ÄÚµå °ªÀÌ µé¾î°¨  
-		                           //   \n - 10¹ø ,\r - 13¹ø , A - 65¹ø , a - 97¹ø 
+		int ch = System.in.read(); // 'A'ë¥¼ ìž…ë ¥í•˜ë©´ Aì— í•´ë‹¹í•˜ëŠ” ì•„ìŠ¤í‚¤ ì½”ë“œ ê°’ì´ ë“¤ì–´ê°  
+		                           //   \n - 10ë²ˆ ,\r - 13ë²ˆ , A - 65ë²ˆ , a - 97ë²ˆ 
 		
 		System.out.print("ch = "+ch);
 		System.out.println();
 		
-		System.out.print("1¹®ÀÚ ÀÔ·Â ÇÏ¼¼¿ä >> ");
-		char ch_1 = (char)System.in.read(); // °­Á¦ Çüº¯È¯
+		System.out.print("1ë¬¸ìž ìž…ë ¥ í•˜ì„¸ìš” >> ");
+		char ch_1 = (char)System.in.read(); // ê°•ì œ í˜•ë³€í™˜
 		System.out.println("ch_1 = "+ch_1);
 		
 		

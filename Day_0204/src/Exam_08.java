@@ -1,7 +1,7 @@
 import java.util.*;
 
 /*
-HashCode¿À¹ö¶óÀÌµù
+HashCodeì˜¤ë²„ë¼ì´ë”©
 
 
 
@@ -30,7 +30,7 @@ class Person{
 		}else {
 			return false;
 		}
-	}// ÀÌ°Å¸¸ ÇØ¼­´Â Áßº¹ ÆÇ´ÜÀÌ ¾ÈµÈ´Ù. ±×·¡¼­ ÇØ½¬ÄÚµåµµ ¿À¹ö¶óÀÌµù ÇØÁÖÀÚ
+	}// ì´ê±°ë§Œ í•´ì„œëŠ” ì¤‘ë³µ íŒë‹¨ì´ ì•ˆëœë‹¤. ê·¸ë˜ì„œ í•´ì‰¬ì½”ë“œë„ ì˜¤ë²„ë¼ì´ë”© í•´ì£¼ì
 	
 	@Override
 	public int hashCode() {
@@ -46,9 +46,9 @@ public class Exam_08 {
 		
 		Set<Person> set = new HashSet<Person>();
 		
-		set.add(new Person(1,"È«±æµ¿"));
-		set.add(new Person(2,"±èÀÚ¹İ"));
-		set.add(new Person(1,"È«±æµ¿"));
+		set.add(new Person(1,"í™ê¸¸ë™"));
+		set.add(new Person(2,"ê¹€ìë°˜"));
+		set.add(new Person(1,"í™ê¸¸ë™"));
 		
 		System.out.println(set);
 		

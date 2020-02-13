@@ -1,7 +1,7 @@
 
 public class SutdaCard {
-	int num; //Ä«µåÀÇ ¼ıÀÚ(1~10»çÀÌÀÇ Á¤¼ö)
-	boolean isKwang; // ±¤ÀÌ¸é true ,¾Æ´Ï¸é false
+	int num; //ì¹´ë“œì˜ ìˆ«ì(1~10ì‚¬ì´ì˜ ì •ìˆ˜)
+	boolean isKwang; // ê´‘ì´ë©´ true ,ì•„ë‹ˆë©´ false
 	
 	SutdaCard() {
 		this(1,true);

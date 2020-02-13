@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 /*
-1.¼¼°³ÀÇ Á¤¼öÁß °¡Àå Å«°ª Ã£±â
+1.ì„¸ê°œì˜ ì •ìˆ˜ì¤‘ ê°€ìž¥ í°ê°’ ì°¾ê¸°
 
-2.¼¼°³ÀÇ Á¤¼öÁß °¡Àå Å«°ª Ã£±â
+2.ì„¸ê°œì˜ ì •ìˆ˜ì¤‘ ê°€ìž¥ í°ê°’ ì°¾ê¸°
 
 
  */
@@ -16,16 +16,16 @@ public class Exam_09 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö1À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜1ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int a = sc.nextInt();
-		System.out.print("Á¤¼ö2À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜2ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int b = sc.nextInt();
-		System.out.print("Á¤¼ö3À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜3ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int c = sc.nextInt();
 		
 		
-		// 1. Å«°ª Ã£±â
-		int max = a; // Ã³À½ ¼ýÀÚ°¡ max°¡ µÈ´Ù.
+		// 1. í°ê°’ ì°¾ê¸°
+		int max = a; // ì²˜ìŒ ìˆ«ìžê°€ maxê°€ ëœë‹¤.
 		
 		if(max < b) {
 			max = b;

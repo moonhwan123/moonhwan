@@ -3,21 +3,21 @@ package OOP2;
 import java.util.Scanner;
 
 class Product{
-	int price;//Á¦Ç°ÀÇ °¡°İ
-	int bonusPoint;//Á¦Ç° ±¸¸Å ½Ã Á¦°øÇÏ´Â º¸³Ê½º Á¡¼ö
+	int price;//ì œí’ˆì˜ ê°€ê²©
+	int bonusPoint;//ì œí’ˆ êµ¬ë§¤ ì‹œ ì œê³µí•˜ëŠ” ë³´ë„ˆìŠ¤ ì ìˆ˜
 	
 	public Product(int price) {
 		this.price = price;
 		bonusPoint = (int)(price/10.0);
-		//º¸³Ê½º Á¡¼ö´Â Á¦Ç° °¡°İÀÇ 10%
+		//ë³´ë„ˆìŠ¤ ì ìˆ˜ëŠ” ì œí’ˆ ê°€ê²©ì˜ 10%
 	}
 }
 class Tv1 extends Product{
 	Tv1(){
-		super(100);//TvÀÇ °¡°İÀ» 100¸¸¿ø
+		super(100);//Tvì˜ ê°€ê²©ì„ 100ë§Œì›
 	}
 	public String toString() {
-		return "TV";//Object Å¬·¡½ºÀÇ toString() ¿À¹ö¶óÀÌµù
+		return "TV";//Object í´ë˜ìŠ¤ì˜ toString() ì˜¤ë²„ë¼ì´ë”©
 	}
 }
 
@@ -30,7 +30,7 @@ class Computer extends Product{
 	}
 }
 
-class Buyer{//°í°´,¹°°ÇÀ» »ç´Â »ç¶÷
+class Buyer{//ê³ ê°,ë¬¼ê±´ì„ ì‚¬ëŠ” ì‚¬ëŒ
 	int money = 1000;
 	int bonusPoint = 0;
 	Product[] item = new Product[10];
@@ -38,15 +38,15 @@ class Buyer{//°í°´,¹°°ÇÀ» »ç´Â »ç¶÷
 	
 	void Buy(Product p) {
 		if(money<p.price) {
-			System.out.println("ÀÜ¾×ÀÌ ºÎÁ·ÇÏ¿© ¹°°ÇÀ» »ì ¼ö ¾ø½À´Ï´Ù.");
+			System.out.println("ì”ì•¡ì´ ë¶€ì¡±í•˜ì—¬ ë¬¼ê±´ì„ ì‚´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
 			return;
 		}
-		money -= p.price;//°¡Áø µ·¿¡¼­ ±¸ÀÔÇÑ Á¦Ç°ÀÇ °¡°İÀ» »«´Ù.
-		bonusPoint += p.bonusPoint;//Á¦Ç°ÀÇ º¸³Ê½º Á¡¼ö¸¦ Ãß°¡
+		money -= p.price;//ê°€ì§„ ëˆì—ì„œ êµ¬ì…í•œ ì œí’ˆì˜ ê°€ê²©ì„ ëº€ë‹¤.
+		bonusPoint += p.bonusPoint;//ì œí’ˆì˜ ë³´ë„ˆìŠ¤ ì ìˆ˜ë¥¼ ì¶”ê°€
 		item[i++] = p;
-		System.out.println(p+"À»/¸¦ ±¸ÀÔÇÏ¼Ì½À´Ï´Ù.");
+		System.out.println(p+"ì„/ë¥¼ êµ¬ì…í•˜ì…¨ìŠµë‹ˆë‹¤.");
 	}
-	void summary() {//±¸¸ÅÇÑ ¹°Ç°¿¡ ´ëÇÑ Á¤º¸ ¿ä¾à
+	void summary() {//êµ¬ë§¤í•œ ë¬¼í’ˆì— ëŒ€í•œ ì •ë³´ ìš”ì•½
 		int sum = 0;
 		String itemList = "";
 		
@@ -56,8 +56,8 @@ class Buyer{//°í°´,¹°°ÇÀ» »ç´Â »ç¶÷
 			itemList +=item[i]+", ";
 		}
 
-		System.out.println("±¸ÀÔÇÏ½Å ¹°Ç°ÀÇ ÃÑ ±Ş¾× "+sum+"¸¸¿ø ÀÔ´Ï´Ù.");
-		System.out.println("±¸ÀÔÇÏ½Å Á¦Ç°Àº "+itemList+"Á¡ÀÔ´Ï´Ù.");
+		System.out.println("êµ¬ì…í•˜ì‹  ë¬¼í’ˆì˜ ì´ ê¸‰ì•¡ "+sum+"ë§Œì› ì…ë‹ˆë‹¤.");
+		System.out.println("êµ¬ì…í•˜ì‹  ì œí’ˆì€ "+itemList+"ì ì…ë‹ˆë‹¤.");
 	}
 }
 
@@ -68,11 +68,11 @@ public class PolyArgumentTest {
 		Scanner sc = new Scanner(System.in);
 		
 		
-		System.out.println("»óÇ°À» °í¸£½Ã¿À.");
+		System.out.println("ìƒí’ˆì„ ê³ ë¥´ì‹œì˜¤.");
 		System.out.println("0. TV");
 		System.out.println("1. COMPUTER");
 		
-		System.out.print("»óÇ° ¹øÈ£ : ");
+		System.out.print("ìƒí’ˆ ë²ˆí˜¸ : ");
 		int num = sc.nextInt();
 		
 		switch (num) {

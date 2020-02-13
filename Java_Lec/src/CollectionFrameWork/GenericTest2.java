@@ -22,7 +22,7 @@ public class GenericTest2 {
 		
 		
 	}
-	//Å¸ÀÔ¿¡ »ó°ü¾øÀÌ ¹«Á¶°Ç ObjectÅ¸ÀÔÀ¸·Î ¹ŞÀ½. ÀÚ¿ø³¶ºñ ¹× Ã³¸®·® Áõ°¡
+	//íƒ€ì…ì— ìƒê´€ì—†ì´ ë¬´ì¡°ê±´ Objectíƒ€ì…ìœ¼ë¡œ ë°›ìŒ. ìì›ë‚­ë¹„ ë° ì²˜ë¦¬ëŸ‰ ì¦ê°€
 	private static void printArray1(Object[] intArray) {
 		for(Object element : intArray) {
 			System.out.printf("%s ",element);
@@ -31,7 +31,7 @@ public class GenericTest2 {
 	
 	}
 	
-	//Á¦³×¸¯ ¸Ş¼Òµå : of <> ¿ÀºêÅ¸ÀÔ, <T> Á¦³×¸¯ ¸Ş¼Òµå¶ó´Â °ÍÀ» Ç¥½Ã
+	//ì œë„¤ë¦­ ë©”ì†Œë“œ : of <> ì˜¤ë¸Œíƒ€ì…, <T> ì œë„¤ë¦­ ë©”ì†Œë“œë¼ëŠ” ê²ƒì„ í‘œì‹œ
 	
 	private static <T> void printArray(T[] intArray) {
 		for(T element : intArray) {

@@ -5,7 +5,7 @@ public class Cartest_mondai {
 	public static void main(String[] args) {
 		
 		CAR2 K7 = new CAR2();
-		CAR2 SONATA = new CAR2("HYUNDAI","white","SONATA","»ïÃµ¸¸¿ø","ºÏ´ë±¸ ¿µ¾÷¼Ò");
+		CAR2 SONATA = new CAR2("HYUNDAI","white","SONATA","ì‚¼ì²œë§Œì›","ë¶ëŒ€êµ¬ ì˜ì—…ì†Œ");
 		
 		
 		K7.SHOW();
@@ -23,7 +23,7 @@ class CAR2{
 	String nedan;
 	
 	CAR2(){
-		this("±â¾Æ","ºí·¢","K7","»çÃµ¸¸¿ø","µ¿´ë±¸ ¿µ¾÷¼Ò");
+		this("ê¸°ì•„","ë¸”ë™","K7","ì‚¬ì²œë§Œì›","ë™ëŒ€êµ¬ ì˜ì—…ì†Œ");
 	}
 	
 	CAR2(String company,String color,String model, String nedan, String store){
@@ -35,7 +35,7 @@ class CAR2{
 	}
 	
 	void SHOW(){
-		System.out.println("Á¦Á¶»ç : "+this.company+", »ö»ó : "+this.color+", ¸ğµ¨¸í : "+this.model+", °¡°İ : "+this.nedan+", ÆÇ¸ÅÁöÁ¡ : "+this.store);
+		System.out.println("ì œì¡°ì‚¬ : "+this.company+", ìƒ‰ìƒ : "+this.color+", ëª¨ë¸ëª… : "+this.model+", ê°€ê²© : "+this.nedan+", íŒë§¤ì§€ì  : "+this.store);
 	}
 	
 }

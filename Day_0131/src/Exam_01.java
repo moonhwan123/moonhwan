@@ -2,18 +2,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /*
-[³¯Â¥ °ü·Ã Å¬·¡½º]
-Date - Å¬·¡½º / Calendar - ÀÎÅÍÆäÀÌ½º
+[ë‚ ì§œ ê´€ë ¨ í´ë˜ìŠ¤]
+Date - í´ë˜ìŠ¤ / Calendar - ì¸í„°í˜ì´ìŠ¤
 GregorianCalender
  */
 public class Exam_01 {
 	public static void main(String[] args) {
 		Date now = new Date();
 		System.out.println(now);
-		System.out.println("³âµµ : " + now.getYear());
+		System.out.println("ë…„ë„ : " + now.getYear());
 		
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy³âMM¿ùddÀÏ hh½ÃmmºĞssÃÊ");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyyë…„MMì›”ddì¼ hhì‹œmmë¶„ssì´ˆ");
 		String nowStr = sdf.format(now);
 		System.out.println(nowStr);
 	}
 }
+

@@ -1,7 +1,7 @@
 /*
-[StringÅ¬·¡½º ¸Ş¼Òµå]
+[Stringí´ë˜ìŠ¤ ë©”ì†Œë“œ]
 valueOf(); 
-String.format(); -> Çü½Ä ÁöÁ¤
+String.format(); -> í˜•ì‹ ì§€ì •
 
  */
 
@@ -11,29 +11,29 @@ public class Exam_01 {
 		
 		int a = 100;
 		
-		String aa = a+""; // a´Â ¹®ÀÚ¿­·Î ¹Ù²ñ 
-		String ab = String.valueOf(a); // ½ºÅÂÆ½ ¸Ş¼Òµå¶ó¼­ Å¬·¡½º ÀÌ¸§À¸·Î Á÷Á¢ Á¢±Ù
+		String aa = a+""; // aëŠ” ë¬¸ìì—´ë¡œ ë°”ë€œ 
+		String ab = String.valueOf(a); // ìŠ¤íƒœí‹± ë©”ì†Œë“œë¼ì„œ í´ë˜ìŠ¤ ì´ë¦„ìœ¼ë¡œ ì§ì ‘ ì ‘ê·¼
 		String ac = String.valueOf(true); //"true"
 		
-		//·¡ÆÛÅ¬·¡½º (Wrapper Class)
-		//±âº»ÀÚ·áÇüÀÎµ¥ ±×°Ô Å¬·¡½ºÀÏ¶§
+		//ë˜í¼í´ë˜ìŠ¤ (Wrapper Class)
+		//ê¸°ë³¸ìë£Œí˜•ì¸ë° ê·¸ê²Œ í´ë˜ìŠ¤ì¼ë•Œ
 		//int -> Integer / byte -> Byte / char -> Character
 		
-		int b = Integer.parseInt(ab); // ¹®ÀÚ¿­À» Á¤¼ö·Î
-//  	int bb = Integer.parseInt("123a"); // ·±Å¸ÀÓ ¿¡·¯ ¹ß»ı
-		int bbb = Integer.valueOf(ab); // Á¤¼ö·Î ¹Ù²ã¶ó 
+		int b = Integer.parseInt(ab); // ë¬¸ìì—´ì„ ì •ìˆ˜ë¡œ
+//  	int bb = Integer.parseInt("123a"); // ëŸ°íƒ€ì„ ì—ëŸ¬ ë°œìƒ
+		int bbb = Integer.valueOf(ab); // ì •ìˆ˜ë¡œ ë°”ê¿”ë¼ 
 		
 		int var = 100;
 		double dou = 3.141582;
 		
-		//Á¤¼ö var=100  ½Ç¼ö dou= 3.14
+		//ì •ìˆ˜ var=100  ì‹¤ìˆ˜ dou= 3.14
 		
-		System.out.println("Á¤¼ö var = "+var+" ½Ç¼ö dou = "+dou);
+		System.out.println("ì •ìˆ˜ var = "+var+" ì‹¤ìˆ˜ dou = "+dou);
 		
-		String ss = String.format("Á¤¼ö var = %5d ½Ç¼ö dou = %f ", var,dou);
+		String ss = String.format("ì •ìˆ˜ var = %5d ì‹¤ìˆ˜ dou = %f ", var,dou);
 		System.out.println(ss);
 		
-		String sss = String.format("Á¤¼ö var = %10d ½Ç¼ö dou = %10.3f ", var,dou);
+		String sss = String.format("ì •ìˆ˜ var = %10d ì‹¤ìˆ˜ dou = %10.3f ", var,dou);
 		System.out.println(sss);
 		
 		

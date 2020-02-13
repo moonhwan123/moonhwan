@@ -6,12 +6,12 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /*
-[ÀÌÁø °Ë»ö Æ®¸®]
-	-¸ğµç ³ëµå´Â ÃÖ´ë µÎ°³ÀÇ ÀÚ½Ä ³ëµå¸¦ °¡Áú ¼ö ÀÖ´Ù.
-	-¿ŞÂÊ ÀÚ½Ä ³ëµåÀÇ °æ¿ì¿¡´Â ºÎ¸ğ ³ëµå°ª º¸´Ù ÀÛ°í ¿À¸¥ÂÊ ÀÚ½Ä³ëµå°¡ ºÎ¸ğº¸´Ù °ªÀÌ Å©´Ù.
-	-³ëµåÀÇ Ãß°¡/»èÁ¦¿¡ ½Ã°£ÀÌ °É¸²
-	-°Ë»ö°ú Á¤·Ä¿¡ À¯¸®(¹üÀ§ °Ë»ö)
-	-Áßº¹µÈ °ª ÀúÀå X
+[ì´ì§„ ê²€ìƒ‰ íŠ¸ë¦¬]
+	-ëª¨ë“  ë…¸ë“œëŠ” ìµœëŒ€ ë‘ê°œì˜ ìì‹ ë…¸ë“œë¥¼ ê°€ì§ˆ ìˆ˜ ìˆë‹¤.
+	-ì™¼ìª½ ìì‹ ë…¸ë“œì˜ ê²½ìš°ì—ëŠ” ë¶€ëª¨ ë…¸ë“œê°’ ë³´ë‹¤ ì‘ê³  ì˜¤ë¥¸ìª½ ìì‹ë…¸ë“œê°€ ë¶€ëª¨ë³´ë‹¤ ê°’ì´ í¬ë‹¤.
+	-ë…¸ë“œì˜ ì¶”ê°€/ì‚­ì œì— ì‹œê°„ì´ ê±¸ë¦¼
+	-ê²€ìƒ‰ê³¼ ì •ë ¬ì— ìœ ë¦¬(ë²”ìœ„ ê²€ìƒ‰)
+	-ì¤‘ë³µëœ ê°’ ì €ì¥ X
  */
 
 public class TreeSetDemo {
@@ -49,31 +49,31 @@ public class TreeSetDemo {
 			set1.add(new Integer(score[i]));
 		}
 		
-		System.out.println("50º¸´Ù ÀÛÀº °ª = "+ set1.headSet(new Integer(50)));
+		System.out.println("50ë³´ë‹¤ ì‘ì€ ê°’ = "+ set1.headSet(new Integer(50)));
 		
 		
 		
-// ·Î¶Ç »ı¼º±â
-// Áßº¹ ¼ıÀÚ X
+// ë¡œë˜ ìƒì„±ê¸°
+// ì¤‘ë³µ ìˆ«ì X
 		
 		TreeSet lotto = new TreeSet();
 		Random r = new Random();
 		
-		//1¹ø
+		//1ë²ˆ
 		while(lotto.size()<6) {
 			lotto.add(r.nextInt(45)+1);
 		}
 		
-		System.out.println("·Î¶Ç ¹øÈ£ 1¹ø : "+ lotto);
+		System.out.println("ë¡œë˜ ë²ˆí˜¸ 1ë²ˆ : "+ lotto);
 		
 		
-		//2¹ø
-		for(int i = 0; lotto.size() < 7; i++) {  // set.size() °¡ ÇÙ½É
+		//2ë²ˆ
+		for(int i = 0; lotto.size() < 7; i++) {  // set.size() ê°€ í•µì‹¬
 			lotto.add((int)(Math.random()*50)+1); 
 		} 
 		
 		
-		System.out.println("·Î¶Ç ¹øÈ£ 2¹ø : "+ lotto);
+		System.out.println("ë¡œë˜ ë²ˆí˜¸ 2ë²ˆ : "+ lotto);
 	}
 
 }

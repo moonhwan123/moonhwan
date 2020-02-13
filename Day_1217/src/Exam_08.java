@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-¹øÈ£, ÀÌ¸§ , ±¹¾îÁ¡¼ö , ¿µ¾îÁ¡¼ö , ¼öÇĞÁ¡¼ö¸¦
-ÀÔ·Â¹Ş¾Æ¼­ ÃÑÁ¡, Æò±ÕÀ» °è»ê ÇÏ¿© Ãâ·Â
+ë²ˆí˜¸, ì´ë¦„ , êµ­ì–´ì ìˆ˜ , ì˜ì–´ì ìˆ˜ , ìˆ˜í•™ì ìˆ˜ë¥¼
+ì…ë ¥ë°›ì•„ì„œ ì´ì , í‰ê· ì„ ê³„ì‚° í•˜ì—¬ ì¶œë ¥
  */
 
 public class Exam_08 {
@@ -11,22 +11,22 @@ public class Exam_08 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int s_num = sc.nextInt(); 
-		System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String s_name = sc.next(); 
-		System.out.print("±¹¾îÁ¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("êµ­ì–´ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int kor_score = sc.nextInt(); 
-		System.out.print("¿µ¾îÁ¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì˜ì–´ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int eng_score = sc.nextInt(); 
-		System.out.print("¼öÇĞÁ¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ìˆ˜í•™ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int math_score = sc.nextInt(); System.out.println("=====================");
 		
 		int total_score = kor_score + eng_score + math_score;
 		double average_score = total_score /3. ;
 		
 		
-		System.out.println("¹øÈ£\tÀÌ¸§\tÃÑÁ¡\tÆò±Õ");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\tì´ì \tí‰ê· ");
 		System.out.println(s_num+"\t"+s_name+"\t"+total_score+"\t"+average_score+"\t");
 		
 		

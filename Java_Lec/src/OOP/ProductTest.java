@@ -10,7 +10,7 @@ public class ProductTest {
 	}
 	
 	public ProductTest() {
-		System.out.println("»ı¼ºÀÚ");
+		System.out.println("ìƒì„±ì");
 	}
 
 	public static void main(String[] args) {
@@ -20,9 +20,9 @@ public class ProductTest {
 		ProductTest p3 = new ProductTest();
 		
 		
-		System.out.println("p1ÀÇ Á¦Ç°¹øÈ£´Â - "+p1.serialNo);
-		System.out.println("p1ÀÇ Á¦Ç°¹øÈ£´Â - "+p2.serialNo);
-		System.out.println("p1ÀÇ Á¦Ç°¹øÈ£´Â - "+p3.serialNo);
+		System.out.println("p1ì˜ ì œí’ˆë²ˆí˜¸ëŠ” - "+p1.serialNo);
+		System.out.println("p1ì˜ ì œí’ˆë²ˆí˜¸ëŠ” - "+p2.serialNo);
+		System.out.println("p1ì˜ ì œí’ˆë²ˆí˜¸ëŠ” - "+p3.serialNo);
 		
 
 	}

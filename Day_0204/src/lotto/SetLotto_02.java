@@ -3,7 +3,7 @@ package lotto;
 import java.util.*;
 
 /*
-[Collections.shuffle(); ¸Ş¼­µå ÀÌ¿ëÇÑ Á¡¼ö ¸¸µé±â]
+[Collections.shuffle(); ë©”ì„œë“œ ì´ìš©í•œ ì ìˆ˜ ë§Œë“¤ê¸°]
  */
 
 public class SetLotto_02 {

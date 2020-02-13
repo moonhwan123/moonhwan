@@ -2,13 +2,13 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 /*
-[Á¤±ÔÇ¥Çö½Ä] - PatternÅ¬·¡½º 
-µ¥ÀÌÅÍ À¯È¿¼º °Ë»ç½Ã ÀÚÁÖ »ç¿ë
-\\d - ¼ıÀÚ 1±ÛÀÚ , \\w - ¹®ÀÚ ¶Ç´Â ¼ıÀÚ
-\\d? - ¼ıÀÚ°¡ ¾øÀ½ ¶Ç´Â 1ÀÚ , \\d* - 1ÀÚ ÀÌ»ó ,
-\\d{3} - ¼ıÀÚ 3ÀÚ , \\d{1,3} -> 1ÀÚÀÌ»ó 3ÀÚ ÀÌ³» ,
+[ì •ê·œí‘œí˜„ì‹] - Patterní´ë˜ìŠ¤ 
+ë°ì´í„° ìœ íš¨ì„± ê²€ì‚¬ì‹œ ìì£¼ ì‚¬ìš©
+\\d - ìˆ«ì 1ê¸€ì , \\w - ë¬¸ì ë˜ëŠ” ìˆ«ì
+\\d? - ìˆ«ìê°€ ì—†ìŒ ë˜ëŠ” 1ì , \\d* - 1ì ì´ìƒ ,
+\\d{3} - ìˆ«ì 3ì , \\d{1,3} -> 1ìì´ìƒ 3ì ì´ë‚´ ,
 
-Å°º¸µå·Î Á¤¼ö¸¦ ÀÔ·Â 1°³ ÀÌ»ó 
+í‚¤ë³´ë“œë¡œ ì •ìˆ˜ë¥¼ ì…ë ¥ 1ê°œ ì´ìƒ 
 
  */
 
@@ -16,17 +16,17 @@ public class Exam_01 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Á¡¼ö ÀÔ·Â : ");
+		System.out.print("ì ìˆ˜ ì…ë ¥ : ");
 		String[] var = sc.nextLine().split(",");
 		
 		for(int x = 0; x < var.length; x++) {
-			boolean bool = Pattern.matches("\\w*", var[x]); // ¼ıÀÚÀÌ¸é true, ¾Æ´Ï¸é false
-															// ÆĞÅÏ Å¬·¡½º´Â ½ºÅÂÆ½ ¸Ş¼­µå ÀÌ±â¶§¹®¿¡ Å¬·¡½º¸íÀ¸·Î Á÷Á¢ È£ÃâÇÑ´Ù.
-															// ¸®ÅÏÅ¸ÀÔÀº booleanÀÌ´Ù.
+			boolean bool = Pattern.matches("\\w*", var[x]); // ìˆ«ìì´ë©´ true, ì•„ë‹ˆë©´ false
+															// íŒ¨í„´ í´ë˜ìŠ¤ëŠ” ìŠ¤íƒœí‹± ë©”ì„œë“œ ì´ê¸°ë•Œë¬¸ì— í´ë˜ìŠ¤ëª…ìœ¼ë¡œ ì§ì ‘ í˜¸ì¶œí•œë‹¤.
+															// ë¦¬í„´íƒ€ì…ì€ booleanì´ë‹¤.
 			if(bool) {
-				System.out.println(var[x]+"´Â ¼ıÀÚ");
+				System.out.println(var[x]+"ëŠ” ìˆ«ì");
 			}else {
-				System.out.println(var[x]+"´Â ¿À·ù");
+				System.out.println(var[x]+"ëŠ” ì˜¤ë¥˜");
 			}
 		}
 		
@@ -34,3 +34,4 @@ public class Exam_01 {
 		
 	}
 }
+

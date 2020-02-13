@@ -1,20 +1,20 @@
 /*
 [Wrapper Class]
--¿ÀÅä¹Ú½Ì : 
--¿ÀÅä¾ð¹Ú½Ì : 
+-ì˜¤í† ë°•ì‹± : 
+-ì˜¤í† ì–¸ë°•ì‹± : 
  */
 public class Exam_03 {
 	public static void main(String[] args) {
 		
 		int n = 10; 
-		Integer nn = new Integer(n); // ¿ÀÅä¹Ú½ÌÀ» »ç¿ë ¾È ÇÒ½Ã 
+		Integer nn = new Integer(n); // ì˜¤í† ë°•ì‹±ì„ ì‚¬ìš© ì•ˆ í• ì‹œ 
 		
-		System.out.println("nn = "+nn); // °´Ã¼ÀÌÁö¸¸ ÁÖ¼Ò°¡¾Æ´Ñ °ªÀÌ Ãâ·Â µÈ´Ù. (¿ÀÅä¹Ú½Ì/¾ð¹Ú½Ì ¶§¹®ÀÓ)
+		System.out.println("nn = "+nn); // ê°ì²´ì´ì§€ë§Œ ì£¼ì†Œê°€ì•„ë‹Œ ê°’ì´ ì¶œë ¥ ëœë‹¤. (ì˜¤í† ë°•ì‹±/ì–¸ë°•ì‹± ë•Œë¬¸ìž„)
 		
-		Integer nI = n; // ±âº»ÀÚ·áÇüÀÌ °´Ã¼·Î ¹Ù²ñ -> "¿ÀÅä ¹Ú½Ì"
+		Integer nI = n; // ê¸°ë³¸ìžë£Œí˜•ì´ ê°ì²´ë¡œ ë°”ë€œ -> "ì˜¤í†  ë°•ì‹±"
 		
 		Integer n2 = new Integer(100);
-		int n3 = n2; // "¿ÀÅä ¾ð¹Ú½Ì"
+		int n3 = n2; // "ì˜¤í†  ì–¸ë°•ì‹±"
 		
 		System.out.println();
 		

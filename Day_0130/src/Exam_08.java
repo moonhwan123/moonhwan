@@ -2,8 +2,8 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /*
-[ArraysClass - ¹è¿­ Ã³¸® Å¬·¡½º]
- -> ¹è¿­º¹»ç , Ç×¸ñ ºñ±³ , Á¤·Ä , °Ë»ö µîÀ» Áö¿ø ÇÏ´Â Å¬·¹½º
+[ArraysClass - ë°°ì—´ ì²˜ë¦¬ í´ë˜ìŠ¤]
+ -> ë°°ì—´ë³µì‚¬ , í•­ëª© ë¹„êµ , ì •ë ¬ , ê²€ìƒ‰ ë“±ì„ ì§€ì› í•˜ëŠ” í´ë ˆìŠ¤
 
  */
 
@@ -11,13 +11,13 @@ public class Exam_08 {
 	public static void main(String[] args) {
 
 		int[] var = { 1, 2, 3, 4, 5, 6 };
-		int[] str = Arrays.copyOf(var, var.length); // 7¹øÀÇ System.Arraycopy¿Í ´Ş¸® ½ÇÁ¦·Î °ø°£À» ÇÒ´çÇÏÁö ¾Ê¾Æµµ °¡´É , ¸®ÅÏ°ªÀº ¹è¿­
+		int[] str = Arrays.copyOf(var, var.length); // 7ë²ˆì˜ System.Arraycopyì™€ ë‹¬ë¦¬ ì‹¤ì œë¡œ ê³µê°„ì„ í• ë‹¹í•˜ì§€ ì•Šì•„ë„ ê°€ëŠ¥ , ë¦¬í„´ê°’ì€ ë°°ì—´
 
 		System.out.println(Arrays.toString(str));
 
 		System.out.println();
-		System.out.println("µÎ ¹è¿­ÀÇ ÁÖ¼Ò¸¦ ºñ±³ - " + var.equals(str)); // var°ú strÀÇ ÁÖ¼Ò°ªÀº ´Ù¸£´Ù.
-		System.out.println("µÎ ¹è¿­ÀÇ ¿ä¼Ò°ªÀ» ºñ±³ - " + Arrays.equals(var, str)); // .equals() ¿Í Arrays.equals()´Â ´Ù¸£´Ù.
+		System.out.println("ë‘ ë°°ì—´ì˜ ì£¼ì†Œë¥¼ ë¹„êµ - " + var.equals(str)); // varê³¼ strì˜ ì£¼ì†Œê°’ì€ ë‹¤ë¥´ë‹¤.
+		System.out.println("ë‘ ë°°ì—´ì˜ ìš”ì†Œê°’ì„ ë¹„êµ - " + Arrays.equals(var, str)); // .equals() ì™€ Arrays.equals()ëŠ” ë‹¤ë¥´ë‹¤.
 
 	}
 }

@@ -38,7 +38,7 @@ public class Exam_13 {
 	public static void main(String[] args) {
 		
 		
-		//Student°´Ã¼°¡ value¿¡ ÀÖÀ»°æ¿ì
+		//Studentê°ì²´ê°€ valueì— ìˆì„ê²½ìš°
 		Map<String , Student> stuMap = new HashMap<String, Student>();
 		
 		stuMap.put("A", new Student(1,"aaa"));
@@ -47,7 +47,7 @@ public class Exam_13 {
 	
 		System.out.println(stuMap.size());
 		
-		//Student°´Ã¼°¡ key°ªÀ¸·Î °¥¶§
+		//Studentê°ì²´ê°€ keyê°’ìœ¼ë¡œ ê°ˆë•Œ
 		Map<Student , Integer> stuMap2 = new HashMap<Student, Integer>();
 		
 		stuMap2.put(new Student(1,"AAA"), new Integer(100));

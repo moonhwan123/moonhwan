@@ -1,17 +1,17 @@
 import java.util.ArrayList;
 
 /*
-[Collection Framework - ÀÚ¹ÙÀÇ ÀÚ·á±¸Á¶]
+[Collection Framework - ìë°”ì˜ ìë£Œêµ¬ì¡°]
 
-Collection ÀÎÅÍÆäÀÌ½º¸¦ »ó¼ÓÇÑ ÀÎÅÍÆäÀÌ½º (List,Set) , Map
+Collection ì¸í„°í˜ì´ìŠ¤ë¥¼ ìƒì†í•œ ì¸í„°í˜ì´ìŠ¤ (List,Set) , Map
 
-List (¼ø¼­°¡ ÀÖ°í, Áßº¹ Çã¿ë) - ¼ø¼­°¡ ÀÖÀ¸¹Ç·Î ÀÎµ¦½ÌÀÌ °¡´É
+List (ìˆœì„œê°€ ìˆê³ , ì¤‘ë³µ í—ˆìš©) - ìˆœì„œê°€ ìˆìœ¼ë¯€ë¡œ ì¸ë±ì‹±ì´ ê°€ëŠ¥
 	-> ArrayList, Vector, LinkedList 
-	-> ArrayList´Â "µ¿±âÈ­ Áö¿øx" , Vector´Â "µ¿±âÈ­ Áö¿øo"
+	-> ArrayListëŠ” "ë™ê¸°í™” ì§€ì›x" , VectorëŠ” "ë™ê¸°í™” ì§€ì›o"
 	
-Set (¼ø¼­°¡ ¾ø°í, Áßº¹ ºÒ°¡) - ¼ø¼­°¡ ¾øÀ¸¹Ç·Î ÀÎµ¦½º·Î Á¢±Ù ºÒ°¡
+Set (ìˆœì„œê°€ ì—†ê³ , ì¤‘ë³µ ë¶ˆê°€) - ìˆœì„œê°€ ì—†ìœ¼ë¯€ë¡œ ì¸ë±ìŠ¤ë¡œ ì ‘ê·¼ ë¶ˆê°€
 	
-Map (Å°<k>, °ª<v>ÀÌ ½ÖÀ¸·Î ÀúÀå / ¼ø¼­°¡ ÀÖ°í, Å°ÀÇ Áßº¹ ºÒ°¡)
+Map (í‚¤<k>, ê°’<v>ì´ ìŒìœ¼ë¡œ ì €ì¥ / ìˆœì„œê°€ ìˆê³ , í‚¤ì˜ ì¤‘ë³µ ë¶ˆê°€)
 
 	
  */
@@ -20,9 +20,9 @@ public class Exam_01 {
 	public static void main(String[] args) {
 		
 	
-		ArrayList list = new ArrayList(); // µğÆúÆ® »ı¼ºÀÚ
+		ArrayList list = new ArrayList(); // ë””í´íŠ¸ ìƒì„±ì
 		
-		ArrayList list2 = new ArrayList(10); // Å©±â ÁöÁ¤
+		ArrayList list2 = new ArrayList(10); // í¬ê¸° ì§€ì •
 		
 		System.out.println("list Empty : " + list.isEmpty());
 		System.out.println("list size : " + list.size());
@@ -30,16 +30,16 @@ public class Exam_01 {
 		list.add("123");
 		list.add(123);
 		list.add(3.14);
-		list.add('A'); // ¹¹µçÁö ´Ù ÀúÀå °¡´É
+		list.add('A'); // ë­ë“ ì§€ ë‹¤ ì €ì¥ ê°€ëŠ¥
 		
 		System.out.println("list Empty : " + list.isEmpty());
 		System.out.println("list size : " + list.size());
 		
-//		String s = list.get(0); -> ¿ÀºêÁ§Æ®¶ó¼­ ½ºÆ®¸µ¿¡ ÀúÀå¾ÈµÊ
-		String s = (String)list.get(0); // -> ±×·¡¼­ ÀÌ·¸°Ô Çüº¯È¯À» ½ÃÄÑ Áà¾ßÇÔ
+//		String s = list.get(0); -> ì˜¤ë¸Œì íŠ¸ë¼ì„œ ìŠ¤íŠ¸ë§ì— ì €ì¥ì•ˆë¨
+		String s = (String)list.get(0); // -> ê·¸ë˜ì„œ ì´ë ‡ê²Œ í˜•ë³€í™˜ì„ ì‹œì¼œ ì¤˜ì•¼í•¨
 		int a = (int)list.get(1);
 		
-		System.out.println("list[0] : " + list.get(0)); // ÀúÀåµÈ °ÍÀ» ²¨³»¿À±â
+		System.out.println("list[0] : " + list.get(0)); // ì €ì¥ëœ ê²ƒì„ êº¼ë‚´ì˜¤ê¸°
 		
 		
 		
@@ -48,3 +48,4 @@ public class Exam_01 {
 		
 	}
 }
+

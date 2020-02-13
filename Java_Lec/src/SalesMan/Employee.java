@@ -27,7 +27,7 @@ public abstract class Employee {
 	public abstract void print();
 	
 	public void display() {
-		System.out.print("ÀÌ¸§ : "+name+" ³ªÀÌ : "+age);
+		System.out.print("ì´ë¦„ : "+name+" ë‚˜ì´ : "+age);
 	}
 
 }

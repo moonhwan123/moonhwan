@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-¹øÈ£, ÀÌ¸§, ±¹¾î, ¿µ¾î, ¼öÇĞÁ¡¼ö¸¦ Å°º¸µå·Î ÀÔ·Â
-ÃÑÁ¡, Æò±Õ(¼Ò¼öÀÌÇÏ µÎ¹øÂ° ÀÚ¸®¿¡¼­ ¹İ¿Ã¸²)
+ë²ˆí˜¸, ì´ë¦„, êµ­ì–´, ì˜ì–´, ìˆ˜í•™ì ìˆ˜ë¥¼ í‚¤ë³´ë“œë¡œ ì…ë ¥
+ì´ì , í‰ê· (ì†Œìˆ˜ì´í•˜ ë‘ë²ˆì§¸ ìë¦¬ì—ì„œ ë°˜ì˜¬ë¦¼)
  */
 
 
@@ -13,19 +13,19 @@ public class Exam_03 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int number = sc.nextInt();
 		
-		System.out.print("ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì´ë¦„ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 		String name = sc.next();
 		
-		System.out.print("±¹¾î Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("êµ­ì–´ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int kor = sc.nextInt();
 		
-		System.out.print("¿µ¾î Á¡¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ");
+		System.out.print("ì˜ì–´ ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš” : ");
 		int eng = sc.nextInt();
 		
-		System.out.print("¼öÇĞ Á¡¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ìˆ˜í•™ ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int math = sc.nextInt();
 		
 		int total = kor + eng + math;
@@ -33,10 +33,10 @@ public class Exam_03 {
 		double ave = (double)total/3; 
 		ave = (int)(ave*10+0.5)/10.; 
 		
-		System.out.println("¹øÈ£´Â : "+number);
-		System.out.println("ÀÌ¸§Àº : "+name);
-		System.out.println("ÃÑÁ¡Àº : "+total);
-		System.out.println("Æò±ÕÀº : "+ave);
+		System.out.println("ë²ˆí˜¸ëŠ” : "+number);
+		System.out.println("ì´ë¦„ì€ : "+name);
+		System.out.println("ì´ì ì€ : "+total);
+		System.out.println("í‰ê· ì€ : "+ave);
 		
 		sc.close();
 		

@@ -1,7 +1,7 @@
 package lamda;
 
 /*
-[¸®ÅÏ °ªÀÌ Á¸ÀçÇÏ´Â ¶÷´Ù½Ä ±¸Çö]
+[ë¦¬í„´ ê°’ì´ ì¡´ìž¬í•˜ëŠ” ëžŒë‹¤ì‹ êµ¬í˜„]
  */
 
 @FunctionalInterface

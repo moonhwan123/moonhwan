@@ -2,23 +2,23 @@ package studnet.util;
 
 
 /*
-private : ÇØ´ç Å¬·¡½º¿¡¼­ ¸¸ »ç¿ë °¡´É(¿ÜºÎÀÇ Á¢±Ù x)
+private : í•´ë‹¹ í´ëž˜ìŠ¤ì—ì„œ ë§Œ ì‚¬ìš© ê°€ëŠ¥(ì™¸ë¶€ì˜ ì ‘ê·¼ x)
 
-default : Á¢±Ù Á¦¾îÀÚ°¡ »ý·«ÀÌ µÇ¸é ÀÚµ¿À¸·Î µðÆúÆ®ÀÓ,¾²´Â°Å ¾Æ´Ô -> "°°Àº ÆÐÅ°Áö" ¾È¿¡¼­´Â ¾ó¸¶µçÁö »ç¿ë °¡´É
+default : ì ‘ê·¼ ì œì–´ìžê°€ ìƒëžµì´ ë˜ë©´ ìžë™ìœ¼ë¡œ ë””í´íŠ¸ìž„,ì“°ëŠ”ê±° ì•„ë‹˜ -> "ê°™ì€ íŒ¨í‚¤ì§€" ì•ˆì—ì„œëŠ” ì–¼ë§ˆë“ ì§€ ì‚¬ìš© ê°€ëŠ¥
 
-protected : °°Àº ÆÐÅ°Áö + ÆÐÅ°Áö°¡ ´Þ¶óµµ »ó¼Ó °ü°èÀÏ¶§´Â »ç¿ë°¡´É
+protected : ê°™ì€ íŒ¨í‚¤ì§€ + íŒ¨í‚¤ì§€ê°€ ë‹¬ë¼ë„ ìƒì† ê´€ê³„ì¼ë•ŒëŠ” ì‚¬ìš©ê°€ëŠ¥
 
-public : Á¦ÇÑ ¾øÀ½(´Ù¸¥ ÆÐÅ°ÁöÀÏ °æ¿ì importÇÏ¸é µÈ´Ù.)
+public : ì œí•œ ì—†ìŒ(ë‹¤ë¥¸ íŒ¨í‚¤ì§€ì¼ ê²½ìš° importí•˜ë©´ ëœë‹¤.)
 
-Á¦ÀÏ ¸¹ÀÌ ¾²´Â °Å´Â private or public
-ÀÏ¹ÝÀûÀ¸·Î Å¬·¡½º¿¡´Â publicÀ» ¾²±äÇÑ´Ù.
+ì œì¼ ë§Žì´ ì“°ëŠ” ê±°ëŠ” private or public
+ì¼ë°˜ì ìœ¼ë¡œ í´ëž˜ìŠ¤ì—ëŠ” publicì„ ì“°ê¸´í•œë‹¤.
 
  */
 
 public class Sample {
 	private int a = 10;
 	void test() {
-		int s = a+20; // aº¯¼öÀÇ »ç¿ë¿¡ Á¦ÇÑÀÌ ¾øÀ½ °°Àº Å¬·¡½º ¾È¿¡ ÀÖ±â ¶§¹®¿¡
+		int s = a+20; // aë³€ìˆ˜ì˜ ì‚¬ìš©ì— ì œí•œì´ ì—†ìŒ ê°™ì€ í´ëž˜ìŠ¤ ì•ˆì— ìžˆê¸° ë•Œë¬¸ì—
 	}
 }
 

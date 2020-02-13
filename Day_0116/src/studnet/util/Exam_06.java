@@ -3,7 +3,7 @@ import studnet.*;
 class BBB{
 	BBB(){
 		AAA aa = new AAA();
-		aa.aa = 1000; // ÆĞÅ°Áö°¡ ´Ş¶óµµ publicÁ¢±Ù Á¦¾îÀÚ ÀÌ¸é »ç¿ëÇÒ¼ö ÀÖ´Ù.
+		aa.aa = 1000; // íŒ¨í‚¤ì§€ê°€ ë‹¬ë¼ë„ publicì ‘ê·¼ ì œì–´ì ì´ë©´ ì‚¬ìš©í• ìˆ˜ ìˆë‹¤.
 //		aa.bb
 		aa.aaa();
 	}

@@ -7,8 +7,8 @@ public class WrapperEx {
 	public static void main(String[] args) {
 		
 		/*
-		 [·¡ÆÛ(Wrapper)Å¬·¡½º]
-		 	- 8°³ÀÇ ±âº»ÀÚ·áÇüÀÇ °´Ã¼Ç¥Çö
+		 [ë˜í¼(Wrapper)í´ë˜ìŠ¤]
+		 	- 8ê°œì˜ ê¸°ë³¸ìë£Œí˜•ì˜ ê°ì²´í‘œí˜„
 		 	
 		 	boolean = Boolean
 		 	char = Character

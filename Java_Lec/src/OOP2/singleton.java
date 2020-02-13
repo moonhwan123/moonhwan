@@ -1,9 +1,9 @@
 package OOP2;
 
 /*
-Singleton - »ı¼ºÀÚÀÇ Á¢±ÙÁ¦¾îÀÚ
-	-ÀÏ¹İÀûÀ¸·Î »ı¼ºÀÚÀÇ Á¢±ÙÁ¦¾îÀÚ´Â Å¬·¡½ºÀÇ Á¢±ÙÁ¦¾îÀÚ¿Í ÀÏÄ¡
-	-»ı¼ºÀÚ¿¡ Á¢±ÙÁ¦¾îÀÚ¸¦ »ç¿ëÇÏ¹Ç·Î½á ÀÎ½ºÅÏ½ºÀÇ »ı¼ºÀ» Á¦ÇÑ °¡´É
+Singleton - ìƒì„±ìì˜ ì ‘ê·¼ì œì–´ì
+	-ì¼ë°˜ì ìœ¼ë¡œ ìƒì„±ìì˜ ì ‘ê·¼ì œì–´ìëŠ” í´ë˜ìŠ¤ì˜ ì ‘ê·¼ì œì–´ìì™€ ì¼ì¹˜
+	-ìƒì„±ìì— ì ‘ê·¼ì œì–´ìë¥¼ ì‚¬ìš©í•˜ë¯€ë¡œì¨ ì¸ìŠ¤í„´ìŠ¤ì˜ ìƒì„±ì„ ì œí•œ ê°€ëŠ¥
  */
 final class singletone{
 	
@@ -24,7 +24,7 @@ final class singletone{
 public class singleton {
 
 	public static void main(String[] args) {
-//		singletone = new singletone();   -> ¿©±â¼­´Â ¹Ù·Î »ı¼ººÒ°¡
+//		singletone = new singletone();   -> ì—¬ê¸°ì„œëŠ” ë°”ë¡œ ìƒì„±ë¶ˆê°€
 		
 		singletone s = singletone.getInstance();
 

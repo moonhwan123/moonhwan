@@ -5,19 +5,19 @@ import java.util.List;
 import java.util.Scanner;
 
 /*
-1. Å°º¸µå ÀÔ·Â
-	ÀÔ·Â : ¹øÈ£, ÀÌ¸§, Á¡¼ö, Á¡¼ö, Á¡¼ö, Á¡¼ö, Á¡¼ö
+1. í‚¤ë³´ë“œ ì…ë ¥
+	ì…ë ¥ : ë²ˆí˜¸, ì´ë¦„, ì ìˆ˜, ì ìˆ˜, ì ìˆ˜, ì ìˆ˜, ì ìˆ˜
 	
 	
-2. Ã³¸®Á¶°Ç
-	- ÀÔ·Â½Ã ¹øÈ£°¡ '0'ÀÌ¸é ÀÔ·Â Á¾·á
-	- ¹øÈ£°¡ Áßº¹½Ã ÀÔ·Â ºÒ°¡ ÇÏµµ·Ï Ã³¸®
-	- ÃÑÁ¡À» ±âÁØÀ¸·Î ¼®Â÷ ºÎ¿©
-	- ÇÑ¹øÀº ÀÔ·Â ÀÚ·á ¼øÀ¸·Î Ãâ·Â ÇÏ°í 
-	- ÇÑ¹øÀº ¼®Â÷¸¦ ±âÁØÀ¸·Î Ãâ·Â ÇÑ´Ù.
+2. ì²˜ë¦¬ì¡°ê±´
+	- ì…ë ¥ì‹œ ë²ˆí˜¸ê°€ '0'ì´ë©´ ì…ë ¥ ì¢…ë£Œ
+	- ë²ˆí˜¸ê°€ ì¤‘ë³µì‹œ ì…ë ¥ ë¶ˆê°€ í•˜ë„ë¡ ì²˜ë¦¬
+	- ì´ì ì„ ê¸°ì¤€ìœ¼ë¡œ ì„ì°¨ ë¶€ì—¬
+	- í•œë²ˆì€ ì…ë ¥ ìë£Œ ìˆœìœ¼ë¡œ ì¶œë ¥ í•˜ê³  
+	- í•œë²ˆì€ ì„ì°¨ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ì¶œë ¥ í•œë‹¤.
 	
-3. Ãâ·Â
-	¹øÈ£          ÀÌ¸§          Á¡¼ö1            Á¡¼ö2   ....   Á¡¼ö5         ÃÑÁ¡          Æò±Õ          ¼®Â÷
+3. ì¶œë ¥
+	ë²ˆí˜¸          ì´ë¦„          ì ìˆ˜1            ì ìˆ˜2   ....   ì ìˆ˜5         ì´ì           í‰ê·           ì„ì°¨
 
 
 
@@ -32,7 +32,7 @@ public class StudentExam {
 		List<Student> stuList = new ArrayList<Student>();
 		
 		while(true) {
-			System.out.print("¹øÈ£,ÀÌ¸§,Á¡¼ö1~5 ÀÔ·Â >> ");
+			System.out.print("ë²ˆí˜¸,ì´ë¦„,ì ìˆ˜1~5 ì…ë ¥ >> ");
 			String str = sc.nextLine();
 			String strArr[] = str.split(",");
 			int score[] = new int[5];
@@ -47,7 +47,7 @@ public class StudentExam {
 			
 			s = new Student(Integer.parseInt(strArr[0]),strArr[1],score);
 			if(stuList.contains(s)) {
-				System.out.println("Áßº¹µÈ ¹øÈ£ ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä");
+				System.out.println("ì¤‘ë³µëœ ë²ˆí˜¸ ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”");
 			}else {
 				stuList.add(s);
 			}
@@ -56,8 +56,8 @@ public class StudentExam {
 		}
 		
 		StudentData sd = new StudentData(stuList);
-		sd.sourcePrint(); // ¿øº»µ¥ÀÌÅÍ Ãâ·Â
-		sd.sortdataPrint(); // Á¤·ÄÈÄ µ¥ÀÌÅÍ Ãâ·Â
+		sd.sourcePrint(); // ì›ë³¸ë°ì´í„° ì¶œë ¥
+		sd.sortdataPrint(); // ì •ë ¬í›„ ë°ì´í„° ì¶œë ¥
 		
 		
 

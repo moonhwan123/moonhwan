@@ -3,17 +3,17 @@ import java.util.Scanner;
 
 /*
 
-Å°º¸µå·Î °ÔÀÓ ¼ö ÀÔ·Â
-°ÔÀÓ¼ö : 5
+í‚¤ë³´ë“œë¡œ ê²Œìž„ ìˆ˜ ìž…ë ¥
+ê²Œìž„ìˆ˜ : 5
 
 1 : 19 20 34 35 40 43
 .
 .
 5 : 1 10 17 34 38 40
 
-[Ã³¸® Á¶°Ç]
-1°ÔÀÓ´ç °¡»óÀ¸·Î 100°ÔÀÓ ÈÄ ¹ß»ý ºóµµ°¡ ³ôÀº
-6°³ÀÇ ¼ýÀÚ¸¦ ÃßÃâÇØ¼­ Ãâ·Â
+[ì²˜ë¦¬ ì¡°ê±´]
+1ê²Œìž„ë‹¹ ê°€ìƒìœ¼ë¡œ 100ê²Œìž„ í›„ ë°œìƒ ë¹ˆë„ê°€ ë†’ì€
+6ê°œì˜ ìˆ«ìžë¥¼ ì¶”ì¶œí•´ì„œ ì¶œë ¥
  */
 
 public class Exam_10 {
@@ -38,8 +38,8 @@ public class Exam_10 {
 			for(int i = 0; i < lotto.length; i++) {
 				int number = (int)(Math.random()*45+1);
 				lotto[i] = number;
-				//¿©±â¼­ Áßº¹ Ã¼Å©(for¹® ÀÌ¿ë)
-				for(int y = 0; y < i; y++) { // x=0ÀÏ¶§´Â ÀÛµ¿¾ÈÇÔ
+				//ì—¬ê¸°ì„œ ì¤‘ë³µ ì²´í¬(forë¬¸ ì´ìš©)
+				for(int y = 0; y < i; y++) { // x=0ì¼ë•ŒëŠ” ìž‘ë™ì•ˆí•¨
 					if(lotto[i] == lotto[y]) {
 						i--;
 						break;
@@ -49,9 +49,9 @@ public class Exam_10 {
 				ball[1][number-1]++;
 			}
 			
-			//°ÔÀÓ Ãâ·Â
+			//ê²Œìž„ ì¶œë ¥
 //			Arrays.sort(lotto);
-//			System.out.print((x+1)+"È¸)\t");
+//			System.out.print((x+1)+"íšŒ)\t");
 //			for(int a = 0; a < 6; a++) {
 //				System.out.print(lotto[a]+"\t");
 //			}
@@ -62,7 +62,7 @@ public class Exam_10 {
 			
 		}
 
-		//ball ¹è¿­ Á¤·Ä
+		//ball ë°°ì—´ ì •ë ¬
 		for(int x = 0; x < ball[0].length-1; x++) {
 			for(int y = x+1; y < ball[0].length; y++) {
 				if(ball[1][x] < ball[1][y]) {
@@ -79,7 +79,7 @@ public class Exam_10 {
 		}
 
 		
-		//0¹øÁöºÎÅÍ 5¹øÁö ±îÁö Ãâ·Â
+		//0ë²ˆì§€ë¶€í„° 5ë²ˆì§€ ê¹Œì§€ ì¶œë ¥
 		for(int a = 0; a < 6; a++) {
 			System.out.print(ball[0][a]+"\t");
 		}

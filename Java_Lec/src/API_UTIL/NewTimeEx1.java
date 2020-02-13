@@ -9,36 +9,36 @@ import java.time.temporal.TemporalAdjusters;
 public class NewTimeEx1 {
 	public static void main(String[] args) {
 		/*
-		 java.time ÆĞÅ°Áö
-		 	-date,CalendarÀÇ ´ÜÁ¡ º¸¿ÏÀ» À§ÇØ Ãß°¡µÈ ÆĞÅ°Áö
+		 java.time íŒ¨í‚¤ì§€
+		 	-date,Calendarì˜ ë‹¨ì  ë³´ì™„ì„ ìœ„í•´ ì¶”ê°€ëœ íŒ¨í‚¤ì§€
 		 	
 			
 		LocalDate
-			-³¯Â¥
+			-ë‚ ì§œ
 		LocalTime
-			-½Ã°£
+			-ì‹œê°„
 		LocalDateTime
-			-³¯Â¥ & ½Ã°£
-		LocalDateTime + ½Ã°£´ë = ZoneDateTime
+			-ë‚ ì§œ & ì‹œê°„
+		LocalDateTime + ì‹œê°„ëŒ€ = ZoneDateTime
 		
 		Period
-			-³¯Â¥ÀÇ Â÷ÀÌ
+			-ë‚ ì§œì˜ ì°¨ì´
 		Duration
-			-½Ã°£ÀÇ Â÷ÀÌ
+			-ì‹œê°„ì˜ ì°¨ì´
 		
-		Æ¯Á¤ ÇÊµåÀÇ °ª °¡Á®¿À±â - get(),getXXX()
-		ÁÖÀÇ : Calendar 1¿ù -> 0 ÀÏ¿äÀÏ -> 1
-		getXXX() ¿ù 1~12 ¿ù¿äÀÏ 1
+		íŠ¹ì • í•„ë“œì˜ ê°’ ê°€ì ¸ì˜¤ê¸° - get(),getXXX()
+		ì£¼ì˜ : Calendar 1ì›” -> 0 ì¼ìš”ì¼ -> 1
+		getXXX() ì›” 1~12 ì›”ìš”ì¼ 1
 		
-		¸Ş¼­µå : getYear(),getMonthValue(),getHour()....
-		¸Å°³º¯¼ö : YEAR,MONTH_OF_YEAR...
+		ë©”ì„œë“œ : getYear(),getMonthValue(),getHour()....
+		ë§¤ê°œë³€ìˆ˜ : YEAR,MONTH_OF_YEAR...
 		
-		ÇÊµå °ª º¯°æ
-		with() : Á÷Á¢ °ª º¯°æ
-		plus(),minus(): ´õÇÏ±â »©±â
+		í•„ë“œ ê°’ ë³€ê²½
+		with() : ì§ì ‘ ê°’ ë³€ê²½
+		plus(),minus(): ë”í•˜ê¸° ë¹¼ê¸°
 		
 		
-		³¯Â¥¿Í ½Ã°£ÀÇ ºñ±³
+		ë‚ ì§œì™€ ì‹œê°„ì˜ ë¹„êµ
 		isAfter()
 		isBefore()
 		isEqual()
@@ -47,14 +47,14 @@ public class NewTimeEx1 {
 		
 		LocalDate today = LocalDate.now();
 		LocalTime now = LocalTime.now();
-		//now() : ÇöÀç ³¯Â¥ ½Ã°£
+		//now() : í˜„ì¬ ë‚ ì§œ ì‹œê°„
 		
 
 		
 		
 		LocalDate birthdate = LocalDate.of(1999, 12, 31);
 		LocalTime birthtime = LocalTime.of(23, 59,59);
-		//of() : Æ¯Á¤ ³¯Â¥ ½Ã°£ ÁöÁ¤
+		//of() : íŠ¹ì • ë‚ ì§œ ì‹œê°„ ì§€ì •
 		
 		birthdate = LocalDate.ofYearDay(1999, 365);
 		birthtime = LocalTime.ofSecondOfDay(86399);
@@ -83,12 +83,12 @@ public class NewTimeEx1 {
 			new_id = Id.withYear(i);
 			
 			if(new_id.isLeapYear()) {
-				System.out.println(new_id.getYear()+"Àº À±³âÀÔ´Ï´Ù.");
+				System.out.println(new_id.getYear()+"ì€ ìœ¤ë…„ì…ë‹ˆë‹¤.");
 				count++;
 			}
 		
 		}
-		System.out.println("1900³âºÎÅÍ 2100³â±îÁö À±³âÀº ÃÑ "+count+"¹ø ÀÖ½À´Ï´Ù.");
+		System.out.println("1900ë…„ë¶€í„° 2100ë…„ê¹Œì§€ ìœ¤ë…„ì€ ì´ "+count+"ë²ˆ ìˆìŠµë‹ˆë‹¤.");
 		
 		
 		LocalDateTime ldt = LocalDateTime.now();
@@ -96,28 +96,28 @@ public class NewTimeEx1 {
 		
 		LocalDateTime new_ldt;    
 		new_ldt = ldt.with(TemporalAdjusters.firstDayOfYear( ));  
-		System.out.println("¿ÃÇØÀÇ Ã¹ ¹øÂ° ³¯"+new_ldt);  
+		System.out.println("ì˜¬í•´ì˜ ì²« ë²ˆì§¸ ë‚ "+new_ldt);  
 		new_ldt = ldt.with(TemporalAdjusters.lastDayOfYear( ));  
-		System.out.println("¿ÃÇØÀÇ ¸¶Áö¸· ³¯"+new_ldt);
+		System.out.println("ì˜¬í•´ì˜ ë§ˆì§€ë§‰ ë‚ "+new_ldt);
 		 
 		new_ldt = ldt.with(TemporalAdjusters.firstDayOfMonth( ));  
 		  
-		System.out.println("ÀÌ¹ø ´ŞÀÇ Ã¹¹øÂ° ³¯"+new_ldt);  
+		System.out.println("ì´ë²ˆ ë‹¬ì˜ ì²«ë²ˆì§¸ ë‚ "+new_ldt);  
 		new_ldt = ldt.with(TemporalAdjusters.lastDayOfMonth( ));  
-		System.out.println("ÀÌ¹ø´ŞÀÇ ¸¶Áö¸· ³¯"+new_ldt);
+		System.out.println("ì´ë²ˆë‹¬ì˜ ë§ˆì§€ë§‰ ë‚ "+new_ldt);
 		
 		new_ldt = ldt.with(TemporalAdjusters.firstInMonth(DayOfWeek.MONDAY));  
-		System.out.println("ÀÌ¹ø´ŞÀÇ Ã¹ ¿ù¿äÀÏ"+new_ldt);  
+		System.out.println("ì´ë²ˆë‹¬ì˜ ì²« ì›”ìš”ì¼"+new_ldt);  
 		new_ldt = ldt.with(TemporalAdjusters.lastInMonth(DayOfWeek.SUNDAY));
-		System.out.println("ÀÌ¹ø´ŞÀÇ ¸¶Áö¸· ÀÏ¿äÀÏ"+new_ldt);  
+		System.out.println("ì´ë²ˆë‹¬ì˜ ë§ˆì§€ë§‰ ì¼ìš”ì¼"+new_ldt);  
 		new_ldt = ldt.with(TemporalAdjusters.next(DayOfWeek.FRIDAY));  
-		System.out.println("µ¹¾Æ¿À´Â ±İ¿äÀÏ"+new_ldt);  
+		System.out.println("ëŒì•„ì˜¤ëŠ” ê¸ˆìš”ì¼"+new_ldt);  
 		new_ldt = ldt.with(TemporalAdjusters.nextOrSame(DayOfWeek.FRIDAY));  
-		System.out.println("¿À´ÃÀ» Æ÷ÇÔÇÑ ´ÙÀ½ ±İ¿äÀÏ"+new_ldt);  
+		System.out.println("ì˜¤ëŠ˜ì„ í¬í•¨í•œ ë‹¤ìŒ ê¸ˆìš”ì¼"+new_ldt);  
 		new_ldt = ldt.with(TemporalAdjusters.previous(DayOfWeek.MONDAY));  
-		System.out.println("Áö³­ ¿ù¿äÀÏ"+new_ldt);  
+		System.out.println("ì§€ë‚œ ì›”ìš”ì¼"+new_ldt);  
 		new_ldt = ldt.with(TemporalAdjusters.previousOrSame(DayOfWeek.MONDAY));  
-		System.out.println("¿À´ÃÀ» Æ÷ÇÔÇÑ Áö³­ ¿ù¿äÀÏ"+new_ldt); 
+		System.out.println("ì˜¤ëŠ˜ì„ í¬í•¨í•œ ì§€ë‚œ ì›”ìš”ì¼"+new_ldt); 
 		
 		LocalDateTime ldt1 = LocalDateTime.of(2010,1,1,12,23,23,444);
 		System.out.println(ldt1);
@@ -125,8 +125,8 @@ public class NewTimeEx1 {
 		LocalDateTime ldt2 = LocalDateTime.of(2010,12,25,1,12,2,222);
 		System.out.println(ldt2);
 		
-		System.out.println(ldt1.isAfter(ldt2));//ldt1ÀÌ ldt2º¸´Ù ÀÌÈÄÀÇ ³¯Â¥ÀÎ°¡?
-		System.out.println(ldt1.isBefore(ldt2));//ldt1ÀÌ ldt2º¸´Ù ÀÌÀüÀÇ ³¯Â¥ÀÎ°¡?
+		System.out.println(ldt1.isAfter(ldt2));//ldt1ì´ ldt2ë³´ë‹¤ ì´í›„ì˜ ë‚ ì§œì¸ê°€?
+		System.out.println(ldt1.isBefore(ldt2));//ldt1ì´ ldt2ë³´ë‹¤ ì´ì „ì˜ ë‚ ì§œì¸ê°€?
 		System.out.println(ldt1.isEqual(ldt2));
 		
 		
@@ -136,13 +136,13 @@ public class NewTimeEx1 {
 		
 		LocalDateTime end_time = LocalDateTime.of(2017, 6,24,12,00);
 		
-		System.out.println("À¯Åë±âÇÑ  : "+end_time);
+		System.out.println("ìœ í†µê¸°í•œ  : "+end_time);
 		
 		if(idt.isAfter(end_time)) {
-			System.out.println("À¯Åë±âÇÑÀÌ Áö³µ½À´Ï´Ù.");
+			System.out.println("ìœ í†µê¸°í•œì´ ì§€ë‚¬ìŠµë‹ˆë‹¤.");
 		}
 		else {
-			System.out.println("À¯Åë±âÇÑ ¾È Áö³²");
+			System.out.println("ìœ í†µê¸°í•œ ì•ˆ ì§€ë‚¨");
 		}
 	}
 }

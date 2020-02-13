@@ -1,6 +1,6 @@
 package ExceptionTest;
 /*
-[»ç¿ëÀÚ Á¤ÀÇ ¿¹¿ÜÃ³¸®]
+[ì‚¬ìš©ì ì •ì˜ ì˜ˆì™¸ì²˜ë¦¬]
  */
 class AgeException extends Exception{
 	AgeException(String message){
@@ -12,7 +12,7 @@ public class ExceptionEx9 {
 	
 	public static void ticketing(int age) throws AgeException {
 		if(age<0) {
-			throw new AgeException("³ªÀÌ ÀÔ·ÂÀÌ Àß¸ø µÇ¾ú½À´Ï´Ù.");
+			throw new AgeException("ë‚˜ì´ ì…ë ¥ì´ ì˜ëª» ë˜ì—ˆìŠµë‹ˆë‹¤.");
 		}
 	}
 	

@@ -3,10 +3,10 @@ package treeset;
 import java.util.*;
 
 /*
-[»ç¿ëÀÚ Á¤ÀÇ ÀÚ·áÇüÀÇ ÀÚµ¿ Á¤·Ä ÇÏ±â]
- -> Comparable ÀÎÅÍÆäÀÌ½º ±¸Çö (µğÆúÆ®°¡ ¿À¸§ Â÷¼ø)
- -> Comparator ÀÎÅÍÆäÀÌ½º ±¸Çö 
-  = µÑÁß ÇÏ³ª ±¸ÇöÇÏ±â 
+[ì‚¬ìš©ì ì •ì˜ ìë£Œí˜•ì˜ ìë™ ì •ë ¬ í•˜ê¸°]
+ -> Comparable ì¸í„°í˜ì´ìŠ¤ êµ¬í˜„ (ë””í´íŠ¸ê°€ ì˜¤ë¦„ ì°¨ìˆœ)
+ -> Comparator ì¸í„°í˜ì´ìŠ¤ êµ¬í˜„ 
+  = ë‘˜ì¤‘ í•˜ë‚˜ êµ¬í˜„í•˜ê¸° 
 
 
  */
@@ -24,11 +24,11 @@ class Person implements Comparable<Person>{
 	@Override
 	public int compareTo(Person o) {
 		if(age < o.age) {
-			return -1; // ºñ±³ÇÏ´Â °ªÀÌ Å©¸é
+			return -1; // ë¹„êµí•˜ëŠ” ê°’ì´ í¬ë©´
 		}else if(age == o.age) {
 			return 0; 
 		}else {
-			return 1; // ºñ±³ÇÏ´Â °ªÀÌ ÀÛÀ¸¸é
+			return 1; // ë¹„êµí•˜ëŠ” ê°’ì´ ì‘ìœ¼ë©´
 		}
 		
 	}
@@ -41,14 +41,14 @@ public class Exam_04 {
 		
 		TreeSet<Person> set = new TreeSet<Person>();
 		
-		set.add(new Person("È«±æµ¿",20));
-		set.add(new Person("±è±æµ¿",39));
-		set.add(new Person("ÀÌ±æµ¿",18));
-		set.add(new Person("¹Ú±æµ¿",56));
+		set.add(new Person("í™ê¸¸ë™",20));
+		set.add(new Person("ê¹€ê¸¸ë™",39));
+		set.add(new Person("ì´ê¸¸ë™",18));
+		set.add(new Person("ë°•ê¸¸ë™",56));
 		
-		//Æ®¸®¼ÂÀº µé¾î°¥¶§ ÀÚµ¿Á¤·ÄÀÌ µÇ¾î¼­ µé¾î°¡´Âµ¥ , ÀÌ°Ç ºñ±³°¡ ÇÒ¼ö ¾ø¾î¼­ ·±Å¸ÀÓ ¿¡·¯°¡ ¹ß»ıÇÑ´Ù.
+		//íŠ¸ë¦¬ì…‹ì€ ë“¤ì–´ê°ˆë•Œ ìë™ì •ë ¬ì´ ë˜ì–´ì„œ ë“¤ì–´ê°€ëŠ”ë° , ì´ê±´ ë¹„êµê°€ í• ìˆ˜ ì—†ì–´ì„œ ëŸ°íƒ€ì„ ì—ëŸ¬ê°€ ë°œìƒí•œë‹¤.
 //		System.out.println(set);
-		//±×ÈÄ ComparableÀ» ±¸Çö ÇÑµÚ Ãâ·Â ÇÑ´Ù.
+		//ê·¸í›„ Comparableì„ êµ¬í˜„ í•œë’¤ ì¶œë ¥ í•œë‹¤.
 		
 		Iterator<Person> iter = set.iterator();
 		

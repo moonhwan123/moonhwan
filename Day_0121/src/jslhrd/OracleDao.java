@@ -4,22 +4,22 @@ public class OracleDao implements DataAccessObject {
 
 	@Override
 	public void delete() {
-		System.out.println("Oracle DB¿¡¼­ »èÁ¦");
+		System.out.println("Oracle DBì—ì„œ ì‚­ì œ");
 		
 	}
 	@Override
 	public void insert() {
-		System.out.println("Oracle DB¿¡¼­ »ğÀÔ");
+		System.out.println("Oracle DBì—ì„œ ì‚½ì…");
 		
 	}
 	@Override
 	public void select() {
-		System.out.println("Oracle DB¿¡¼­ °Ë»ö");
+		System.out.println("Oracle DBì—ì„œ ê²€ìƒ‰");
 		
 	}
 	@Override
 	public void update() {
-		System.out.println("Oracle DB¿¡¼­ ¼öÁ¤");
+		System.out.println("Oracle DBì—ì„œ ìˆ˜ì •");
 		
 	}
 	

@@ -13,7 +13,7 @@ public class ExceptionTest {
 		int flag ;
 			
 			do {
-				System.out.print("°öÇÏ°íÀÚ ÇÏ´Â µÎ Á¤¼ö ÀÔ·Â >>");
+				System.out.print("ê³±í•˜ê³ ì í•˜ëŠ” ë‘ ì •ìˆ˜ ì…ë ¥ >>");
 				
 				flag = 1;
 				
@@ -22,13 +22,13 @@ public class ExceptionTest {
 				int num1 = sc.nextInt();
 				int num2 = sc.nextInt();
 				
-				System.out.println("µÎ¼öÀÇ °öÀº : "+num1*num2);
+				System.out.println("ë‘ìˆ˜ì˜ ê³±ì€ : "+num1*num2);
 				
 			} catch (InputMismatchException e) {
 				
 				flag = 0;
-				System.out.println("Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä");
-				sc.nextLine();//Enter Å° ±îÁö ÀĞ¾î¼­ ¹ö¸°´Ù.
+				System.out.println("ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš”");
+				sc.nextLine();//Enter í‚¤ ê¹Œì§€ ì½ì–´ì„œ ë²„ë¦°ë‹¤.
 				
 			}
 				

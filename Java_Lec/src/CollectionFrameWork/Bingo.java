@@ -13,7 +13,7 @@ class Bingo {
 //        Set set = new LinkedHashSet(); 
           int[][] board = new int[5][5]; 
 
-          for(int i = 0; set.size() < 25; i++) {  // set.size() °¡ ÇÙ½É
+          for(int i = 0; set.size() < 25; i++) {  // set.size() ê°€ í•µì‹¬
                 set.add((int)(Math.random()*50)+1+""); 
           } 
           

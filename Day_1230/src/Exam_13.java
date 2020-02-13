@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-¼¼°³ÀÇ Á¤¼öÁß Áß°£ °ª¸¸ Ã£±â
-max , min ÀÌ·± º¯¼ö »ç¿ëx
+ì„¸ê°œì˜ ì •ìˆ˜ì¤‘ ì¤‘ê°„ ê°’ë§Œ ì°¾ê¸°
+max , min ì´ëŸ° ë³€ìˆ˜ ì‚¬ìš©x
  */
 
 
@@ -13,11 +13,11 @@ public class Exam_13 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö1À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜1ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int a = sc.nextInt();
-		System.out.print("Á¤¼ö2À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜2ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int b = sc.nextInt();
-		System.out.print("Á¤¼ö3À» ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜3ì„ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int c = sc.nextInt();
 		
 		int mid = 0;
@@ -46,10 +46,10 @@ public class Exam_13 {
 				
 		}
 		
-		System.out.println("Á¤¼ö1 ÀÔ·Â °ª :"+ a);
-		System.out.println("Á¤¼ö2 ÀÔ·Â °ª :"+ b);
-		System.out.println("Á¤¼ö3 ÀÔ·Â °ª :"+ c);
-		System.out.println("±× Áß Áß°£ °ª : " + mid);
+		System.out.println("ì •ìˆ˜1 ìž…ë ¥ ê°’ :"+ a);
+		System.out.println("ì •ìˆ˜2 ìž…ë ¥ ê°’ :"+ b);
+		System.out.println("ì •ìˆ˜3 ìž…ë ¥ ê°’ :"+ c);
+		System.out.println("ê·¸ ì¤‘ ì¤‘ê°„ ê°’ : " + mid);
 
 		sc.close();
 

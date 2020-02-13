@@ -19,7 +19,7 @@ public class UserData {
 			}
 		}
 		if(sw && !(userId.equalsIgnoreCase("end"))) {
-			System.out.println("Á¤º¸°¡ ¾ø½À´Ï´Ù.");
+			System.out.println("ì •ë³´ê°€ ì—†ìŠµë‹ˆë‹¤.");
 		}
 		
 	}

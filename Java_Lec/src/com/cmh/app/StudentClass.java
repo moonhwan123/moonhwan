@@ -46,6 +46,6 @@ public class StudentClass {
 	}
 	
 	public void showStudentInfo() {
-		System.out.printf("ÀÌ¸§ : %s , ³ªÀÌ : %d , ¼ºº° : %s , ÁÖ¼Ò  : %s\n",this.name,this.age,this.gender,this.address);	
+		System.out.printf("ì´ë¦„ : %s , ë‚˜ì´ : %d , ì„±ë³„ : %s , ì£¼ì†Œ  : %s\n",this.name,this.age,this.gender,this.address);	
 	}
 }

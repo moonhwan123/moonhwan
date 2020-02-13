@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-¼¼°³ÀÇ Á¤¼ö¸¦ Å°º¸µå·Î ÀÔ·Â -> ´ë,Áß,¼Ò Ãâ·Â
-´Ü, µ¿ÀÏÇÑ °ªÀº ¾ø´Ù.
+ì„¸ê°œì˜ ì •ìˆ˜ë¥¼ í‚¤ë³´ë“œë¡œ ìž…ë ¥ -> ëŒ€,ì¤‘,ì†Œ ì¶œë ¥
+ë‹¨, ë™ì¼í•œ ê°’ì€ ì—†ë‹¤.
  */
 
 
@@ -12,7 +12,7 @@ public class Exam_10 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("Á¤¼ö 3°³¸¦ ÀÔ·ÂÇÏ¼¼¿ä >> ");
+		System.out.print("ì •ìˆ˜ 3ê°œë¥¼ ìž…ë ¥í•˜ì„¸ìš” >> ");
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 		int num3 = sc.nextInt();

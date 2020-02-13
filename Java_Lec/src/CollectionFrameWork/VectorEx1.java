@@ -12,12 +12,12 @@ public class VectorEx1 {
 		v.add(4);
 		v.add(-1);
 		System.out.println(v);
-		v.add(2, 100); // °ªÀ» Ãß°¡ÇÏ¸é Ãß°¡ÇÑ ¸¸Å­ µÚ·Î ¹Ğ·Á³² (»ğÀÔ)
+		v.add(2, 100); // ê°’ì„ ì¶”ê°€í•˜ë©´ ì¶”ê°€í•œ ë§Œí¼ ë’¤ë¡œ ë°€ë ¤ë‚¨ (ì‚½ì…)
 		
 		System.out.println(v); 
 		
-		System.out.println("»çÀÌÁî = "+v.size());
-		System.out.println("¿ë·® = "+v.capacity());
+		System.out.println("ì‚¬ì´ì¦ˆ = "+v.size());
+		System.out.println("ìš©ëŸ‰ = "+v.capacity());
 		
 		for(int i = 0 ; i < v.size() ; i++) {
 			int n = (int)v.get(i);

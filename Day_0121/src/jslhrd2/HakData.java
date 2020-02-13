@@ -45,10 +45,10 @@ public class HakData extends Hak implements Account {
 
 	void print() {
 		if (sw) {
-			System.out.print("¹øÈ£\tÀÌ¸§\tÁ¡¼ö\tÇÕ°è\tÆò±Õ\n");
+			System.out.print("ë²ˆí˜¸\tì´ë¦„\tì ìˆ˜\tí•©ê³„\tí‰ê· \n");
 			System.out.println(bun + "\t" + name + "\t" + score + "\t" + total + "\t" + ave);
 		}else {
-			System.out.print("¹øÈ£\tÀÌ¸§\tÁ¡¼ö\t\tÇÕ°è\tÆò±Õ\n");
+			System.out.print("ë²ˆí˜¸\tì´ë¦„\tì ìˆ˜\t\tí•©ê³„\tí‰ê· \n");
 			System.out.print(bun + "\t" + name + "\t");
 			for(int x = 0; x < scorearr.length; x++) {
 				System.out.print(scorearr[x]+" ");

@@ -8,11 +8,11 @@ public class DaoExam {
 		dao.update();
 		dao.delete();
 	}
-	// dbWork¸Þ¼­µåÀÇ ¸Å°³º¯¼ö ÀÚ¸®¿¡ (DataAccessObject dao)¸¦ ¾´ ÀÌÀ¯¸¦ ¾ËÀÚ
-	// ¹Ù·Î ºÎ¸ð Å¬·¡½º(Á¤È®È÷´Â ÀÎÅÍÆäÀÌ½º Áö¸¸) ÀÌ±â¶§¹®¿¡ °¡´ÉÇÑ°Í
-	// ºÎ¸ðÅ¬·¡½º´Â ÀÚ½ÄÅ¬·¡½º¸¦ Áö¸ñ ÇÒ ¼ö ÀÖ´Ù.
-	// ¸¸¾à¿¡ ¿©±â¼­ ¸Å°³º¯¼ö ÀÚ¸®¿¡ ±¸ÇöÇÑ Å¬·¡½º¸¦ ¸Å°³º¯¼ö·Î ¹Þ¾Ò´Ù¸é
-	// ¸Þ¼­µå°¡ 2°³ ÇÊ¿ä ÇßÀ» °ÍÀÌ´Ù.
+	// dbWorkë©”ì„œë“œì˜ ë§¤ê°œë³€ìˆ˜ ìžë¦¬ì— (DataAccessObject dao)ë¥¼ ì“´ ì´ìœ ë¥¼ ì•Œìž
+	// ë°”ë¡œ ë¶€ëª¨ í´ëž˜ìŠ¤(ì •í™•ížˆëŠ” ì¸í„°íŽ˜ì´ìŠ¤ ì§€ë§Œ) ì´ê¸°ë•Œë¬¸ì— ê°€ëŠ¥í•œê²ƒ
+	// ë¶€ëª¨í´ëž˜ìŠ¤ëŠ” ìžì‹í´ëž˜ìŠ¤ë¥¼ ì§€ëª© í•  ìˆ˜ ìžˆë‹¤.
+	// ë§Œì•½ì— ì—¬ê¸°ì„œ ë§¤ê°œë³€ìˆ˜ ìžë¦¬ì— êµ¬í˜„í•œ í´ëž˜ìŠ¤ë¥¼ ë§¤ê°œë³€ìˆ˜ë¡œ ë°›ì•˜ë‹¤ë©´
+	// ë©”ì„œë“œê°€ 2ê°œ í•„ìš” í–ˆì„ ê²ƒì´ë‹¤.
 
 	public static void main(String[] args) {
 
@@ -22,3 +22,4 @@ public class DaoExam {
 	}
 
 }
+

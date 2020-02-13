@@ -24,7 +24,7 @@ public class InnerEx4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ÀÎ½ºÅÏ½ºÅ¬·¡½ºÀÇ ÀÎ½ºÅÏ½º¸¦ »ı¼ºÇÏ·Á¸é ¿ÜºÎ Å¬·¡½ºÀÇ ÀÎ½ºÅÏ½º ¸ÕÀú »ı¼º
+		// ì¸ìŠ¤í„´ìŠ¤í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ë¥¼ ìƒì„±í•˜ë ¤ë©´ ì™¸ë¶€ í´ë˜ìŠ¤ì˜ ì¸ìŠ¤í„´ìŠ¤ ë¨¼ì € ìƒì„±
 		Outer oc = new Outer();
 		Outer.InstanceInner ii = oc.new InstanceInner();
 		

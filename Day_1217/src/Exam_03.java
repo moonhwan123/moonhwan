@@ -8,17 +8,17 @@ public class Exam_03 {
 		int kor = 95;
 		int eng = 88 , mat = 77;
 		
-		int total = kor + eng + mat; // ÃÑÁ¡
-		double average = total / 3.; // Æò±Õ  (3µÚ¿¡ . ÀÖ°í ¾ø°íÀÇ Â÷ÀÌ ¼÷Áö)
+		int total = kor + eng + mat; // ì´ì 
+		double average = total / 3.; // í‰ê·   (3ë’¤ì— . ìˆê³  ì—†ê³ ì˜ ì°¨ì´ ìˆ™ì§€)
 		
 		
-		System.out.println("¹øÈ£ = " + number);
-		System.out.println("ÀÌ¸§ = " + name);
-		System.out.println("ÃÑÁ¡ = " + total);
-		System.out.println("Æò±Õ = " + average);
+		System.out.println("ë²ˆí˜¸ = " + number);
+		System.out.println("ì´ë¦„ = " + name);
+		System.out.println("ì´ì  = " + total);
+		System.out.println("í‰ê·  = " + average);
 		System.out.println();
 		
-		System.out.print("¹øÈ£\tÀÌ¸§\t±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\n");
+		System.out.print("ë²ˆí˜¸\tì´ë¦„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \n");
 		System.out.print(number+"\t"+name+"\t"+kor+"\t"+eng+"\t"+mat+"\t"+total+"\t"+average+"\t"+"\n");
 		
 		

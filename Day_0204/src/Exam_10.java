@@ -1,8 +1,8 @@
 import java.util.*;
 
 /*
-HashTable - µ¿±âÈ­ °¡´É
-HashMap - µ¿±âÈ­ ºÒ°¡
+HashTable - ë™ê¸°í™” ê°€ëŠ¥
+HashMap - ë™ê¸°í™” ë¶ˆê°€
  */
 
 
@@ -14,8 +14,8 @@ public class Exam_10 {
 		map.put(1, "AAA");
 		map.put(2, "BBB");
 		map.put(3, "CCC");
-		map.put(1, "DDD"); // key°ªÀº Áßº¹ÀÌ ¾ÈµÊ
-		System.out.println(map); //ÀÚ·á±¸Á¶¶ó¼­ ÂüÁ¶º¯¼ö¸¦ Àû¾îµµ °ªÀÌ Ãâ·ÂµÊ -> toString()ÀÌ ¿À¹ö¶óÀÌµù µÇ¾îÀÖ¾î¼­
+		map.put(1, "DDD"); // keyê°’ì€ ì¤‘ë³µì´ ì•ˆë¨
+		System.out.println(map); //ìë£Œêµ¬ì¡°ë¼ì„œ ì°¸ì¡°ë³€ìˆ˜ë¥¼ ì ì–´ë„ ê°’ì´ ì¶œë ¥ë¨ -> toString()ì´ ì˜¤ë²„ë¼ì´ë”© ë˜ì–´ìˆì–´ì„œ
 		
 		String s = (String)map.get(1);
 		System.out.println("map.get(1) = "+s);

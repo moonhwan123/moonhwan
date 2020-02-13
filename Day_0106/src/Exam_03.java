@@ -8,9 +8,9 @@ public class Exam_03 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("¿ù±Ş ÀÔ·Â >> ");
+		System.out.print("ì›”ê¸‰ ì…ë ¥ >> ");
 		int money = sc.nextInt();
-		int m = 50000; // È­Æó´ÜÀ§
+		int m = 50000; // í™”íë‹¨ìœ„
 		boolean sw = true;
 		
 		
@@ -18,7 +18,7 @@ public class Exam_03 {
 			int s = money / m ;
 			System.out.println(m+" : "+s);
 			if(sw) {
-				money = money-(s*m); // money = money % m; (³ª¸ÓÁö ¿¬»êÀÚ°¡ ¾øÀ»¶§)
+				money = money-(s*m); // money = money % m; (ë‚˜ë¨¸ì§€ ì—°ì‚°ìê°€ ì—†ì„ë•Œ)
 				m = m/5;
 				sw = false;
 			}else {

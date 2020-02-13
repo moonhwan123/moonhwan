@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 /*
-1.[ÀÔ·Â ¿¹½Ã]
-»ç¿ëÀÚ : È«±æµ¿
-½ÃÀÛ    : 5
-³¡       : 20
+1.[ì…ë ¥ ì˜ˆì‹œ]
+ì‚¬ìš©ì : í™ê¸¸ë™
+ì‹œì‘    : 5
+ë       : 20
 
-2.[Ãâ·Â ¿¹½Ã]
-»ç¿ëÀÚ : È«±æµ¿
-¿¬»ê°á°ú : 5+6+7+8+....+20 = xxx
+2.[ì¶œë ¥ ì˜ˆì‹œ]
+ì‚¬ìš©ì : í™ê¸¸ë™
+ì—°ì‚°ê²°ê³¼ : 5+6+7+8+....+20 = xxx
 
  */
 
@@ -28,8 +28,8 @@ class SeqNumber{
 	}
 	
 	void print() {
-		System.out.println("»ç¿ëÀÚ : "+this.name);
-		System.out.print("¿¬»ê °á°ú : ");
+		System.out.println("ì‚¬ìš©ì : "+this.name);
+		System.out.print("ì—°ì‚° ê²°ê³¼ : ");
 		for(int i = start; i <= end; i++) {
 			if(i<end) System.out.print(i+" + ");
 			else System.out.print(i+" = ");
@@ -45,12 +45,12 @@ public class Exam_02 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		//ÀÛ¼º
-		System.out.print("»ç¿ëÀÚ : ");
+		//ì‘ì„±
+		System.out.print("ì‚¬ìš©ì : ");
 		String name = sc.next();
-		System.out.print("½ÃÀÛ    : ");
+		System.out.print("ì‹œì‘    : ");
 		int start = sc.nextInt();
-		System.out.print("³¡       : ");
+		System.out.print("ë       : ");
 		int end = sc.nextInt();
 		
 		SeqNumber seq = new SeqNumber(name,start,end);

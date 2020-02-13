@@ -4,7 +4,7 @@ public class Exam_02 {
 	public static void main(String[] args) {
 		
 		//Math.random();
-		//¾ê¸¦ ¾²³ª ¹Ø¿¡ ³ğÀ» ¾²³ª ¶È°°À½
+		//ì–˜ë¥¼ ì“°ë‚˜ ë°‘ì— ë†ˆì„ ì“°ë‚˜ ë˜‘ê°™ìŒ
 		
 		Random r = new Random();
 		

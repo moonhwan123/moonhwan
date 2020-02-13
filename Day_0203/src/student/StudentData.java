@@ -16,7 +16,7 @@ public class StudentData {
 		}
 	}
 	
-	private void ranksort() { // ¼®Â÷¼ø Á¤·Ä ¸Ş¼Òµå
+	private void ranksort() { // ì„ì°¨ìˆœ ì •ë ¬ ë©”ì†Œë“œ
 		for(int x = 0 ; x < stuList.size()-1; x++) {
 			for(int y = x+1 ; y < stuList.size(); y++) {
 				if(stuList.get(x).rank > stuList.get(y).rank) {
@@ -29,8 +29,8 @@ public class StudentData {
 	}
 	
 	public void sourcePrint() {
-		System.out.println("[¿øº» µ¥ÀÌÅÍ Ãâ·Â]");
-		System.out.println("¹øÈ£\tÀÌ¸§\tÁ¡¼ö1\tÁ¡¼ö2\tÁ¡¼ö3\tÁ¡¼ö4\tÁ¡¼ö5\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
+		System.out.println("[ì›ë³¸ ë°ì´í„° ì¶œë ¥]");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\tì ìˆ˜1\tì ìˆ˜2\tì ìˆ˜3\tì ìˆ˜4\tì ìˆ˜5\tì´ì \tí‰ê· \tì„ì°¨");
 		for(int x = 0 ; x < stuList.size(); x++) {
 			System.out.print(stuList.get(x));
 		}
@@ -38,8 +38,8 @@ public class StudentData {
 	
 	public void sortdataPrint() {
 		ranksort();
-		System.out.println("[¼®Â÷¼ø Á¤·Ä ÈÄ µ¥ÀÌÅÍ Ãâ·Â]");
-		System.out.println("¹øÈ£\tÀÌ¸§\tÁ¡¼ö1\tÁ¡¼ö2\tÁ¡¼ö3\tÁ¡¼ö4\tÁ¡¼ö5\tÃÑÁ¡\tÆò±Õ\t¼®Â÷");
+		System.out.println("[ì„ì°¨ìˆœ ì •ë ¬ í›„ ë°ì´í„° ì¶œë ¥]");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\tì ìˆ˜1\tì ìˆ˜2\tì ìˆ˜3\tì ìˆ˜4\tì ìˆ˜5\tì´ì \tí‰ê· \tì„ì°¨");
 		for(int x = 0 ; x < stuList.size(); x++) {
 			System.out.print(stuList.get(x));
 		}

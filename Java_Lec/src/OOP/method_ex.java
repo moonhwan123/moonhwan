@@ -5,14 +5,14 @@ import java.util.Scanner;
 public class method_ex {
 	
 	
-	//±¸±¸´Ü ¸Þ¼­µå
+	//êµ¬êµ¬ë‹¨ ë©”ì„œë“œ
 	static void gugudan(int num) {
 		for(int i = 1; i < 10 ; i++) {
 			System.out.printf("%d * %d = %d \n", num,i,(num*i));
 		}
 	}
 	
-	//»çÄ¢ ¿¬»ê ¸Þ¼­µå
+	//ì‚¬ì¹™ ì—°ì‚° ë©”ì„œë“œ
 	static int calc(int num1, int num2, char op) {
 		
 		switch(op) {
@@ -35,14 +35,14 @@ public class method_ex {
 		Scanner sc = new Scanner(System.in);
 		
 		
-		//3°³ÀÇ ¼ýÀÚ¸¦ ÀÔ·Â¹Þ¾Æ¼­ Å©±â°¡ Å« ¼ø¼­´ë·Î Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥.
+		//3ê°œì˜ ìˆ«ìžë¥¼ ìž…ë ¥ë°›ì•„ì„œ í¬ê¸°ê°€ í° ìˆœì„œëŒ€ë¡œ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨.
 
 		
 		
 		
-		//1°³ÀÇ ¼ýÀÚ¸¦ ÀÔ·Â ¹Þ¾Æ¼­ ±¸±¸´Ü Ãâ·ÂÇÏ´Â ÇÁ·Î±×·¥
+		//1ê°œì˜ ìˆ«ìžë¥¼ ìž…ë ¥ ë°›ì•„ì„œ êµ¬êµ¬ë‹¨ ì¶œë ¥í•˜ëŠ” í”„ë¡œê·¸ëž¨
 		/*
-		System.out.print("¼ýÀÚ ÀÔ·Â : ");
+		System.out.print("ìˆ«ìž ìž…ë ¥ : ");
 		int num = sc.nextInt();
 		
 		gugudan(num);
@@ -50,9 +50,9 @@ public class method_ex {
 		
 		
 		
-		//¼ýÀÚ2°³¿Í »çÄ¢¿¬»êÀÚ¸¦ ÀÔ·Â¹Þ¾Æ¼­ µ¿ÀÛÇÏ´Â °£´ÜÇÑ °è»ê±â ÇÁ·Î±×·¥
+		//ìˆ«ìž2ê°œì™€ ì‚¬ì¹™ì—°ì‚°ìžë¥¼ ìž…ë ¥ë°›ì•„ì„œ ë™ìž‘í•˜ëŠ” ê°„ë‹¨í•œ ê³„ì‚°ê¸° í”„ë¡œê·¸ëž¨
 		/*
-		System.out.print("µÎ ¼ýÀÚ ÀÔ·Â : ");
+		System.out.print("ë‘ ìˆ«ìž ìž…ë ¥ : ");
 		int num1 = sc.nextInt();
 		int num2 = sc.nextInt();
 		

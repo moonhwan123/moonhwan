@@ -9,9 +9,9 @@ public class ScannerEx1 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("ÀÌ¸§ ÀÔ·Â : ");
+		System.out.println("ì´ë¦„ ì…ë ¥ : ");
 		String name = sc.nextLine();
-		System.out.println(name+"´Ô  È¯¿µÇÕ´Ï´Ù.");
+		System.out.println(name+"ë‹˜  í™˜ì˜í•©ë‹ˆë‹¤.");
 		
 		
 		
@@ -19,7 +19,7 @@ public class ScannerEx1 {
 			FileInputStream fs = new FileInputStream("c:\\PT\\test.txt");
 			Scanner fsc = new Scanner(fs);
 			
-			while(fsc.hasNext()) { // °ªÀÌ Á¸ÀçÇÏ¸é °è¼Ó ¹İº¹
+			while(fsc.hasNext()) { // ê°’ì´ ì¡´ì¬í•˜ë©´ ê³„ì† ë°˜ë³µ
 				System.out.println(fsc.nextLine());
 				
 				

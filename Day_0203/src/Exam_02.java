@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 /*
 set , indexOf , contains , get , size , add 
-ListÁß¿¡¼­ °¡Àå ¸¹ÀÌ ¾²´Â ¸Ş¼­µåµé
+Listì¤‘ì—ì„œ ê°€ì¥ ë§ì´ ì“°ëŠ” ë©”ì„œë“œë“¤
  */
 
 public class Exam_02 {
@@ -11,14 +11,14 @@ public class Exam_02 {
 		
 		List<String> list = new ArrayList<String>();
 		
-		list.add("È«±æµ¿");
-//		list.add(1234);  String Àü¿ëÀÌ¶ó Á¤¼ö´Â ¾Èµé¾î°¨
+		list.add("í™ê¸¸ë™");
+//		list.add(1234);  String ì „ìš©ì´ë¼ ì •ìˆ˜ëŠ” ì•ˆë“¤ì–´ê°
 		list.add("Java");
 		list.add("C++");
 		list.add("Python");
 		list.add("Program");
 		
-		String str = list.get(0); // <String>ÁöÁ¤ ÇØÁÖ¾ú±â ¶§¹®¿¡ °¡´ÉÇÏ´Ù.
+		String str = list.get(0); // <String>ì§€ì • í•´ì£¼ì—ˆê¸° ë•Œë¬¸ì— ê°€ëŠ¥í•˜ë‹¤.
 		
 		for(int x = 0; x< list.size(); x++) {
 			System.out.println(list.get(x));
@@ -26,17 +26,17 @@ public class Exam_02 {
 //		System.out.println(list);
 		
 		boolean bool = list.contains("C++");
-		System.out.println("list¿¡ C++À» Æ÷ÇÔ ÇÏ°í ÀÖ´Â°¡ >> "+bool);
+		System.out.println("listì— C++ì„ í¬í•¨ í•˜ê³  ìˆëŠ”ê°€ >> "+bool);
 		
 		int index = list.indexOf("C++");
-		System.out.println("C++ÀÇ ÀÎµ¦½º °ª >> "+index);
+		System.out.println("C++ì˜ ì¸ë±ìŠ¤ ê°’ >> "+index);
 		
-		list.set(0, "±è±æµ¿");
-		System.out.println("list.set(0, \"±è±æµ¿\") >> "+list.get(0));
+		list.set(0, "ê¹€ê¸¸ë™");
+		System.out.println("list.set(0, \"ê¹€ê¸¸ë™\") >> "+list.get(0));
 		
 		
 		//set , indexOf , contains , get , size , add 
-		//°¡Àå ¸¹ÀÌ ¾²´Â ¸Ş¼­µåµé
+		//ê°€ì¥ ë§ì´ ì“°ëŠ” ë©”ì„œë“œë“¤
 		
 		
 	}

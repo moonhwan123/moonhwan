@@ -4,7 +4,7 @@ public class sam_12 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.print("2ÀÌ»óÀÇ Á¤¼öÁß ¼Ò¼öÆÇº°ÇÒ Á¤¼ö¸¦ 1°³ ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("2ì´ìƒì˜ ì •ìˆ˜ì¤‘ ì†Œìˆ˜íŒë³„í•  ì •ìˆ˜ë¥¼ 1ê°œ ìž…ë ¥ í•˜ì„¸ìš” >> ");
 		int num = sc.nextInt();
 		int nmg;
 		
@@ -12,9 +12,9 @@ public class sam_12 {
 			nmg = num % i;
 			if(nmg==0) {
 				if(i == num) {
-					System.out.println("¼Ò¼ö");
+					System.out.println("ì†Œìˆ˜");
 				}else {
-					System.out.println("¼Ò¼ö¾Æ´Ô");
+					System.out.println("ì†Œìˆ˜ì•„ë‹˜");
 					break;
 				}
 			}

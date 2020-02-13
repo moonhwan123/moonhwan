@@ -8,20 +8,20 @@ public class HashMapEx {
 		HashMap hm = new HashMap();
 		Scanner sc = new Scanner(System.in);
 		
-		hm.put("apple","»ç°ú");
-		hm.put("paper","Á¾ÀÌ");
-		hm.put("flower", "²É");
+		hm.put("apple","ì‚¬ê³¼");
+		hm.put("paper","ì¢…ì´");
+		hm.put("flower", "ê½ƒ");
 		
 		String voca;
 		
-		System.out.print("¾Ë°í ½ÍÀº ´Ü¾î¸¦ ÀÔ·Â : ");
+		System.out.print("ì•Œê³  ì‹¶ì€ ë‹¨ì–´ë¥¼ ì…ë ¥ : ");
 		voca = sc.nextLine();
 		
 		if(hm.containsKey(voca)) {
-			System.out.println("ÇØ´çÇÏ´Â ¶æÀº : "+hm.get(voca));
+			System.out.println("í•´ë‹¹í•˜ëŠ” ëœ»ì€ : "+hm.get(voca));
 		}
 		else
-			System.out.println("ÇØ´ç ´Ü¾î´Â ¾ø½À´Ï´Ù.");
+			System.out.println("í•´ë‹¹ ë‹¨ì–´ëŠ” ì—†ìŠµë‹ˆë‹¤.");
 		
 	}
 }

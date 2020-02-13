@@ -1,10 +1,10 @@
 /*
 [String Class]
--> Á¤ÀûÀÎ ¹®ÀÚÀÇ Ã³¸®
+-> ì •ì ì¸ ë¬¸ìì˜ ì²˜ë¦¬
 [StringBuffer/Builder] 
--> º°µµÀÇ °¡»ó¸Ş¸ğ¸®¸¦ ¾²´Â°Ô ¾Æ´Ï¶ó ¹öÆÛ¿¡¼­ ¹®ÀÚ¸¦ º¯È¯½ÃÅ°°Å³ª ÇÔ
--> µ¿ÀûÀÎ ¹®ÀÚ¿­ÀÇ Ã³¸® 
--> ¸ÖÆ¼½º·¹µå¸¦ Áö¿øÇÏ´Â°¡ (¹öÆÛ´Â ¸ÖÆ¼½º·¹µåÈ¯°æ¿¡¼­ µ¿±âÈ­(µ¿½Ã»ç¿ëx,½Î¿ïÀÏÀÌ ¾øÀ½)Áö¿ø, ºô´õ´Â ¾ÈµÊ)
+-> ë³„ë„ì˜ ê°€ìƒë©”ëª¨ë¦¬ë¥¼ ì“°ëŠ”ê²Œ ì•„ë‹ˆë¼ ë²„í¼ì—ì„œ ë¬¸ìë¥¼ ë³€í™˜ì‹œí‚¤ê±°ë‚˜ í•¨
+-> ë™ì ì¸ ë¬¸ìì—´ì˜ ì²˜ë¦¬ 
+-> ë©€í‹°ìŠ¤ë ˆë“œë¥¼ ì§€ì›í•˜ëŠ”ê°€ (ë²„í¼ëŠ” ë©€í‹°ìŠ¤ë ˆë“œí™˜ê²½ì—ì„œ ë™ê¸°í™”(ë™ì‹œì‚¬ìš©x,ì‹¸ìš¸ì¼ì´ ì—†ìŒ)ì§€ì›, ë¹Œë”ëŠ” ì•ˆë¨)
 
  */
 
@@ -14,21 +14,21 @@ public class Exam_02 {
 		String str = "aaaaa";
 		String str2 = new String("aaaaa");
 		
-		StringBuffer sb = new StringBuffer(); // ¹İµå½Ã new »ç¿ë ÇØ¾ßÇÔ, °ıÈ£¾ÈÀº ¹öÆÛÀÇ »çÀÌÁî ±âº» 16ÀÚ Á¤µµ ÀâÈû		
-		StringBuffer sb2 = new StringBuffer(20); // ±Ùµ¥ ÁöÁ¤ÇØÁàµµ Áö°¡ ¾Ë¾Æ¼­ ´Ã¾î³µ´Ù ±×·±´Ù. º¸Åë 16¾¿ Ä¿Áü
+		StringBuffer sb = new StringBuffer(); // ë°˜ë“œì‹œ new ì‚¬ìš© í•´ì•¼í•¨, ê´„í˜¸ì•ˆì€ ë²„í¼ì˜ ì‚¬ì´ì¦ˆ ê¸°ë³¸ 16ì ì •ë„ ì¡í˜		
+		StringBuffer sb2 = new StringBuffer(20); // ê·¼ë° ì§€ì •í•´ì¤˜ë„ ì§€ê°€ ì•Œì•„ì„œ ëŠ˜ì–´ë‚¬ë‹¤ ê·¸ëŸ°ë‹¤. ë³´í†µ 16ì”© ì»¤ì§
 		
-		System.out.println("sb°ø°£Å©±â = " + sb.capacity()); //°ø°£ÀÇ Å©±â
-		System.out.println("sb±ÛÀÚ¼ö = " + sb.length()); //½ÇÁ¦ ÀúÀåµÈ µ¥ÀÌÅÍ
+		System.out.println("sbê³µê°„í¬ê¸° = " + sb.capacity()); //ê³µê°„ì˜ í¬ê¸°
+		System.out.println("sbê¸€ììˆ˜ = " + sb.length()); //ì‹¤ì œ ì €ì¥ëœ ë°ì´í„°
 		
 
-		sb.append("AAAA"); //append¸¦ ÀÌ¿ëÇØ¼­ Ãß°¡ÇÑ´Ù.
+		sb.append("AAAA"); //appendë¥¼ ì´ìš©í•´ì„œ ì¶”ê°€í•œë‹¤.
 		sb.append("BBBBBBBB");
-		sb.append("CCCCCCCCCC"); // µÚ¿¡ Âß Ãß°¡ÇØÁÜ
+		sb.append("CCCCCCCCCC"); // ë’¤ì— ì­‰ ì¶”ê°€í•´ì¤Œ
 		
 		
 		System.out.println(sb);
-		System.out.println("sb°ø°£Å©±â = " + sb.capacity()); //°ø°£ÀÇ Å©±â 
-		System.out.println("sb±ÛÀÚ¼ö = " + sb.length()); //½ÇÁ¦ ÀúÀåµÈ µ¥ÀÌÅÍ
+		System.out.println("sbê³µê°„í¬ê¸° = " + sb.capacity()); //ê³µê°„ì˜ í¬ê¸° 
+		System.out.println("sbê¸€ììˆ˜ = " + sb.length()); //ì‹¤ì œ ì €ì¥ëœ ë°ì´í„°
 		
 		
 		

@@ -5,7 +5,7 @@ public class Exam_07 {
 		String date = "20200131"; 
 		
 		//2020-01-31
-		//2020³â01¿ù31ÀÏ
+		//2020ë…„01ì›”31ì¼
 		
 		String y = date.substring(0,4);
 		String m = date.substring(4,6);

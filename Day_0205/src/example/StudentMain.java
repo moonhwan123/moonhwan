@@ -18,34 +18,34 @@ public class StudentMain {
 			String name;
 			String score;
 			
-			while(true) { // ÇĞ³â ÀÔ·Â
-				System.out.print("ÇĞ³â ÀÔ·Â(1~3) >>");
+			while(true) { // í•™ë…„ ì…ë ¥
+				System.out.print("í•™ë…„ ì…ë ¥(1~3) >>");
 				grade = sc.nextLine();
 				boolean bool = Pattern.matches("(0|1|2|3)", grade);
 				
 				if(bool) {
 					break;
 				}else {
-					System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ÇĞ³â ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä ");
+					System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ í•™ë…„ ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš” ");
 				}	
 			}
 			
 			if(grade.equals("0")) break;
 			
-			while(true) { // ¹İ ÀÔ·Â
-				System.out.print("¹İ ÀÔ·Â(1~6) >>");
+			while(true) { // ë°˜ ì…ë ¥
+				System.out.print("ë°˜ ì…ë ¥(1~6) >>");
 				cla = sc.nextLine();
 				boolean bool = Pattern.matches("(1|2|3|4|5|6)", cla);
 				
 				if(bool) {
 					break;
 				}else {
-					System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ¹İ ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä ");
+					System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ë°˜ ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš” ");
 				}	
 			}
 			
-			while(true) { // ¹øÈ£ ÀÔ·Â
-				System.out.print("¹øÈ£ ÀÔ·Â(1~45) >>");
+			while(true) { // ë²ˆí˜¸ ì…ë ¥
+				System.out.print("ë²ˆí˜¸ ì…ë ¥(1~45) >>");
 				bun = sc.nextLine();
 				boolean bool = false;
 				
@@ -56,25 +56,25 @@ public class StudentMain {
 				if(bool) {
 					break;
 				}else {
-					System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ¹øÈ£ ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä ");
+					System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ë²ˆí˜¸ ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš” ");
 				}	
 			}
 			
-			while(true) { // ÀÌ¸§ ÀÔ·Â
-				System.out.print("ÀÌ¸§ ÀÔ·Â(1~10ÀÚ) >>");
+			while(true) { // ì´ë¦„ ì…ë ¥
+				System.out.print("ì´ë¦„ ì…ë ¥(1~10ì) >>");
 				name = sc.nextLine();
 				boolean bool = Pattern.matches("\\w{1,10}", name);
 				
 				if(bool) {
 					break;
 				}else {
-					System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ÀÌ¸§ ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä ");
+					System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì´ë¦„ ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš” ");
 				}	
 			}
 			
 			
-			while(true) { // Á¡¼öÀÔ·Â
-				System.out.print("Á¡¼ö ÀÔ·Â(0~100) >>");
+			while(true) { // ì ìˆ˜ì…ë ¥
+				System.out.print("ì ìˆ˜ ì…ë ¥(0~100) >>");
 				score = sc.nextLine();
 				boolean bool = false;
 				
@@ -85,20 +85,20 @@ public class StudentMain {
 				if(bool) {
 					break;
 				}else {
-					System.out.println("¿Ã¹Ù¸£Áö ¾ÊÀº ÀÌ¸§ ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇÏ¼¼¿ä ");
+					System.out.println("ì˜¬ë°”ë¥´ì§€ ì•Šì€ ì´ë¦„ ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•˜ì„¸ìš” ");
 				}	
 			}
 			
 			stu = new Student(grade,cla,bun,name,Integer.parseInt(score));
 			
 			if(stuList.contains(stu)) {
-				System.out.println("Áßº¹µÈ °ªÀÌ ÀÖ½À´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä");
+				System.out.println("ì¤‘ë³µëœ ê°’ì´ ìˆìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”");
 				continue;
 			}
 			
 			stuList.add(stu);
 			
-		}// ÀüÃ¼ while¹® ³¡
+		}// ì „ì²´ whileë¬¸ ë
 		
 		
 		StudentData sd = new StudentData(stuList);

@@ -1,9 +1,9 @@
 package lamda;
 
 /*
-[ÇÔ¼öÀû ÀÎÅÍÆäÀÌ½º]
+[í•¨ìˆ˜ì  ì¸í„°íŽ˜ì´ìŠ¤]
 @functionalInterface
-¸Þ¼­µå°¡ ÇÏ³ª ¹Û¿¡ ¾ø´Â ÀÎÅÍÆäÀÌ½º
+ë©”ì„œë“œê°€ í•˜ë‚˜ ë°–ì— ì—†ëŠ” ì¸í„°íŽ˜ì´ìŠ¤
  */
 
 @FunctionalInterface

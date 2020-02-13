@@ -29,17 +29,17 @@ public class API_String {
 		System.out.println("======================substring");
 		s1 = "0123456789";
 		s2 = s1.substring(3);
-		s3 = s1.substring(3,7); // ¹üÀ§´Â 3 ~ (7-1) ±îÁö
+		s3 = s1.substring(3,7); // ë²”ìœ„ëŠ” 3 ~ (7-1) ê¹Œì§€
 		System.out.println("s2 = "+s2);
 		System.out.println("s3 = "+s3);
 		
 		System.out.println("======================indexof");
 		s1 = "01ab456ab9";
-		n1 = s1.indexOf('a'); // a°¡ 2°³ ÀÌÁö¸¸ Ã³À½ ¸¸³­ Ä£±¸¸¸ Ã£¾ÆÁÜ
-		n2 = s1.indexOf('a',5); // 5¹ø ÀÎµ¦½ººÎÅÍ °Ë»ö
-		n3 = s1.indexOf("ab"); // ¹®ÀÚ¿­ÀÇ ½ÃÀÛÀ§Ä¡¸¦ ¾Ë·ÁÁÜ
+		n1 = s1.indexOf('a'); // aê°€ 2ê°œ ì´ì§€ë§Œ ì²˜ìŒ ë§Œë‚œ ì¹œêµ¬ë§Œ ì°¾ì•„ì¤Œ
+		n2 = s1.indexOf('a',5); // 5ë²ˆ ì¸ë±ìŠ¤ë¶€í„° ê²€ìƒ‰
+		n3 = s1.indexOf("ab"); // ë¬¸ìì—´ì˜ ì‹œì‘ìœ„ì¹˜ë¥¼ ì•Œë ¤ì¤Œ
 		n4 = s1.indexOf("ab",5);
-		n5 = s1.indexOf("XX"); // Ã£´Â°Ô ¾øÀ¸¸é -1À» ¹İÈ¯
+		n5 = s1.indexOf("XX"); // ì°¾ëŠ”ê²Œ ì—†ìœ¼ë©´ -1ì„ ë°˜í™˜
 		
 		n6 = s1.lastIndexOf('a');
 		s1 = "123.txt.ppt.jpg";
@@ -54,7 +54,7 @@ public class API_String {
 		
 
 		
-		System.out.println("======================equals´Â ¹®ÀÚ¿­ ½ÇÃ¼ºñ±³, ==¹®ÀÚ¿­ Address ºñ±³");
+		System.out.println("======================equalsëŠ” ë¬¸ìì—´ ì‹¤ì²´ë¹„êµ, ==ë¬¸ìì—´ Address ë¹„êµ");
 		s1 = "dd";
 		s2 = "dddd";
 		s3 = s1+s1;
@@ -63,8 +63,8 @@ public class API_String {
 		s1 = "TEST";
 		s2 = "test";
 		
-		if(s1.equalsIgnoreCase(s2)) System.out.println("°°´Ù"); //IgnoreCase´Â ´ë¼Ò¹®ÀÚ ±¸º° X
-		else System.out.println("°°Áö ¾Ê´Ù");
+		if(s1.equalsIgnoreCase(s2)) System.out.println("ê°™ë‹¤"); //IgnoreCaseëŠ” ëŒ€ì†Œë¬¸ì êµ¬ë³„ X
+		else System.out.println("ê°™ì§€ ì•Šë‹¤");
 		
 		System.out.println("======================hashcode");
 		s1 = "AAAAA";
@@ -99,13 +99,13 @@ public class API_String {
 		
 		System.out.println("======================startsWith, endswith");
 		String url = "http://www.naver.com";
-		System.out.println("url.startsWith = "+url.startsWith("http")); // "~"·Î ½ÃÀÛÇÏ´ÂÁö
-		System.out.println("url.endsWith = "+url.endsWith(".com")); // "~"·Î ³¡³ª´ÂÁö
+		System.out.println("url.startsWith = "+url.startsWith("http")); // "~"ë¡œ ì‹œì‘í•˜ëŠ”ì§€
+		System.out.println("url.endsWith = "+url.endsWith(".com")); // "~"ë¡œ ëë‚˜ëŠ”ì§€
 		
 		System.out.println("======================String.valueOf()");
 		int year = 2019;
 		System.out.println(year+year);
-		System.out.println(String.valueOf(year)+String.valueOf(year)); //String.valueOf(year) => yearÀ» ¹®ÀÚ¿­·Î ¹Ù²ãÁÜ 
+		System.out.println(String.valueOf(year)+String.valueOf(year)); //String.valueOf(year) => yearì„ ë¬¸ìì—´ë¡œ ë°”ê¿”ì¤Œ 
 		
 		
 		System.out.println("======================split()");
@@ -123,11 +123,11 @@ public class API_String {
 	public static void sscmp(String a , String b) {
 		System.out.println("a = "+a+"   b = "+b);
 		
-		//¹®ÀÚ¿­ ÂüÁ¶°ª ºñ±³
-		if(a == b) {System.out.println("¾çÀÚÀÇ ÂüÁ¶´Â °°´Ù.");}
-		else {System.out.println("¾çÀÚÀÇ ÂüÁ¶´Â °°Áö ¾Ê´Ù.");}
+		//ë¬¸ìì—´ ì°¸ì¡°ê°’ ë¹„êµ
+		if(a == b) {System.out.println("ì–‘ìì˜ ì°¸ì¡°ëŠ” ê°™ë‹¤.");}
+		else {System.out.println("ì–‘ìì˜ ì°¸ì¡°ëŠ” ê°™ì§€ ì•Šë‹¤.");}
 		
-		//¹®ÀÚ¿­ ½ÇÃ¼¸¦ ºñ±³ÇÑ´Ù.
-		if (a.equals(b)) {System.out.println("¾çÀÚÀÇ ¹®ÀÚ¿­ ½ÇÃ¼´Â °°´Ù.");}
-		else System.out.println("¾çÀÚÀÇ ¹®ÀÚ¿­ ½ÇÃ¼´Â °°Áö ¾Ê´Ù.");}
+		//ë¬¸ìì—´ ì‹¤ì²´ë¥¼ ë¹„êµí•œë‹¤.
+		if (a.equals(b)) {System.out.println("ì–‘ìì˜ ë¬¸ìì—´ ì‹¤ì²´ëŠ” ê°™ë‹¤.");}
+		else System.out.println("ì–‘ìì˜ ë¬¸ìì—´ ì‹¤ì²´ëŠ” ê°™ì§€ ì•Šë‹¤.");}
 }

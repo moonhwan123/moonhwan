@@ -3,8 +3,8 @@ package OOP;
 public class overloading {
 	
 	//int add(int a ,int b) {return a+b;}
-	//int add(int c ,int d) {return a+b;} ¿À·ù
-	//long add(int a ,int b) {return a+b;} ¿À·ù
+	//int add(int c ,int d) {return a+b;} ì˜¤ë¥˜
+	//long add(int a ,int b) {return a+b;} ì˜¤ë¥˜
 	
 
 
@@ -12,41 +12,41 @@ public class overloading {
 	
 	public static void main(String[] args) {
 		/*
-		 -¸Ş¼­µå ¿À¹ö·Îµù
-		 	: ÇÏ³ªÀÇ Å¬·¡½º¿¡ °°Àº ÀÌ¸§ÀÇ ¸Ş¼­µå¸¦ ¿©·¯°³ Á¤ÀÇÇÏ´Â °Í
+		 -ë©”ì„œë“œ ì˜¤ë²„ë¡œë”©
+		 	: í•˜ë‚˜ì˜ í´ë˜ìŠ¤ì— ê°™ì€ ì´ë¦„ì˜ ë©”ì„œë“œë¥¼ ì—¬ëŸ¬ê°œ ì •ì˜í•˜ëŠ” ê²ƒ
 		 	
-		 -¿À¹ö·ÎµùÀÇ Á¶°Ç
-		 	: ¸Ş¼­µå ÀÌ¸§ÀÌ °°¾Æ¾ß ÇÑ´Ù.
-		 	: ¸Å°³º¯¼öÀÇ °³¼ö ¶Ç´Â Å¸ÀÔÀÌ ´Ş¶ó¾ßÇÑ´Ù.
-		 	: ¸Å°³º¯¼ö´Â °°°í ¸®ÅÏ Å¸ÀÔÀÌ ´Ù¸¥°æ¿ì´Â ¿À¹ö·ÎµùÀÌ ¼º¸³ÇÏÁö ¾ÊÀ½
+		 -ì˜¤ë²„ë¡œë”©ì˜ ì¡°ê±´
+		 	: ë©”ì„œë“œ ì´ë¦„ì´ ê°™ì•„ì•¼ í•œë‹¤.
+		 	: ë§¤ê°œë³€ìˆ˜ì˜ ê°œìˆ˜ ë˜ëŠ” íƒ€ì…ì´ ë‹¬ë¼ì•¼í•œë‹¤.
+		 	: ë§¤ê°œë³€ìˆ˜ëŠ” ê°™ê³  ë¦¬í„´ íƒ€ì…ì´ ë‹¤ë¥¸ê²½ìš°ëŠ” ì˜¤ë²„ë¡œë”©ì´ ì„±ë¦½í•˜ì§€ ì•ŠìŒ
 		 	
-		 -´ëÇ¥ÀûÀÎ ¿¹
+		 -ëŒ€í‘œì ì¸ ì˜ˆ
 		 	: System.out.println();
 		 	: int add(int a, int b){return a+b;}
 		 	  int add(float a, float b){return a+b;}
 		 	  
-		 -ÁÖÀÇ
-		 	: ¸Å°³º¯¼ö ÀÌ¸§ÀÌ ´Ù¸¥°ÍÀº ¿À¹ö·ÎµùX
-		 	: ¸®ÅÏ Å¸ÀÔÀº ¿À¹ö·Îµù ¼º¸³Á¶°ÇÀÌ ¾Æ´Ô!
+		 -ì£¼ì˜
+		 	: ë§¤ê°œë³€ìˆ˜ ì´ë¦„ì´ ë‹¤ë¥¸ê²ƒì€ ì˜¤ë²„ë¡œë”©X
+		 	: ë¦¬í„´ íƒ€ì…ì€ ì˜¤ë²„ë¡œë”© ì„±ë¦½ì¡°ê±´ì´ ì•„ë‹˜!
 		 	
-		 	static long add(int a ,long b) {return a+b;} // ¼º¸³
-			static long add(long a ,int b) {return a+b;} // ¼º¸³
-			add(3,5); >> ¿À·ù¹ß»ı ¾îµğ°¡ LongÀÎÁö Ç¥½Ã ÇØÁà¾ßÇÔ >> ÄÄÆÄÀÏ·¯³ª ÄÄÇ»ÅÍ°¡ À§¿¡ µÑÁß ¾îµğ°¡ LongÀÎÁö ¸ğ¸§
+		 	static long add(int a ,long b) {return a+b;} // ì„±ë¦½
+			static long add(long a ,int b) {return a+b;} // ì„±ë¦½
+			add(3,5); >> ì˜¤ë¥˜ë°œìƒ ì–´ë””ê°€ Longì¸ì§€ í‘œì‹œ í•´ì¤˜ì•¼í•¨ >> ì»´íŒŒì¼ëŸ¬ë‚˜ ì»´í“¨í„°ê°€ ìœ„ì— ë‘˜ì¤‘ ì–´ë””ê°€ Longì¸ì§€ ëª¨ë¦„
 			>> add(3,5L);
 		
 		 	
 		 */
 
 		MyMath2 mm = new MyMath2();
-		System.out.println("mm.add(3,3)ÀÇ °á°ú : "+mm.add(3, 3));
-		System.out.println("mm.add(3L,3)ÀÇ °á°ú : "+mm.add(3L, 3));
-		System.out.println("mm.add(3,3L)ÀÇ °á°ú : "+mm.add(3, 3L));
-		System.out.println("mm.add(3L,3L)ÀÇ °á°ú : "+mm.add(3L, 3L));
-		System.out.println("mm.add(3.3,3.3)ÀÇ °á°ú : "+mm.add(3.3, 3.3));
+		System.out.println("mm.add(3,3)ì˜ ê²°ê³¼ : "+mm.add(3, 3));
+		System.out.println("mm.add(3L,3)ì˜ ê²°ê³¼ : "+mm.add(3L, 3));
+		System.out.println("mm.add(3,3L)ì˜ ê²°ê³¼ : "+mm.add(3, 3L));
+		System.out.println("mm.add(3L,3L)ì˜ ê²°ê³¼ : "+mm.add(3L, 3L));
+		System.out.println("mm.add(3.3,3.3)ì˜ ê²°ê³¼ : "+mm.add(3.3, 3.3));
 		
-		//¹è¿­ÀÇ ¸ğµç ¿ä¼ÒÀÇ ÇÕÀ» °á°ú·Î µ¹·ÁÁÖ´Â ¸Ş¼Òµå
+		//ë°°ì—´ì˜ ëª¨ë“  ìš”ì†Œì˜ í•©ì„ ê²°ê³¼ë¡œ ëŒë ¤ì£¼ëŠ” ë©”ì†Œë“œ
 		int[] a = {100,200,300,400,500};
-		System.out.println("mm.add(a)ÀÇ °á°ú : "+mm.add(a));
+		System.out.println("mm.add(a)ì˜ ê²°ê³¼ : "+mm.add(a));
 	}
 
 

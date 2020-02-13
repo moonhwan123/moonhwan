@@ -14,8 +14,8 @@ public class Exam_06 {
 		s.push("CCCC");
 		s.push("DDDD");
 		System.out.println(s);
-		System.out.println(s.pop() + "¸¦ popÇÑ´Ù.");
-		System.out.println(s.peek()+ "¸¦ peekÇÑ´Ù.");
+		System.out.println(s.pop() + "ë¥¼ popí•œë‹¤.");
+		System.out.println(s.peek()+ "ë¥¼ peekí•œë‹¤.");
 		System.out.println(s);
 		
 		

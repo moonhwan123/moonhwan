@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î ¹øÈ£,ÀÌ¸§,±¹¾î,¿µ¾î,¼öÇĞ ÀÔ·Â
-´ÙÀ½°ú °°ÀÌ Ãâ·ÂÇÏ´Â Å¬·¡½º¸¦ ÀÛ¼ºÇÏ½Ã¿À
+í‚¤ë³´ë“œë¡œ ë²ˆí˜¸,ì´ë¦„,êµ­ì–´,ì˜ì–´,ìˆ˜í•™ ì…ë ¥
+ë‹¤ìŒê³¼ ê°™ì´ ì¶œë ¥í•˜ëŠ” í´ë˜ìŠ¤ë¥¼ ì‘ì„±í•˜ì‹œì˜¤
 
-[ÀÔ·Â ¿¹½Ã]
-ÀÔ·Â : 1 È«±æµ¿  90 70 80
+[ì…ë ¥ ì˜ˆì‹œ]
+ì…ë ¥ : 1 í™ê¸¸ë™  90 70 80
 
-[Ãâ·Â ¿¹½Ã]
-¹øÈ£ : xx
-ÀÌ¸§ : xx
-ÃÑÁ¡ : xx
-Æò±Õ : xx
+[ì¶œë ¥ ì˜ˆì‹œ]
+ë²ˆí˜¸ : xx
+ì´ë¦„ : xx
+ì´ì  : xx
+í‰ê·  : xx
  */
 
 class Student{
@@ -39,10 +39,10 @@ class Student{
 	}
 	
 	void print() {
-		System.out.println("¹øÈ£ : " + this.number);
-		System.out.println("ÀÌ¸§ : " + this.name);
-		System.out.println("ÃÑÁ¡ : " + tot());
-		System.out.println("Æò±Õ : " + ave());
+		System.out.println("ë²ˆí˜¸ : " + this.number);
+		System.out.println("ì´ë¦„ : " + this.name);
+		System.out.println("ì´ì  : " + tot());
+		System.out.println("í‰ê·  : " + ave());
 	}
 }
 
@@ -53,14 +53,14 @@ public class Exam_01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		//ÀÔ·Â ÀÛ¾÷
-		System.out.print("ÀÔ·Â : ");
+		//ì…ë ¥ ì‘ì—…
+		System.out.print("ì…ë ¥ : ");
 		int b = sc.nextInt();
 		String na = sc.next();
 		int k = sc.nextInt();
 		int e = sc.nextInt();
 		int m = sc.nextInt();
-		//°´Ã¼ »ı¼º
+		//ê°ì²´ ìƒì„±
 		Student st = new Student(b,na,k,e,m);
 		st.print();
 		

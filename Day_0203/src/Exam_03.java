@@ -12,7 +12,7 @@ class AA{
 	
 	@Override
 	public String toString() {
-		return "¹øÈ£ : " + b + "\t" + ", ÀÌ¸§ : " + n + "\n";
+		return "ë²ˆí˜¸ : " + b + "\t" + ", ì´ë¦„ : " + n + "\n";
 	}
 	
 }
@@ -21,12 +21,12 @@ public class Exam_03 {
 		
 		List<AA> list = new ArrayList<AA>();
 		
-		list.add(new AA(1,"AAA")); // ¹Ù·Î °´Ã¼µµ ÀúÀå ÇÒ ¼ö ÀÖ´Ù.
+		list.add(new AA(1,"AAA")); // ë°”ë¡œ ê°ì²´ë„ ì €ì¥ í•  ìˆ˜ ìˆë‹¤.
 		list.add(new AA(2,"BBB"));
 		list.add(new AA(3,"CCC"));
 		list.add(new AA(4,"DDD"));
 		
-		//¹è¿­°ú ´Ş¸® Å©±â¸¦ ¹Ì¸® ¾Ë ÇÊ¿ä°¡ ¾ø´Ù.
+		//ë°°ì—´ê³¼ ë‹¬ë¦¬ í¬ê¸°ë¥¼ ë¯¸ë¦¬ ì•Œ í•„ìš”ê°€ ì—†ë‹¤.
 		
 		for(int x = 0 ; x < list.size(); x++) {
 			System.out.print(list.get(x));

@@ -19,10 +19,10 @@ public class Exam_01 {
 		
 //		dao.tableCreate();
 		
-		int dno = 30;
-		String dname = "fuck";
-		String date = "20200210";
-		int score = 90;
+		int dno = 20;
+		String dname = "TAKR";
+		String date = "20200110";
+		int score = 70;
 		
 		
 		int row = dao.insertAAA(dno, dname, date, score);

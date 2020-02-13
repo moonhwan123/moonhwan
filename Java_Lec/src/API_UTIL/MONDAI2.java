@@ -1,5 +1,5 @@
 package API_UTIL;
-// µ¥ÀÌÅÍÆ÷¸ä/½ÉÇÃµ¥ÀÌÅÍÆ÷¸ä ÀÌ¿ëÇØ¼­ 
+// ë°ì´í„°í¬ë©§/ì‹¬í”Œë°ì´í„°í¬ë©§ ì´ìš©í•´ì„œ 
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -14,7 +14,7 @@ public class MONDAI2 {
 		
 		Date today = new Date();
 		
-		System.out.println("³¯Â¥¸¦ yyyy/MM/ddÀÇ ÇüÅÂ·Î ÀÔ·Â ÇØÁÖ¼¼¿ä.(ÀÔ·Â ¿¹ : 2015/12/31)");
+		System.out.println("ë‚ ì§œë¥¼ yyyy/MM/ddì˜ í˜•íƒœë¡œ ì…ë ¥ í•´ì£¼ì„¸ìš”.(ì…ë ¥ ì˜ˆ : 2015/12/31)");
 		
 		SimpleDateFormat inputDate;
 		inputDate = new SimpleDateFormat("yyyy/MM/dd");

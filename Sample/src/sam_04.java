@@ -1,12 +1,12 @@
 
 public class sam_04 {
 	public static void main(String[] args) {
-		System.out.println("====1 ~ 10 ±îÁöÀÇ ÇÕ°è¸¦ ±¸ÇÏ´Â ÇÁ·Î±×·¥ ÀÔ´Ï´Ù.====");
+		System.out.println("====1 ~ 10 ê¹Œì§€ì˜ í•©ê³„ë¥¼ êµ¬í•˜ëŠ” í”„ë¡œê·¸ë¨ ì…ë‹ˆë‹¤.====");
 		
 		int sum = 0;
 		for(int i = 1; i <= 10; i++) {
 			sum+=i;
 		}
-		System.out.println("1 ~ 10 ±îÁöÀÇ ÇÕÀº "+sum+"ÀÔ´Ï´Ù.");
+		System.out.println("1 ~ 10 ê¹Œì§€ì˜ í•©ì€ "+sum+"ì…ë‹ˆë‹¤.");
 	}
 }

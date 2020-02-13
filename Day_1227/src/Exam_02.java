@@ -5,11 +5,11 @@ public class Exam_02 {
 		int a=5,b=0;
 		int aa=5,bb=0;
 		
-		b=a++; // ´ëÀÔ ÈÄ 1Áõ°¡
+		b=a++; // ëŒ€ì… í›„ 1ì¦ê°€
 		System.out.println("a = " + a);
 		System.out.println("b = " + b);
 		
-		bb=++aa; // 1Áõ°¡ ÈÄ ´ëÀÔ
+		bb=++aa; // 1ì¦ê°€ í›„ ëŒ€ì…
 		System.out.println("aa = " + aa);
 		System.out.println("bb = " + bb);
 		

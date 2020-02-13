@@ -8,7 +8,7 @@ public class Ex1 {
 		
 		ArrayList<Character> a = new ArrayList<Character>();
 		Scanner sc = new Scanner(System.in);
-		System.out.print("6°³ÀÇ ÇĞÁ¡À» ºó Ä­À¸·Î ºĞ¸® ÀÔ·Â : ");
+		System.out.print("6ê°œì˜ í•™ì ì„ ë¹ˆ ì¹¸ìœ¼ë¡œ ë¶„ë¦¬ ì…ë ¥ : ");
 		
 		for(int i = 0; i < 6; i ++) {
 			
@@ -19,7 +19,7 @@ public class Ex1 {
 			if(ch >= 'A' && ch <='D' || ch =='F')
 				a.add(ch);
 			else {
-				System.out.println("ÇĞÁ¡ ¾Æ´Ô");
+				System.out.println("í•™ì  ì•„ë‹˜");
 				sc.close();
 				return;
 			}

@@ -1,29 +1,29 @@
 import java.util.Arrays;
 
 /*
-[ArraysÅ¬·¡½º¸¦ ÀÌ¿ëÇÑ 2Áø°Ë»ö]
+[Arraysí´ë˜ìŠ¤ë¥¼ ì´ìš©í•œ 2ì§„ê²€ìƒ‰]
  */
 
 public class Exam_11 {
 	public static void main(String[] args) {
 		
 		int var[] = {80,90,77,88,56,60,24};
-		String name[] = {"È«±æµ¿","±è±æµ¿","ÀÌ±æµ¿","¹Ú±æµ¿"};
+		String name[] = {"í™ê¸¸ë™","ê¹€ê¸¸ë™","ì´ê¸¸ë™","ë°•ê¸¸ë™"};
 		
 		Arrays.sort(var);
 		System.out.println(Arrays.toString(var));
 		int index = Arrays.binarySearch(var, 90);
-		System.out.println("90ÀÇ À§Ä¡ "+index);
+		System.out.println("90ì˜ ìœ„ì¹˜ "+index);
 		
 		System.out.println("--------------------------");
-		Member m1 = new Member("È«±æµ¿");
-		Member m2 = new Member("±è±æµ¿");
-		Member m3 = new Member("ÀÌ±æµ¿");
+		Member m1 = new Member("í™ê¸¸ë™");
+		Member m2 = new Member("ê¹€ê¸¸ë™");
+		Member m3 = new Member("ì´ê¸¸ë™");
 		Member[] memArr = {m1,m2,m3};
 		
 		Arrays.sort(memArr);
 		int index2 = Arrays.binarySearch(memArr, m3);
-		System.out.println(m3.name+"Àº  "+index2+"¹øÂ°");
+		System.out.println(m3.name+"ì€  "+index2+"ë²ˆì§¸");
 		
 		
 	}

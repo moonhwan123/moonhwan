@@ -6,38 +6,38 @@ public class practice {
 		Scanner sc = new Scanner(System.in);
 		
 		//2019-09-08
-		//¿¹Á¦ 1¹ø//
+		//ì˜ˆì œ 1ë²ˆ//
 		/*
 		int A = 20; int B = 25; int C = 30;
 		int sum = A + B + C;
 		char Que = '?';
-		String intro = "Hello? My name is ±æµ¿";
+		String intro = "Hello? My name is ê¸¸ë™";
 		
-		System.out.printf("a¿Í b¿Í cÀÇ ÇÕÀº : %dÀÔ´Ï´Ù.\n" , sum);
+		System.out.printf("aì™€ bì™€ cì˜ í•©ì€ : %dì…ë‹ˆë‹¤.\n" , sum);
 		System.out.printf("%s \n",intro);
 		System.out.printf("%c \n",Que);
 		
 		System.out.println();
 		
-		//¿¹Á¦ 2¹ø//
+		//ì˜ˆì œ 2ë²ˆ//
 		
 		
 		
 		double Pie = 3.14;
-		System.out.print("¹İÁö¸§ÀÇ ±æÀÌ¸¦ ÀÔ·Â ÇØÁÖ¼¼¿ä : ");
+		System.out.print("ë°˜ì§€ë¦„ì˜ ê¸¸ì´ë¥¼ ì…ë ¥ í•´ì£¼ì„¸ìš” : ");
 		double Ban = sc.nextFloat();
 		double result = Ban * Ban * Pie;
 		
-		System.out.printf("¹İÁö¸§ÀÌ %.1fÀÎ ¿øÀÇ ³ĞÀÌ´Â %.1fÀÔ´Ï´Ù.",Ban,result);
+		System.out.printf("ë°˜ì§€ë¦„ì´ %.1fì¸ ì›ì˜ ë„“ì´ëŠ” %.1fì…ë‹ˆë‹¤.",Ban,result);
 		
 		System.out.println();
 		*/
 		
 		//2019-09-18
-		//¿¹Á¦ 1¹ø
+		//ì˜ˆì œ 1ë²ˆ
 		/*
 		System.out.println();
-		System.out.print("¼ıÀÚ¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ìˆ«ìë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int sut = sc.nextInt();
 		int St = 0;
 		int Ed = 0;
@@ -56,33 +56,33 @@ public class practice {
 				St = 20;
 				Ed = 30;
 			}
-			System.out.printf("%dÀÌ»ó %d¹Ì¸¸",St,Ed);
+			System.out.printf("%dì´ìƒ %dë¯¸ë§Œ",St,Ed);
 		}
 	
 		else
-			System.out.println("À¯È¿ÇÑ °ªÀÌ ¾Æ´Õ´Ï´Ù.");
+			System.out.println("ìœ íš¨í•œ ê°’ì´ ì•„ë‹™ë‹ˆë‹¤.");
 		
 		sc.close();
 		*/
 		
 		
-		//¿¹Á¦ 2¹ø
+		//ì˜ˆì œ 2ë²ˆ
 		
 		
-		//¿¹Á¦ 3¹ø
+		//ì˜ˆì œ 3ë²ˆ
 		
 		
 		
 		
-		//°¡À§,¹ÙÀ§,º¸ °ÔÀÓ (randomÇÔ¼ö)
+		//ê°€ìœ„,ë°”ìœ„,ë³´ ê²Œì„ (randomí•¨ìˆ˜)
 		
-		//int i = (int)(Math.random()*45+1); //¿ø·¡´Â 0ºÎÅÍ 45 ±îÁöÁö¸¸ +1À» ÇØÁÖ¸é 1ºÎÅÍ 45 ±îÁö °¡´É
+		//int i = (int)(Math.random()*45+1); //ì›ë˜ëŠ” 0ë¶€í„° 45 ê¹Œì§€ì§€ë§Œ +1ì„ í•´ì£¼ë©´ 1ë¶€í„° 45 ê¹Œì§€ ê°€ëŠ¥
 		//System.out.println(i);
 		int user,com;
 		String user_tmp;
 		String com_tmp;
 		
-		System.out.print("°¡À§(1) ¹ÙÀ§(2) º¸(3) Áß¿¡ ÇÏ³ª¸¦ ÀÔ·Â ÇÏ¼¼¿ä >>> ");
+		System.out.print("ê°€ìœ„(1) ë°”ìœ„(2) ë³´(3) ì¤‘ì— í•˜ë‚˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” >>> ");
 		user = sc.nextInt();
 		com = (int)(Math.random()*3+1);
 		user_tmp = "";
@@ -90,39 +90,39 @@ public class practice {
 		
 		switch(user) {
 		case 1 :
-			user_tmp = "°¡À§";
+			user_tmp = "ê°€ìœ„";
 			break;
 		case 2 :
-			user_tmp = "¹ÙÀ§";
+			user_tmp = "ë°”ìœ„";
 			break;
 		case 3 :
-			user_tmp = "º¸";
+			user_tmp = "ë³´";
 			break;
 		}
 		switch(com) {
 		case 1 :
-			com_tmp = "°¡À§";
+			com_tmp = "ê°€ìœ„";
 			break;
 		case 2 :
-			com_tmp = "¹ÙÀ§";
+			com_tmp = "ë°”ìœ„";
 			break;
 		case 3 :
-			com_tmp = "º¸";
+			com_tmp = "ë³´";
 			break;
 		}
 		
-		System.out.println("´ç½ÅÀº "+user_tmp+" ÀÔ´Ï´Ù.");
-		System.out.println("ÄÄÇ»ÅÍ´Â "+com_tmp+" ÀÔ´Ï´Ù.");
+		System.out.println("ë‹¹ì‹ ì€ "+user_tmp+" ì…ë‹ˆë‹¤.");
+		System.out.println("ì»´í“¨í„°ëŠ” "+com_tmp+" ì…ë‹ˆë‹¤.");
 		
 		switch(user-com) {
 		case 2: case -1:
-			System.out.println("´ç½ÅÀº Á³½À´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì€ ì¡ŒìŠµë‹ˆë‹¤.");
 			break;
 		case 1: case -2:
-			System.out.println("´ç½ÅÀº ÀÌ°å½À´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì€ ì´ê²¼ìŠµë‹ˆë‹¤.");
 			break;
 		case 0:
-			System.out.println("´ç½ÅÀº ºñ°å½À´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì€ ë¹„ê²¼ìŠµë‹ˆë‹¤.");
 			break;	
 		}
 		

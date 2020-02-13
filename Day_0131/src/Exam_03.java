@@ -24,7 +24,7 @@ public class Exam_03 {
 		
 		END_DAY = eDay.get(Calendar.DATE);
 		
-		System.out.println("           " + args[0] + "³â" + args[1] + "¿ù");
+		System.out.println("           " + args[0] + "ë…„" + args[1] + "ì›”");
 		System.out.println("  SU  MO  TU  WE  TH  FR  SA");
 		
 		for(int i = 1; i < START_DAY_OF_WEEK; i++) {

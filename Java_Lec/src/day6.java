@@ -5,8 +5,8 @@ public class day6 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		//ÇĞÁ¡°è»ê±â
-		//System.out.println("Á¡¼ö¸¦ ÀÔ·Â ÇÏ½Ã¿À : ");
+		//í•™ì ê³„ì‚°ê¸°
+		//System.out.println("ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì‹œì˜¤ : ");
 		Scanner sc = new Scanner(System.in);
 		
 		//int jumsu=sc.nextInt();
@@ -34,23 +34,23 @@ public class day6 {
 		
 		/*
 		 -else if
-		 	: if¹® Á¶°Ç½ÄÀÌ ¸¸Á·ÇÏÁö ¾ÊÀ¸¸é ¼öÇà
-		 	: if¹® Á¶°Ç½ÄÀÌ ¸¸Á·ÇÏÁö ¸øÇÒ¶§ ´Ù¸¥ Á¶°Ç °Ë»ç
-		 	: if¹®¿¡ Á¾¼Ó(ÇÏ³ªÀÇ if¹®¿¡ ¿©·¯°³ÀÇ else if ¹® °¡´É)
+		 	: ifë¬¸ ì¡°ê±´ì‹ì´ ë§Œì¡±í•˜ì§€ ì•Šìœ¼ë©´ ìˆ˜í–‰
+		 	: ifë¬¸ ì¡°ê±´ì‹ì´ ë§Œì¡±í•˜ì§€ ëª»í• ë•Œ ë‹¤ë¥¸ ì¡°ê±´ ê²€ì‚¬
+		 	: ifë¬¸ì— ì¢…ì†(í•˜ë‚˜ì˜ ifë¬¸ì— ì—¬ëŸ¬ê°œì˜ else if ë¬¸ ê°€ëŠ¥)
 		 	
-		 -switch~case¹®
-		 	: ÇÏ³ªÀÇ Á¶°Ç½ÄÀ¸·Î ¸¹Àº °æ¿ìÀÇ ¼ö Ã³¸® 
-		 	: Á¶°Ç½ÄÀÇ °á°ú´Â Á¤¼ö ¶Ç´Â ¹®ÀÚ (¹®ÀÚ¿­ µµ µÇ±äÇÔ)
-		 	: switch(Á¶°Ç½Ä)
+		 -switch~caseë¬¸
+		 	: í•˜ë‚˜ì˜ ì¡°ê±´ì‹ìœ¼ë¡œ ë§ì€ ê²½ìš°ì˜ ìˆ˜ ì²˜ë¦¬ 
+		 	: ì¡°ê±´ì‹ì˜ ê²°ê³¼ëŠ” ì •ìˆ˜ ë˜ëŠ” ë¬¸ì (ë¬¸ìì—´ ë„ ë˜ê¸´í•¨)
+		 	: switch(ì¡°ê±´ì‹)
 		 	  {
-		 	  	case °ª1 :
-		 	  		//Á¶°Ç½ÄÀÇ °á°ú¿Í °ª1°ú °°Àº°æ¿ì ½ÇÇà
+		 	  	case ê°’1 :
+		 	  		//ì¡°ê±´ì‹ì˜ ê²°ê³¼ì™€ ê°’1ê³¼ ê°™ì€ê²½ìš° ì‹¤í–‰
 		 	  		break;
-		 	  	case °ª2 :
-		 	  		//Á¶°Ç½ÄÀÇ °á°ú¿Í °ª2°ú °°Àº°æ¿ì ½ÇÇà
+		 	  	case ê°’2 :
+		 	  		//ì¡°ê±´ì‹ì˜ ê²°ê³¼ì™€ ê°’2ê³¼ ê°™ì€ê²½ìš° ì‹¤í–‰
 		 	  		break;
 		 	  	default :
-		 	  		//Á¶°Ç½ÄÀÇ °á°ú¿Í ÀÏÄ¡ÇÏ´Â °ªÀÌ ¾øÀ» ¶§ ½ÇÇà(if¹®ÀÇ else¿Í µ¿ÀÏ)
+		 	  		//ì¡°ê±´ì‹ì˜ ê²°ê³¼ì™€ ì¼ì¹˜í•˜ëŠ” ê°’ì´ ì—†ì„ ë•Œ ì‹¤í–‰(ifë¬¸ì˜ elseì™€ ë™ì¼)
 		 	  }
 		 */
 		
@@ -71,107 +71,107 @@ public class day6 {
 		
 		
 		
-		//È¦Â¦ ÆÇº°±â
-		//Â¦¼ö¸é "Â¦¼ö ÀÔ´Ï´Ù." È¦¼öÀÌ¸é "È¦¼ö ÀÔ´Ï´Ù." 0ÀÌ¸é "¾Ö¸ÅÇÏ³×¿ä~"
+		//í™€ì§ íŒë³„ê¸°
+		//ì§ìˆ˜ë©´ "ì§ìˆ˜ ì…ë‹ˆë‹¤." í™€ìˆ˜ì´ë©´ "í™€ìˆ˜ ì…ë‹ˆë‹¤." 0ì´ë©´ "ì• ë§¤í•˜ë„¤ìš”~"
 		/*
-		System.out.println("¾Æ·¡¿¡ ¼ıÀÚ¸¦ ÀÔ·Â ÇÏ¼¼¿ä");
+		System.out.println("ì•„ë˜ì— ìˆ«ìë¥¼ ì…ë ¥ í•˜ì„¸ìš”");
 		int num_1 = sc.nextInt();
 		
 		if (num_1 != 0) {
 			if (num_1 %2 == 0)
-				System.out.println("Â¦¼ö ÀÔ´Ï´Ù.");
+				System.out.println("ì§ìˆ˜ ì…ë‹ˆë‹¤.");
 			else
-				System.out.println("È¦¼ö ÀÔ´Ï´Ù.");
+				System.out.println("í™€ìˆ˜ ì…ë‹ˆë‹¤.");
 		}
 		else
-			System.out.println("¾Ö¸ÅÇÏ³×¿ä~");
+			System.out.println("ì• ë§¤í•˜ë„¤ìš”~");
 		*/
 		
 		
 		
 		
-		//·Î±×ÀÎ ÇÁ·Î±×·¥ 
+		//ë¡œê·¸ì¸ í”„ë¡œê·¸ë¨ 
 		//id = java , pw = abc123
 		/*
-		System.out.print("ID ÀÔ·Â : ");
+		System.out.print("ID ì…ë ¥ : ");
 		String id,pw;
 		
 		id = sc.nextLine();
 		
 		if(id.equals("java")) {
-			System.out.println("ID ÀÏÄ¡");
-			System.out.print("PW ÀÔ·Â : ");
+			System.out.println("ID ì¼ì¹˜");
+			System.out.print("PW ì…ë ¥ : ");
 			pw = sc.nextLine();
 			if(pw.equals("abc123")) {
-				System.out.println("PWÀÏÄ¡");
-				System.out.println("·Î±×ÀÎ ¼º°ø");
+				System.out.println("PWì¼ì¹˜");
+				System.out.println("ë¡œê·¸ì¸ ì„±ê³µ");
 			}
 			else
-				System.out.println("ÆĞ½º¿öµå ºÒÀÏÄ¡");
+				System.out.println("íŒ¨ìŠ¤ì›Œë“œ ë¶ˆì¼ì¹˜");
 		}
 		else
-			System.out.println("ID ºÒÀÏÄ¡");
+			System.out.println("ID ë¶ˆì¼ì¹˜");
 		*/
 		
 		
 		
 		
-		// ÇĞÁ¡ °è»ê±â 2
-		// +,- µµ Ç¥½ÃÇÑ´Ù. ex) 98ÀÌ»óÀÌ¸é + 94¹Ì¸¸Àº -
+		// í•™ì  ê³„ì‚°ê¸° 2
+		// +,- ë„ í‘œì‹œí•œë‹¤. ex) 98ì´ìƒì´ë©´ + 94ë¯¸ë§Œì€ -
 		/*
-		System.out.print("Á¡¼ö ÀÔ·Â : ");
+		System.out.print("ì ìˆ˜ ì…ë ¥ : ");
 		int jum = sc.nextInt();
-		System.out.println("´ç½ÅÀÇ Á¡¼ö´Â"+jum+"Á¡ ÀÔ´Ï´Ù.");
+		System.out.println("ë‹¹ì‹ ì˜ ì ìˆ˜ëŠ”"+jum+"ì  ì…ë‹ˆë‹¤.");
 		
 		if (jum>=90)
 		{
 			if (jum>=98)
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº A+ ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ A+ ì…ë‹ˆë‹¤.");
 			else if (jum>93)
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº A0 ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ A0 ì…ë‹ˆë‹¤.");
 			else
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº A- ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ A- ì…ë‹ˆë‹¤.");
 		}
 		
 		else if (jum>=80)
 		{
 			if (jum>=88)
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº B+ ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ B+ ì…ë‹ˆë‹¤.");
 			else if (jum>83)
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº B0 ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ B0 ì…ë‹ˆë‹¤.");
 			else
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº B- ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ B- ì…ë‹ˆë‹¤.");
 		}
 		
 		else if (jum>=70)
 		{
 			if (jum>=78)
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº C+ ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ C+ ì…ë‹ˆë‹¤.");
 			else if (jum>73)
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº C0 ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ C0 ì…ë‹ˆë‹¤.");
 			else
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº C- ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ C- ì…ë‹ˆë‹¤.");
 		}
 		
 		else if (jum>=60)
 		{
 			if (jum>=68)
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº D+ ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ D+ ì…ë‹ˆë‹¤.");
 			else if (jum>63)
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº D0 ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ D0 ì…ë‹ˆë‹¤.");
 			else
-				System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº D- ÀÔ´Ï´Ù.");
+				System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ D- ì…ë‹ˆë‹¤.");
 		}
 		else
-			System.out.println("´ç½ÅÀÇ ÇĞÁ¡Àº F ÀÔ´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì˜ í•™ì ì€ F ì…ë‹ˆë‹¤.");
 		 */
 		/*
 		char grade =' ';
 		char opt = '0';
-		System.out.print("Á¡¼ö ÀÔ·Â:");
+		System.out.print("ì ìˆ˜ ì…ë ¥:");
 		int jumsu = sc.nextInt();
 		
-		System.out.printf("´ç½ÅÀÇ Á¡¼ö´Â %d ÀÔ´Ï´Ù. \n",jumsu);
+		System.out.printf("ë‹¹ì‹ ì˜ ì ìˆ˜ëŠ” %d ì…ë‹ˆë‹¤. \n",jumsu);
 		
 		if(jumsu >= 90) {
 			grade = 'A';
@@ -181,7 +181,7 @@ public class day6 {
 			else if(jumsu<94) {
 				opt = '-';
 			} 
-		System.out.printf("´ç½ÅÀÇ ÇĞÁ¡Àº %c%c ÀÔ´Ï´Ù.",grade,opt);	
+		System.out.printf("ë‹¹ì‹ ì˜ í•™ì ì€ %c%c ì…ë‹ˆë‹¤.",grade,opt);	
 		}
 		
 		if(jumsu >= 80) {
@@ -193,39 +193,39 @@ public class day6 {
 				opt = '-';
 			}
 		}
-		System.out.printf("´ç½ÅÀÇ ÇĞÁ¡Àº %c%c ÀÔ´Ï´Ù.",grade,opt);
+		System.out.printf("ë‹¹ì‹ ì˜ í•™ì ì€ %c%c ì…ë‹ˆë‹¤.",grade,opt);
 		*/
 		
 		
 		
 		/*
-		//Á¶°Ç½ÄÀÇ °á°ú´Â Á¤¼ö ¶Ç´Â ¹®ÀÚ (¹®ÀÚ¿­ µµ µÇ±äÇÔ)
+		//ì¡°ê±´ì‹ì˜ ê²°ê³¼ëŠ” ì •ìˆ˜ ë˜ëŠ” ë¬¸ì (ë¬¸ìì—´ ë„ ë˜ê¸´í•¨)
 		
-		System.out.println("¼ıÀÚ ÀÔ·Â : ");
+		System.out.println("ìˆ«ì ì…ë ¥ : ");
 		int num = sc.nextInt();
 		
 		switch(num) 
 		{
 		case 1 :
-			System.out.println("ÇÏ³ª");
+			System.out.println("í•˜ë‚˜");
 			break;
 		case 2 :
-			System.out.println("µÑ");
+			System.out.println("ë‘˜");
 			break;
 		case 3 :
-			System.out.println("¼Â");
+			System.out.println("ì…‹");
 			break;
 		default :
-			System.out.println("±×¿Ü ~");
+			System.out.println("ê·¸ì™¸ ~");
 			break;
 		}
 		*/
 		
 		
-		//ÇĞÁ¡ °è»ê±â (switch~case¹®)
+		//í•™ì  ê³„ì‚°ê¸° (switch~caseë¬¸)
 		/*
 		char grade = ' ';
-		System.out.print("Á¡¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä : ");
+		System.out.print("ì ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” : ");
 		int score = sc.nextInt();
 		
 		switch(score/10)
@@ -233,7 +233,7 @@ public class day6 {
 			case 10 :
 			case 9 :
 				grade = 'A';
-				// ¿©±â¿¡ if¹® switch¹® ³Ö¾îµµ »ó°ü ¾øÀ½
+				// ì—¬ê¸°ì— ifë¬¸ switchë¬¸ ë„£ì–´ë„ ìƒê´€ ì—†ìŒ
 				break;
 			case 8 :
 				grade = 'B';
@@ -248,32 +248,32 @@ public class day6 {
 				grade ='F';
 				break;
 		}
-		System.out.printf("´ç½ÅÀÇ µî±ŞÀº %cÀÔ´Ï´Ù." , grade);
+		System.out.printf("ë‹¹ì‹ ì˜ ë“±ê¸‰ì€ %cì…ë‹ˆë‹¤." , grade);
 		*/
 		
 		
 		
 		
 		
-		//È¸¿ø µî±Ş¿¡ µû¶ó ±ÇÇÑ Ãâ·ÂÇÏ±â
-		//½ºÀ§Ä¡~ÄÉÀÌ½º¹® »ç¿ë
-		//3µî±Ş - »èÁ¦,¾²±â,ÀĞ±â
-		//2µî±Ş - ¾²±â,ÀĞ±â
-		//1µî±Ş - ÀĞ±â
+		//íšŒì› ë“±ê¸‰ì— ë”°ë¼ ê¶Œí•œ ì¶œë ¥í•˜ê¸°
+		//ìŠ¤ìœ„ì¹˜~ì¼€ì´ìŠ¤ë¬¸ ì‚¬ìš©
+		//3ë“±ê¸‰ - ì‚­ì œ,ì“°ê¸°,ì½ê¸°
+		//2ë“±ê¸‰ - ì“°ê¸°,ì½ê¸°
+		//1ë“±ê¸‰ - ì½ê¸°
 		
 		/*
-		System.out.print("´ç½ÅÀÇ È¸¿øµî±ŞÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä : ");
+		System.out.print("ë‹¹ì‹ ì˜ íšŒì›ë“±ê¸‰ì„ ì…ë ¥í•´ì£¼ì„¸ìš” : ");
 		int grade;
 		grade = sc.nextInt();
 		
 		switch(grade)
 		{
 		case 3:
-			System.out.println("»èÁ¦±ÇÇÑ ºÎ¿©");
+			System.out.println("ì‚­ì œê¶Œí•œ ë¶€ì—¬");
 		case 2:
-			System.out.println("¾²±â±ÇÇÑ ºÎ¿©");
+			System.out.println("ì“°ê¸°ê¶Œí•œ ë¶€ì—¬");
 		case 1:
-			System.out.println("ÀĞ±â±ÇÇÑ ºÎ¿©");
+			System.out.println("ì½ê¸°ê¶Œí•œ ë¶€ì—¬");
 		}
 		
 		*/
@@ -282,7 +282,7 @@ public class day6 {
 		char gender;
 		String regNo="";
 		
-		System.out.print("´ç½ÅÀÇ ÁÖ¹Î ¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä(123456-1234567) : ");
+		System.out.print("ë‹¹ì‹ ì˜ ì£¼ë¯¼ ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”(123456-1234567) : ");
 		regNo = sc.nextLine();
 		
 		gender = regNo.charAt(7);
@@ -291,16 +291,16 @@ public class day6 {
 		{
 		case'1':
 		case'3':
-			System.out.println("´ç½ÅÀº ³²ÀÚÀÔ´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì€ ë‚¨ìì…ë‹ˆë‹¤.");
 			break;
 		case'2':
 		case'4':
-			System.out.println("´ç½ÅÀº ¿©ÀÚÀÔ´Ï´Ù.");
+			System.out.println("ë‹¹ì‹ ì€ ì—¬ìì…ë‹ˆë‹¤.");
 			break;
 		default:
-			System.out.println("À¯È¿ÇÏÁö ¾ÊÀº ÁÖ¹Î¹øÈ£ ÀÔ´Ï´Ù.");
+			System.out.println("ìœ íš¨í•˜ì§€ ì•Šì€ ì£¼ë¯¼ë²ˆí˜¸ ì…ë‹ˆë‹¤.");
 		}
-		// ½ºÀ§Ä¡¹® ¾È¿¡ ½ºÀ§Ä¡ ¹® ³Ö¾î¼­ 2000³â ÀÌÈÄ ÀÌÀü¿¡ Ãâ»ıÇÑ ÀÚ ÀÎÁö ÆÇ´Ü ÇÒ ¼ö ÀÖ´Ù.
+		// ìŠ¤ìœ„ì¹˜ë¬¸ ì•ˆì— ìŠ¤ìœ„ì¹˜ ë¬¸ ë„£ì–´ì„œ 2000ë…„ ì´í›„ ì´ì „ì— ì¶œìƒí•œ ì ì¸ì§€ íŒë‹¨ í•  ìˆ˜ ìˆë‹¤.
 		
 		sc.close();
 		

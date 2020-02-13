@@ -6,19 +6,19 @@ public class Exam_04 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¹øÈ£ ÀÔ·Â : ");
+		System.out.print("ë²ˆí˜¸ ì…ë ¥ : ");
 		int bun = sc.nextInt();
 		
-		System.out.print("ÀÌ¸§ ÀÔ·Â : ");
+		System.out.print("ì´ë¦„ ì…ë ¥ : ");
 		String name = sc.next();
 		
-		System.out.print("±¹¾î Á¡¼ö : ");
+		System.out.print("êµ­ì–´ ì ìˆ˜ : ");
 		double kor = sc.nextDouble();
 		
-		System.out.print("¿µ¾î Á¡¼ö : ");
+		System.out.print("ì˜ì–´ ì ìˆ˜ : ");
 		double eng = sc.nextDouble();
 		
-		System.out.print("¼öÇĞ Á¡¼ö : ");
+		System.out.print("ìˆ˜í•™ ì ìˆ˜ : ");
 		double mat = sc.nextDouble();
 		
 		double tot = kor + eng + mat;
@@ -27,8 +27,8 @@ public class Exam_04 {
 		
 		System.out.println();
 		
-		System.out.println("[¼ºÀûÇ¥]");
-		System.out.println("¹øÈ£\tÀÌ¸§\tÃÑÁ¡\tÆò±Õ");
+		System.out.println("[ì„±ì í‘œ]");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\tì´ì \tí‰ê· ");
 		System.out.println(bun+"\t"+name+"\t"+tot+"\t"+ave);
 		
 		

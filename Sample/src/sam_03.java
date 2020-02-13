@@ -4,8 +4,8 @@ public class sam_03 {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("===°¡Àå Å«¼ö, Áß°£°ª, °¡Àå ÀÛÀº°ªÀ» Ã£´Â ÇÁ·Î±×·¥ ÀÔ´Ï´Ù.===");
-		System.out.print("Á¤¼ö 3°³¸¦ ÀÔ·Â ÇÏ¼¼¿ä(ÇÏ³ª¸¦ ÀÔ·ÂÇÏ°í ½ºÆäÀÌ½º ÈÄ ´Ù½Ã ÀÔ·Â ) >> ");
+		System.out.println("===ê°€ì¥ í°ìˆ˜, ì¤‘ê°„ê°’, ê°€ì¥ ì‘ì€ê°’ì„ ì°¾ëŠ” í”„ë¡œê·¸ë¨ ì…ë‹ˆë‹¤.===");
+		System.out.print("ì •ìˆ˜ 3ê°œë¥¼ ì…ë ¥ í•˜ì„¸ìš”(í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ê³  ìŠ¤í˜ì´ìŠ¤ í›„ ë‹¤ì‹œ ì…ë ¥ ) >> ");
 		int a = sc.nextInt();
 		int b = sc.nextInt();
 		int c = sc.nextInt();
@@ -46,9 +46,9 @@ public class sam_03 {
 			}
 		}
 		
-		System.out.println("°¡Àå Å« °ªÀº "+ max+" ÀÔ´Ï´Ù.");
-		System.out.println("Áß°£ °ªÀº "+ mid+" ÀÔ´Ï´Ù.");
-		System.out.println("°¡Àå ÀÛÀº °ªÀº "+ min+" ÀÔ´Ï´Ù.");
+		System.out.println("ê°€ì¥ í° ê°’ì€ "+ max+" ì…ë‹ˆë‹¤.");
+		System.out.println("ì¤‘ê°„ ê°’ì€ "+ mid+" ì…ë‹ˆë‹¤.");
+		System.out.println("ê°€ì¥ ì‘ì€ ê°’ì€ "+ min+" ì…ë‹ˆë‹¤.");
 		
 	}
 }

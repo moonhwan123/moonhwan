@@ -9,11 +9,11 @@ public class DateFormatEx3 {
 
 	public static void main(String[] args) {
 		
-		DateFormat df = new SimpleDateFormat("yyyy³â MM¿ù ddÀÏ");
+		DateFormat df = new SimpleDateFormat("yyyyë…„ MMì›” ddì¼");
 		DateFormat df2 = new SimpleDateFormat("yyyy/MM/dd");
 		
 		try {
-			Date d =df.parse("2015³â 11¿ù 23ÀÏ");
+			Date d =df.parse("2015ë…„ 11ì›” 23ì¼");
 			System.out.println(d);
 			System.out.println(df2.format(d));
 		} catch (ParseException e) {

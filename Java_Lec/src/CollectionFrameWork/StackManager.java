@@ -33,7 +33,7 @@ class MyStack <T> implements IStack<T> {
 	@Override
 	public boolean push(T ob) {
 		
-		I.add(0,ob); // ¸Ç ³¡¿¡ »ğÀÔ
+		I.add(0,ob); // ë§¨ ëì— ì‚½ì…
 		
 		return true;
 	}

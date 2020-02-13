@@ -1,6 +1,6 @@
 /*
-[³í¸®¿¬»êÀÚ] 
-!(not,´ÜÇ×¿¬»êÀÚ) -> &&(and) -> ||(or)
+[ë…¼ë¦¬ì—°ì‚°ìž] 
+!(not,ë‹¨í•­ì—°ì‚°ìž) -> &&(and) -> ||(or)
  */
 
 
@@ -18,13 +18,13 @@ public class Exam_06 {
 		
 		int a = 100;
 		System.out.println("a = " + a);
-		//System.out.println("!a = " = !a); // ¿À·ù
+		//System.out.println("!a = " = !a); // ì˜¤ë¥˜
 		
 		int sw = 0;
 		System.out.println("sw==0 " + (sw==0));
 		System.out.println("sw!=0 " + (sw!=0));
 		System.out.println("sw==1 " + (sw==1));
-		// À§ ¹æ¹ýÀº ºÒÆí -> ³í¸®Çü »ç¿ë½Ã Æí¸®
+		// ìœ„ ë°©ë²•ì€ ë¶ˆíŽ¸ -> ë…¼ë¦¬í˜• ì‚¬ìš©ì‹œ íŽ¸ë¦¬
 		
 		
 		

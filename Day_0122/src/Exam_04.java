@@ -1,5 +1,5 @@
 /*
-[equals() / equalsIgnoreCase() - ´ë¼Ò¹®ÀÚ °ü°è¾øÀÌ ÆÇ´Ü ÇÒ °ÍÀÎ°¡]
+[equals() / equalsIgnoreCase() - ëŒ€ì†Œë¬¸ì ê´€ê³„ì—†ì´ íŒë‹¨ í•  ê²ƒì¸ê°€]
 
 
 
@@ -33,3 +33,4 @@ public class Exam_04 {
 		
 	}
 }
+

@@ -13,7 +13,7 @@ public class StudentData {
 	
 	
 	public void print() {
-		System.out.println("ÇĞ¹ø\tÀÌ¸§\tÁ¡¼ö\tÇĞÁ¡");
+		System.out.println("í•™ë²ˆ\tì´ë¦„\tì ìˆ˜\tí•™ì ");
 		for(int x = 0 ; x < stuList.size(); x++) {
 			System.out.println(stuList.get(x));
 		}

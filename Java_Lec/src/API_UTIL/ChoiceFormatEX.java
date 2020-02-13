@@ -2,10 +2,10 @@ package API_UTIL;
 
 import java.text.ChoiceFormat;
 
-// ChoiceFormat - ¹üÀ§ÀÇ Çü½ÄÈ­
-// : Æ¯Á¤ ¹üÀ§¿¡ ¼ÓÇÏ´Â °ªÀ» ¹®ÀÚ¿­·Î ¹ÝÈ¯
-// : if¹® switch¹®À¸·Î Ã³¸®ÇÏ±â º¹ÀâÇÑ °æ¿ì »ç¿ë
-// : ÆÐÅÏ ±¸ºÐÀÚ # -> °æ°è°ª Æ÷ÇÔ , <Àº Æ÷ÇÔÇÏÁö ¾ÊÀ½
+// ChoiceFormat - ë²”ìœ„ì˜ í˜•ì‹í™”
+// : íŠ¹ì • ë²”ìœ„ì— ì†í•˜ëŠ” ê°’ì„ ë¬¸ìžì—´ë¡œ ë°˜í™˜
+// : ifë¬¸ switchë¬¸ìœ¼ë¡œ ì²˜ë¦¬í•˜ê¸° ë³µìž¡í•œ ê²½ìš° ì‚¬ìš©
+// : íŒ¨í„´ êµ¬ë¶„ìž # -> ê²½ê³„ê°’ í¬í•¨ , <ì€ í¬í•¨í•˜ì§€ ì•ŠìŒ
 
 public class ChoiceFormatEX {
 

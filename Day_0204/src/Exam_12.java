@@ -6,23 +6,23 @@ public class Exam_12 {
 		
 		HashMap map = new HashMap();
 		
-		map.put("±èÀÚ¹İ", 100); // 100Àº Integer·Î ¿ÀÅä¹Ú½Ì µÇ¾ú±â ¶§¹®¿¡ ³ÖÀ» ¼ö ÀÖ´Ù.
-		map.put("±èºÎ°¢", new Integer(90)); // À§³ª ¾Æ·¡³ª ¶È°°À½
-		map.put("±èÆ¢°¢", new Integer(86));
-		map.put("±èµ¹±è", new Integer(93));
-		map.put("°¨ÀÚÄ¨", new Integer(53));
+		map.put("ê¹€ìë°˜", 100); // 100ì€ Integerë¡œ ì˜¤í† ë°•ì‹± ë˜ì—ˆê¸° ë•Œë¬¸ì— ë„£ì„ ìˆ˜ ìˆë‹¤.
+		map.put("ê¹€ë¶€ê°", new Integer(90)); // ìœ„ë‚˜ ì•„ë˜ë‚˜ ë˜‘ê°™ìŒ
+		map.put("ê¹€íŠ€ê°", new Integer(86));
+		map.put("ê¹€ëŒê¹€", new Integer(93));
+		map.put("ê°ìì¹©", new Integer(53));
 		
-		// ÇĞ»ı¸í´Ü Ãâ·Â
+		// í•™ìƒëª…ë‹¨ ì¶œë ¥
 		Set stuSet = map.keySet();
 		
-		System.out.println("ÇĞ»ı¸í´Ü : " + stuSet);
+		System.out.println("í•™ìƒëª…ë‹¨ : " + stuSet);
 		
-		// Á¡¼ö(°ª) ¸¸ ÃßÃâÇÏ´Â °æ¿ì
+		// ì ìˆ˜(ê°’) ë§Œ ì¶”ì¶œí•˜ëŠ” ê²½ìš°
 		Collection value = map.values();
 		
-		System.out.println("Á¡¼ö : " + value);
+		System.out.println("ì ìˆ˜ : " + value);
 		
-		// Á¡¼ö ÇÕ°è °è»ê
+		// ì ìˆ˜ í•©ê³„ ê³„ì‚°
 		Iterator iter = value.iterator();
 		int tot = 0;
 		
@@ -30,7 +30,7 @@ public class Exam_12 {
 			Integer a = (Integer)iter.next();
 			tot += a.intValue();
 		}
-		System.out.println("Á¡¼öÀÇ ÃÑ ÇÕ : "+tot);
+		System.out.println("ì ìˆ˜ì˜ ì´ í•© : "+tot);
 		
 		
 		

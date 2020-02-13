@@ -2,7 +2,7 @@ package OOP;
 
 public class ReturnTest {
 	
-	//return°ªÀº ¿À·ÎÁö ÇÏ³ª¸¸ Á¸Àç °¡´É
+	//returnê°’ì€ ì˜¤ë¡œì§€ í•˜ë‚˜ë§Œ ì¡´ì¬ ê°€ëŠ¥
 	static int add(int a, int b) {
 		return a+b;
 	}

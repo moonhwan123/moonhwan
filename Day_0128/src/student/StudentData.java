@@ -43,7 +43,7 @@ public class StudentData {
 //	}
 	
 	public void print() {
-		System.out.println("¹øÈ£\tÀÌ¸§\t1\t2\t3\t4\t5\t6\t7\t8\t9\t10\t11\t12\t13\t14\t15\t16\t17\t18\t19\t20\tÁ¡¼ö");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\t1\t2\t3\t4\t5\t6\t7\t8\t9\t10\t11\t12\t13\t14\t15\t16\t17\t18\t19\t20\tì ìˆ˜");
 		for(int x = 0 ; x < 20; x++) {
 			System.out.print(stuArr[x].bun+"\t"+stuArr[x].name+"\t");
 			for(int y = 0 ; y < 20; y++) {

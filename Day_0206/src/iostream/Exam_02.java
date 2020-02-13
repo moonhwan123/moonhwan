@@ -20,7 +20,7 @@ public class Exam_02 {
 			try {
 				f1.createNewFile();
 			} catch (Exception e) {
-				System.out.println("ÆÄÀÏ »ı¼º ºÒ°¡");
+				System.out.println("íŒŒì¼ ìƒì„± ë¶ˆê°€");
 			}
 		}
 

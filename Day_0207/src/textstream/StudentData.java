@@ -14,9 +14,9 @@ public class StudentData {
 		
 		for(int x = 0 ; x < list.size(); x++) {
 			if(list.get(x).gender.equalsIgnoreCase("m")) {
-				list.get(x).gender = "³²ÀÚ";
+				list.get(x).gender = "ë‚¨ìž";
 			} else if(list.get(x).gender.equalsIgnoreCase("f")) {
-				list.get(x).gender = "¿©ÀÚ";
+				list.get(x).gender = "ì—¬ìž";
 			}
 		}
 		
@@ -26,14 +26,14 @@ public class StudentData {
 	}
 	
 	public void print() {
-		System.out.println("¹øÈ£\tÀÌ¸§\t¼ºº°\t±¹¾î\t¿µ¾î\t¼öÇÐ\tÃÑÁ¡\tÆò±Õ");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\tì„±ë³„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
 		for(int x = 0 ; x < list.size(); x++) {
 			System.out.print(list.get(x));
 		}
 	}
 	
 	public void print2() {
-		System.out.println("¹øÈ£\tÀÌ¸§\t¼ºº°\t±¹¾î\t¿µ¾î\t¼öÇÐ\tÃÑÁ¡\tÆò±Õ");
+		System.out.println("ë²ˆí˜¸\tì´ë¦„\tì„±ë³„\têµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· ");
 		Iterator<Student> iter = ts.iterator();
 		
 		while(iter.hasNext()) {

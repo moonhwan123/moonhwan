@@ -3,17 +3,17 @@ import java.util.Scanner;
 
 /*
 
-Å°º¸µå·Î °ÔÀÓ ¼ö ÀÔ·Â
-°ÔÀÓ¼ö : 5
+í‚¤ë³´ë“œë¡œ ê²Œìž„ ìˆ˜ ìž…ë ¥
+ê²Œìž„ìˆ˜ : 5
 
 1 : 19 20 34 35 40 43
 .
 .
 5 : 1 10 17 34 38 40
 
-[Ã³¸® Á¶°Ç]
-1°ÔÀÓ´ç °¡»óÀ¸·Î 100°ÔÀÓ ÈÄ ¹ß»ý ºóµµ°¡ ³ôÀº
-6°³ÀÇ ¼ýÀÚ¸¦ ÃßÃâÇØ¼­ Ãâ·Â
+[ì²˜ë¦¬ ì¡°ê±´]
+1ê²Œìž„ë‹¹ ê°€ìƒìœ¼ë¡œ 100ê²Œìž„ í›„ ë°œìƒ ë¹ˆë„ê°€ ë†’ì€
+6ê°œì˜ ìˆ«ìžë¥¼ ì¶”ì¶œí•´ì„œ ì¶œë ¥
  */
 
 public class Exam_10_2 {
@@ -23,19 +23,19 @@ public class Exam_10_2 {
 
 		int ball[][] = new int[2][45];
 		int[] lotto = new int[6];
-		int[] lotto2 = new int[6]; // °¢ ¼ýÀÚÀÇ È½¼ö ÀúÀå¿ë ¹è¿­
+		int[] lotto2 = new int[6]; // ê° ìˆ«ìžì˜ íšŸìˆ˜ ì €ìž¥ìš© ë°°ì—´
 
-		// ball ¹è¿­ ÃÊ±âÈ­
+		// ball ë°°ì—´ ì´ˆê¸°í™”
 		for (int x = 0; x < ball[0].length; x++) {
-			ball[0][x] += x + 1; // 1ºÎÅÍ 45±îÁö ÀúÀå
+			ball[0][x] += x + 1; // 1ë¶€í„° 45ê¹Œì§€ ì €ìž¥
 		}
 
-		System.out.print("¹Ýº¹ È½¼ö : ");
+		System.out.print("ë°˜ë³µ íšŸìˆ˜ : ");
 		int banbok = sc.nextInt();
 
-		// ¹Ýº¹ ½ÃÀÛ
+		// ë°˜ë³µ ì‹œìž‘
 		for (int o = 0; o < banbok; o++) {
-			// °ÔÀÓ 100¹ø ½ÃÀÛ
+			// ê²Œìž„ 100ë²ˆ ì‹œìž‘
 			for (int x = 0; x < 100; x++) {
 				for (int i = 0; i < lotto.length; i++) {
 					int number = (int) (Math.random() * 45 + 1);
@@ -46,14 +46,14 @@ public class Exam_10_2 {
 							break;
 						}
 					}
-					ball[1][number - 1]++; // °¹¼ö Ä«¿îÆ®
+					ball[1][number - 1]++; // ê°¯ìˆ˜ ì¹´ìš´íŠ¸
 				}
-			} // 100¹ø °ÔÀÓ ´Ùµ¹¸²
+			} // 100ë²ˆ ê²Œìž„ ë‹¤ëŒë¦¼
 
-			// ball ¹è¿­ Á¤·Ä (ºóµµ¼ö ±âÁØ Á¤·Ä,»óÀ§ TOP6±¸ÇÏ±â)
+			// ball ë°°ì—´ ì •ë ¬ (ë¹ˆë„ìˆ˜ ê¸°ì¤€ ì •ë ¬,ìƒìœ„ TOP6êµ¬í•˜ê¸°)
 			for (int x = 0; x < ball[0].length - 1; x++) {
 				for (int y = x + 1; y < ball[0].length; y++) {
-					if (ball[1][x] < ball[1][y]) { // ºóµµ¼ö¸¦ ±âÁØÀ¸·Î ¼ýÀÚ¸¦ Á¤·Ä
+					if (ball[1][x] < ball[1][y]) { // ë¹ˆë„ìˆ˜ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ìˆ«ìžë¥¼ ì •ë ¬
 						int temp = ball[1][x];
 						ball[1][x] = ball[1][y];
 						ball[1][y] = temp;
@@ -63,9 +63,9 @@ public class Exam_10_2 {
 						ball[0][y] = temp;
 					}
 				}
-			} // Á¤·Ä³¡
+			} // ì •ë ¬ë
 
-			// ball[0][0~5]¹øÁöÀÇ °ªÀ» lotto[0~5]·Î ÀÌµ¿ ÈÄ ¿À¸§Â÷¼ø Á¤·Ä
+			// ball[0][0~5]ë²ˆì§€ì˜ ê°’ì„ lotto[0~5]ë¡œ ì´ë™ í›„ ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
 			for (int a = 0; a < 6; a++) {
 				lotto[a] = ball[0][a];
 				lotto2[a] = ball[1][a];
@@ -79,26 +79,27 @@ public class Exam_10_2 {
 					}
 				}
 			}
-			// lotto¹è¿­ Ãâ·Â
-			System.out.print((o + 1) + "È¸)\t");
+			// lottoë°°ì—´ ì¶œë ¥
+			System.out.print((o + 1) + "íšŒ)\t");
 			for (int a = 0; a < 6; a++) {
 				System.out.print(lotto[a] + "\t");
 			}
 			System.out.println();
-			// °¢ ¼ýÀÚÀÇ È½¼ö Ãâ·Â
+			// ê° ìˆ«ìžì˜ íšŸìˆ˜ ì¶œë ¥
 			for (int a = 0; a < 6; a++) {
-				System.out.print("\t"+lotto2[a] + "È¸");
+				System.out.print("\t"+lotto2[a] + "íšŒ");
 			}
-			//´©Àû °¹¼ö ÃÊ±âÈ­
+			//ëˆ„ì  ê°¯ìˆ˜ ì´ˆê¸°í™”
 			for (int x = 0; x < ball[0].length; x++) {
-				ball[1][x] = 0; // 1ºÎÅÍ 45±îÁö ÀúÀå
+				ball[1][x] = 0; // 1ë¶€í„° 45ê¹Œì§€ ì €ìž¥
 			}
 			System.out.println();
 			
 			
 			
-		} // ÀüÃ¼ for¹® ³¡
+		} // ì „ì²´ forë¬¸ ë
 
 	}
 
 }
+

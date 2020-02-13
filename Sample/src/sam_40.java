@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class sam_40 {
 	public static void main(String[] args) {
 		
-		System.out.println("[10Áø¼ö¸¦ 2Áø¼ö·Î º¯È¯ ÇÏ´Â ÇÁ·Î±×·¥ ÀÔ´Ï´Ù.]");
+		System.out.println("[10ì§„ìˆ˜ë¥¼ 2ì§„ìˆ˜ë¡œ ë³€í™˜ í•˜ëŠ” í”„ë¡œê·¸ëž¨ ìž…ë‹ˆë‹¤.]");
 		
 		int arr[] = new int[10];
 		int mok;
@@ -12,7 +12,7 @@ public class sam_40 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("º¯È¯ÇÒ ¼ýÀÚ¸¦ ÀÔ·Â ÇØ ÁÖ¼¼¿ä >> ");
+		System.out.print("ë³€í™˜í•  ìˆ«ìžë¥¼ ìž…ë ¥ í•´ ì£¼ì„¸ìš” >> ");
 		int num = sc.nextInt();
 		do {
 			mok = num/2;
@@ -22,11 +22,11 @@ public class sam_40 {
 			num = mok;
 		}while(mok != 0);
 		
-		System.out.print("2Áø¼ö·Î ");
+		System.out.print("2ì§„ìˆ˜ë¡œ ");
 		for(int i = cnt-1; i >= 0; i--) {
 			System.out.print(arr[i]+" ");
 		}
-		System.out.print("ÀÔ´Ï´Ù.");
+		System.out.print("ìž…ë‹ˆë‹¤.");
 		
 	}
 }

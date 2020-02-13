@@ -1,6 +1,6 @@
 /*
 [Math.random()]
-0 ~ 1 »çÀÌÀÇ ³­¼ö
+0 ~ 1 ì‚¬ì´ì˜ ë‚œìˆ˜
  */
 
 
@@ -8,7 +8,7 @@
 public class Exam_06 {
 	public static void main(String[] args) {
 		
-		//1 ~ 10 »çÀÌÀÇ ³­¼ö
+		//1 ~ 10 ì‚¬ì´ì˜ ë‚œìˆ˜
 //		for(int x = 0 ; x < 10; x++) {
 //			int a = (int)(Math.random()*10+1);
 //			System.out.println(a);

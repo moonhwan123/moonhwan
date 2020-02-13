@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class sam_13 {
 	public static void main(String[] args) {
-		System.out.println("[2ºÎÅÍ ÀÔ·ÂÇÑ ¼ö±îÁöÀÇ ¼Ò¼öÀÇ °¹¼ö¸¦ Ãâ·ÂÇÕ´Ï´Ù.]");
+		System.out.println("[2ë¶€í„° ì…ë ¥í•œ ìˆ˜ê¹Œì§€ì˜ ì†Œìˆ˜ì˜ ê°¯ìˆ˜ë¥¼ ì¶œë ¥í•©ë‹ˆë‹¤.]");
 		Scanner sc = new Scanner(System.in);
-		System.out.print("ÆÇº°ÇÒ Á¤¼ö¸¦ ÀÔ·Â ÇÏ¼¼¿ä >> ");
+		System.out.print("íŒë³„í•  ì •ìˆ˜ë¥¼ ì…ë ¥ í•˜ì„¸ìš” >> ");
 		int num = sc.nextInt();
 		int cnt = 0;
 		int nmg;
@@ -22,7 +22,7 @@ public class sam_13 {
 			}
 		}
 		
-		System.out.println("2ºÎÅÍ"+num+"±îÁöÀÇ ¼Ò¼öÀÇ °¹¼ö´Â "+cnt+"°³ ÀÔ´Ï´Ù.");
+		System.out.println("2ë¶€í„°"+num+"ê¹Œì§€ì˜ ì†Œìˆ˜ì˜ ê°¯ìˆ˜ëŠ” "+cnt+"ê°œ ì…ë‹ˆë‹¤.");
 		
 	}
 

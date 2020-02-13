@@ -1,24 +1,24 @@
 import java.util.StringTokenizer;
 
 /*
-[StringTokenizer Å¬·¡½º]
-hasMoreTokens() : ÅäÅ«ÀÌ Á¸Àç ÇÏ´ÂÁö ¹°¾îº»´Ù.
-nextToken() : ÅäÅ«À» ºÒ·¯¿Â´Ù.
-countTokens() : ÅäÅ«ÀÇ °¹¼ö
+[StringTokenizer í´ë˜ìŠ¤]
+hasMoreTokens() : í† í°ì´ ì¡´ì¬ í•˜ëŠ”ì§€ ë¬¼ì–´ë³¸ë‹¤.
+nextToken() : í† í°ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
+countTokens() : í† í°ì˜ ê°¯ìˆ˜
  */
 
 public class Exam_05 {
 	public static void main(String[] args) {
 		
-		String str = "010-1111.2222"; // ÀÌ »óÈ²¿¡¼± splitÀÌ ¾ÈµÊ
+		String str = "010-1111.2222"; // ì´ ìƒí™©ì—ì„  splitì´ ì•ˆë¨
 		String str2[] = str.split("-");
 		
 //		for(int x = 0; x < str2.length; x++) {
 //			System.out.print(str2[x]+" ");
 //		}
 		
-		StringTokenizer st = new StringTokenizer(str,"-."); // -À¸·Îµµ ºĞ¸®°¡´ÉÇÏ°í .À¸·Îµµ ºĞ¸®°¡ °¡´É
-//		System.out.println("ÅäÅ« ¼ö : "+st.countTokens());
+		StringTokenizer st = new StringTokenizer(str,"-."); // -ìœ¼ë¡œë„ ë¶„ë¦¬ê°€ëŠ¥í•˜ê³  .ìœ¼ë¡œë„ ë¶„ë¦¬ê°€ ê°€ëŠ¥
+//		System.out.println("í† í° ìˆ˜ : "+st.countTokens());
 //		
 //		System.out.println(st.nextToken());
 //		System.out.println(st.nextToken());

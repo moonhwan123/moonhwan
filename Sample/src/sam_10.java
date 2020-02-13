@@ -2,7 +2,7 @@
 public class sam_10 {
 	public static void main(String[] args) {
 		
-		System.out.println("[1 ~ 100»çÀÌÀÇ Â¦¼öÇÕ,È¦¼öÇÕÀ» Ãâ·ÂÇÕ´Ï´Ù.]");
+		System.out.println("[1 ~ 100ì‚¬ì´ì˜ ì§ìˆ˜í•©,í™€ìˆ˜í•©ì„ ì¶œë ¥í•©ë‹ˆë‹¤.]");
 		
 		int jjakSum = 0;
 		int holSum = 0;
@@ -19,8 +19,8 @@ public class sam_10 {
 			}
 			
 		}
-		System.out.println("Â¦¼öÀÇ ÇÕ : "+jjakSum);
-		System.out.println("È¦¼öÀÇ ÇÕ : "+holSum);
+		System.out.println("ì§ìˆ˜ì˜ í•© : "+jjakSum);
+		System.out.println("í™€ìˆ˜ì˜ í•© : "+holSum);
 		
 		
 	}

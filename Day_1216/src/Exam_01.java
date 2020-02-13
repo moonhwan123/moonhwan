@@ -1,20 +1,20 @@
-//Ç¥ÁØ ÀÔÃâ·Â (ÀÔ·Â - Å°º¸µå , Ãâ·Â - ¸ð´ÏÅÍ)
-//Ç¥ÁØ Ãâ·Â
+//í‘œì¤€ ìž…ì¶œë ¥ (ìž…ë ¥ - í‚¤ë³´ë“œ , ì¶œë ¥ - ëª¨ë‹ˆí„°)
+//í‘œì¤€ ì¶œë ¥
 public class Exam_01 {
 
 	public static void main(String[] args) {
 		
-		// System = Å¬·¡½º , out = ¼Ó¼º , print = ¸Þ¼­µå
+		// System = í´ëž˜ìŠ¤ , out = ì†ì„± , print = ë©”ì„œë“œ
 		
 		
 		
-		System.out.println(90); // Á¤¼öÇü »ó¼ö
-		System.out.println("seoul"); // ¹®ÀÚ¿­
-		System.out.println("È«±æµ¿"); // ¹®ÀÚ¿­
-		System.out.println('a'); // ¹®ÀÚÇü »ó¼ö
-		//System.out.print(a); // º¯¼ö
+		System.out.println(90); // ì •ìˆ˜í˜• ìƒìˆ˜
+		System.out.println("seoul"); // ë¬¸ìžì—´
+		System.out.println("í™ê¸¸ë™"); // ë¬¸ìžì—´
+		System.out.println('a'); // ë¬¸ìží˜• ìƒìˆ˜
+		//System.out.print(a); // ë³€ìˆ˜
 		
-		System.out.println(); // print() + line() -> ÁÙ¹Ù²Þ
+		System.out.println(); // print() + line() -> ì¤„ë°”ê¿ˆ
 		
 		
 		

@@ -76,13 +76,13 @@ class SCV extends GroundUnit implements Repairable{
 		return "SCV";
 	}
 	void repair(Repairable r) { // Repairable r = new Tank();
-		//Å¸ÀÔÀÌ RepairableÀÌ¹Ç·Î ÀÎÅÍÆäÀÌ½º Repairable¿¡ Á¤ÀÇµÈ ¸â¹ö¸¸ »ç¿ë°¡´É
+		//íƒ€ì…ì´ Repairableì´ë¯€ë¡œ ì¸í„°í˜ì´ìŠ¤ Repairableì— ì •ì˜ëœ ë©¤ë²„ë§Œ ì‚¬ìš©ê°€ëŠ¥
 		if (r instanceof Unit2) {
 			Unit2 u = (Unit2)r;
 			while(u.hitpoint != u.MAX_HP) {
 				u.hitpoint++;
 			}
-			System.out.println(u.toString()+"ÀÇ ¼ö¸®°¡ ³¡³µ½À´Ï´Ù.");
+			System.out.println(u.toString()+"ì˜ ìˆ˜ë¦¬ê°€ ëë‚¬ìŠµë‹ˆë‹¤.");
 		}
 	}
 }

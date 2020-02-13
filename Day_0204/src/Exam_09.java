@@ -3,14 +3,14 @@ import java.util.Scanner;
 import java.util.Set;
 
 /*
- [Set¿¹Á¦]
- [Å°º¸µå ÀÔ·Â] (¾ÆÀÌµğ,ÀÌ¸§,³ªÀÌ)
- - ÀÌ¸§ÀÌ 'end' Á¾·á
- - µ¿ÀÏÇÑ ID ÀÎ°æ¿ì "¾ÆÀÌµğ Áßº¹" Ãâ·Â ÈÄ ÀçÀÔ·Â
- - setÀ» ÀÌ¿ëÇÏÀÚ
+ [Setì˜ˆì œ]
+ [í‚¤ë³´ë“œ ì…ë ¥] (ì•„ì´ë””,ì´ë¦„,ë‚˜ì´)
+ - ì´ë¦„ì´ 'end' ì¢…ë£Œ
+ - ë™ì¼í•œ ID ì¸ê²½ìš° "ì•„ì´ë”” ì¤‘ë³µ" ì¶œë ¥ í›„ ì¬ì…ë ¥
+ - setì„ ì´ìš©í•˜ì
  
- [Ãâ·Â]
- ¾ÆÀÌµğ          ÀÌ¸§            ³ªÀÌ 
+ [ì¶œë ¥]
+ ì•„ì´ë””          ì´ë¦„            ë‚˜ì´ 
  xxx     xxx      xx
  */
 
@@ -59,7 +59,7 @@ public class Exam_09 {
 		Member mem;
 		
 		while(true) {
-			System.out.print("ÀÔ·Â (¾ÆÀÌµğ,ÀÌ¸§,³ªÀÌ) >> ");
+			System.out.print("ì…ë ¥ (ì•„ì´ë””,ì´ë¦„,ë‚˜ì´) >> ");
 			String str = sc.nextLine();
 			String strArr[] = str.split(",");
 			
@@ -70,16 +70,16 @@ public class Exam_09 {
 			mem = new Member(strArr[0],strArr[1],Integer.parseInt(strArr[2]));
 			
 			boolean flag = perSet.add(mem);
-			//add¸Ş¼ÒµåÀÇ ¸®ÅÏ°ªÀº booleanÀÌ±â ¶§¹®¿¡ ÀÌ·± ¹æ¹ıµµ °¡´É ÇÏ´Ù.
+			//addë©”ì†Œë“œì˜ ë¦¬í„´ê°’ì€ booleanì´ê¸° ë•Œë¬¸ì— ì´ëŸ° ë°©ë²•ë„ ê°€ëŠ¥ í•˜ë‹¤.
 			
-			//contains¸¦ ½áµµ µÇÁö¸¸ ÀÌ·± ¹æ¹ıµµ Á¸Àç ÇÑ´Ù.
+			//containsë¥¼ ì¨ë„ ë˜ì§€ë§Œ ì´ëŸ° ë°©ë²•ë„ ì¡´ì¬ í•œë‹¤.
 			if(!flag) {
-				System.out.println("Áßº¹µÈ ¾ÆÀÌµğ ÀÔ´Ï´Ù. ´Ù½Ã ÀÔ·Â ÇÏ¼¼¿ä");
+				System.out.println("ì¤‘ë³µëœ ì•„ì´ë”” ì…ë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥ í•˜ì„¸ìš”");
 			}
 			
 		}//while End
 		
-		System.out.println("¾ÆÀÌµğ\tÀÌ¸§\t³ªÀÌ");
+		System.out.println("ì•„ì´ë””\tì´ë¦„\të‚˜ì´");
 		for(Member m : perSet) {
 			System.out.println(m);
 		}

@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 /*
-Å°º¸µå·Î 10°³ÀÇ Á¤¼ö dataÀÔ·Â
-ÇÕ°è¸¦ Ãâ·Â
+í‚¤ë³´ë“œë¡œ 10ê°œì˜ ì •ìˆ˜ dataì…ë ¥
+í•©ê³„ë¥¼ ì¶œë ¥
  */
 
 
@@ -13,11 +13,11 @@ public class Exam_07 {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int sum = 0; // ÇÕ°è
-		int cnt = 0; // ´©ÀûÇüÀº ¹«Á¶°Ç ÃÊ±âÈ­ µÇ¾î¾ßÇÔ , ´ëÀÔÇüÀº ¤¡¤º
-		System.out.println("Á¤¼ö 10°³ ÀÔ·Â >> ");
+		int sum = 0; // í•©ê³„
+		int cnt = 0; // ëˆ„ì í˜•ì€ ë¬´ì¡°ê±´ ì´ˆê¸°í™” ë˜ì–´ì•¼í•¨ , ëŒ€ì…í˜•ì€ ã„±ã…Š
+		System.out.println("ì •ìˆ˜ 10ê°œ ì…ë ¥ >> ");
 		while(true) {
-			int a = sc.nextInt(); // ¸Ş¸ğ¸® ¸Ô¾îµµ GC¶§¹®¿¡ ¤¡¤º 
+			int a = sc.nextInt(); // ë©”ëª¨ë¦¬ ë¨¹ì–´ë„ GCë•Œë¬¸ì— ã„±ã…Š 
 			cnt ++;
 			sum += a;
 			if(cnt == 10) break;

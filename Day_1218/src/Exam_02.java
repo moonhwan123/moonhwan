@@ -3,7 +3,7 @@ public class Exam_02 {
 
 	public static void main(String[] args) {
 		
-		int a = (int) (7/5.); // Çüº¯È¯ - '°­Á¦ Çüº¯È¯'(µ¥ÀÌÅÍ°¡ Àß·Á ³ª°¥ ¼ö ÀÖÀ½)
+		int a = (int) (7/5.); // í˜•ë³€í™˜ - 'ê°•ì œ í˜•ë³€í™˜'(ë°ì´í„°ê°€ ìž˜ë ¤ ë‚˜ê°ˆ ìˆ˜ ìžˆìŒ)
 		int b = 7%5; 
 		
 		System.out.println("7/5 = " + a);
@@ -12,9 +12,9 @@ public class Exam_02 {
 		System.out.println("7/5 = " + 7/5.);
 		System.out.println("7%5 = " + 7%5);
 		
-		int var = (int) 3.14; // int´Â 4byte ½Ç¼ö´Â 8byte¶ó¼­ x
+		int var = (int) 3.14; // intëŠ” 4byte ì‹¤ìˆ˜ëŠ” 8byteë¼ì„œ x
 		double d1 = 3.14;
-		double d2 = 90; // ¿©±â¼­´Â 'ÀÚµ¿ Çüº¯È¯' ÀÌ ÀÏ¾î³² double 8byte > Á¤¼ö 4byte
+		double d2 = 90; // ì—¬ê¸°ì„œëŠ” 'ìžë™ í˜•ë³€í™˜' ì´ ì¼ì–´ë‚¨ double 8byte > ì •ìˆ˜ 4byte
 		System.out.println("d2 = " + d2);
 		System.out.println("var = " + var);
 		

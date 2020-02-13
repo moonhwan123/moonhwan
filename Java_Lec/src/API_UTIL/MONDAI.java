@@ -16,10 +16,10 @@ public class MONDAI {
 		
 		
 		long difference1 = (date_mal.getTimeInMillis() - date_cur.getTimeInMillis())/1000 ;
-		System.out.println(" ¿¬¸» ±îÁö ³²Àº ³¯ : " + difference1/(24*60*60)+ "ÀÏ");
+		System.out.println(" ì—°ë§ ê¹Œì§€ ë‚¨ì€ ë‚  : " + difference1/(24*60*60)+ "ì¼");
 		
 		long difference2 = (date_cirs.getTimeInMillis() - date_cur.getTimeInMillis())/1000 ;
-		System.out.println(" Å©¸®½º¸¶½º ±îÁö ³²Àº ³¯ : " + difference2/(24*60*60)+ "ÀÏ");
+		System.out.println(" í¬ë¦¬ìŠ¤ë§ˆìŠ¤ ê¹Œì§€ ë‚¨ì€ ë‚  : " + difference2/(24*60*60)+ "ì¼");
 		
 
 	}

@@ -2,7 +2,7 @@
 public class SawonData {
 
 	void sourceDataPrint(Sawon[] sa,int cnt) {
-		System.out.print("»ç¹ø\tÀÌ¸§\t±Ş¿©\n");
+		System.out.print("ì‚¬ë²ˆ\tì´ë¦„\tê¸‰ì—¬\n");
 		for(int x = 0; x < cnt; x++) {
 			sa[x].print();
 			System.out.println();
@@ -13,8 +13,8 @@ public class SawonData {
 			for(int y = x+1; y < cnt; y++) {
 				if(n==1) {
 					if(sa[x].sabun > sa[y].sabun) {
-						Sawon temp = sa[x]; // ¿©±â¼­ ÇÙ½ÉÀº temp¸¦ int°¡ ¾Æ´Ñ SawonÅ¬·¡½º ÇüÀ¸·Î ¼±¾ğ µÇ¸é ÁÖ¼Ò°¡ ¹Ù²î¹Ç·Î ÀüÃ¼ °ªÀÌ ´Ù ¹Ù²ï´Ù.
-						                    // °´Ã¼¿Í °´Ã¼¸¦ ¹Ù²Ù´Â ¹æ¹ıÀÌ´Ù.
+						Sawon temp = sa[x]; // ì—¬ê¸°ì„œ í•µì‹¬ì€ tempë¥¼ intê°€ ì•„ë‹Œ Sawoní´ë˜ìŠ¤ í˜•ìœ¼ë¡œ ì„ ì–¸ ë˜ë©´ ì£¼ì†Œê°€ ë°”ë€Œë¯€ë¡œ ì „ì²´ ê°’ì´ ë‹¤ ë°”ë€ë‹¤.
+						                    // ê°ì²´ì™€ ê°ì²´ë¥¼ ë°”ê¾¸ëŠ” ë°©ë²•ì´ë‹¤.
 						sa[x] = sa[y];
 						sa[y] = temp;
 					}

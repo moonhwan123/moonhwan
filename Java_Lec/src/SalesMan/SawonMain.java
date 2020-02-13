@@ -3,12 +3,12 @@ package SalesMan;
 public class SawonMain {
 
 	public static void main(String[] args) {
-		Temporary tem = new Temporary("¹ÚÄ¡±â", 21, 20, 90000);
+		Temporary tem = new Temporary("ë°•ì¹˜ê¸°", 21, 20, 90000);
 		tem.print();
-		Regular reg = new Regular("È«±æµ¿", 23, 2300000);
+		Regular reg = new Regular("í™ê¸¸ë™", 23, 2300000);
 		reg.print();
 		
-		Salesman sal = new Salesman ("ÇÑ¼ÛÀÌ", 25, 230000,300000,300000);
+		Salesman sal = new Salesman ("í•œì†¡ì´", 25, 230000,300000,300000);
 		sal.print();
 	}
 

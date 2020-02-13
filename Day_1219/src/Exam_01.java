@@ -7,7 +7,7 @@ public class Exam_01 {
 		
 		b = a++ + 5;
 		
-		System.out.println("a = "+a+", b = "+b); // 11�Ǵ°� �ƴ�
+		System.out.println("a = "+a+", b = "+b); // 11되는거 아님
 		
 		
 		int c = ++a + 5;
