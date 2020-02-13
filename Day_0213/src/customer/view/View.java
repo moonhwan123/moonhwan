@@ -55,7 +55,7 @@ public class View {
 			String birthday = sc.next();
 			System.out.print("성별(M/F) : ");
 			String sex = sc.next();
-
+			
 			System.out.print("등록 하시겠습니까? (y/n) >> ");
 			String ch = sc.next();
 			if(ch.equalsIgnoreCase("y")) {
