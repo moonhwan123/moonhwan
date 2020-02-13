@@ -8,6 +8,7 @@ public class Exam_01 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		UI ui = new UI();
+		Boolean sw = true;
 		
 		while(true) {
 			System.out.println("1 : 목록(List)");
@@ -36,9 +37,9 @@ public class Exam_01 {
 					ui.deptDelete(sc);
 					break;
 				case 6: // 종료
-					break;
+					return;
 			}
-			break;
+			
 
 		}
 		

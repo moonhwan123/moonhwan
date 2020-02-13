@@ -92,8 +92,7 @@ public class UI {
 		}else {
 			System.out.println("no");
 		}
-		
-		
+			
 		
 	}
 	
