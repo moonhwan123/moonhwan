@@ -11,7 +11,7 @@ public class View {
 	CustomDAO dao = null;
 	
 	//1번 전체 출력
-	public void customView() {
+	public void customView(Scanner sc) {
 		dao = new CustomDAO();
 		System.out.println("[전체 고객정보를 출력 합니다]");
 		System.out.println("고객번호\t이름\t연락처\t\t직장명\t생년월일\t\t성별\t등록일자");
@@ -30,6 +30,9 @@ public class View {
 		}else {
 			System.out.println("no");
 		}
+		if(sc.nextLine().length()==0) {
+			System.out.println("");
+		}else System.out.println("");
 		System.out.println();
 	}
 	
@@ -66,7 +69,6 @@ public class View {
 				}else {
 					System.out.println("등록 실패");
 				}
-				
 				break;
 			}else {
 				continue;

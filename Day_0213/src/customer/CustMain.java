@@ -23,7 +23,8 @@ public class CustMain {
 			
 			switch(menu) {
 				case 1: // 전체목록 화면 메소드 호출
-					view.customView();
+					sc.nextLine();
+					view.customView(sc);
 					break;
 				case 2:
 					view.customInsert(sc);
