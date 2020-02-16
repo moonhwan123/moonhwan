@@ -51,6 +51,7 @@ public class SawonView {
 		}else {
 			System.out.println("no");
 		}
+		System.out.println("엔터를 누르면 메인화면");
 		if(sc.nextLine().length()==0) {
 			System.out.println("");
 		}else System.out.println("");
