@@ -11,11 +11,11 @@ import model.EmployeeDAO;
 import model.EmployeeVO;
 
 public class SawonView {
-	 SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
+	SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd");
 
-     Calendar c1 = Calendar.getInstance();
+    Calendar c1 = Calendar.getInstance();
 
-	 String strToday = sdf.format(c1.getTime());
+	String strToday = sdf.format(c1.getTime());
 	
 	EmployeeDAO dao = null;
 	

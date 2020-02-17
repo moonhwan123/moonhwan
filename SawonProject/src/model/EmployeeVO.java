@@ -9,7 +9,16 @@ public class EmployeeVO {
 	private int salary;
 	private int commission;
 	private int dno;
+	private String temp;
 	
+	public String getTemp() {
+		return temp;
+	}
+
+	public void setTemp(String temp) {
+		this.temp = temp;
+	}
+
 	private String dname;
 	
 	private String Mname;

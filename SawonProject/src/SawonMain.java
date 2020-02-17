@@ -23,7 +23,6 @@ public class SawonMain {
 			System.out.println();
 			
 			switch(menu) {
-			
 				case "1":
 					sc.nextLine();
 					view.sawonPrint(sc);
@@ -43,6 +42,7 @@ public class SawonMain {
 				case "6":
 					view.exit(sc);
 					break;
+			
 			}
 
 			
@@ -53,3 +53,4 @@ public class SawonMain {
 		
 	}
 }
+
