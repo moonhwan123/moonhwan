@@ -38,8 +38,8 @@ public class JoinView {
 			System.out.println("등록된 회원 정보가 없습니다.");
 		}
 	}// 1번 끝
-		// 2번 회원 등록
-
+	
+	// 2번 회원 등록
 	public void userInsert(Scanner sc) {
 		dao = new JoinDAO();
 		System.out.println("[신규 회원을 등록 합니다]");
