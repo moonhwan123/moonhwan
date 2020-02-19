@@ -15,6 +15,12 @@ public class Exam_01 {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년MM월dd일 hh시mm분ss초");
 		String nowStr = sdf.format(now);
 		System.out.println(nowStr);
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyMMdd");
+		String nowStr2 = sdf2.format(now);
+		System.out.println(nowStr2);
+		
+
+		
 	}
 }
 

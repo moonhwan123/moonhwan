@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.FileReader"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
-<fullyQualifiedTypeName name="java.util.Comparator"/>
-<fullyQualifiedTypeName name="java.lang.Comparable"/>
-<fullyQualifiedTypeName name="java.util.TreeSet"/>
-<fullyQualifiedTypeName name="textstream.StudentData"/>
-<fullyQualifiedTypeName name="java.beans.Statement"/>
-<fullyQualifiedTypeName name="oracle.exam.OracleSQL"/>
 <fullyQualifiedTypeName name="java.lang.Class"/>
 <fullyQualifiedTypeName name="oracle.db.DBManager"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
@@ -39,25 +31,33 @@
 <fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="view.SawonView"/>
 <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="model.DepartmentVO"/>
 <fullyQualifiedTypeName name="model.EmployeeDAO"/>
 <fullyQualifiedTypeName name="model.EmployeeVO"/>
 <fullyQualifiedTypeName name="javax.lang.model.type.NullType"/>
-<fullyQualifiedTypeName name="db.DBManager"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="ui.JoinView"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.Finishings"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="dao.JoinDAO"/>
 <fullyQualifiedTypeName name="vo.JoinVO"/>
 <fullyQualifiedTypeName name="ui.StudentUI"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="model.StudentDAO"/>
 <fullyQualifiedTypeName name="model.StudentVO"/>
+<fullyQualifiedTypeName name="main.Main"/>
+<fullyQualifiedTypeName name="ui.ReUI"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="model.ReDAO"/>
+<fullyQualifiedTypeName name="model.ReVO"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="db.DBManager"/>
+<fullyQualifiedTypeName name="ui.ShopUI"/>
+<fullyQualifiedTypeName name="java.util.regex.Pattern"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="model.ShopVO"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="model.ShopDAO"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
