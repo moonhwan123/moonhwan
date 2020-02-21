@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	function send(){
+		//radio체크 하는 방법 체크박스도 동일하다 방식은
+		//flag=0 여기로 빼도 노상관
+		for(var x = 0,flag = 0; x < input.gender.length; x++){
+			//gender를 배열로 생각하자
+			if(input.gender[x].checked){
+				flag=1;
+				break;
+			}
+		}
+		if(flag!=1){
+			alert("성별을 선택하세요");
+			return;
+		}
+		//취미 유효성 검사
+		for(var x = 0,flag = 0; x < input.hobby.length; x++){
+			if(input.hobby[x].checked){
+				flag=1;
+				break;
+			}
+		}
+		if(flag!=1){
+			alert("취미를 선택하세요");
+			return;
+		}
+		//직업 선택 체크
+		if(input.job.selectedIndex==0){
+			alert("똑바로 해라");
+			input.job.focus();
+		}
+		
+//		if(input.job.value==""){
+//			alert("똑바로 해라");
+//		}
+		
+		alert("전송한다 색기야");
+		input.action = "script_02_pro.jsp";
+		input.submit();
+		
+	}
+</script>
+
+</head>
+<body>
+	<form name="f1">
+	
+	</form>
+	
+	<form name="f2">
+	
+	</form>
+
+
+	<form name="input" method="post">
+		<table border="1" width="300">
+			<tr>
+				<td> 성별 </td>
+				<td> 
+					<input type="radio" name="gender" value="M"> 남자
+					<input type="radio" name="gender" value="F"> 여자
+				</td>
+			</tr>
+			<tr>
+				<td> 취미 </td>
+				<td> 
+					<input type="checkbox" name="hobby" value="야구"> 야구
+					<input type="checkbox" name="hobby" value="몬헌"> 몬헌
+					<input type="checkbox" name="hobby" value="라이딩"> 라이딩
+					<input type="checkbox" name="hobby" value="축구"> 축구				
+				</td>
+			</tr>
+						<tr>
+				<td> 직업 </td>
+				<td> 
+					<select name="job">
+						<option>직업선택</option>
+						<option value="학생">학생</option>
+						<option value="교사">교사</option>
+						<option value="군인">군인</option>
+						<option value="병신">병신</option>
+					</select>			
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">  
+					<input type="button" value="전송" onClick="send()">
+					<input type="button" value="취소" onClick="clear2()">
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+</body>
+</html>

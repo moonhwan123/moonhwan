@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<script>
+	
+	function send(){
+		if(input.bun.value==""){
+			alert("번호를 입력하세요");
+			input.bun.focus();
+			return;
+		}
+		if(input.name.value==""){
+			alert("이름을 입력하세요");
+			input.name.focus();
+			return;
+		}
+		input.action="script_02_pro.jsp"
+		input.submit();
+		
+	}
+	
+	function clear2(){
+		alert("정보를 지우고 다시 시작합니다.");
+	}
+	
+	
+	
+</script>
+
+<body>
+	<form name="input" method="post">
+		<table border="1" width="300">
+			<tr>
+				<td> 학번 </td>
+				<td> <input type="text" name="bun" value="555"> </td>
+			</tr>
+			<tr>
+				<td> 이름 </td>
+				<td> <input type="text" name="name"> </td>
+			</tr>
+			<tr>
+				<td colspan="2">  
+					<input type="button" value="전송" onClick="send()">
+					<input type="button" value="취소" onClick="clear2()">
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+
+</body>
+</html>
