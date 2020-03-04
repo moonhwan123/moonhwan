@@ -5,26 +5,24 @@ import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import board.model.BoardDAO;
 import board.model.BoardVO;
-import board.util.SqlMark;
 
 /**
- * Servlet implementation class BoardViewServlet
+ * Servlet implementation class BoardModifyServlet
  */
-@WebServlet("/board_view")
-public class BoardViewServlet extends HttpServlet {
+@WebServlet("/board_modify")
+public class BoardModifyServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public BoardViewServlet() {
+    public BoardModifyServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,36 +32,14 @@ public class BoardViewServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int idx = Integer.parseInt(request.getParameter("idx"));
-		
 		BoardDAO dao = new BoardDAO();
-		
-		boolean bool = false;
-		Cookie info = null;
-		Cookie[] cookies = request.getCookies();
-		
-		for(int x = 0; x < cookies.length; x++){
-			info = cookies[x];
-			if(info.getName().equals("guest"+idx)){
-				bool = true;
-				break;
-			}
-		}
-		
-		String newValue=""+System.currentTimeMillis();
-		
-		if(!bool){ // 쿠키가 존재 하지않으면
-			dao.boardCntUp(idx); // 조회수 증가 메소드
-			info = new Cookie("guest"+idx , newValue);
-			info.setMaxAge(60*60); // 세션을 유지하는 시간(초) 
-			response.addCookie(info);
-		}
-		
 		BoardVO vo = dao.boardSelect(idx);
-		vo.setContents(SqlMark.lineBreak(vo.getContents()));
-		request.setAttribute("vo", vo);
 		
-		RequestDispatcher dispatchar = request.getRequestDispatcher("Board/board_view.jsp");
-		dispatchar.forward(request, response);
+		request.setAttribute("vo", vo);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("Board/board_modify.jsp");
+		
+		dispatcher.forward(request, response);
+		
 		
 	}
 
@@ -71,8 +47,24 @@ public class BoardViewServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		request.setCharacterEncoding("UTF-8");
+		BoardDAO dao = new BoardDAO();
+		
+		BoardVO vo = new BoardVO();
+		int idx = Integer.parseInt(request.getParameter("idx"));
+		
+		vo.setEmail(request.getParameter("email"));
+		vo.setSubject(request.getParameter("subject"));
+		vo.setContents(request.getParameter("contents"));
+		
+		int row = dao.boardUpdate(vo,idx);
+		
+		request.setAttribute("row", row);
+		RequestDispatcher dispatcher = request.getRequestDispatcher("Board/board_modify_pro.jsp");
+		
+		dispatcher.forward(request, response);
+		
+		
 	}
 
 }

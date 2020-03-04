@@ -1,30 +1,29 @@
 package board.servlet;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import board.model.BoardDAO;
 import board.model.BoardVO;
-import board.util.SqlMark;
 
 /**
- * Servlet implementation class BoardViewServlet
+ * Servlet implementation class BoardListServlet
  */
-@WebServlet("/board_view")
-public class BoardViewServlet extends HttpServlet {
+@WebServlet("/board_list")
+public class BoardListServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public BoardViewServlet() {
+    public BoardListServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -33,36 +32,16 @@ public class BoardViewServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int idx = Integer.parseInt(request.getParameter("idx"));
-		
 		BoardDAO dao = new BoardDAO();
 		
-		boolean bool = false;
-		Cookie info = null;
-		Cookie[] cookies = request.getCookies();
+		int cnt = dao.boardCount();
 		
-		for(int x = 0; x < cookies.length; x++){
-			info = cookies[x];
-			if(info.getName().equals("guest"+idx)){
-				bool = true;
-				break;
-			}
-		}
+		List<BoardVO> list = dao.boardList();
 		
-		String newValue=""+System.currentTimeMillis();
+		request.setAttribute("total", cnt); //전체글 갯수
+		request.setAttribute("list", list); //게시글 리스트
 		
-		if(!bool){ // 쿠키가 존재 하지않으면
-			dao.boardCntUp(idx); // 조회수 증가 메소드
-			info = new Cookie("guest"+idx , newValue);
-			info.setMaxAge(60*60); // 세션을 유지하는 시간(초) 
-			response.addCookie(info);
-		}
-		
-		BoardVO vo = dao.boardSelect(idx);
-		vo.setContents(SqlMark.lineBreak(vo.getContents()));
-		request.setAttribute("vo", vo);
-		
-		RequestDispatcher dispatchar = request.getRequestDispatcher("Board/board_view.jsp");
+		RequestDispatcher dispatchar = request.getRequestDispatcher("Board/board_list.jsp");
 		dispatchar.forward(request, response);
 		
 	}

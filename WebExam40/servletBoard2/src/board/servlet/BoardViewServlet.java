@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletResponse;
 
 import board.model.BoardDAO;
 import board.model.BoardVO;
-import board.util.SqlMark;
 
 /**
  * Servlet implementation class BoardViewServlet
@@ -59,7 +58,6 @@ public class BoardViewServlet extends HttpServlet {
 		}
 		
 		BoardVO vo = dao.boardSelect(idx);
-		vo.setContents(SqlMark.lineBreak(vo.getContents()));
 		request.setAttribute("vo", vo);
 		
 		RequestDispatcher dispatchar = request.getRequestDispatcher("Board/board_view.jsp");
