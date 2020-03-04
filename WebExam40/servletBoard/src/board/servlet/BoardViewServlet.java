@@ -5,6 +5,7 @@ import java.io.IOException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -34,7 +35,28 @@ public class BoardViewServlet extends HttpServlet {
 		int idx = Integer.parseInt(request.getParameter("idx"));
 		
 		BoardDAO dao = new BoardDAO();
-		dao.boardCntUp(idx); // 조회수 증가 메소드
+		
+		boolean bool = false;
+		Cookie info = null;
+		Cookie[] cookies = request.getCookies();
+		
+		for(int x = 0; x < cookies.length; x++){
+			info = cookies[x];
+			if(info.getName().equals("guest"+idx)){
+				bool = true;
+				break;
+			}
+		}
+		
+		String newValue=""+System.currentTimeMillis();
+		
+		if(!bool){ // 쿠키가 존재 하지않으면
+			dao.boardCntUp(idx); // 조회수 증가 메소드
+			info = new Cookie("guest"+idx , newValue);
+			info.setMaxAge(60*60); // 세션을 유지하는 시간(초) 
+			response.addCookie(info);
+		}
+		
 		BoardVO vo = dao.boardSelect(idx);
 				
 		request.setAttribute("vo", vo);

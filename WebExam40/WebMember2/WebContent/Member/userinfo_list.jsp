@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html; charset=UTF-8" %>
 
 <html>
@@ -22,6 +23,7 @@ td   { font-family: 돋움, Verdana; font-size: 9pt; text-decoration: none; colo
     <td width=100 align=center>최근접속일</td>
     
   </tr>
+
    <tr>
       <td align=center>5</td>
       <td align=center>ein1027</td>
@@ -30,14 +32,7 @@ td   { font-family: 돋움, Verdana; font-size: 9pt; text-decoration: none; colo
       <td align=center>2019-05-20</td>
       <td align=center></td>
    </tr>
-   <tr>
-      <td align=center>4</td>
-      <td align=center>ein1027</td>
-      <td align=center>홍길동</td>
-      <td align=center>042-222-1111</td>
-      <td align=center>2019-05-20</td>
-      <td align=center>2019-06-10</td>
-   </tr>
+
 
 </table>
 <table width=550>
