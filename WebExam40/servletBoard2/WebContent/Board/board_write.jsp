@@ -3,17 +3,17 @@
 <html>
    <head><title>게시판 작성</title>
     <link rel="stylesheet" type="text/css" href="/stylesheet.css">
+
+</head>
 <script>
 	function send(){
-		alert("등록 합니다.");
+		alert("등록되었습니다.");
 		board.submit();
 	}
 	function reset(){
-		
+		history.back();
 	}
-
 </script>
-</head>
  <body topmargin="0" leftmargin="0">
  <table border="0" width="800">
  <tr>
@@ -28,7 +28,7 @@
      <font size="2"> - 글쓰기</font><p>
      <img src="Board/img/bullet-03.gif"><font size="2" face="돋움" color="orange"> 잠깐</font> &nbsp;
      <img src="Board/img/bullet-02.gif"><font size="2" face="돋움">는 필수 입력 사항입니다.</font><p>
-     <form name="board" method="post" action = "board_write">
+     <form method="post" name="board" action="board_write">
 
 	  <table border="0">
        <tr>

@@ -1,18 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%!
-	String lineBreak(String str){
-		StringBuffer buf = new StringBuffer();
-		for(int x=0 ; x<str.length(); x++){
-			if(str.charAt(x)=='\n'){
-				buf.append("<br>");
-			}else{
-				buf.append(str.charAt(x));
-			}
-		}
-		return new String(buf);
-	}
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-%>
 
  <html>
  <head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
@@ -23,16 +11,14 @@
      td.content { padding:10px; line-height:1.6em; text-align:justify; }
      a.list { text-decoration:none;color:black;font-size:10pt; }
    </style>
-<script>
-	function board_del(){
-		url="Board/board_delete.jsp?idx="+${vo.idx}; 
-		window.open(url,"글 삭제","width=300, height=200");
-	}
-
-</script>
+ <script>
+ 	function board_del(){
+ 		url = "board_delete?idx=${vo.idx}&page=${page}";
+ 		window.open(url,"글 삭제","width=500, height=200") // 팝업창 띄우는 명령어
+ 	}
+ </script>
  </head>
  <body topmargin="0" leftmargin="0">
- 	
    <table border="0" width="800">
      <tr>
        <td width="20%"  height="500" bgcolor="#ecf1ef" valign="top">
@@ -52,16 +38,15 @@
          <tr bgcolor="e3e9ff">
            <td class="title">
              <img src="Board/img/bullet-04.gif"> <font size="2" face="돋움">
-                  ${vo.getSubject() }</font>
+                  ${vo.subject}</font>
            </td>
          </tr>
          <tr>
            <td class="content">
              <p align="right"><font size="2" face="돋움">
-              <a class="list" href="mailto:ein1027@nate.com">${vo.getName() }</a> / <font size="2" face="돋움">${vo.getRegdate() }
-               / ${vo.getReadcnt() }</font>
+              <a class="list" href="mailto:ein1027@nate.com">${vo.name}</a> / <font size="2" face="돋움">${vo.regdate} / ${vo.readcnt}번 읽음</font>
              <p>
-            ${vo.getContents().replaceAll("\\n","<br>") }<p><!--contents의 내용을 <BR>태그로 처리-->
+            ${vo.contents}<p><!--contents의 내용을 <BR>태그로 처리-->
            </td>
          </tr>
        </table>
@@ -70,16 +55,15 @@
       <p align="center">
       <font size="2">
        <!-- 새글쓰기 -->
-       <a href="board_write">
+       <a href="board_write?page=${page}">
        <img src="Board/img/write.jpg" border="0"></a>&nbsp;&nbsp;
 	   <!-- 수정하기 -->
-       <a href="board_modify?idx=${vo.idx }">
+       <a href="board_modify?idx=${vo.idx}&page=${page}">
        <img src="Board/img/edit.gif" border="0"></a>&nbsp;&nbsp;
          <!-- 삭제하기 -->
-       <a href="javascript:board_del()">
-       <img src="Board/img/del.gif" border="0"></a>&nbsp;&nbsp;
+       <a href="javascript:board_del()"><img src="Board/img/del.gif" border="0"></a>&nbsp;&nbsp;
        <!-- 목록보기 -->
-       <a href="board_list"><img src="Board/img/list-2.gif" border="0"></a>&nbsp;&nbsp;
+       <a href="board_list?page=${page}"><img src="Board/img/list-2.gif" border="0"></a>&nbsp;&nbsp;
       </font>
     </td>
   </tr>

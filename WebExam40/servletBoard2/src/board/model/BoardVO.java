@@ -10,6 +10,7 @@ public class BoardVO {
 	private String regdate;
 	private int readcnt;
 	private String ip;
+	
 	public int getIdx() {
 		return idx;
 	}
@@ -64,7 +65,4 @@ public class BoardVO {
 	public void setIp(String ip) {
 		this.ip = ip;
 	}
-	
-	
-
 }

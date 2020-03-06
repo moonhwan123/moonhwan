@@ -2,7 +2,8 @@
 <%@ page import="java.util.*, board.model.*" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
-<%
+<%	
+	
 	List<BoardVO> list = (List)request.getAttribute("list");
 	String search = (String)request.getAttribute("search");
 	int listcount = (int)(request.getAttribute("listcount"));

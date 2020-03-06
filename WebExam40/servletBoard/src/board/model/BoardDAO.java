@@ -43,10 +43,40 @@ public class BoardDAO {
 		}
 		return cnt;
 	}
-	//조건에 맞는 게시글 갯수 카운트
+	//게시글중 조건에 맞는 게시글 전체 갯수 카운트
+	public int boardCount(String s_query) {
+
+		String query = "select count(*) as counter from tbl_board where " + s_query;
+		int cnt = 0;
+		try {
+			conn = manager.getConnection();
+			pstmt = conn.prepareStatement(query);
+			rs = pstmt.executeQuery();
+
+			if (rs.next()) {
+				cnt = rs.getInt("counter"); // cnt = rs.getInt(1);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rs != null)
+					rs.close();
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e2) {
+			}
+		}
+		return cnt;
+	}
+
+	// 조건에 맞는 게시글 갯수 카운트
 	public int boardCount(String search, String key) {
 
-		String query = "select count(*) as counter from tbl_board where "+search+" like '%"+key+"%'";
+		String query = "select count(*) as counter from tbl_board where " + search + " like '%" + key + "%'";
 		int cnt = 0;
 		try {
 			conn = manager.getConnection();
@@ -108,12 +138,55 @@ public class BoardDAO {
 		}
 		return list;
 	}
-	//게시글(시작,끝) 불러오기
+	
+	
+	
+	
+	// 게시글(시작,끝) 불러오기
 	public List<BoardVO> boardList(int pagestart, int endpage) {
 		String query = "select X.* from (select rownum rnum, A.* from ("
-				+ "select * from tbl_board order by regdate desc) A "
-				+ "where rownum <= ?) X where X.rnum > ?";
-		
+				+ "select * from tbl_board order by regdate desc) A " + "where rownum <= ?) X where X.rnum > ?";
+
+		List<BoardVO> list = new ArrayList<BoardVO>();
+
+		try {
+			conn = manager.getConnection();
+			pstmt = conn.prepareStatement(query);
+			pstmt.setInt(1, endpage);
+			pstmt.setInt(2, pagestart);
+			rs = pstmt.executeQuery();
+			BoardVO vo = null;
+			while (rs.next()) {
+				vo = new BoardVO();
+				vo.setIdx(rs.getInt("idx"));
+				vo.setName(rs.getString("name"));
+				vo.setSubject(rs.getString("subject"));
+				vo.setRegdate(rs.getString("regdate"));
+				vo.setReadcnt(rs.getInt("readcnt"));
+
+				list.add(vo);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (rs != null)
+					rs.close();
+				if (pstmt != null)
+					pstmt.close();
+				if (conn != null)
+					conn.close();
+			} catch (Exception e2) {
+			}
+		}
+		return list;
+	}
+	//검색조건이 있을때의 메소드
+	public List<BoardVO> boardList(String s_query,int pagestart, int endpage) {
+		String query = "select X.* from (select rownum rnum, A.* from ("
+				+ "select * from tbl_board order by regdate desc) A " 
+				+ " where " + s_query + " and rownum <= ?) X where "+ s_query + " and X.rnum > ?";
+
 		List<BoardVO> list = new ArrayList<BoardVO>();
 
 		try {
@@ -197,7 +270,7 @@ public class BoardDAO {
 			}
 		}
 	}
-
+	
 	public BoardVO boardSelect(int idx) {
 		String query = "select * from tbl_board where idx=?order by idx desc";
 		BoardVO vo = null;

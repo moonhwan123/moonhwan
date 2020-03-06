@@ -33,25 +33,32 @@ public class BoardDeleteServlet extends HttpServlet {
 		
 		int idx = Integer.parseInt(request.getParameter("idx"));
 		
-		String pass = request.getParameter("pass");
 		
-		BoardDAO dao = new BoardDAO();
 		
-		int row = dao.boardDelete(idx,pass);
+		RequestDispatcher dispater = request.getRequestDispatcher("Board/board_delete.jsp");
+		dispater.forward(request, response);
 		
-		request.setAttribute("row", row); 
-		
-		RequestDispatcher dispatchar = request.getRequestDispatcher("Board/board_delete_pro.jsp");
-		dispatchar.forward(request, response);
-		
+		// response.sendRedirect("board_list");
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8");
 		
-		doGet(request, response);
+		String pass = request.getParameter("pass");
+		int idx = Integer.parseInt(request.getParameter("idx"));
+		
+		
+		BoardDAO dao = new BoardDAO();
+		
+		int row = dao.boardDelete(idx,pass);
+		
+		request.setAttribute("row", row);
+		RequestDispatcher dispater = request.getRequestDispatcher("Board/board_delete_pro.jsp");
+		dispater.forward(request, response);
+		
 	}
 
 }

@@ -32,15 +32,14 @@ public class BoardModifyServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		int idx = Integer.parseInt(request.getParameter("idx"));
+		
 		BoardDAO dao = new BoardDAO();
 		BoardVO vo = dao.boardSelect(idx);
 		
 		request.setAttribute("vo", vo);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("Board/board_modify.jsp");
 		
-		dispatcher.forward(request, response);
-		
-		
+		RequestDispatcher dispater = request.getRequestDispatcher("Board/board_modify.jsp");
+		dispater.forward(request, response);
 	}
 
 	/**
@@ -48,22 +47,22 @@ public class BoardModifyServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-		BoardDAO dao = new BoardDAO();
 		
 		BoardVO vo = new BoardVO();
-		int idx = Integer.parseInt(request.getParameter("idx"));
 		
+		vo.setIdx(Integer.parseInt(request.getParameter("idx")));
 		vo.setEmail(request.getParameter("email"));
 		vo.setSubject(request.getParameter("subject"));
 		vo.setContents(request.getParameter("contents"));
+		vo.setPass(request.getParameter("pass"));
 		
-		int row = dao.boardUpdate(vo,idx);
+		BoardDAO dao = new BoardDAO();
+		int row = dao.boardModify(vo);
 		
 		request.setAttribute("row", row);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("Board/board_modify_pro.jsp");
 		
-		dispatcher.forward(request, response);
-		
+		RequestDispatcher dispater = request.getRequestDispatcher("Board/board_modify_pro.jsp");
+		dispater.forward(request, response);
 		
 	}
 

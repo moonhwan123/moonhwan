@@ -3,7 +3,6 @@
 	int idx = Integer.parseInt(request.getParameter("idx"));
 	
 	
-	
 %>
 
  <html>
@@ -61,7 +60,7 @@
       <p align="center">
       <font size="2">
        <!-- 새글쓰기 -->
-       <a href="board_write">
+       <a href="board_write?page">
        <img src="Board/img/write.jpg" border="0"></a>&nbsp;&nbsp;
 	   <!-- 수정하기 -->
        <a href="board_modify?idx=<%= idx%>">

@@ -31,8 +31,9 @@ public class BoardWriteServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestDispatcher dispatchar = request.getRequestDispatcher("Board/board_write.jsp");
-		dispatchar.forward(request, response);
+
+		RequestDispatcher dispater = request.getRequestDispatcher("Board/board_write.jsp");
+		dispater.forward(request, response);
 	}
 
 	/**
@@ -42,23 +43,22 @@ public class BoardWriteServlet extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		
 		BoardVO vo = new BoardVO();
+		
 		vo.setName(request.getParameter("name"));
 		vo.setEmail(request.getParameter("email"));
-		vo.setPass(request.getParameter("pass"));
 		vo.setSubject(request.getParameter("subject"));
 		vo.setContents(request.getParameter("contents"));
+		vo.setPass(request.getParameter("pass"));
 		
 		BoardDAO dao = new BoardDAO();
-		int row = dao.boardWrite(vo);	
 		
-		//1번방식
+		int row = dao.boardWrite(vo);
+		
 		request.setAttribute("row", row);
-		RequestDispatcher dispatchar = request.getRequestDispatcher("Board/board_write_pro.jsp");
-		dispatchar.forward(request, response);
+		RequestDispatcher dispater = request.getRequestDispatcher("Board/board_write_pro.jsp");
+		dispater.forward(request, response);
 		
-		//2번방식
-//		response.sendRedirect("board_list");
-		
+		// response.sendRedirect("board_list");
 		
 	}
 

@@ -14,7 +14,7 @@ CREATE TABLE board (
   comments number(3) null,			--  댓글 수
   PRIMARY KEY  (idx)
 );
-create sequence board_seq_idx;
+create sequence tbl_board_seq_idx;
 
 - 댓글 테이블 -
 create table comments(
