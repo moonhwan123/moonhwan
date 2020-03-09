@@ -47,6 +47,7 @@
  	      <td width="10%" align="center" height="20"><font face="돋움" size="2">조회수</font></td>
  	   </tr>
 <c:if test ="${!empty list}">
+
 	<c:forEach var="vo" items="${list}">
 			<tr onMouseOver="style.backgroundColor='#D1EEEE'" onMouseOut="style.backgroundColor=''">
         <td align="center" height="25">
@@ -69,6 +70,8 @@
         <font face="돋움" size="2" color="#000000">등록된 자료가 없습니다.</font></td>
     </tr>
 </c:if>
+
+
 
 	 <div align="center">
         <table width="700" border="0" cellspacing="0" cellpadding="5">

@@ -28,7 +28,7 @@
      <font size="2"> - 수정하기</font><p>
      <img src="./img/bullet-03.gif"><font size="2" face="돋움" color="orange"> 잠깐</font> &nbsp;
      <img src="./img/bullet-02.gif"><font size="2" face="돋움">는 필수 입력 사항입니다.</font><p>
-     <form method="post" name = "board" action = "board_modify">
+     <form method="post" name = "board" action = "board_modify" enctype="multipart/form-data">
      <input type="hidden" name="idx" value="${vo.idx}">
 
       <table border="0">
