@@ -9,8 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import KISA.SHA256;
 import model.MemberDAO;
 import model.MemberVO;
+import sun.misc.BASE64Encoder;
 
 /**
  * Servlet implementation class MemberInsertServlet
@@ -46,6 +48,11 @@ public class MemberInsertServlet extends HttpServlet {
 		String faArr[] = request.getParameterValues("favorite");
 		String fa = "";
 		
+		String passwd = request.getParameter("passwd");
+		
+		SHA256 s = new SHA256(passwd.getBytes());
+		BASE64Encoder Base64Encoder = new BASE64Encoder();
+		
 		if(faArr != null) {
 			fa = faArr[0];
 			for(int x=1; x<faArr.length; x++) {
@@ -55,7 +62,7 @@ public class MemberInsertServlet extends HttpServlet {
 		
 		vo.setName(request.getParameter("name"));
 		vo.setUserid(request.getParameter("userid"));
-		vo.setPasswd(request.getParameter("passwd"));
+		vo.setPasswd(Base64Encoder.encode(s.GetHashCode()));
 		vo.setGubun(request.getParameter("gubun"));
 		vo.setZipcode(request.getParameter("zipcode"));
 		vo.setAddr1(request.getParameter("addr1"));
@@ -68,7 +75,6 @@ public class MemberInsertServlet extends HttpServlet {
 		
 		
 		boolean flag = dao.memberInsert(vo);
-		
 		request.setAttribute("flag", flag);
 		RequestDispatcher dis = request.getRequestDispatcher("Member/userinfo_list_pro.jsp");
 		dis.forward(request, response);

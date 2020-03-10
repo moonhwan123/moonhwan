@@ -41,7 +41,8 @@ public class MemberLoginOkServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String userid = request.getParameter("userid");
-		String passwd = request.getParameter("passwd");
+		String passwd = request.getParameter("passwd");	//얘도 암호화 해서 메서드에 매개변수로 바꾼걸 줘야함
+		
 		
 		MemberDAO dao = new MemberDAO();
 		
