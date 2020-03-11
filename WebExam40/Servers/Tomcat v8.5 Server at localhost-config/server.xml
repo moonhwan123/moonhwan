@@ -112,7 +112,7 @@
 				<Context docBase="exUser" path="/exUser" reloadable="true" source="org.eclipse.jst.jee.server:exUser">
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="jsl40"/>
 				</Context>
-			<Context docBase="ServletMember" path="/ServletMember" reloadable="true" source="org.eclipse.jst.jee.server:ServletMember"/></Host>
+			<Context docBase="exPdsPoolDBCP" path="/exPdsPoolDBCP" reloadable="true" source="org.eclipse.jst.jee.server:exPdsPoolDBCP"/><Context docBase="TEST2" path="/TEST2" reloadable="true" source="org.eclipse.jst.jee.server:TEST2"/></Host>
 		</Engine>
 	</Service>
 </Server>

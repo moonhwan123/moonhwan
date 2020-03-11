@@ -39,9 +39,11 @@ public class UserEmailCheckServlet extends HttpServlet {
 		}
 		
 		String email1 = request.getParameter("email1");
+		System.out.println("email1:"+email1);
 		String email2 = request.getParameter("email2");
+		System.out.println("email2:"+email2);
 		String email3 = email1+email2;
-		
+		System.out.println("emailcheckservlet/email3:"+email3);
 		String subject = "회원가입 인증 번호 입니다.";
 		
 		try {

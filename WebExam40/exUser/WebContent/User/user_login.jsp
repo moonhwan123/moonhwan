@@ -11,6 +11,25 @@ td   { font-family: 돋움, Verdana; font-size: 9pt; text-decoration: none; colo
       BACKGROUND-POSITION: left top; BACKGROUND-REPEAT: no-repeat;}
 //-->
 </STYLE>
+<script>
+	function check_submit(){
+		if(login.userid.value == ""){
+			alert("아이디를 입력 해주세요");
+			login.userid.focus();
+			return false;
+		}
+		if(login.passwd.value == ""){
+			alert("비밀번호를 입력 해주세요");
+			login.passwd.focus();
+			return false;
+		}
+		return true;
+	}
+	function findPasswd(){
+		window.open("user_findpasswd","user_findpasswd form","width=350 height=250");
+	}
+	
+</script>
 </HEAD>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin=0 
   topmargin=0 onLoad='document.fname.user_id.focus();'>
@@ -20,7 +39,7 @@ td   { font-family: 돋움, Verdana; font-size: 9pt; text-decoration: none; colo
   <TD width=100>&nbsp;</td>
   <TD>
     <table width="583" border="0" cellspacing="0" cellpadding="0" height="265">
-	  <form name=fname method=post action=""  onSubmit="return check_submit()">
+	  <form name=login method=post action="user_login"  onSubmit="return check_submit()">
 	    <tr>
 		  <td height="298"> 
 		    <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -53,14 +72,19 @@ td   { font-family: 돋움, Verdana; font-size: 9pt; text-decoration: none; colo
 							  <td>: 
 								<input type=password name="passwd" size=14 maxlength=12 STYLE="WIDTH:155">
 							  </td>
-							  <td><input type=image src="./img/login.gif" border=0 align=absmiddle></td>
+							  <td>
+							 
+							  <input type=image src="./img/login.gif" border=0 align=absmiddle>
+							  
+							  </td>
 							</tr>
 						  </table>
 						</td>
 					  </tr>
 					  <tr bgcolor="#FFFFFF"> 
 						<td bgcolor="#ffffff" align=CENTER height="138"> 
-							[아이디찾기] &nbsp;&nbsp; [비밀번호찾기]
+							[아이디찾기] &nbsp;&nbsp; 
+							<a href="#" onClick="findPasswd()">[비밀번호찾기]</a>
 						</td>
 					  </tr>
 

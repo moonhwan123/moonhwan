@@ -1,4 +1,16 @@
+<%@page import="model.UserVO"%>
+<%@page import="java.util.List"%>
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%
+	List<UserVO> list = (List<UserVO>)request.getAttribute("list");
+
+	UserVO sessionVO = null;
+	
+	if(session.getAttribute("sessionVO") != null){
+		sessionVO = (UserVO)session.getAttribute("sessionVO");
+	}
+	
+%>
 
 <html>
 <head>
@@ -22,22 +34,21 @@ td   { font-family: 돋움, Verdana; font-size: 9pt; text-decoration: none; colo
     <td width=100 align=center>최근접속일</td>
     
   </tr>
+  
+  <%
+  	for(int x = 0 ; x < list.size(); x++){
+  %>
    <tr>
-      <td align=center>5</td>
-      <td align=center>ein1027</td>
-      <td align=center>홍길동</td>
-      <td align=center>042-222-1111</td>
-      <td align=center>2019-05-20</td>
-      <td align=center></td>
+      <td align=center><%= list.get(x).getIdx() %></td>
+      <td align=center><%= list.get(x).getUserid() %></td>
+      <td align=center><%= list.get(x).getName() %></td>
+      <td align=center><%= list.get(x).getTel() %></td>
+      <td align=center><%= list.get(x).getFirst_time() %></td>
+      <td align=center><%= list.get(x).getLast_time() %></td>
    </tr>
-   <tr>
-      <td align=center>4</td>
-      <td align=center>ein1027</td>
-      <td align=center>홍길동</td>
-      <td align=center>042-222-1111</td>
-      <td align=center>2019-05-20</td>
-      <td align=center>2019-06-10</td>
-   </tr>
+	<%
+	  	}
+	%>
 
 </table>
 <table width=550>
@@ -59,8 +70,19 @@ td   { font-family: 돋움, Verdana; font-size: 9pt; text-decoration: none; colo
     <td></td>
    </tr>
   <tr>
-    <td>로그인 페이지 이동
+  	<%
+  		if(sessionVO == null){
+  	%>
+    <td><a href = "user_login">로그인 페이지 이동</a>
     </td>
+    <%
+  		}else{
+    %>
+        <td><a href = "user_logout">로그아웃 페이지 이동</a>
+    </td>
+    <%
+  		}
+    %>
     <td><a href = "user_insert">[회원가입페이지 이동]</a></td>
    </tr>
 </table>    
