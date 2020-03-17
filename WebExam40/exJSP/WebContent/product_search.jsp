@@ -61,7 +61,7 @@ function update(){
 }
 function sakuje(){
 	
-	insert.action = "product_delete";
+	insert.action = "product_delete.jsp";
 	insert.submit();
 }
 

@@ -13,7 +13,7 @@
 		e.printStackTrace();
 	}
 	
-	String query = "select * from product order by gcode";
+	String query = "select * from product order by code";
 	
 	pstmt = conn.prepareStatement(query);
 	rs = pstmt.executeQuery();
@@ -34,7 +34,7 @@
 	.navi{padding:12px 0; overflow:hidden;background-color:#BCA9F5;}
 	
 	.navi ul,li{float:left; padding:0 20px; text-align:center;}
-	.content{background-color:#E6E6E6; padding:16px; height:300px;} 
+	.content{background-color:#E6E6E6; padding:16px; height:300px;overflow:auto} 
 	.title{text-align:center;padding:22px;}
 	.footer{padding:16px 0; text-align:center;background-color:#0040FF;}
 	.content table{width:500px; margin:0 auto;}

@@ -1,4 +1,16 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
+<%
+	String search = null;
+	String key = null;
+
+	if(request.getAttribute("search")!=null){
+		search = (String)request.getAttribute("search");
+	}
+	if(request.getAttribute("key")!=null){
+		key = (String)request.getAttribute("key");
+	}
+
+%>
 <center>
  <html>
  <head><meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
@@ -61,7 +73,20 @@
        <!-- 삭제하기 -->
        <a href="javascript:board_delete()"><img src="./img/del.gif" border="0"></a>&nbsp;&nbsp;
        <!-- 목록보기 -->
+		<%
+		if(search != null || key != null){
+		%>
+       <a href="Board?command=board_list&page=${page }&search=${search}&key=${key}"><img src="./img/list-2.gif" border="0"></a>&nbsp;&nbsp;
+     	<%
+		}
+     	%>
+     	<%
+		if(search == null || key == null){
+		%>
        <a href="Board?command=board_list&page=${page }"><img src="./img/list-2.gif" border="0"></a>&nbsp;&nbsp;
+     	<%
+		}
+     	%>
       </font>
     </td>
   </tr>

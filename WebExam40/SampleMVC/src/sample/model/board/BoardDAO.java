@@ -196,7 +196,6 @@ public class BoardDAO {
 	public int boardWrite(BoardVO vo) {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
-		ResultSet rs = null;
 		String query = "insert into tbl_board(idx,name,email,subject,contents,pass) "
 				+ " values (tbl_board_seq_idx.nextval,?,?,?,?,?)";
 		int row = 0;
@@ -213,7 +212,7 @@ public class BoardDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			DBManager.close(conn, pstmt, rs);
+			DBManager.close(conn, pstmt);
 		}
 		return row;
 	}

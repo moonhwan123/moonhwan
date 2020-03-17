@@ -22,6 +22,14 @@ public class BoardViewAction implements Action {
 		if(request.getParameter("page") != null) {
 			page = Integer.parseInt(request.getParameter("page"));
 		}
+		String search = "";
+		String key = "";
+		if(request.getParameter("search")!=null) {
+			search = request.getParameter("search");
+		}
+		if(request.getParameter("key")!=null) {
+			key = request.getParameter("key");
+		}
 		BoardDAO dao = BoardDAO.getInstance();
 		
 		
@@ -51,7 +59,10 @@ public class BoardViewAction implements Action {
 		vo.setContents(content);
 		request.setAttribute("vo", vo);
 		request.setAttribute("page", page);
-		
+		if(search!=""||key!="") {
+			request.setAttribute("search", search);
+			request.setAttribute("key", key);
+		}
 		RequestDispatcher dispater = request.getRequestDispatcher("Board/board_view.jsp");
 		dispater.forward(request, response);
 	}

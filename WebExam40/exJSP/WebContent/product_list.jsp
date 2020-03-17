@@ -61,7 +61,7 @@
 	}
 	function sakuje(){
 		
-		insert.action = "product_delete";
+		insert.action = "product_delete.jsp";
 		insert.submit();
 	}
 	
@@ -93,7 +93,7 @@
 <div class="section">
 		<section>
 			<div class="content">
-				<h2 class="title">생산관리 조회&수정 화면 <br>제품코드를 입력하면 정보가표시 됩니다.<br></h2>
+				<h2 class="title">생산관리 조회&수정 화면 </h2>
 				
 					<form name="insert" method="post" action="product_list_pro.jsp">
 						<table>

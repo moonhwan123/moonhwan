@@ -113,7 +113,7 @@
 <div class="section">
 		<section>
 			<div class="content">
-				<h2 class="title">제품 조회 화면</h2>
+				<h2 class="title">제품  정보 입력 화면</h2>
 					<form name="insert" method="post" action="product_insert_pro.jsp">
 						<table>
 							<tr>

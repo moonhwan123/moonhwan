@@ -33,7 +33,7 @@
       <tr>
         <td colspan="7" align="center" valign="center" height="20">
         <font size="4" face="돋움" color="blue">
-        <img src="./img/bullet-01.gif"> <b>자 유 게 시 판</b></font></td></tr>
+        <img src="./img/bullet-01.gif"> <b><a href="Board?command=board_list">자 유 게 시 판</a></b></font></td></tr>
       <tr>
         <td colspan="5" align="right" valign="middle" height="20">
 		<font size="2" face="고딕">전체 : <b>${totcount}</b>건 - ${page}/ ${totpage} Pages</font></td></tr>
@@ -52,7 +52,8 @@
         <font face="돋움" size="2" color="#000000">${listcount}</font></td>
 			<td align="left" height="20">&nbsp;
 				<font face="돋움" size="2" color="#000000">
-				<a class="list" href="Board?command=board_view&idx=${vo.idx}&page=${page}">${vo.subject}</a></td>
+				<a class="list" href="Board?command=board_view&idx=${vo.idx}&page=${page}
+				&key=${key}&search=${search}">${vo.subject}</a></td>
 					<td align="center" height="20"><font face="돋움" size="2">
 					<a class="list" href="mailto:ein1027@nate.com">${vo.name}</a></font></td>
 				<td align="center" height="20"><font face="돋움" size="2">${vo.regdate.substring(2,10)}</font></td>

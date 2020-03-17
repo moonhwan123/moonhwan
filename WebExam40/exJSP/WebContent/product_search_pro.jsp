@@ -16,10 +16,10 @@
 		e.printStackTrace();
 	}
 	
-	String query = "select p.code, p.pname,p.cost,p.pnum,p.jnum,p.sale,g.gname from product p , groupcode g "
-			+ " where code = ? and p.gcode = g.gcode";
+	String query = "select * from product where code = ?";
 	
 	pstmt = conn.prepareStatement(query);
+	pstmt.setString(1, code);
 	rs = pstmt.executeQuery();
 %>
 
@@ -63,7 +63,7 @@ function update(){
 }
 function sakuje(){
 	
-	insert.action = "product_delete";
+	insert.action = "product_delete.jsp";
 	insert.submit();
 }
 
@@ -99,45 +99,61 @@ function main(){
 					<form name="insert" method="post" action="product_search_pro.jsp">
 						<table>
 						<%
-							
+							String gcode = "";
+							while(rs.next()){
 						%>
 							<tr>
 								<th>제품코드</th>
-								<td><input type="text" name="code" ></td>
+								<td><input type="text" name="code" value="<%= rs.getString("code") %>" ></td>
 							</tr>
 							
 							<tr>
 								<th>제품이름</th>
-								<td><input type="text" name="pname" readonly></td>
+								<td><input type="text" name="pname" value="<%= rs.getString("pname") %>" ></td>
 							</tr>
 
 							<tr>
 								<th>제품원가</th>
-								<td><input type="text" name="cost" readonly></td>
+								<td><input type="text" name="cost" value="<%= rs.getString("cost") %>" ></td>
 							</tr>
 							
 							<tr>
 								<th>목표수량</th>
-								<td><input type="text" name="pnum" readonly></td>
+								<td><input type="text" name="pnum" value="<%= rs.getString("pnum") %>" ></td>
 							</tr>
 							
 							<tr>
 								<th>재고수량</th>
-								<td><input type="text" name="jnum" readonly></td>
+								<td><input type="text" name="jnum" value="<%= rs.getString("jnum") %>"></td>
 							</tr>
 							
 							<tr>
 								<th>출고가</th>
-								<td><input type="text" name="sale" readonly></td>
+								<td><input type="text" name="sale" value="<%= rs.getString("sale") %>" ></td>
 							</tr>
+							<%
+							gcode = rs.getString("gcode");
+							}
+							query = "select * from groupcode order by gcode";
 							
+							pstmt = conn.prepareStatement(query);
+							rs = pstmt.executeQuery();
+							%>
 							<tr>
                 				<th>&nbsp;그룹이름<font color=red>&nbsp;</font></th>
                 				<TD >
                   					<select name="gcode" class="formbox">
  										<option value="0">선택하세요 ---
  										
- 										<option value="">
+ 										<%
+ 											while(rs.next()){
+ 										%>
+ 										<option value="<%= rs.getString("gcode") %>" 
+ 										<% if(rs.getString("gcode").contains(gcode)){%> selected <%}%>><%= rs.getString("gname") %>
+ 										<%
+ 											
+ 											}
+ 										%>
  										
 									</select>
 								</td>                
