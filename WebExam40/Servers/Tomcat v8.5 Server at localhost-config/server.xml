@@ -107,12 +107,18 @@
 
 
 
-				
-					
+
+
 				<Context docBase="exUser" path="/exUser" reloadable="true" source="org.eclipse.jst.jee.server:exUser">
 					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="jsl40"/>
 				</Context>
-			<Context docBase="exPdsPoolDBCP" path="/exPdsPoolDBCP" reloadable="true" source="org.eclipse.jst.jee.server:exPdsPoolDBCP"/><Context docBase="TEST2" path="/TEST2" reloadable="true" source="org.eclipse.jst.jee.server:TEST2"/><Context docBase="StudentJSP" path="/StudentJSP" reloadable="true" source="org.eclipse.jst.jee.server:StudentJSP"/><Context docBase="StudentServlet" path="/StudentServlet" reloadable="true" source="org.eclipse.jst.jee.server:StudentServlet"/><Context docBase="ProductServlet" path="/ProductServlet" reloadable="true" source="org.eclipse.jst.jee.server:ProductServlet"/></Host>
+				<Context docBase="exPdsPoolDBCP" path="/exPdsPoolDBCP" reloadable="true" source="org.eclipse.jst.jee.server:exPdsPoolDBCP"/>
+				<Context docBase="SampleMVC" path="/" reloadable="true" source="org.eclipse.jst.jee.server:SampleMVC">
+
+					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="jsl40"/>
+
+				</Context>
+			<Context docBase="SampleProject" path="/SampleProject" reloadable="true" source="org.eclipse.jst.jee.server:SampleProject"/><Context docBase="servletBoard" path="/servletBoard" reloadable="true" source="org.eclipse.jst.jee.server:servletBoard"/><Context docBase="exJSP" path="/exJSP" reloadable="true" source="org.eclipse.jst.jee.server:exJSP"/></Host>
 		</Engine>
 	</Service>
 </Server>
