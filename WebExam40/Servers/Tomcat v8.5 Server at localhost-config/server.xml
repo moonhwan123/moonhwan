@@ -109,10 +109,16 @@
 
 
 
+
+
+
 				
-				
-				
-			<Context docBase="exProject" path="/" reloadable="true" source="org.eclipse.jst.jee.server:exProject"/><Context docBase="SampleMVC" path="/SampleMVC" reloadable="true" source="org.eclipse.jst.jee.server:SampleMVC"/></Host>
+				<Context docBase="SampleMVC" path="/SampleMVC" reloadable="true" source="org.eclipse.jst.jee.server:SampleMVC"/>
+				<Context docBase="exSample2" path="/" reloadable="true" source="org.eclipse.jst.jee.server:exSample2">
+
+					<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="jsl40"/>
+				</Context>
+			<Context docBase="123" path="/123" reloadable="true" source="org.eclipse.jst.jee.server:123"/></Host>
 		</Engine>
 	</Service>
 </Server>
